@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
-import * as pdfjsLib from 'pdfjs-dist';
 
 interface ConvertedImage {
   dataUrl: string;
@@ -15,12 +14,22 @@ export default function ConverterPDFJPG() {
   const [progress, setProgress] = useState(0);
   const [quality, setQuality] = useState(90);
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const pdfjsRef = useRef<typeof import('pdfjs-dist') | null>(null);
 
-  // Configurar o worker do PDF.js após o componente montar
+  // Carregar PDF.js dinamicamente após o componente montar
   useEffect(() => {
-    if (typeof window !== 'undefined' && pdfjsLib.GlobalWorkerOptions) {
-      pdfjsLib.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.mjs';
-    }
+    const loadPdfJs = async () => {
+      if (typeof window !== 'undefined') {
+        const pdfjs = await import('pdfjs-dist');
+        pdfjsRef.current = pdfjs;
+
+        if (pdfjs.GlobalWorkerOptions) {
+          pdfjs.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.mjs';
+        }
+      }
+    };
+
+    loadPdfJs();
   }, []);
 
   const handleFileSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -37,13 +46,19 @@ export default function ConverterPDFJPG() {
   const convertToJPG = async () => {
     if (!selectedFile) return;
 
+    // Verificar se PDF.js foi carregado
+    if (!pdfjsRef.current) {
+      alert('Aguarde, carregando biblioteca PDF.js...');
+      return;
+    }
+
     setConverting(true);
     setProgress(0);
     setImages([]);
 
     try {
       const arrayBuffer = await selectedFile.arrayBuffer();
-      const loadingTask = pdfjsLib.getDocument({ data: arrayBuffer });
+      const loadingTask = pdfjsRef.current.getDocument({ data: arrayBuffer });
       const pdf = await loadingTask.promise;
       const numPages = pdf.numPages;
       const convertedImages: ConvertedImage[] = [];
