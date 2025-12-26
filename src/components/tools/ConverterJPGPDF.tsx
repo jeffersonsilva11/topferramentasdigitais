@@ -82,7 +82,7 @@ export default function ConverterJPGPDF() {
 
       // Salvar PDF
       pdf.save('imagens-convertidas.pdf');
-    } catch (error) {
+    } catch {
       alert('Erro ao converter para PDF');
     } finally {
       setConverting(false);

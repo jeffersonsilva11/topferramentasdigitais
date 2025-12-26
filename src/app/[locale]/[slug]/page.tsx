@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
 import { tools } from '@/lib/tools';
 import AdSlot from '@/components/AdSlot';
@@ -60,7 +60,6 @@ const toolComponents: Record<string, React.ComponentType> = {
   'convertir-png-jpg': ConverterPNGJPG,
   'contador-caracteres': ContadorCaracteres,
   'character-counter': ContadorCaracteres,
-  'contador-caracteres': ContadorCaracteres,
   'gerador-lorem-ipsum': GeradorLoremIpsum,
   'lorem-ipsum-generator': GeradorLoremIpsum,
   'generador-lorem-ipsum': GeradorLoremIpsum,
@@ -188,15 +187,16 @@ export async function generateStaticParams() {
 }
 
 export default async function ToolPage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
-  const { slug } = await params;
+  const { locale, slug } = await params;
+  setRequestLocale(locale);
   const toolKey = getToolKeyBySlug(slug);
 
-  return <ToolPageContent slug={slug} toolKey={toolKey} />;
+  return <ToolPageContent locale={locale} slug={slug} toolKey={toolKey} />;
 }
 
-function ToolPageContent({ slug, toolKey }: { slug: string; toolKey: string }) {
-  const t = useTranslations(`tools.${toolKey}`);
-  const tSite = useTranslations('site');
+async function ToolPageContent({ locale, slug, toolKey }: { locale: string; slug: string; toolKey: string }) {
+  const t = await getTranslations({ locale, namespace: `tools.${toolKey}` });
+  const tSite = await getTranslations({ locale, namespace: 'site' });
 
   const ToolComponent = toolComponents[slug];
 

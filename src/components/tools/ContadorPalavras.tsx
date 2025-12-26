@@ -60,7 +60,7 @@ export default function ContadorPalavras() {
     try {
       const clipboardText = await navigator.clipboard.readText();
       setText(clipboardText);
-    } catch (err) {
+    } catch {
       alert('Não foi possível acessar a área de transferência');
     }
   };

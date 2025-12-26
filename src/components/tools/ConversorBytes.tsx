@@ -25,28 +25,24 @@ export default function ConversorBytes() {
 
   useEffect(() => {
     if (value && !isNaN(Number(value))) {
-      convert();
+      const numValue = parseFloat(value);
+      if (!isNaN(numValue)) {
+        // Converter para bytes primeiro
+        const bytes = numValue * conversions[fromUnit];
+
+        // Converter bytes para todas as unidades
+        setResults({
+          B: bytes.toFixed(0),
+          KB: (bytes / conversions.KB).toFixed(2),
+          MB: (bytes / conversions.MB).toFixed(2),
+          GB: (bytes / conversions.GB).toFixed(4),
+          TB: (bytes / conversions.TB).toFixed(6),
+        });
+      }
     } else {
       setResults({ B: '', KB: '', MB: '', GB: '', TB: '' });
     }
   }, [value, fromUnit]);
-
-  const convert = () => {
-    const numValue = parseFloat(value);
-    if (isNaN(numValue)) return;
-
-    // Converter para bytes primeiro
-    const bytes = numValue * conversions[fromUnit];
-
-    // Converter bytes para todas as unidades
-    setResults({
-      B: bytes.toFixed(0),
-      KB: (bytes / conversions.KB).toFixed(2),
-      MB: (bytes / conversions.MB).toFixed(2),
-      GB: (bytes / conversions.GB).toFixed(4),
-      TB: (bytes / conversions.TB).toFixed(6),
-    });
-  };
 
   const copyResult = (unit: Unit) => {
     const resultValue = results[unit];

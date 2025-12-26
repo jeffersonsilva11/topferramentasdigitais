@@ -60,7 +60,7 @@ export default function RegraDeTres() {
               name="type"
               value="simple"
               checked={type === 'simple'}
-              onChange={(e) => setType('simple')}
+              onChange={() => setType('simple')}
               className="w-4 h-4 text-primary-600 border-gray-300 focus:ring-primary-500"
             />
             <span className="ml-2 text-sm text-gray-700">Simples (direta)</span>
@@ -71,7 +71,7 @@ export default function RegraDeTres() {
               name="type"
               value="inverse"
               checked={type === 'inverse'}
-              onChange={(e) => setType('inverse')}
+              onChange={() => setType('inverse')}
               className="w-4 h-4 text-primary-600 border-gray-300 focus:ring-primary-500"
             />
             <span className="ml-2 text-sm text-gray-700">Inversa</span>

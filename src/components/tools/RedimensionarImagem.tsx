@@ -74,7 +74,7 @@ export default function RedimensionarImagem() {
         const resizedDataUrl = canvas.toDataURL('image/jpeg', 0.9);
         setResizedPreview(resizedDataUrl);
       }
-    } catch (error) {
+    } catch {
       alert('Erro ao redimensionar imagem');
     } finally {
       setProcessing(false);

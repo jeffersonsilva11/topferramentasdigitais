@@ -1,5 +1,5 @@
 import { useTranslations } from 'next-intl';
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import ToolCard from '@/components/ToolCard';
 import AdSlot from '@/components/AdSlot';
 import { tools } from '@/lib/tools';
@@ -25,16 +25,19 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   };
 }
 
-export default function Home() {
+export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   return (
-    <HomePage />
+    <HomePage locale={locale} />
   );
 }
 
-function HomePage() {
-  const t = useTranslations('site');
-  const tFeatures = useTranslations('features');
-  const tCategories = useTranslations('categories');
+async function HomePage({ locale }: { locale: string }) {
+  const t = await getTranslations({ locale, namespace: 'site' });
+  const tFeatures = await getTranslations({ locale, namespace: 'features' });
+  const tCategories = await getTranslations({ locale, namespace: 'categories' });
 
   return (
     <div className="container mx-auto px-4 py-8">

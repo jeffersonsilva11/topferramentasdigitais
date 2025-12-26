@@ -50,7 +50,7 @@ export default function ConverterWebPJPG() {
         const jpgDataUrl = canvas.toDataURL('image/jpeg', quality / 100);
         setConvertedPreview(jpgDataUrl);
       }
-    } catch (error) {
+    } catch {
       alert('Erro ao converter para JPG');
     } finally {
       setConverting(false);

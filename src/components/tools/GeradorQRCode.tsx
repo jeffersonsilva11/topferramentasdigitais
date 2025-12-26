@@ -30,7 +30,7 @@ export default function GeradorQRCode() {
         const url = await QRCode.toDataURL(text, { width: 500 });
         setQrCodeUrl(url);
       }
-    } catch (err) {
+    } catch {
       alert('Erro ao gerar QR Code');
     }
   };

@@ -47,7 +47,7 @@ export default function ComprimirImagem() {
       const reader = new FileReader();
       reader.onload = (e) => setCompressedPreview(e.target?.result as string);
       reader.readAsDataURL(compressedFile);
-    } catch (error) {
+    } catch {
       alert('Erro ao comprimir imagem');
     } finally {
       setCompressing(false);

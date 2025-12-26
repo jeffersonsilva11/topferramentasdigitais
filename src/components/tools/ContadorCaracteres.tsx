@@ -40,7 +40,7 @@ export default function ContadorCaracteres() {
     try {
       const clipboardText = await navigator.clipboard.readText();
       setText(clipboardText);
-    } catch (err) {
+    } catch {
       alert('Não foi possível acessar a área de transferência');
     }
   };

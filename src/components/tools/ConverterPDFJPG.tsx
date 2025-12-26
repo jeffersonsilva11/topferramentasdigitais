@@ -35,7 +35,7 @@ export default function ConverterPDFJPG() {
         setConverting(false);
         // setImages([...]) - adicionar imagens convertidas aqui
       }, 2000);
-    } catch (error) {
+    } catch {
       alert('Erro ao converter PDF');
       setConverting(false);
     }
