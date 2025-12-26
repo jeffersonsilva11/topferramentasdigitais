@@ -30,6 +30,11 @@ export default function ConsultaWHOIS() {
 
       const data = await response.json();
 
+      // Verificar se houve erro da API
+      if (data.error) {
+        throw new Error(data.message || 'WHOIS service unavailable');
+      }
+
       // Formatar resultado de forma mais legível
       let formattedResult = `🌐 Informações WHOIS para: ${cleanDomain}\n\n`;
 
