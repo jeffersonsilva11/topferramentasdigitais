@@ -142,12 +142,12 @@ export default function ConverterPDFJPG() {
   return (
     <>
       <Script
-        src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.0.379/pdf.min.mjs"
+        src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"
         strategy="afterInteractive"
         onLoad={() => {
           if (window.pdfjsLib && window.pdfjsLib.GlobalWorkerOptions) {
             window.pdfjsLib.GlobalWorkerOptions.workerSrc =
-              'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.0.379/pdf.worker.min.mjs';
+              'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
           }
           setPdfjsLoaded(true);
         }}
