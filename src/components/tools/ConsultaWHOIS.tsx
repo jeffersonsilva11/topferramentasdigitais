@@ -17,19 +17,62 @@ export default function ConsultaWHOIS() {
     setResult('');
 
     try {
-      // API pública WHOIS - whoisjsonapi.com ou similar
-      const cleanDomain = domain.replace(/^https?:\/\//, '').split('/')[0];
-      const response = await fetch(`https://www.whoisxmlapi.com/whoisserver/WhoisService?domainName=${cleanDomain}&outputFormat=JSON&apiKey=at_free`);
+      // Limpar o domínio removendo protocolo e path
+      const cleanDomain = domain.replace(/^https?:\/\//, '').replace(/^www\./, '').split('/')[0];
+
+      // Usar API gratuita Who-Dat (sem autenticação)
+      const response = await fetch(`https://who-dat.as93.net/api/whois/${cleanDomain}`);
 
       if (!response.ok) {
-        setResult('⚠️ Serviço WHOIS temporariamente indisponível.\n\nInformações básicas do domínio:\n• Domínio consultado: ' + cleanDomain + '\n• Status: Aguardando consulta WHOIS\n• Para consulta completa, use registrar.br (domínios .br) ou whois.com');
-        return;
+        throw new Error('API indisponível');
       }
 
       const data = await response.json();
-      setResult(JSON.stringify(data, null, 2));
-    } catch {
-      setResult(`⚠️ Não foi possível consultar o domínio.\n\nDica: Para consultar domínios .br, acesse:\nhttps://registro.br/tecnologia/ferramentas/whois/\n\nPara domínios internacionais:\nhttps://whois.com/whois/${domain.replace(/^https?:\/\//, '').split('/')[0]}`);
+
+      // Formatar resultado de forma mais legível
+      let formattedResult = `🌐 Informações WHOIS para: ${cleanDomain}\n\n`;
+
+      if (data.raw) {
+        // Extrair informações principais do raw data
+        const rawText = Array.isArray(data.raw) ? data.raw.join('\n') : data.raw;
+
+        // Tentar extrair informações principais
+        const lines = rawText.split('\n');
+        const importantLines = lines.filter((line: string) => {
+          const lower = line.toLowerCase();
+          return (
+            lower.includes('domain name:') ||
+            lower.includes('registrar:') ||
+            lower.includes('creation date:') ||
+            lower.includes('expiration date:') ||
+            lower.includes('updated date:') ||
+            lower.includes('name server:') ||
+            lower.includes('status:') ||
+            lower.includes('registrant') ||
+            lower.includes('admin') ||
+            lower.includes('tech')
+          );
+        });
+
+        if (importantLines.length > 0) {
+          formattedResult += importantLines.join('\n');
+        } else {
+          formattedResult += rawText;
+        }
+      } else {
+        formattedResult += JSON.stringify(data, null, 2);
+      }
+
+      setResult(formattedResult);
+    } catch (error) {
+      console.error('Erro WHOIS:', error);
+      setResult(
+        `⚠️ Não foi possível consultar o domínio automaticamente.\n\n` +
+          `📌 Consulte manualmente em:\n\n` +
+          `• Domínios .br:\n  https://registro.br/tecnologia/ferramentas/whois/\n\n` +
+          `• Domínios internacionais:\n  https://whois.com/whois/${domain.replace(/^https?:\/\//, '').replace(/^www\./, '').split('/')[0]}\n\n` +
+          `• Alternativa:\n  https://who.is/whois/${domain.replace(/^https?:\/\//, '').replace(/^www\./, '').split('/')[0]}`
+      );
     } finally {
       setLoading(false);
     }
