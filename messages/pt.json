@@ -1,0 +1,198 @@
+{
+  "site": {
+    "title": "Ferramentas Digitais Grátis - Utilitários Online",
+    "description": "Coleção completa de ferramentas online gratuitas: conversores, geradores, calculadoras e mais. Sem cadastro, sem limites!",
+    "hero": {
+      "title": "Ferramentas Digitais Gratuitas",
+      "subtitle": "Utilitários online gratuitos para facilitar seu dia a dia. Conversores, geradores, calculadoras e muito mais!",
+      "features": "100% Gratuito • Sem Cadastro • Sem Limites • Privacidade Garantida"
+    },
+    "chooseTool": "Escolha uma ferramenta",
+    "whyUse": "Por que usar nossas ferramentas?",
+    "categories": "Ferramentas por Categoria",
+    "about": "Sobre esta ferramenta",
+    "relatedKeywords": "Palavras-chave relacionadas",
+    "backToHome": "Voltar para Home"
+  },
+  "features": {
+    "free": {
+      "title": "100% Gratuito",
+      "desc": "Todas as ferramentas são completamente gratuitas, sem taxas ocultas"
+    },
+    "privacy": {
+      "title": "Privacidade Total",
+      "desc": "Tudo funciona no seu navegador. Seus dados não saem do seu computador"
+    },
+    "fast": {
+      "title": "Rápido e Fácil",
+      "desc": "Sem cadastro, sem instalação. Use instantaneamente qualquer ferramenta"
+    },
+    "responsive": {
+      "title": "100% Responsivo",
+      "desc": "Funciona perfeitamente em desktop, tablet e celular"
+    }
+  },
+  "categories": {
+    "converters": {
+      "title": "Conversores",
+      "desc": "PDF, JPG, PNG, WebP e muito mais"
+    },
+    "generators": {
+      "title": "Geradores",
+      "desc": "QR Code, Senhas, UUID, Lorem Ipsum"
+    },
+    "calculators": {
+      "title": "Calculadoras",
+      "desc": "Porcentagem, Regra de Três e mais"
+    },
+    "text": {
+      "title": "Texto",
+      "desc": "Contadores, Formatadores"
+    },
+    "images": {
+      "title": "Imagens",
+      "desc": "Comprimir, Redimensionar, Converter"
+    },
+    "security": {
+      "title": "Segurança",
+      "desc": "Hash, Senhas Seguras"
+    }
+  },
+  "tools": {
+    "meu-ip": {
+      "name": "Qual é meu IP",
+      "slug": "meu-ip",
+      "description": "Descubra seu endereço IP público instantaneamente",
+      "metaDescription": "Descubra qual é seu endereço IP público de forma rápida e gratuita. Ferramenta online para verificar seu IP."
+    },
+    "gerador-qr-code": {
+      "name": "Gerador de QR Code",
+      "slug": "gerador-qr-code",
+      "description": "Crie QR codes personalizados gratuitamente",
+      "metaDescription": "Gere QR codes gratuitamente online. Crie códigos QR personalizados para URLs, textos e mais."
+    },
+    "contador-palavras": {
+      "name": "Contador de Palavras",
+      "slug": "contador-palavras",
+      "description": "Conte palavras, caracteres e parágrafos em tempo real",
+      "metaDescription": "Contador de palavras online gratuito. Conte palavras, caracteres, frases e parágrafos em tempo real."
+    },
+    "converter-pdf-jpg": {
+      "name": "Converter PDF para JPG",
+      "slug": "converter-pdf-jpg",
+      "description": "Converta páginas de PDF em imagens JPG",
+      "metaDescription": "Converta PDF para JPG online grátis. Transforme páginas de PDF em imagens de alta qualidade."
+    },
+    "converter-jpg-pdf": {
+      "name": "Converter JPG para PDF",
+      "slug": "converter-jpg-pdf",
+      "description": "Transforme imagens JPG em documentos PDF",
+      "metaDescription": "Converta JPG para PDF online grátis. Transforme suas imagens em documentos PDF facilmente."
+    },
+    "comprimir-imagem": {
+      "name": "Comprimir Imagem",
+      "slug": "comprimir-imagem",
+      "description": "Reduza o tamanho das suas imagens sem perder qualidade",
+      "metaDescription": "Comprima imagens online grátis. Reduza o tamanho de JPG, PNG e WebP mantendo a qualidade."
+    },
+    "redimensionar-imagem": {
+      "name": "Redimensionar Imagem",
+      "slug": "redimensionar-imagem",
+      "description": "Altere as dimensões das suas imagens facilmente",
+      "metaDescription": "Redimensione imagens online grátis. Altere largura e altura de imagens mantendo proporções."
+    },
+    "calculadora-porcentagem": {
+      "name": "Calculadora de Porcentagem",
+      "slug": "calculadora-porcentagem",
+      "description": "Calcule porcentagens de forma rápida e fácil",
+      "metaDescription": "Calculadora de porcentagem online grátis. Calcule percentuais, descontos e aumentos facilmente."
+    },
+    "gerador-senha": {
+      "name": "Gerador de Senha Segura",
+      "slug": "gerador-senha",
+      "description": "Gere senhas fortes e seguras aleatoriamente",
+      "metaDescription": "Gerador de senhas seguras online. Crie senhas fortes com letras, números e símbolos gratuitamente."
+    },
+    "converter-png-jpg": {
+      "name": "Converter PNG para JPG",
+      "slug": "converter-png-jpg",
+      "description": "Converta imagens PNG para formato JPG",
+      "metaDescription": "Converta PNG para JPG online grátis. Transforme imagens PNG em JPG rapidamente."
+    },
+    "contador-caracteres": {
+      "name": "Contador de Caracteres",
+      "slug": "contador-caracteres",
+      "description": "Conte caracteres com e sem espaços",
+      "metaDescription": "Contador de caracteres online grátis. Conte letras, caracteres com e sem espaços em tempo real."
+    },
+    "gerador-lorem-ipsum": {
+      "name": "Gerador Lorem Ipsum",
+      "slug": "gerador-lorem-ipsum",
+      "description": "Gere texto placeholder para seus projetos",
+      "metaDescription": "Gerador de Lorem Ipsum online grátis. Crie textos placeholder para seus projetos e designs."
+    },
+    "site-online": {
+      "name": "Testar se Site está Online",
+      "slug": "site-online",
+      "description": "Verifique se um website está acessível",
+      "metaDescription": "Teste se um site está online. Verifique a disponibilidade de websites gratuitamente."
+    },
+    "meu-user-agent": {
+      "name": "Meu User Agent",
+      "slug": "meu-user-agent",
+      "description": "Descubra informações sobre seu navegador",
+      "metaDescription": "Descubra seu User Agent. Veja informações sobre seu navegador e sistema operacional."
+    },
+    "converter-webp-jpg": {
+      "name": "Converter WebP para JPG",
+      "slug": "converter-webp-jpg",
+      "description": "Converta imagens WebP para formato JPG",
+      "metaDescription": "Converta WebP para JPG online grátis. Transforme imagens WebP em JPG facilmente."
+    },
+    "regra-de-tres": {
+      "name": "Regra de Três Online",
+      "slug": "regra-de-tres",
+      "description": "Resolva cálculos de regra de três simples",
+      "metaDescription": "Calculadora de regra de três online grátis. Resolva proporções e cálculos facilmente."
+    },
+    "gerador-hash": {
+      "name": "Gerador de Hash",
+      "slug": "gerador-hash",
+      "description": "Gere hashes MD5, SHA-1, SHA-256 de textos",
+      "metaDescription": "Gerador de Hash online grátis. Crie hashes MD5, SHA-1 e SHA-256 de textos."
+    },
+    "json-formatter": {
+      "name": "JSON Formatter",
+      "slug": "json-formatter",
+      "description": "Formate e valide código JSON",
+      "metaDescription": "Formatador JSON online grátis. Formate, valide e embeleze código JSON facilmente."
+    },
+    "conversor-bytes": {
+      "name": "Conversor MB/KB/GB",
+      "slug": "conversor-bytes",
+      "description": "Converta unidades de armazenamento digital",
+      "metaDescription": "Conversor de bytes online grátis. Converta MB, KB, GB e outras unidades de armazenamento."
+    },
+    "gerador-uuid": {
+      "name": "Gerador de UUID",
+      "slug": "gerador-uuid",
+      "description": "Gere identificadores únicos universais (UUID v4)",
+      "metaDescription": "Gerador de UUID online grátis. Crie identificadores únicos universais (UUID v4) instantaneamente."
+    }
+  },
+  "footer": {
+    "title": "Ferramentas Digitais",
+    "subtitle": "Utilitários online gratuitos para facilitar seu dia a dia. Todas as ferramentas funcionam 100% no navegador.",
+    "categories": "Categorias",
+    "about": "Sobre",
+    "aboutText": "Ferramentas 100% gratuitas, sem cadastro, sem limites de uso. Sua privacidade é garantida - tudo funciona localmente no seu navegador.",
+    "copyright": "Todos os direitos reservados.",
+    "tagline": "Ferramentas online gratuitas para uso pessoal e comercial."
+  },
+  "languageSelector": {
+    "label": "Idioma",
+    "en": "English",
+    "pt": "Português",
+    "es": "Español"
+  }
+}

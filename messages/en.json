@@ -1,0 +1,198 @@
+{
+  "site": {
+    "title": "Free Digital Tools - Online Utilities",
+    "description": "Complete collection of free online tools: converters, generators, calculators and more. No registration, no limits!",
+    "hero": {
+      "title": "Free Digital Tools",
+      "subtitle": "Free online utilities to make your day easier. Converters, generators, calculators and much more!",
+      "features": "100% Free • No Registration • No Limits • Privacy Guaranteed"
+    },
+    "chooseToolshare": "Choose a tool",
+    "whyUse": "Why use our tools?",
+    "categories": "Tools by Category",
+    "about": "About this tool",
+    "relatedKeywords": "Related keywords",
+    "backToHome": "Back to Home"
+  },
+  "features": {
+    "free": {
+      "title": "100% Free",
+      "desc": "All tools are completely free, no hidden fees"
+    },
+    "privacy": {
+      "title": "Total Privacy",
+      "desc": "Everything works in your browser. Your data never leaves your computer"
+    },
+    "fast": {
+      "title": "Fast and Easy",
+      "desc": "No registration, no installation. Use any tool instantly"
+    },
+    "responsive": {
+      "title": "100% Responsive",
+      "desc": "Works perfectly on desktop, tablet and mobile"
+    }
+  },
+  "categories": {
+    "converters": {
+      "title": "Converters",
+      "desc": "PDF, JPG, PNG, WebP and more"
+    },
+    "generators": {
+      "title": "Generators",
+      "desc": "QR Code, Passwords, UUID, Lorem Ipsum"
+    },
+    "calculators": {
+      "title": "Calculators",
+      "desc": "Percentage, Rule of Three and more"
+    },
+    "text": {
+      "title": "Text",
+      "desc": "Counters, Formatters"
+    },
+    "images": {
+      "title": "Images",
+      "desc": "Compress, Resize, Convert"
+    },
+    "security": {
+      "title": "Security",
+      "desc": "Hash, Secure Passwords"
+    }
+  },
+  "tools": {
+    "meu-ip": {
+      "name": "What is My IP",
+      "slug": "what-is-my-ip",
+      "description": "Discover your public IP address instantly",
+      "metaDescription": "Find out what your public IP address is quickly and for free. Online tool to check your IP."
+    },
+    "gerador-qr-code": {
+      "name": "QR Code Generator",
+      "slug": "qr-code-generator",
+      "description": "Create custom QR codes for free",
+      "metaDescription": "Generate QR codes for free online. Create custom QR codes for URLs, texts and more."
+    },
+    "contador-palavras": {
+      "name": "Word Counter",
+      "slug": "word-counter",
+      "description": "Count words, characters and paragraphs in real-time",
+      "metaDescription": "Free online word counter. Count words, characters, sentences and paragraphs in real-time."
+    },
+    "converter-pdf-jpg": {
+      "name": "Convert PDF to JPG",
+      "slug": "convert-pdf-to-jpg",
+      "description": "Convert PDF pages to JPG images",
+      "metaDescription": "Convert PDF to JPG online for free. Transform PDF pages into high-quality images."
+    },
+    "converter-jpg-pdf": {
+      "name": "Convert JPG to PDF",
+      "slug": "convert-jpg-to-pdf",
+      "description": "Transform JPG images into PDF documents",
+      "metaDescription": "Convert JPG to PDF online for free. Turn your images into PDF documents easily."
+    },
+    "comprimir-imagem": {
+      "name": "Image Compressor",
+      "slug": "image-compressor",
+      "description": "Reduce image size without losing quality",
+      "metaDescription": "Compress images online for free. Reduce the size of JPG, PNG and WebP while maintaining quality."
+    },
+    "redimensionar-imagem": {
+      "name": "Resize Image",
+      "slug": "resize-image",
+      "description": "Change image dimensions easily",
+      "metaDescription": "Resize images online for free. Change width and height while maintaining proportions."
+    },
+    "calculadora-porcentagem": {
+      "name": "Percentage Calculator",
+      "slug": "percentage-calculator",
+      "description": "Calculate percentages quickly and easily",
+      "metaDescription": "Free online percentage calculator. Calculate percentages, discounts and increases easily."
+    },
+    "gerador-senha": {
+      "name": "Password Generator",
+      "slug": "password-generator",
+      "description": "Generate strong and secure passwords randomly",
+      "metaDescription": "Secure password generator online. Create strong passwords with letters, numbers and symbols for free."
+    },
+    "converter-png-jpg": {
+      "name": "Convert PNG to JPG",
+      "slug": "convert-png-to-jpg",
+      "description": "Convert PNG images to JPG format",
+      "metaDescription": "Convert PNG to JPG online for free. Transform PNG images to JPG quickly."
+    },
+    "contador-caracteres": {
+      "name": "Character Counter",
+      "slug": "character-counter",
+      "description": "Count characters with and without spaces",
+      "metaDescription": "Free online character counter. Count letters, characters with and without spaces in real-time."
+    },
+    "gerador-lorem-ipsum": {
+      "name": "Lorem Ipsum Generator",
+      "slug": "lorem-ipsum-generator",
+      "description": "Generate placeholder text for your projects",
+      "metaDescription": "Free Lorem Ipsum generator online. Create placeholder texts for your projects and designs."
+    },
+    "site-online": {
+      "name": "Is Website Online",
+      "slug": "website-status-checker",
+      "description": "Check if a website is accessible",
+      "metaDescription": "Test if a website is online. Check website availability for free."
+    },
+    "meu-user-agent": {
+      "name": "My User Agent",
+      "slug": "my-user-agent",
+      "description": "Discover information about your browser",
+      "metaDescription": "Discover your User Agent. View information about your browser and operating system."
+    },
+    "converter-webp-jpg": {
+      "name": "Convert WebP to JPG",
+      "slug": "convert-webp-to-jpg",
+      "description": "Convert WebP images to JPG format",
+      "metaDescription": "Convert WebP to JPG online for free. Transform WebP images to JPG easily."
+    },
+    "regra-de-tres": {
+      "name": "Rule of Three Calculator",
+      "slug": "rule-of-three-calculator",
+      "description": "Solve simple rule of three calculations",
+      "metaDescription": "Free online rule of three calculator. Solve proportions and calculations easily."
+    },
+    "gerador-hash": {
+      "name": "Hash Generator",
+      "slug": "hash-generator",
+      "description": "Generate MD5, SHA-1, SHA-256 hashes from texts",
+      "metaDescription": "Free Hash generator online. Create MD5, SHA-1 and SHA-256 hashes from texts."
+    },
+    "json-formatter": {
+      "name": "JSON Formatter",
+      "slug": "json-formatter",
+      "description": "Format and validate JSON code",
+      "metaDescription": "Free online JSON formatter. Format, validate and beautify JSON code easily."
+    },
+    "conversor-bytes": {
+      "name": "Bytes Converter",
+      "slug": "bytes-converter",
+      "description": "Convert digital storage units",
+      "metaDescription": "Free bytes converter online. Convert MB, KB, GB and other storage units."
+    },
+    "gerador-uuid": {
+      "name": "UUID Generator",
+      "slug": "uuid-generator",
+      "description": "Generate universally unique identifiers (UUID v4)",
+      "metaDescription": "Free UUID generator online. Create universally unique identifiers (UUID v4) instantly."
+    }
+  },
+  "footer": {
+    "title": "Free Digital Tools",
+    "subtitle": "Free online utilities to make your day easier. All tools work 100% in the browser.",
+    "categories": "Categories",
+    "about": "About",
+    "aboutText": "100% free tools, no registration, no usage limits. Your privacy is guaranteed - everything works locally in your browser.",
+    "copyright": "All rights reserved.",
+    "tagline": "Free online tools for personal and commercial use."
+  },
+  "languageSelector": {
+    "label": "Language",
+    "en": "English",
+    "pt": "Português",
+    "es": "Español"
+  }
+}
