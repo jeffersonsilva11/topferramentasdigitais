@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useTranslations, useLocale } from 'next-intl';
 import LanguageSelector from './LanguageSelector';
+import ThemeToggle from './ThemeToggle';
 import MobileMenu from './MobileMenu';
 
 export default function Header() {
@@ -35,7 +36,8 @@ export default function Header() {
           </Link>
 
           <nav aria-label={locale === 'en' ? 'Main navigation' : locale === 'pt' ? 'Navegação principal' : 'Navegación principal'}>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-3">
+              <ThemeToggle />
               <LanguageSelector />
               {!isHome && (
                 <Link

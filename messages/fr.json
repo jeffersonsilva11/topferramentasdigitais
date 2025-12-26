@@ -455,5 +455,9 @@
       "email": "Email : privacy@topferramentasdigitais.com"
     },
     "footer": "Tous Droits Réservés"
+  },
+  "theme": {
+    "switchToLight": "Passer en mode clair",
+    "switchToDark": "Passer en mode sombre"
   }
 }

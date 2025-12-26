@@ -6,6 +6,7 @@ import '../globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { ConsentProvider } from '@/contexts/ConsentContext';
+import { ThemeProvider } from '@/contexts/ThemeContext';
 import CookieBanner from '@/components/CookieConsent/CookieBanner';
 import CookieSettings from '@/components/CookieConsent/CookieSettings';
 import GoogleAnalytics from '@/components/Analytics/GoogleAnalytics';
@@ -63,21 +64,23 @@ export default async function LocaleLayout({
         </a>
 
         <NextIntlClientProvider messages={messages}>
-          <ConsentProvider>
-            {/* Google Analytics with Consent Mode v2 */}
-            <GoogleAnalytics />
+          <ThemeProvider>
+            <ConsentProvider>
+              {/* Google Analytics with Consent Mode v2 */}
+              <GoogleAnalytics />
 
-            {/* Cookie Consent Components */}
-            <CookieBanner />
-            <CookieSettings />
+              {/* Cookie Consent Components */}
+              <CookieBanner />
+              <CookieSettings />
 
-            {/* Main Layout */}
-            <Header />
-            <main id="main-content" className="min-h-screen">
-              {children}
-            </main>
-            <Footer />
-          </ConsentProvider>
+              {/* Main Layout */}
+              <Header />
+              <main id="main-content" className="min-h-screen">
+                {children}
+              </main>
+              <Footer />
+            </ConsentProvider>
+          </ThemeProvider>
         </NextIntlClientProvider>
       </body>
     </html>
