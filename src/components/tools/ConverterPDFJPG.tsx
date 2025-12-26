@@ -1,10 +1,17 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
+import Script from 'next/script';
 
 interface ConvertedImage {
   dataUrl: string;
   pageNumber: number;
+}
+
+declare global {
+  interface Window {
+    pdfjsLib: any;
+  }
 }
 
 export default function ConverterPDFJPG() {
@@ -13,24 +20,8 @@ export default function ConverterPDFJPG() {
   const [converting, setConverting] = useState(false);
   const [progress, setProgress] = useState(0);
   const [quality, setQuality] = useState(90);
+  const [pdfjsLoaded, setPdfjsLoaded] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
-  const pdfjsRef = useRef<typeof import('pdfjs-dist') | null>(null);
-
-  // Carregar PDF.js dinamicamente após o componente montar
-  useEffect(() => {
-    const loadPdfJs = async () => {
-      if (typeof window !== 'undefined') {
-        const pdfjs = await import('pdfjs-dist');
-        pdfjsRef.current = pdfjs;
-
-        if (pdfjs.GlobalWorkerOptions) {
-          pdfjs.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.mjs';
-        }
-      }
-    };
-
-    loadPdfJs();
-  }, []);
 
   const handleFileSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
@@ -47,7 +38,7 @@ export default function ConverterPDFJPG() {
     if (!selectedFile) return;
 
     // Verificar se PDF.js foi carregado
-    if (!pdfjsRef.current) {
+    if (!pdfjsLoaded || !window.pdfjsLib) {
       alert('Aguarde, carregando biblioteca PDF.js...');
       return;
     }
@@ -58,7 +49,7 @@ export default function ConverterPDFJPG() {
 
     try {
       const arrayBuffer = await selectedFile.arrayBuffer();
-      const loadingTask = pdfjsRef.current.getDocument({ data: arrayBuffer });
+      const loadingTask = window.pdfjsLib.getDocument({ data: arrayBuffer });
       const pdf = await loadingTask.promise;
       const numPages = pdf.numPages;
       const convertedImages: ConvertedImage[] = [];
@@ -149,8 +140,21 @@ export default function ConverterPDFJPG() {
   };
 
   return (
-    <div className="bg-white rounded-xl shadow-lg p-8">
-      <div className="mb-6">
+    <>
+      <Script
+        src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.0.379/pdf.min.mjs"
+        strategy="afterInteractive"
+        onLoad={() => {
+          if (window.pdfjsLib && window.pdfjsLib.GlobalWorkerOptions) {
+            window.pdfjsLib.GlobalWorkerOptions.workerSrc =
+              'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.0.379/pdf.worker.min.mjs';
+          }
+          setPdfjsLoaded(true);
+        }}
+      />
+
+      <div className="bg-white rounded-xl shadow-lg p-8">
+        <div className="mb-6">
         <label className="block text-sm font-medium text-gray-700 mb-2">
           Selecione um arquivo PDF:
         </label>
@@ -279,6 +283,7 @@ export default function ConverterPDFJPG() {
           <li>✅ Tudo funciona localmente - seu PDF não é enviado para servidores!</li>
         </ul>
       </div>
-    </div>
+      </div>
+    </>
   );
 }
