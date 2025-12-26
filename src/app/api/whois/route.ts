@@ -9,10 +9,23 @@ export async function GET(request: NextRequest) {
   }
 
   try {
-    const response = await fetch(`https://who-dat.as93.net/api/whois/${domain}`);
+    const response = await fetch(`https://who-dat.as93.net/${domain}`, {
+      headers: {
+        'Accept': 'application/json',
+      },
+    });
 
     if (!response.ok) {
-      throw new Error('WHOIS API unavailable');
+      console.error(`Who-Dat API returned status: ${response.status}`);
+      // Retornar erro com informações úteis
+      return NextResponse.json(
+        {
+          error: 'WHOIS service unavailable',
+          domain,
+          message: 'The WHOIS lookup service is temporarily unavailable. Please try the manual links below.',
+        },
+        { status: 503 }
+      );
     }
 
     const data = await response.json();
@@ -23,6 +36,7 @@ export async function GET(request: NextRequest) {
       {
         error: 'Failed to fetch WHOIS data',
         domain,
+        message: 'Unable to connect to WHOIS service. Please try the manual links below.',
       },
       { status: 500 }
     );
