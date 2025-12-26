@@ -1,0 +1,296 @@
+{
+  "site": {
+    "title": "Strumenti Digitali Gratuiti - Utilità Online",
+    "description": "Collezione completa di strumenti online gratuiti: convertitori, generatori, calcolatrici e altro. Senza registrazione, senza limiti!",
+    "hero": {
+      "title": "Strumenti Digitali Gratuiti",
+      "subtitle": "Utilità online gratuite per facilitare la tua vita quotidiana. Convertitori, generatori, calcolatrici e molto altro!",
+      "features": "100% Gratuito • Senza Registrazione • Senza Limiti • Privacy Garantita"
+    },
+    "chooseTool": "Scegli uno strumento",
+    "whyUse": "Perché usare i nostri strumenti?",
+    "categories": "Strumenti per Categoria",
+    "about": "Informazioni su questo strumento",
+    "relatedKeywords": "Parole chiave correlate",
+    "backToHome": "Torna alla Home"
+  },
+  "features": {
+    "free": {
+      "title": "100% Gratuito",
+      "desc": "Tutti gli strumenti sono completamente gratuiti, senza costi nascosti"
+    },
+    "privacy": {
+      "title": "Privacy Totale",
+      "desc": "Tutto funziona nel tuo browser. I tuoi dati non lasciano il tuo computer"
+    },
+    "fast": {
+      "title": "Veloce e Facile",
+      "desc": "Senza registrazione, senza installazione. Usa istantaneamente qualsiasi strumento"
+    },
+    "responsive": {
+      "title": "100% Responsive",
+      "desc": "Funziona perfettamente su desktop, tablet e cellulare"
+    }
+  },
+  "categories": {
+    "converters": {
+      "title": "Convertitori",
+      "desc": "PDF, JPG, PNG, WebP e molto altro"
+    },
+    "generators": {
+      "title": "Generatori",
+      "desc": "QR Code, Password, UUID, Lorem Ipsum"
+    },
+    "calculators": {
+      "title": "Calcolatrici",
+      "desc": "Percentuale, Regola del tre e altro"
+    },
+    "text": {
+      "title": "Testo",
+      "desc": "Contatori, Formattatori"
+    },
+    "images": {
+      "title": "Immagini",
+      "desc": "Comprimere, Ridimensionare, Convertire"
+    },
+    "security": {
+      "title": "Sicurezza",
+      "desc": "Hash, Password Sicure"
+    }
+  },
+  "tools": {
+    "meu-ip": {
+      "name": "Qual è il mio IP",
+      "slug": "mio-ip",
+      "description": "Scopri il tuo indirizzo IP pubblico istantaneamente",
+      "metaDescription": "Scopri il tuo indirizzo IP pubblico rapidamente e gratuitamente. Strumento online per verificare il tuo IP."
+    },
+    "gerador-qr-code": {
+      "name": "Generatore di Codice QR",
+      "slug": "generatore-qr-code",
+      "description": "Crea codici QR personalizzati gratuitamente",
+      "metaDescription": "Genera codici QR gratuitamente online. Crea codici QR personalizzati per URL, testi e altro."
+    },
+    "contador-texto": {
+      "name": "Contatore di Testo",
+      "slug": "contatore-testo",
+      "description": "Conta parole, caratteri, frasi e paragrafi in tempo reale",
+      "metaDescription": "Contatore di testo online gratuito. Conta parole, caratteri, frasi, paragrafi e tempo di lettura in tempo reale."
+    },
+    "converter-pdf-jpg": {
+      "name": "Convertire PDF in JPG",
+      "slug": "convertire-pdf-jpg",
+      "description": "Converti pagine PDF in immagini JPG",
+      "metaDescription": "Converti PDF in JPG online gratis. Trasforma pagine PDF in immagini di alta qualità."
+    },
+    "converter-jpg-pdf": {
+      "name": "Convertire JPG in PDF",
+      "slug": "convertire-jpg-pdf",
+      "description": "Trasforma immagini JPG in documenti PDF",
+      "metaDescription": "Converti JPG in PDF online gratis. Trasforma facilmente le tue immagini in documenti PDF."
+    },
+    "comprimir-imagem": {
+      "name": "Comprimere Immagine",
+      "slug": "comprimere-immagine",
+      "description": "Riduci la dimensione delle tue immagini senza perdere qualità",
+      "metaDescription": "Comprimi immagini online gratis. Riduci la dimensione di JPG, PNG e WebP mantenendo la qualità."
+    },
+    "redimensionar-imagem": {
+      "name": "Ridimensionare Immagine",
+      "slug": "ridimensionare-immagine",
+      "description": "Cambia facilmente le dimensioni delle tue immagini",
+      "metaDescription": "Ridimensiona immagini online gratis. Cambia larghezza e altezza mantenendo le proporzioni."
+    },
+    "calculadora-porcentagem": {
+      "name": "Calcolatrice Percentuale",
+      "slug": "calcolatrice-percentuale",
+      "description": "Calcola percentuali in modo rapido e semplice",
+      "metaDescription": "Calcolatrice percentuale online gratuita. Calcola facilmente percentuali, sconti e aumenti."
+    },
+    "gerador-senha": {
+      "name": "Generatore di Password Sicure",
+      "slug": "generatore-password",
+      "description": "Genera password forti e sicure casualmente",
+      "metaDescription": "Generatore di password sicure online. Crea password forti con lettere, numeri e simboli gratuitamente."
+    },
+    "converter-png-jpg": {
+      "name": "Convertire PNG in JPG",
+      "slug": "convertire-png-jpg",
+      "description": "Converti immagini PNG in formato JPG",
+      "metaDescription": "Converti PNG in JPG online gratis. Trasforma rapidamente immagini PNG in JPG."
+    },
+    "gerador-lorem-ipsum": {
+      "name": "Generatore Lorem Ipsum",
+      "slug": "generatore-lorem-ipsum",
+      "description": "Genera testo segnaposto per i tuoi progetti",
+      "metaDescription": "Generatore di Lorem Ipsum online gratuito. Crea testi segnaposto per i tuoi progetti e design."
+    },
+    "site-online": {
+      "name": "Verificare se Sito è Online",
+      "slug": "verifica-sito-online",
+      "description": "Verifica se un sito web è accessibile",
+      "metaDescription": "Verifica se un sito è online. Controlla gratuitamente la disponibilità dei siti web."
+    },
+    "meu-user-agent": {
+      "name": "Il mio User Agent",
+      "slug": "mio-user-agent",
+      "description": "Scopri informazioni sul tuo browser",
+      "metaDescription": "Scopri il tuo User Agent. Visualizza informazioni sul tuo browser e sistema operativo."
+    },
+    "converter-webp-jpg": {
+      "name": "Convertire WebP in JPG",
+      "slug": "convertire-webp-jpg",
+      "description": "Converti immagini WebP in formato JPG",
+      "metaDescription": "Converti WebP in JPG online gratis. Trasforma facilmente immagini WebP in JPG."
+    },
+    "regra-de-tres": {
+      "name": "Regola del Tre Online",
+      "slug": "regola-del-tre",
+      "description": "Risolvi calcoli di regola del tre semplice",
+      "metaDescription": "Calcolatrice regola del tre online gratuita. Risolvi facilmente proporzioni e calcoli."
+    },
+    "gerador-hash": {
+      "name": "Generatore di Hash",
+      "slug": "generatore-hash",
+      "description": "Genera hash MD5, SHA-1, SHA-256 di testi",
+      "metaDescription": "Generatore di Hash online gratuito. Crea hash MD5, SHA-1 e SHA-256 di testi."
+    },
+    "json-formatter": {
+      "name": "Formattatore JSON",
+      "slug": "formattatore-json",
+      "description": "Formatta e valida codice JSON",
+      "metaDescription": "Formattatore JSON online gratuito. Formatta, valida e abbellisci facilmente il codice JSON."
+    },
+    "conversor-bytes": {
+      "name": "Convertitore MB/KB/GB",
+      "slug": "convertitore-bytes",
+      "description": "Converti unità di archiviazione digitale",
+      "metaDescription": "Convertitore di byte online gratuito. Converti MB, KB, GB e altre unità di archiviazione."
+    },
+    "gerador-uuid": {
+      "name": "Generatore di UUID",
+      "slug": "generatore-uuid",
+      "description": "Genera identificatori univoci universali (UUID v4)",
+      "metaDescription": "Generatore di UUID online gratuito. Crea istantaneamente identificatori univoci universali (UUID v4)."
+    },
+    "gerador-link-whatsapp": {
+      "name": "Generatore di Link WhatsApp",
+      "slug": "generatore-link-whatsapp",
+      "description": "Crea link diretti per conversazione WhatsApp con messaggio predefinito",
+      "metaDescription": "Generatore di link WhatsApp online gratuito. Crea istantaneamente link wa.me con messaggio predefinito e QR Code."
+    },
+    "gerador-chave-pix": {
+      "name": "Generatore Chiave PIX",
+      "slug": "generatore-chiave-pix",
+      "description": "Genera QR Code e codice copia-incolla per pagamento PIX",
+      "metaDescription": "Generatore di chiave PIX online gratuito. Crea QR Code PIX e codice copia-incolla per ricevere pagamenti."
+    },
+    "lista-emojis": {
+      "name": "Elenco di Emoji",
+      "slug": "elenco-emoji",
+      "description": "Copia emoji facilmente - oltre 700 emoji categorizzati",
+      "metaDescription": "Elenco completo di emoji da copiare. Oltre 700 emoji organizzati per categoria. Copia e incolla facilmente."
+    },
+    "cronometro-timer": {
+      "name": "Cronometro e Timer Online",
+      "slug": "cronometro-timer",
+      "description": "Cronometro regressivo e progressivo con modalità schermo intero",
+      "metaDescription": "Cronometro online gratuito. Timer regressivo e progressivo con allarme sonoro e modalità schermo intero."
+    },
+    "cotacao-moedas": {
+      "name": "Quotazione Valute",
+      "slug": "quotazione-valute",
+      "description": "Convertitore di valute in tempo reale con tassi aggiornati",
+      "metaDescription": "Quotazione valute in tempo reale. Convertitore di valute con tassi della Banca Centrale Europea aggiornati quotidianamente."
+    },
+    "conversor-json-csv": {
+      "name": "Convertitore JSON in CSV",
+      "slug": "convertitore-json-csv",
+      "description": "Converti JSON in CSV e CSV in JSON bidirezionalmente",
+      "metaDescription": "Convertitore JSON CSV online gratuito. Converti facilmente JSON in CSV e CSV in JSON."
+    },
+    "gerador-utm": {
+      "name": "Generatore di UTM",
+      "slug": "generatore-utm",
+      "description": "Crea URL con parametri UTM per il monitoraggio delle campagne",
+      "metaDescription": "Generatore di UTM online gratuito. Crea URL con parametri utm_source, utm_medium e utm_campaign per Google Analytics."
+    },
+    "calculadora-juros": {
+      "name": "Calcolatrice Interessi Composti",
+      "slug": "calcolatrice-interessi",
+      "description": "Calcola il rendimento degli investimenti con interessi composti",
+      "metaDescription": "Calcolatrice interessi composti online gratuita. Simula investimenti, risparmi e depositi con interessi composti."
+    },
+    "consulta-whois": {
+      "name": "Consultazione WHOIS",
+      "slug": "consultazione-whois",
+      "description": "Consulta informazioni di registrazione domini (WHOIS)",
+      "metaDescription": "Consultazione WHOIS online gratuita. Visualizza informazioni sul proprietario, data di registrazione e scadenza dei domini."
+    },
+    "feriados-2026": {
+      "name": "Festività Nazionali 2026",
+      "slug": "festivita-2026",
+      "description": "Elenco completo delle festività nazionali del 2026 per vari paesi",
+      "metaDescription": "Festività nazionali 2026. Calendario completo delle festività di Italia, USA, Brasile, Messico, Argentina, Cile, Colombia e Spagna."
+    }
+  },
+  "footer": {
+    "title": "Strumenti Digitali",
+    "subtitle": "Utilità online gratuite per facilitare la tua vita quotidiana. Tutti gli strumenti funzionano 100% nel browser.",
+    "categories": "Categorie",
+    "about": "Informazioni",
+    "aboutText": "Strumenti 100% gratuiti, senza registrazione, senza limiti di utilizzo. La tua privacy è garantita - tutto funziona localmente nel tuo browser.",
+    "copyright": "Tutti i diritti riservati.",
+    "tagline": "Strumenti online gratuiti per uso personale e commerciale."
+  },
+  "languageSelector": {
+    "label": "Lingua",
+    "en": "English",
+    "pt": "Português",
+    "es": "Español",
+    "fr": "Français",
+    "de": "Deutsch",
+    "ru": "Русский",
+    "it": "Italiano"
+  },
+  "cookie": {
+    "banner": {
+      "title": "Utilizziamo i cookie 🍪",
+      "description": "Utilizziamo i cookie per migliorare la tua esperienza, analizzare il traffico del sito e mostrare annunci pertinenti. Continuando a navigare, accetti la nostra Informativa sulla Privacy.",
+      "acceptAll": "Accetta Tutti",
+      "rejectAll": "Rifiuta Tutti",
+      "customize": "Personalizza Cookie",
+      "privacyPolicy": "Informativa sulla Privacy",
+      "acceptAllAria": "Accetta tutti i cookie",
+      "rejectAllAria": "Rifiuta tutti i cookie non essenziali",
+      "customizeAria": "Personalizza le preferenze dei cookie"
+    },
+    "settings": {
+      "title": "Impostazioni Cookie",
+      "description": "Scegli quali categorie di cookie desideri consentire. Puoi modificare le tue preferenze in qualsiasi momento.",
+      "alwaysActive": "Sempre Attivo",
+      "savePreferences": "Salva Preferenze",
+      "cancel": "Annulla",
+      "close": "Chiudi",
+      "enable": "Attiva",
+      "disable": "Disattiva",
+      "seeDetails": "Vedi dettagli",
+      "dataRetention": "Conservazione dati",
+      "months": "mesi"
+    },
+    "categories": {
+      "necessary": {
+        "title": "Cookie Necessari",
+        "description": "Essenziali per il funzionamento del sito. Non possono essere disattivati. Utilizzati per ricordare le tue preferenze e mantenere sicura la tua sessione."
+      },
+      "analytics": {
+        "title": "Cookie Analitici",
+        "description": "Ci aiutano a capire come i visitatori interagiscono con il sito, raccogliendo informazioni in modo anonimo sulle pagine visitate e sugli errori riscontrati."
+      },
+      "advertising": {
+        "title": "Cookie Pubblicitari",
+        "description": "Utilizzati per mostrare annunci pertinenti in base ai tuoi interessi. Limitano anche il numero di volte in cui vedi un annuncio e misurano l'efficacia delle campagne pubblicitarie."
+      }
+    }
+  }
+}

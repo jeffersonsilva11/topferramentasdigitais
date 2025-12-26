@@ -247,7 +247,11 @@
     "label": "Language",
     "en": "English",
     "pt": "Português",
-    "es": "Español"
+    "es": "Español",
+    "fr": "Français",
+    "de": "Deutsch",
+    "ru": "Русский",
+    "it": "Italiano"
   },
   "cookie": {
     "banner": {

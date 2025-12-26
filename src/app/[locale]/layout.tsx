@@ -10,7 +10,7 @@ import CookieBanner from '@/components/CookieConsent/CookieBanner';
 import CookieSettings from '@/components/CookieConsent/CookieSettings';
 import GoogleAnalytics from '@/components/Analytics/GoogleAnalytics';
 
-const locales = ['en', 'pt', 'es'];
+const locales = ['en', 'pt', 'es', 'fr', 'de', 'ru', 'it'];
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -53,7 +53,13 @@ export default async function LocaleLayout({
       <body className="font-sans bg-white dark:bg-dark-950 text-gray-900 dark:text-gray-100 transition-colors antialiased">
         {/* Skip to main content - Accessibility */}
         <a href="#main-content" className="skip-to-main">
-          {locale === 'en' ? 'Skip to main content' : locale === 'pt' ? 'Pular para o conteúdo principal' : 'Saltar al contenido principal'}
+          {locale === 'en' && 'Skip to main content'}
+          {locale === 'pt' && 'Pular para o conteúdo principal'}
+          {locale === 'es' && 'Saltar al contenido principal'}
+          {locale === 'fr' && 'Passer au contenu principal'}
+          {locale === 'de' && 'Zum Hauptinhalt springen'}
+          {locale === 'ru' && 'Перейти к основному содержанию'}
+          {locale === 'it' && 'Vai al contenuto principale'}
         </a>
 
         <NextIntlClientProvider messages={messages}>
