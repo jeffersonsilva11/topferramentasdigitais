@@ -1,13 +1,14 @@
 import type { Metadata } from 'next';
-// import { Inter } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import '../globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-
-// const inter = Inter({ subsets: ['latin'] });
+import { ConsentProvider } from '@/contexts/ConsentContext';
+import CookieBanner from '@/components/CookieConsent/CookieBanner';
+import CookieSettings from '@/components/CookieConsent/CookieSettings';
+import GoogleAnalytics from '@/components/Analytics/GoogleAnalytics';
 
 const locales = ['en', 'pt', 'es'];
 
@@ -47,16 +48,25 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <head>
-        {/* Google AdSense - Replace with your publisher ID */}
-        {/* <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossOrigin="anonymous"></script> */}
+        {/* Google AdSense will be loaded via GoogleAnalytics component after consent */}
       </head>
-      <body className="font-sans">
+      <body className="font-sans bg-white dark:bg-dark-950 text-gray-900 dark:text-gray-100 transition-colors antialiased">
         <NextIntlClientProvider messages={messages}>
-          <Header />
-          <main className="min-h-screen">
-            {children}
-          </main>
-          <Footer />
+          <ConsentProvider>
+            {/* Google Analytics with Consent Mode v2 */}
+            <GoogleAnalytics />
+
+            {/* Cookie Consent Components */}
+            <CookieBanner />
+            <CookieSettings />
+
+            {/* Main Layout */}
+            <Header />
+            <main className="min-h-screen">
+              {children}
+            </main>
+            <Footer />
+          </ConsentProvider>
         </NextIntlClientProvider>
       </body>
     </html>

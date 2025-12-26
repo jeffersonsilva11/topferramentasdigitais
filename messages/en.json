@@ -248,5 +248,45 @@
     "en": "English",
     "pt": "Português",
     "es": "Español"
+  },
+  "cookie": {
+    "banner": {
+      "title": "We use cookies 🍪",
+      "description": "We use cookies to improve your experience, analyze site traffic, and display relevant ads. By continuing to browse, you agree to our Privacy Policy.",
+      "acceptAll": "Accept All",
+      "rejectAll": "Reject All",
+      "customize": "Customize Cookies",
+      "privacyPolicy": "Privacy Policy",
+      "acceptAllAria": "Accept all cookies",
+      "rejectAllAria": "Reject all non-essential cookies",
+      "customizeAria": "Customize cookie preferences"
+    },
+    "settings": {
+      "title": "Cookie Settings",
+      "description": "Choose which categories of cookies you want to allow. You can change your preferences at any time.",
+      "alwaysActive": "Always Active",
+      "savePreferences": "Save Preferences",
+      "cancel": "Cancel",
+      "close": "Close",
+      "enable": "Enable",
+      "disable": "Disable",
+      "seeDetails": "See details",
+      "dataRetention": "Data retention",
+      "months": "months"
+    },
+    "categories": {
+      "necessary": {
+        "title": "Necessary Cookies",
+        "description": "Essential for the website to function. Cannot be disabled. Used to remember your preferences and keep your session secure."
+      },
+      "analytics": {
+        "title": "Analytics Cookies",
+        "description": "Help us understand how visitors interact with the website by collecting information anonymously about pages visited and errors encountered."
+      },
+      "advertising": {
+        "title": "Advertising Cookies",
+        "description": "Used to display relevant ads based on your interests. They also limit the number of times you see an ad and measure the effectiveness of advertising campaigns."
+      }
+    }
   }
 }

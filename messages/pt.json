@@ -248,5 +248,45 @@
     "en": "English",
     "pt": "Português",
     "es": "Español"
+  },
+  "cookie": {
+    "banner": {
+      "title": "Nós usamos cookies 🍪",
+      "description": "Usamos cookies para melhorar sua experiência, analisar o tráfego do site e exibir anúncios relevantes. Ao continuar navegando, você concorda com nossa Política de Privacidade.",
+      "acceptAll": "Aceitar Todos",
+      "rejectAll": "Rejeitar Todos",
+      "customize": "Personalizar Cookies",
+      "privacyPolicy": "Política de Privacidade",
+      "acceptAllAria": "Aceitar todos os cookies",
+      "rejectAllAria": "Rejeitar todos os cookies não essenciais",
+      "customizeAria": "Personalizar preferências de cookies"
+    },
+    "settings": {
+      "title": "Configurações de Cookies",
+      "description": "Escolha quais categorias de cookies você deseja permitir. Você pode alterar suas preferências a qualquer momento.",
+      "alwaysActive": "Sempre Ativo",
+      "savePreferences": "Salvar Preferências",
+      "cancel": "Cancelar",
+      "close": "Fechar",
+      "enable": "Ativar",
+      "disable": "Desativar",
+      "seeDetails": "Ver detalhes",
+      "dataRetention": "Retenção de dados",
+      "months": "meses"
+    },
+    "categories": {
+      "necessary": {
+        "title": "Cookies Necessários",
+        "description": "Essenciais para o funcionamento do site. Não podem ser desativados. Usados para lembrar suas preferências e manter sua sessão segura."
+      },
+      "analytics": {
+        "title": "Cookies Analíticos",
+        "description": "Nos ajudam a entender como os visitantes interagem com o site, coletando informações de forma anônima sobre páginas visitadas e erros encontrados."
+      },
+      "advertising": {
+        "title": "Cookies de Publicidade",
+        "description": "Utilizados para exibir anúncios relevantes baseados em seus interesses. Também limitam o número de vezes que você vê um anúncio e medem a eficácia de campanhas publicitárias."
+      }
+    }
   }
 }
