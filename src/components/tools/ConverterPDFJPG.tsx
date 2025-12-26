@@ -41,7 +41,8 @@ export default function ConverterPDFJPG() {
 
     try {
       const arrayBuffer = await selectedFile.arrayBuffer();
-      const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
+      const loadingTask = pdfjsLib.getDocument({ data: arrayBuffer });
+      const pdf = await loadingTask.promise;
       const numPages = pdf.numPages;
       const convertedImages: ConvertedImage[] = [];
 
@@ -56,7 +57,10 @@ export default function ConverterPDFJPG() {
         const canvas = document.createElement('canvas');
         const context = canvas.getContext('2d');
 
-        if (!context) continue;
+        if (!context) {
+          console.error(`Não foi possível criar contexto 2D para a página ${pageNum}`);
+          continue;
+        }
 
         canvas.height = viewport.height;
         canvas.width = viewport.width;
@@ -65,6 +69,7 @@ export default function ConverterPDFJPG() {
         await page.render({
           canvasContext: context,
           viewport: viewport,
+          canvas: canvas,
         }).promise;
 
         // Converter para JPG
@@ -79,9 +84,26 @@ export default function ConverterPDFJPG() {
         setProgress(Math.round((pageNum / numPages) * 100));
       }
 
-      setImages(convertedImages);
-    } catch {
-      alert('Erro ao converter PDF. Verifique se o arquivo está corrompido.');
+      if (convertedImages.length === 0) {
+        alert('Nenhuma página foi convertida. Verifique o arquivo PDF.');
+      } else {
+        setImages(convertedImages);
+      }
+    } catch (error) {
+      console.error('Erro ao converter PDF:', error);
+      let errorMessage = 'Erro ao converter PDF.';
+
+      if (error instanceof Error) {
+        if (error.message.includes('Invalid PDF')) {
+          errorMessage = 'O arquivo selecionado não é um PDF válido.';
+        } else if (error.message.includes('password')) {
+          errorMessage = 'Este PDF está protegido por senha e não pode ser convertido.';
+        } else {
+          errorMessage = `Erro ao converter PDF: ${error.message}`;
+        }
+      }
+
+      alert(errorMessage);
     } finally {
       setConverting(false);
     }
