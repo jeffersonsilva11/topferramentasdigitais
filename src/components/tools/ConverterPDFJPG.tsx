@@ -1,11 +1,24 @@
 'use client';
 
 import { useState, useRef } from 'react';
+import * as pdfjsLib from 'pdfjs-dist';
+
+// Configurar o worker do PDF.js
+if (typeof window !== 'undefined') {
+  pdfjsLib.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.js`;
+}
+
+interface ConvertedImage {
+  dataUrl: string;
+  pageNumber: number;
+}
 
 export default function ConverterPDFJPG() {
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
+  const [images, setImages] = useState<ConvertedImage[]>([]);
   const [converting, setConverting] = useState(false);
-  const [images, setImages] = useState<string[]>([]);
+  const [progress, setProgress] = useState(0);
+  const [quality, setQuality] = useState(90);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const handleFileSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -13,44 +26,84 @@ export default function ConverterPDFJPG() {
     if (file && file.type === 'application/pdf') {
       setSelectedFile(file);
       setImages([]);
+      setProgress(0);
     } else {
       alert('Por favor, selecione um arquivo PDF válido');
     }
   };
 
-  const convertPDFtoJPG = async () => {
+  const convertToJPG = async () => {
     if (!selectedFile) return;
 
     setConverting(true);
-    try {
-      // Nota: Conversão de PDF para JPG no navegador requer bibliotecas como pdf.js
-      // Esta é uma implementação simplificada que mostra a estrutura
-      alert(
-        'Para converter PDF para JPG completamente no navegador, seria necessário integrar a biblioteca PDF.js. ' +
-        'Esta demonstração mostra a interface da ferramenta.'
-      );
+    setProgress(0);
+    setImages([]);
 
-      // Simulação de conversão (substituir por implementação real com PDF.js)
-      setTimeout(() => {
-        setConverting(false);
-        // setImages([...]) - adicionar imagens convertidas aqui
-      }, 2000);
+    try {
+      const arrayBuffer = await selectedFile.arrayBuffer();
+      const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
+      const numPages = pdf.numPages;
+      const convertedImages: ConvertedImage[] = [];
+
+      for (let pageNum = 1; pageNum <= numPages; pageNum++) {
+        const page = await pdf.getPage(pageNum);
+
+        // Definir escala para boa qualidade
+        const scale = 2.0;
+        const viewport = page.getViewport({ scale });
+
+        // Criar canvas
+        const canvas = document.createElement('canvas');
+        const context = canvas.getContext('2d');
+
+        if (!context) continue;
+
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+
+        // Renderizar página no canvas
+        await page.render({
+          canvasContext: context,
+          viewport: viewport,
+        }).promise;
+
+        // Converter para JPG
+        const jpgDataUrl = canvas.toDataURL('image/jpeg', quality / 100);
+
+        convertedImages.push({
+          dataUrl: jpgDataUrl,
+          pageNumber: pageNum,
+        });
+
+        // Atualizar progresso
+        setProgress(Math.round((pageNum / numPages) * 100));
+      }
+
+      setImages(convertedImages);
     } catch {
-      alert('Erro ao converter PDF');
+      alert('Erro ao converter PDF. Verifique se o arquivo está corrompido.');
+    } finally {
       setConverting(false);
     }
   };
 
-  const downloadImage = (imageUrl: string, index: number) => {
+  const downloadImage = (imageUrl: string, pageNumber: number) => {
     const link = document.createElement('a');
+    link.download = `page-${pageNumber}.jpg`;
     link.href = imageUrl;
-    link.download = `pagina-${index + 1}.jpg`;
     link.click();
+  };
+
+  const downloadAll = () => {
+    images.forEach((img) => {
+      setTimeout(() => downloadImage(img.dataUrl, img.pageNumber), img.pageNumber * 100);
+    });
   };
 
   const reset = () => {
     setSelectedFile(null);
     setImages([]);
+    setProgress(0);
     if (fileInputRef.current) {
       fileInputRef.current.value = '';
     }
@@ -65,69 +118,127 @@ export default function ConverterPDFJPG() {
         <input
           ref={fileInputRef}
           type="file"
-          accept=".pdf"
+          accept="application/pdf"
           onChange={handleFileSelect}
           className="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-primary-50 file:text-primary-700 hover:file:bg-primary-100 cursor-pointer"
         />
       </div>
 
       {selectedFile && (
-        <div className="bg-gray-50 rounded-lg p-4 mb-6">
-          <p className="text-sm text-gray-600">
-            <span className="font-semibold">Arquivo selecionado:</span> {selectedFile.name}
-          </p>
-          <p className="text-sm text-gray-600">
-            <span className="font-semibold">Tamanho:</span>{' '}
-            {(selectedFile.size / 1024 / 1024).toFixed(2)} MB
-          </p>
+        <div className="mb-6">
+          <label className="block text-sm font-medium text-gray-700 mb-2">
+            Qualidade JPG: {quality}%
+          </label>
+          <input
+            type="range"
+            min="10"
+            max="100"
+            step="10"
+            value={quality}
+            onChange={(e) => setQuality(Number(e.target.value))}
+            className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer"
+            disabled={converting}
+          />
+          <div className="flex justify-between text-xs text-gray-500 mt-1">
+            <span>Menor tamanho</span>
+            <span>Melhor qualidade</span>
+          </div>
         </div>
       )}
 
-      <div className="flex gap-3 mb-6">
-        <button
-          onClick={convertPDFtoJPG}
-          disabled={!selectedFile || converting}
-          className="flex-1 px-6 py-3 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition font-medium disabled:bg-gray-400 disabled:cursor-not-allowed"
-        >
-          {converting ? '⏳ Convertendo...' : '🔄 Converter para JPG'}
-        </button>
-        {selectedFile && (
+      {selectedFile && !converting && images.length === 0 && (
+        <div className="flex gap-3 mb-6">
+          <button
+            onClick={convertToJPG}
+            className="flex-1 px-6 py-3 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition font-medium"
+          >
+            🖼️ Converter PDF para JPG
+          </button>
           <button
             onClick={reset}
             className="px-6 py-3 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition font-medium"
           >
             🗑️ Limpar
           </button>
-        )}
-      </div>
-
-      {images.length > 0 && (
-        <div className="space-y-4">
-          <h3 className="font-bold text-lg">Imagens convertidas:</h3>
-          {images.map((imageUrl, index) => (
-            <div key={index} className="bg-gray-50 rounded-lg p-4 flex items-center justify-between">
-              <div className="flex items-center gap-4">
-                <img src={imageUrl} alt={`Página ${index + 1}`} className="w-20 h-20 object-cover rounded" />
-                <span className="font-medium">Página {index + 1}</span>
-              </div>
-              <button
-                onClick={() => downloadImage(imageUrl, index)}
-                className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition"
-              >
-                💾 Baixar
-              </button>
-            </div>
-          ))}
         </div>
       )}
 
-      <div className="mt-8 text-sm text-gray-600 bg-yellow-50 border-l-4 border-yellow-400 p-4">
-        <p className="font-semibold mb-2">⚠️ Nota sobre implementação:</p>
-        <p>
-          Para uma conversão completa de PDF para JPG no navegador, é necessário integrar
-          a biblioteca PDF.js da Mozilla. Esta interface mostra como a ferramenta funcionaria.
-          Os arquivos são processados localmente - nada é enviado para servidores externos.
-        </p>
+      {converting && (
+        <div className="mb-6">
+          <div className="flex items-center justify-between mb-2">
+            <span className="text-sm font-medium text-gray-700">Convertendo...</span>
+            <span className="text-sm font-medium text-primary-600">{progress}%</span>
+          </div>
+          <div className="w-full bg-gray-200 rounded-full h-2.5">
+            <div
+              className="bg-primary-600 h-2.5 rounded-full transition-all duration-300"
+              style={{ width: `${progress}%` }}
+            ></div>
+          </div>
+        </div>
+      )}
+
+      {images.length > 0 && (
+        <>
+          <div className="bg-green-50 border-l-4 border-green-400 p-4 mb-6">
+            <p className="text-green-700 font-medium">
+              ✅ {images.length} página(s) convertida(s) com sucesso!
+            </p>
+          </div>
+
+          <div className="flex gap-3 mb-6">
+            <button
+              onClick={downloadAll}
+              className="flex-1 px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition font-medium"
+            >
+              💾 Baixar Todas ({images.length})
+            </button>
+            <button
+              onClick={reset}
+              className="px-6 py-3 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition font-medium"
+            >
+              🔄 Nova Conversão
+            </button>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {images.map((img) => (
+              <div
+                key={img.pageNumber}
+                className="border-2 border-gray-200 rounded-lg p-4 hover:border-primary-400 transition"
+              >
+                <img
+                  src={img.dataUrl}
+                  alt={`Página ${img.pageNumber}`}
+                  className="w-full h-48 object-contain bg-gray-50 rounded mb-3"
+                />
+                <div className="flex items-center justify-between">
+                  <span className="text-sm font-medium text-gray-700">
+                    Página {img.pageNumber}
+                  </span>
+                  <button
+                    onClick={() => downloadImage(img.dataUrl, img.pageNumber)}
+                    className="px-3 py-1 bg-primary-600 text-white rounded text-sm hover:bg-primary-700 transition"
+                  >
+                    💾 Baixar
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </>
+      )}
+
+      <div className="mt-8 text-sm text-gray-600 bg-blue-50 border-l-4 border-blue-400 p-4">
+        <p className="font-semibold mb-2">💡 Como usar:</p>
+        <ul className="list-disc list-inside space-y-1">
+          <li>Selecione um arquivo PDF do seu computador</li>
+          <li>Ajuste a qualidade do JPG (maior qualidade = maior tamanho)</li>
+          <li>Clique em &quot;Converter PDF para JPG&quot;</li>
+          <li>Cada página do PDF será convertida em uma imagem JPG separada</li>
+          <li>Baixe as imagens individualmente ou todas de uma vez</li>
+          <li>✅ Tudo funciona localmente - seu PDF não é enviado para servidores!</li>
+        </ul>
       </div>
     </div>
   );
