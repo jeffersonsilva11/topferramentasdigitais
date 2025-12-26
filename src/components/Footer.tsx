@@ -1,6 +1,7 @@
 'use client';
 
 import { useTranslations, useLocale } from 'next-intl';
+import Link from 'next/link';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -40,7 +41,21 @@ export default function Footer() {
             <p className="text-sm text-gray-400 dark:text-gray-500 mb-4">
               {t('aboutText')}
             </p>
-            {/* TODO: Add Privacy Policy and Cookie Policy links in Phase 3 */}
+            {/* Legal Links */}
+            <nav aria-label={t('legalLinks')} className="space-y-2">
+              <Link
+                href={`/${locale}/privacy-policy`}
+                className="block text-sm text-gray-400 dark:text-gray-500 hover:text-primary-400 transition-colors"
+              >
+                🔒 {t('privacyPolicy')}
+              </Link>
+              <Link
+                href={`/${locale}/cookie-policy`}
+                className="block text-sm text-gray-400 dark:text-gray-500 hover:text-primary-400 transition-colors"
+              >
+                🍪 {t('cookiePolicy')}
+              </Link>
+            </nav>
           </div>
         </div>
 

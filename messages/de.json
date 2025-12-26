@@ -241,7 +241,10 @@
     "about": "Über",
     "aboutText": "100% kostenlose Tools, ohne Registrierung, ohne Nutzungslimits. Ihre Privatsphäre ist garantiert - alles funktioniert lokal in Ihrem Browser.",
     "copyright": "Alle Rechte vorbehalten.",
-    "tagline": "Kostenlose Online-Tools für den persönlichen und kommerziellen Gebrauch."
+    "tagline": "Kostenlose Online-Tools für den persönlichen und kommerziellen Gebrauch.",
+    "legalLinks": "Rechtliches",
+    "privacyPolicy": "Datenschutzrichtlinie",
+    "cookiePolicy": "Cookie-Richtlinie"
   },
   "languageSelector": {
     "label": "Sprache",

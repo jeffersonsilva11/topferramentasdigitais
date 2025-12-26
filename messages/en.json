@@ -241,7 +241,10 @@
     "about": "About",
     "aboutText": "100% free tools, no registration, no usage limits. Your privacy is guaranteed - everything works locally in your browser.",
     "copyright": "All rights reserved.",
-    "tagline": "Free online tools for personal and commercial use."
+    "tagline": "Free online tools for personal and commercial use.",
+    "legalLinks": "Legal",
+    "privacyPolicy": "Privacy Policy",
+    "cookiePolicy": "Cookie Policy"
   },
   "languageSelector": {
     "label": "Language",

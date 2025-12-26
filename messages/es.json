@@ -241,7 +241,10 @@
     "about": "Acerca de",
     "aboutText": "Herramientas 100% gratuitas, sin registro, sin límites de uso. Tu privacidad está garantizada - todo funciona localmente en tu navegador.",
     "copyright": "Todos los derechos reservados.",
-    "tagline": "Herramientas online gratuitas para uso personal y comercial."
+    "tagline": "Herramientas online gratuitas para uso personal y comercial.",
+    "legalLinks": "Legal",
+    "privacyPolicy": "Política de Privacidad",
+    "cookiePolicy": "Política de Cookies"
   },
   "languageSelector": {
     "label": "Idioma",

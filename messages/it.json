@@ -241,7 +241,10 @@
     "about": "Informazioni",
     "aboutText": "Strumenti 100% gratuiti, senza registrazione, senza limiti di utilizzo. La tua privacy è garantita - tutto funziona localmente nel tuo browser.",
     "copyright": "Tutti i diritti riservati.",
-    "tagline": "Strumenti online gratuiti per uso personale e commerciale."
+    "tagline": "Strumenti online gratuiti per uso personale e commerciale.",
+    "legalLinks": "Note Legali",
+    "privacyPolicy": "Informativa sulla Privacy",
+    "cookiePolicy": "Informativa sui Cookie"
   },
   "languageSelector": {
     "label": "Lingua",

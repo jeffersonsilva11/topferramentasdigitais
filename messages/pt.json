@@ -241,7 +241,10 @@
     "about": "Sobre",
     "aboutText": "Ferramentas 100% gratuitas, sem cadastro, sem limites de uso. Sua privacidade é garantida - tudo funciona localmente no seu navegador.",
     "copyright": "Todos os direitos reservados.",
-    "tagline": "Ferramentas online gratuitas para uso pessoal e comercial."
+    "tagline": "Ferramentas online gratuitas para uso pessoal e comercial.",
+    "legalLinks": "Legal",
+    "privacyPolicy": "Política de Privacidade",
+    "cookiePolicy": "Política de Cookies"
   },
   "languageSelector": {
     "label": "Idioma",

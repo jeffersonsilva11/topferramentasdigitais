@@ -241,7 +241,10 @@
     "about": "À propos",
     "aboutText": "Outils 100% gratuits, sans inscription, sans limites d'utilisation. Votre vie privée est garantie - tout fonctionne localement dans votre navigateur.",
     "copyright": "Tous droits réservés.",
-    "tagline": "Outils en ligne gratuits pour usage personnel et commercial."
+    "tagline": "Outils en ligne gratuits pour usage personnel et commercial.",
+    "legalLinks": "Légal",
+    "privacyPolicy": "Politique de Confidentialité",
+    "cookiePolicy": "Politique de Cookies"
   },
   "languageSelector": {
     "label": "Langue",
