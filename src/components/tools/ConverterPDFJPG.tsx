@@ -20,7 +20,7 @@ export default function ConverterPDFJPG() {
   useEffect(() => {
     const loadPdfJs = async () => {
       if (typeof window !== 'undefined') {
-        const pdfjs = await import('pdfjs-dist');
+        const pdfjs = await import('pdfjs-dist/build/pdf.min.mjs');
         pdfjsRef.current = pdfjs;
 
         if (pdfjs.GlobalWorkerOptions) {
