@@ -20,6 +20,7 @@ const nextConfig = {
     'crypto-js',
     'dompurify',
     'browser-image-compression',
+    'pdfjs-dist',
   ],
 
   // next-intl automatically configured via plugin
