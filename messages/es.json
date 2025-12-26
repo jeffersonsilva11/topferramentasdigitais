@@ -257,12 +257,15 @@
     "banner": {
       "title": "Usamos cookies 🍪",
       "description": "Usamos cookies para mejorar tu experiencia, analizar el tráfico del sitio y mostrar anuncios relevantes. Al continuar navegando, aceptas nuestra Política de Privacidad.",
+      "descriptionCCPA": "Usamos cookies y tecnologías similares. Tienes el derecho de optar por no vender tu información personal. Haz clic en 'Rechazar Todas' para ejercer tus derechos CCPA.",
       "acceptAll": "Aceptar Todas",
       "rejectAll": "Rechazar Todas",
+      "doNotSell": "No Vender Mi Información Personal",
       "customize": "Personalizar Cookies",
       "privacyPolicy": "Política de Privacidad",
       "acceptAllAria": "Aceptar todas las cookies",
       "rejectAllAria": "Rechazar todas las cookies no esenciales",
+      "doNotSellAria": "No vender mi información personal (CCPA)",
       "customizeAria": "Personalizar preferencias de cookies"
     },
     "settings": {

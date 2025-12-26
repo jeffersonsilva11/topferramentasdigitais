@@ -263,7 +263,10 @@
       "privacyPolicy": "Datenschutzerklärung",
       "acceptAllAria": "Alle Cookies akzeptieren",
       "rejectAllAria": "Alle nicht notwendigen Cookies ablehnen",
-      "customizeAria": "Cookie-Einstellungen anpassen"
+      "customizeAria": "Cookie-Einstellungen anpassen",
+      "descriptionCCPA": "Wir verwenden Cookies und ähnliche Technologien. Sie haben das Recht, dem Verkauf Ihrer persönlichen Daten zu widersprechen. Klicken Sie auf 'Alle Ablehnen', um Ihre CCPA-Rechte auszuüben.",
+      "doNotSell": "Meine Persönlichen Daten Nicht Verkaufen",
+      "doNotSellAria": "Meine persönlichen Daten nicht verkaufen (CCPA)"
     },
     "settings": {
       "title": "Cookie-Einstellungen",

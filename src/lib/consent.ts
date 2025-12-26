@@ -5,8 +5,10 @@ import type {
   GoogleConsentState,
   ConsentStatus
 } from '@/types/consent';
+import { detectUserRegion, getRegionInfo } from './regions';
 
 const CONSENT_COOKIE_NAME = 'user_consent';
+const CONSENT_REGION_COOKIE = 'user_region';
 const CONSENT_EXPIRY_DAYS = 365; // 12 months
 
 /**
@@ -19,8 +21,47 @@ export const DEFAULT_CONSENT: ConsentCategories = {
 };
 
 /**
- * Initialize Google Consent Mode v2 with default denied state
+ * Get region-aware default consent
+ */
+export function getDefaultConsent(): ConsentCategories {
+  const region = detectUserRegion();
+  const regionInfo = getRegionInfo(region);
+
+  return {
+    necessary: true, // Always true
+    analytics: regionInfo.defaultAnalytics,
+    advertising: regionInfo.defaultAdvertising,
+  };
+}
+
+/**
+ * Save detected region to cookie
+ */
+export function saveRegion(region: string): void {
+  Cookies.set(CONSENT_REGION_COOKIE, region, {
+    expires: CONSENT_EXPIRY_DAYS,
+    sameSite: 'Lax',
+    secure: process.env.NODE_ENV === 'production',
+  });
+}
+
+/**
+ * Load saved region from cookie
+ */
+export function loadRegion(): string | undefined {
+  return Cookies.get(CONSENT_REGION_COOKIE);
+}
+
+/**
+ * Initialize Google Consent Mode v2 with region-aware defaults
  * MUST be called before gtag scripts load
+ *
+ * Compliance:
+ * - GDPR (EU): Default deny, require opt-in
+ * - LGPD (Brazil): Default deny, require opt-in
+ * - CCPA (California): Default deny (conservative), show "Do Not Sell"
+ * - Other LATAM: Default deny (conservative)
+ * - Other regions: Default deny (safest approach)
  */
 export function initializeGoogleConsent(): void {
   if (typeof window === 'undefined') return;
@@ -34,17 +75,32 @@ export function initializeGoogleConsent(): void {
     window.dataLayer?.push(arguments);
   };
 
-  // Set default consent to denied (GDPR/LGPD compliant)
-  window.gtag('consent', 'default', {
-    ad_storage: 'denied',
-    analytics_storage: 'denied',
-    ad_user_data: 'denied',
-    ad_personalization: 'denied',
-    wait_for_update: 500, // Wait 500ms for consent banner interaction
-  });
+  // Detect user region
+  const region = detectUserRegion();
+  const regionInfo = getRegionInfo(region);
 
-  // Set ad_storage to 'granted' for non-EU regions if needed
-  // This can be enhanced with geolocation detection
+  // Save region for later use
+  saveRegion(region);
+
+  // Conservative approach: default to denied for all regions
+  // This ensures compliance with GDPR, LGPD, and CCPA
+  const defaultConsent: GoogleConsentState = {
+    ad_storage: regionInfo.defaultAdvertising ? 'granted' : 'denied',
+    analytics_storage: regionInfo.defaultAnalytics ? 'granted' : 'denied',
+    ad_user_data: regionInfo.defaultAdvertising ? 'granted' : 'denied',
+    ad_personalization: regionInfo.defaultAdvertising ? 'granted' : 'denied',
+    wait_for_update: 500, // Wait 500ms for consent banner interaction
+  };
+
+  // Set default consent state
+  window.gtag('consent', 'default', defaultConsent);
+
+  // For regions with specific requirements, add additional signals
+  if (region === 'US_CA') {
+    // CCPA: Signal that this is California traffic
+    window.gtag('set', 'ads_data_redaction', { ads_data_redaction: true });
+    window.gtag('set', 'url_passthrough', { url_passthrough: true });
+  }
 }
 
 /**

@@ -3,12 +3,24 @@
 import { useConsent } from '@/contexts/ConsentContext';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
+import { detectUserRegion, requiresDoNotSell } from '@/lib/regions';
+import { useState, useEffect } from 'react';
 
 export default function CookieBanner() {
   const { showBanner, acceptAll, rejectAll, openSettings } = useConsent();
   const t = useTranslations('cookie.banner');
+  const [isUSCA, setIsUSCA] = useState(false);
+
+  useEffect(() => {
+    // Detect if user is in California (CCPA applies)
+    const region = detectUserRegion();
+    setIsUSCA(region === 'US_CA' || requiresDoNotSell(region));
+  }, []);
 
   if (!showBanner) return null;
+
+  // Use CCPA-specific description for California users
+  const description = isUSCA && t('descriptionCCPA') ? t('descriptionCCPA') : t('description');
 
   return (
     <>
@@ -43,8 +55,13 @@ export default function CookieBanner() {
                       id="cookie-banner-description"
                       className="text-sm sm:text-base text-gray-600 dark:text-gray-400 leading-relaxed"
                     >
-                      {t('description')}
+                      {description}
                     </p>
+                    {isUSCA && (
+                      <p className="text-xs text-gray-500 dark:text-gray-500 mt-2 font-medium">
+                        🇺🇸 CCPA Compliance: California Consumer Privacy Act
+                      </p>
+                    )}
                   </div>
                 </div>
 

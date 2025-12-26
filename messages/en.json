@@ -257,12 +257,15 @@
     "banner": {
       "title": "We use cookies 🍪",
       "description": "We use cookies to improve your experience, analyze site traffic, and display relevant ads. By continuing to browse, you agree to our Privacy Policy.",
+      "descriptionCCPA": "We use cookies and similar technologies. You have the right to opt out of the sale of your personal information. Click 'Reject All' to exercise your CCPA rights.",
       "acceptAll": "Accept All",
       "rejectAll": "Reject All",
+      "doNotSell": "Do Not Sell My Personal Information",
       "customize": "Customize Cookies",
       "privacyPolicy": "Privacy Policy",
       "acceptAllAria": "Accept all cookies",
       "rejectAllAria": "Reject all non-essential cookies",
+      "doNotSellAria": "Do not sell my personal information (CCPA)",
       "customizeAria": "Customize cookie preferences"
     },
     "settings": {
