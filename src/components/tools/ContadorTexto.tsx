@@ -11,6 +11,7 @@ export default function ContadorTexto() {
     sentences: 0,
     paragraphs: 0,
     readingTime: 0,
+    readingTimeUnit: 'min' as 'min' | 'seg',
   });
 
   useEffect(() => {
@@ -19,7 +20,20 @@ export default function ContadorTexto() {
     const words = text.trim() ? text.trim().split(/\s+/).length : 0;
     const sentences = text.trim() ? text.split(/[.!?]+/).filter(s => s.trim().length > 0).length : 0;
     const paragraphs = text.trim() ? text.split(/\n+/).filter(p => p.trim().length > 0).length : 0;
-    const readingTime = Math.ceil(words / 200); // 200 palavras por minuto
+
+    // Calcular tempo de leitura: se < 200 palavras, mostrar em segundos
+    let readingTime: number;
+    let readingTimeUnit: 'min' | 'seg';
+
+    if (words < 200) {
+      // Calcular em segundos: (palavras / 200) * 60
+      readingTime = Math.ceil((words / 200) * 60);
+      readingTimeUnit = 'seg';
+    } else {
+      // Calcular em minutos
+      readingTime = Math.ceil(words / 200);
+      readingTimeUnit = 'min';
+    }
 
     setStats({
       characters,
@@ -28,6 +42,7 @@ export default function ContadorTexto() {
       sentences,
       paragraphs,
       readingTime,
+      readingTimeUnit,
     });
   }, [text]);
 
@@ -53,7 +68,7 @@ Estatísticas do Texto:
 📖 Palavras: ${stats.words}
 📄 Sentenças: ${stats.sentences}
 📋 Parágrafos: ${stats.paragraphs}
-⏱️ Tempo de leitura: ${stats.readingTime} min
+⏱️ Tempo de leitura: ${stats.readingTime} ${stats.readingTimeUnit}
     `.trim();
 
     navigator.clipboard.writeText(statsText);
@@ -127,7 +142,7 @@ Estatísticas do Texto:
 
         <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 border-2 border-indigo-200 rounded-lg p-4">
           <p className="text-sm text-indigo-600 font-medium mb-1">⏱️ Tempo Leitura</p>
-          <p className="text-3xl font-bold text-indigo-700">{stats.readingTime} min</p>
+          <p className="text-3xl font-bold text-indigo-700">{stats.readingTime} {stats.readingTimeUnit}</p>
         </div>
       </div>
 

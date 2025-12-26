@@ -11,9 +11,22 @@ export default function ToolsGrid() {
   const locale = useLocale();
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
+  // Mapeamento de IDs de categoria do filtro para categorias das ferramentas
+  const categoryMapping: Record<string, string[]> = {
+    'converters': ['Conversor'],
+    'generators': ['Gerador'],
+    'calculators': ['Calculadora'],
+    'text': ['Texto'],
+    'images': ['Imagem'],
+    'security': ['Segurança'],
+  };
+
   // Filter tools by selected category
   const filteredTools = selectedCategory
-    ? tools.filter((tool) => tool.category.toLowerCase() === selectedCategory.toLowerCase())
+    ? tools.filter((tool) => {
+        const mappedCategories = categoryMapping[selectedCategory] || [];
+        return mappedCategories.includes(tool.category);
+      })
     : tools;
 
   const toolCount = filteredTools.length;

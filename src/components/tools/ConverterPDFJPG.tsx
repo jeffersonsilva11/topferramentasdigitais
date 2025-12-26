@@ -65,7 +65,6 @@ export default function ConverterPDFJPG() {
         await page.render({
           canvasContext: context,
           viewport: viewport,
-          canvas: canvas,
         }).promise;
 
         // Converter para JPG

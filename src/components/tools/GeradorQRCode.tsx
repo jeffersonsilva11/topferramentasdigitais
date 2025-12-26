@@ -95,18 +95,12 @@ export default function GeradorQRCode() {
         )}
       </div>
 
-      {qrCodeUrl && (
-        <div className="text-center bg-gray-50 rounded-lg p-8">
-          <p className="text-gray-700 mb-4 font-medium">Seu QR Code:</p>
-          <div className="inline-block bg-white p-4 rounded-lg shadow-md">
-            <canvas ref={canvasRef} className="mx-auto" />
-          </div>
+      <div className={`text-center bg-gray-50 rounded-lg p-8 ${!qrCodeUrl ? 'hidden' : ''}`}>
+        <p className="text-gray-700 mb-4 font-medium">Seu QR Code:</p>
+        <div className="inline-block bg-white p-4 rounded-lg shadow-md">
+          <canvas ref={canvasRef} className="mx-auto" />
         </div>
-      )}
-
-      {!qrCodeUrl && (
-        <canvas ref={canvasRef} className="hidden" />
-      )}
+      </div>
 
       <div className="mt-8 text-sm text-gray-600 bg-blue-50 border-l-4 border-blue-400 p-4">
         <p className="font-semibold mb-2">💡 Dica:</p>
