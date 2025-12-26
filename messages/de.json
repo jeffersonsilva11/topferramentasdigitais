@@ -295,5 +295,83 @@
         "description": "Werden verwendet, um relevante Anzeigen basierend auf Ihren Interessen anzuzeigen. Begrenzen auch die Häufigkeit, mit der Sie eine Anzeige sehen, und messen die Effektivität von Werbekampagnen."
       }
     }
+  },
+  "privacyPolicy": {
+    "title": "Datenschutzrichtlinie",
+    "metaDescription": "Datenschutzrichtlinie - Wie wir Ihre Daten sammeln, verwenden und schützen. DSGVO, LGPD und CCPA konform.",
+    "backToHome": "Zurück zur Startseite",
+    "lastUpdated": "Letzte Aktualisierung",
+    "updateDate": "Dezember 2024",
+    "introduction": {
+      "title": "Einführung",
+      "p1": "Diese Datenschutzrichtlinie beschreibt, wie wir Ihre persönlichen Informationen sammeln, verwenden und schützen, wenn Sie unsere kostenlosen Online-Tools verwenden.",
+      "p2": "Wir verpflichten uns, Ihre Privatsphäre zu schützen und die geltenden Datenschutzgesetze einzuhalten, einschließlich DSGVO (Europäische Union), LGPD (Brasilien) und CCPA (Kalifornien, USA)."
+    },
+    "dataCollection": {
+      "title": "Welche Daten Wir Sammeln",
+      "intro": "Wir sammeln minimale Daten, um unsere Dienste bereitzustellen und zu verbessern:",
+      "item1": {
+        "title": "Automatische Daten (über Cookies)",
+        "desc": "IP-Adresse, Browsertyp, Geräteinformationen, besuchte Seiten und auf der Website verbrachte Zeit."
+      },
+      "item2": {
+        "title": "Analysedaten (Google Analytics)",
+        "desc": "Anonyme Nutzungsstatistiken, um zu verstehen, wie Benutzer mit unseren Tools interagieren."
+      },
+      "item3": {
+        "title": "Lokal Verarbeitete Dateien",
+        "desc": "Alle Tools (Konverter, Generatoren usw.) verarbeiten Dateien zu 100% in Ihrem Browser. Wir laden Ihre Dateien nie hoch oder speichern sie auf unseren Servern."
+      }
+    },
+    "dataUse": {
+      "title": "Wie Wir Ihre Daten Verwenden",
+      "intro": "Wir verwenden gesammelte Daten nur für:",
+      "item1": "Verbesserung der Benutzererfahrung und Tool-Leistung",
+      "item2": "Analyse von Website-Traffic und Nutzungsmustern",
+      "item3": "Anzeige relevanter Werbung (nur mit Ihrer Zustimmung)",
+      "item4": "Erfüllung gesetzlicher Verpflichtungen"
+    },
+    "cookies": {
+      "title": "Cookies und Tracking",
+      "intro": "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern. Sie können Ihre Cookie-Einstellungen jederzeit verwalten.",
+      "linkText": "Lesen Sie unsere Cookie-Richtlinie"
+    },
+    "dataSharing": {
+      "title": "Datenweitergabe",
+      "intro": "Wir verkaufen Ihre persönlichen Daten nicht. Wir teilen Daten nur mit:",
+      "item1": {
+        "title": "Google Analytics",
+        "desc": "Zur Analyse des Website-Traffics (nur mit Ihrer Zustimmung zu Analyse-Cookies)."
+      },
+      "item2": {
+        "title": "Werbepartnern (Google Ads)",
+        "desc": "Zur Anzeige relevanter Werbung (nur mit Ihrer Zustimmung zu Werbe-Cookies)."
+      }
+    },
+    "yourRights": {
+      "title": "Ihre Rechte",
+      "intro": "Abhängig von Ihrem Standort haben Sie spezifische Rechte:",
+      "gdpr": "Zugang, Berichtigung, Löschung, Datenübertragbarkeit und Widerspruchsrecht.",
+      "lgpd": "Zugang, Korrektur, Löschung, Übertragbarkeit und Recht auf Widerruf der Einwilligung.",
+      "ccpa": "Recht zu erfahren, welche Daten gesammelt werden, Recht auf Löschung und Recht, dem Verkauf persönlicher Informationen zu widersprechen."
+    },
+    "dataSecurity": {
+      "title": "Datensicherheit",
+      "desc": "Wir implementieren branchenübliche Sicherheitsmaßnahmen zum Schutz Ihrer Daten. Die gesamte Dateiverarbeitung erfolgt lokal in Ihrem Browser und gewährleistet maximale Privatsphäre."
+    },
+    "childrenPrivacy": {
+      "title": "Datenschutz für Kinder",
+      "desc": "Unsere Dienste richten sich nicht an Kinder unter 13 Jahren. Wir sammeln wissentlich keine Daten von Kindern."
+    },
+    "changes": {
+      "title": "Änderungen an Dieser Richtlinie",
+      "desc": "Wir können diese Datenschutzrichtlinie von Zeit zu Zeit aktualisieren. Änderungen werden auf dieser Seite mit einem aktualisierten Überarbeitungsdatum veröffentlicht."
+    },
+    "contact": {
+      "title": "Kontaktieren Sie Uns",
+      "desc": "Wenn Sie Fragen zu dieser Datenschutzrichtlinie haben oder Ihre Rechte ausüben möchten, kontaktieren Sie uns unter:",
+      "email": "E-Mail: privacy@topferramentasdigitais.com"
+    },
+    "footer": "Alle Rechte Vorbehalten"
   }
 }

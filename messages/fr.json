@@ -295,5 +295,83 @@
         "description": "Utilisés pour afficher des publicités pertinentes en fonction de vos intérêts. Limitent également le nombre de fois où vous voyez une publicité et mesurent l'efficacité des campagnes publicitaires."
       }
     }
+  },
+  "privacyPolicy": {
+    "title": "Politique de Confidentialité",
+    "metaDescription": "Politique de Confidentialité - Comment nous collectons, utilisons et protégeons vos données. Conforme RGPD, LGPD et CCPA.",
+    "backToHome": "Retour à l'Accueil",
+    "lastUpdated": "Dernière Mise à Jour",
+    "updateDate": "Décembre 2024",
+    "introduction": {
+      "title": "Introduction",
+      "p1": "Cette Politique de Confidentialité décrit comment nous collectons, utilisons et protégeons vos informations personnelles lorsque vous utilisez nos outils en ligne gratuits.",
+      "p2": "Nous nous engageons à protéger votre vie privée et à nous conformer aux lois applicables en matière de protection des données, notamment le RGPD (Union Européenne), la LGPD (Brésil) et la CCPA (Californie, États-Unis)."
+    },
+    "dataCollection": {
+      "title": "Quelles Données Nous Collectons",
+      "intro": "Nous collectons un minimum de données pour fournir et améliorer nos services :",
+      "item1": {
+        "title": "Données Automatiques (via Cookies)",
+        "desc": "Adresse IP, type de navigateur, informations sur l'appareil, pages visitées et temps passé sur le site."
+      },
+      "item2": {
+        "title": "Données d'Analyse (Google Analytics)",
+        "desc": "Statistiques d'utilisation anonymes pour comprendre comment les utilisateurs interagissent avec nos outils."
+      },
+      "item3": {
+        "title": "Fichiers Traités Localement",
+        "desc": "Tous les outils (convertisseurs, générateurs, etc.) traitent les fichiers à 100% dans votre navigateur. Nous ne téléchargeons ni ne stockons jamais vos fichiers sur nos serveurs."
+      }
+    },
+    "dataUse": {
+      "title": "Comment Nous Utilisons Vos Données",
+      "intro": "Nous utilisons les données collectées uniquement pour :",
+      "item1": "Améliorer l'expérience utilisateur et les performances des outils",
+      "item2": "Analyser le trafic du site et les modèles d'utilisation",
+      "item3": "Afficher des annonces pertinentes (uniquement si vous y consentez)",
+      "item4": "Respecter les obligations légales"
+    },
+    "cookies": {
+      "title": "Cookies et Suivi",
+      "intro": "Nous utilisons des cookies pour améliorer votre expérience. Vous pouvez gérer vos préférences de cookies à tout moment.",
+      "linkText": "Lire notre Politique de Cookies"
+    },
+    "dataSharing": {
+      "title": "Partage de Données",
+      "intro": "Nous ne vendons pas vos données personnelles. Nous partageons des données uniquement avec :",
+      "item1": {
+        "title": "Google Analytics",
+        "desc": "Pour analyser le trafic du site (uniquement si vous consentez aux cookies analytiques)."
+      },
+      "item2": {
+        "title": "Partenaires Publicitaires (Google Ads)",
+        "desc": "Pour afficher des annonces pertinentes (uniquement si vous consentez aux cookies publicitaires)."
+      }
+    },
+    "yourRights": {
+      "title": "Vos Droits",
+      "intro": "Selon votre localisation, vous avez des droits spécifiques :",
+      "gdpr": "Accès, rectification, effacement, portabilité des données et droit d'opposition.",
+      "lgpd": "Accès, correction, suppression, portabilité et droit de révoquer le consentement.",
+      "ccpa": "Droit de savoir quelles données sont collectées, droit de supprimer et droit de refuser la vente d'informations personnelles."
+    },
+    "dataSecurity": {
+      "title": "Sécurité des Données",
+      "desc": "Nous mettons en œuvre des mesures de sécurité standard de l'industrie pour protéger vos données. Tout traitement de fichiers se fait localement dans votre navigateur, assurant une confidentialité maximale."
+    },
+    "childrenPrivacy": {
+      "title": "Confidentialité des Enfants",
+      "desc": "Nos services ne sont pas destinés aux enfants de moins de 13 ans. Nous ne collectons pas sciemment de données auprès d'enfants."
+    },
+    "changes": {
+      "title": "Modifications de Cette Politique",
+      "desc": "Nous pouvons mettre à jour cette Politique de Confidentialité de temps en temps. Les modifications seront publiées sur cette page avec une date de révision mise à jour."
+    },
+    "contact": {
+      "title": "Nous Contacter",
+      "desc": "Si vous avez des questions sur cette Politique de Confidentialité ou souhaitez exercer vos droits, contactez-nous à :",
+      "email": "Email : privacy@topferramentasdigitais.com"
+    },
+    "footer": "Tous Droits Réservés"
   }
 }

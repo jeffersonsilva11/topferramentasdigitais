@@ -295,5 +295,83 @@
         "description": "Utilizzati per mostrare annunci pertinenti in base ai tuoi interessi. Limitano anche il numero di volte in cui vedi un annuncio e misurano l'efficacia delle campagne pubblicitarie."
       }
     }
+  },
+  "privacyPolicy": {
+    "title": "Informativa sulla Privacy",
+    "metaDescription": "Informativa sulla Privacy - Come raccogliamo, utilizziamo e proteggiamo i tuoi dati. Conforme a GDPR, LGPD e CCPA.",
+    "backToHome": "Torna alla Home",
+    "lastUpdated": "Ultimo Aggiornamento",
+    "updateDate": "Dicembre 2024",
+    "introduction": {
+      "title": "Introduzione",
+      "p1": "Questa Informativa sulla Privacy descrive come raccogliamo, utilizziamo e proteggiamo le tue informazioni personali quando utilizzi i nostri strumenti online gratuiti.",
+      "p2": "Ci impegniamo a proteggere la tua privacy e a conformarci alle leggi applicabili sulla protezione dei dati, inclusi GDPR (Unione Europea), LGPD (Brasile) e CCPA (California, USA)."
+    },
+    "dataCollection": {
+      "title": "Quali Dati Raccogliamo",
+      "intro": "Raccogliamo dati minimi per fornire e migliorare i nostri servizi:",
+      "item1": {
+        "title": "Dati Automatici (tramite Cookie)",
+        "desc": "Indirizzo IP, tipo di browser, informazioni sul dispositivo, pagine visitate e tempo trascorso sul sito."
+      },
+      "item2": {
+        "title": "Dati Analitici (Google Analytics)",
+        "desc": "Statistiche di utilizzo anonime per comprendere come gli utenti interagiscono con i nostri strumenti."
+      },
+      "item3": {
+        "title": "File Elaborati Localmente",
+        "desc": "Tutti gli strumenti (convertitori, generatori, ecc.) elaborano file al 100% nel tuo browser. Non carichiamo mai né memorizziamo i tuoi file sui nostri server."
+      }
+    },
+    "dataUse": {
+      "title": "Come Utilizziamo i Tuoi Dati",
+      "intro": "Utilizziamo i dati raccolti solo per:",
+      "item1": "Migliorare l'esperienza utente e le prestazioni degli strumenti",
+      "item2": "Analizzare il traffico del sito e i modelli di utilizzo",
+      "item3": "Visualizzare annunci pertinenti (solo con il tuo consenso)",
+      "item4": "Rispettare gli obblighi legali"
+    },
+    "cookies": {
+      "title": "Cookie e Tracciamento",
+      "intro": "Utilizziamo i cookie per migliorare la tua esperienza. Puoi gestire le tue preferenze sui cookie in qualsiasi momento.",
+      "linkText": "Leggi la nostra Informativa sui Cookie"
+    },
+    "dataSharing": {
+      "title": "Condivisione Dati",
+      "intro": "Non vendiamo i tuoi dati personali. Condividiamo i dati solo con:",
+      "item1": {
+        "title": "Google Analytics",
+        "desc": "Per analizzare il traffico del sito (solo se acconsenti ai cookie analitici)."
+      },
+      "item2": {
+        "title": "Partner Pubblicitari (Google Ads)",
+        "desc": "Per visualizzare annunci pertinenti (solo se acconsenti ai cookie pubblicitari)."
+      }
+    },
+    "yourRights": {
+      "title": "I Tuoi Diritti",
+      "intro": "A seconda della tua posizione, hai diritti specifici:",
+      "gdpr": "Accesso, rettifica, cancellazione, portabilità dei dati e diritto di opposizione.",
+      "lgpd": "Accesso, correzione, eliminazione, portabilità e diritto di revocare il consenso.",
+      "ccpa": "Diritto di sapere quali dati vengono raccolti, diritto di cancellare e diritto di rifiutare la vendita di informazioni personali."
+    },
+    "dataSecurity": {
+      "title": "Sicurezza dei Dati",
+      "desc": "Implementiamo misure di sicurezza standard del settore per proteggere i tuoi dati. Tutta l'elaborazione dei file avviene localmente nel tuo browser, garantendo la massima privacy."
+    },
+    "childrenPrivacy": {
+      "title": "Privacy dei Minori",
+      "desc": "I nostri servizi non sono rivolti a bambini di età inferiore a 13 anni. Non raccogliamo consapevolmente dati da bambini."
+    },
+    "changes": {
+      "title": "Modifiche a Questa Informativa",
+      "desc": "Potremmo aggiornare questa Informativa sulla Privacy di tanto in tanto. Le modifiche verranno pubblicate su questa pagina con una data di revisione aggiornata."
+    },
+    "contact": {
+      "title": "Contattaci",
+      "desc": "Se hai domande su questa Informativa sulla Privacy o desideri esercitare i tuoi diritti, contattaci a:",
+      "email": "Email: privacy@topferramentasdigitais.com"
+    },
+    "footer": "Tutti i Diritti Riservati"
   }
 }

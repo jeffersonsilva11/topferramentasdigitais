@@ -295,5 +295,83 @@
         "description": "Utilizados para exibir anúncios relevantes baseados em seus interesses. Também limitam o número de vezes que você vê um anúncio e medem a eficácia de campanhas publicitárias."
       }
     }
+  },
+  "privacyPolicy": {
+    "title": "Política de Privacidade",
+    "metaDescription": "Política de Privacidade - Como coletamos, usamos e protegemos seus dados. Conforme GDPR, LGPD e CCPA.",
+    "backToHome": "Voltar para Home",
+    "lastUpdated": "Última Atualização",
+    "updateDate": "Dezembro 2024",
+    "introduction": {
+      "title": "Introdução",
+      "p1": "Esta Política de Privacidade descreve como coletamos, usamos e protegemos suas informações pessoais quando você usa nossas ferramentas online gratuitas.",
+      "p2": "Estamos comprometidos em proteger sua privacidade e cumprir com as leis aplicáveis de proteção de dados, incluindo GDPR (União Europeia), LGPD (Brasil) e CCPA (Califórnia, EUA)."
+    },
+    "dataCollection": {
+      "title": "Quais Dados Coletamos",
+      "intro": "Coletamos dados mínimos para fornecer e melhorar nossos serviços:",
+      "item1": {
+        "title": "Dados Automáticos (via Cookies)",
+        "desc": "Endereço IP, tipo de navegador, informações do dispositivo, páginas visitadas e tempo gasto no site."
+      },
+      "item2": {
+        "title": "Dados de Análise (Google Analytics)",
+        "desc": "Estatísticas anônimas de uso para entender como os usuários interagem com nossas ferramentas."
+      },
+      "item3": {
+        "title": "Arquivos Processados Localmente",
+        "desc": "Todas as ferramentas (conversores, geradores, etc.) processam arquivos 100% no seu navegador. Nunca fazemos upload ou armazenamos seus arquivos em nossos servidores."
+      }
+    },
+    "dataUse": {
+      "title": "Como Usamos Seus Dados",
+      "intro": "Usamos os dados coletados apenas para:",
+      "item1": "Melhorar a experiência do usuário e desempenho das ferramentas",
+      "item2": "Analisar o tráfego do site e padrões de uso",
+      "item3": "Exibir anúncios relevantes (apenas se você consentir)",
+      "item4": "Cumprir obrigações legais"
+    },
+    "cookies": {
+      "title": "Cookies e Rastreamento",
+      "intro": "Usamos cookies para melhorar sua experiência. Você pode gerenciar suas preferências de cookies a qualquer momento.",
+      "linkText": "Leia nossa Política de Cookies"
+    },
+    "dataSharing": {
+      "title": "Compartilhamento de Dados",
+      "intro": "Não vendemos seus dados pessoais. Compartilhamos dados apenas com:",
+      "item1": {
+        "title": "Google Analytics",
+        "desc": "Para analisar o tráfego do site (apenas se você consentir com cookies analíticos)."
+      },
+      "item2": {
+        "title": "Parceiros de Publicidade (Google Ads)",
+        "desc": "Para exibir anúncios relevantes (apenas se você consentir com cookies de publicidade)."
+      }
+    },
+    "yourRights": {
+      "title": "Seus Direitos",
+      "intro": "Dependendo da sua localização, você tem direitos específicos:",
+      "gdpr": "Acesso, retificação, exclusão, portabilidade de dados e direito de objeção.",
+      "lgpd": "Acesso, correção, eliminação, portabilidade e direito de revogar consentimento.",
+      "ccpa": "Direito de saber quais dados são coletados, direito de deletar e direito de optar por não vender informações pessoais."
+    },
+    "dataSecurity": {
+      "title": "Segurança dos Dados",
+      "desc": "Implementamos medidas de segurança padrão da indústria para proteger seus dados. Todo o processamento de arquivos acontece localmente no seu navegador, garantindo máxima privacidade."
+    },
+    "childrenPrivacy": {
+      "title": "Privacidade de Crianças",
+      "desc": "Nossos serviços não são direcionados a crianças menores de 13 anos. Não coletamos intencionalmente dados de crianças."
+    },
+    "changes": {
+      "title": "Alterações nesta Política",
+      "desc": "Podemos atualizar esta Política de Privacidade periodicamente. As alterações serão publicadas nesta página com uma data de revisão atualizada."
+    },
+    "contact": {
+      "title": "Entre em Contato",
+      "desc": "Se você tiver dúvidas sobre esta Política de Privacidade ou quiser exercer seus direitos, entre em contato conosco:",
+      "email": "Email: privacy@topferramentasdigitais.com"
+    },
+    "footer": "Todos os Direitos Reservados"
   }
 }
