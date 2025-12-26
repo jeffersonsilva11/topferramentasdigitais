@@ -114,6 +114,48 @@ const toolComponents = {
   'feriados-2026': dynamic(() => import('@/components/tools/FeriadosNacionais'), { ssr: false }),
   'holidays-2026': dynamic(() => import('@/components/tools/FeriadosNacionais'), { ssr: false }),
   'feriados-2026-es': dynamic(() => import('@/components/tools/FeriadosNacionais'), { ssr: false }),
+
+  'teleprompter': dynamic(() => import('@/components/tools/Teleprompter'), { ssr: false }),
+
+  'calculadora-roi': dynamic(() => import('@/components/tools/CalculadoraROI'), { ssr: false }),
+  'roi-calculator': dynamic(() => import('@/components/tools/CalculadoraROI'), { ssr: false }),
+  'calculadora-roi-es': dynamic(() => import('@/components/tools/CalculadoraROI'), { ssr: false }),
+
+  'gravador-tela': dynamic(() => import('@/components/tools/GravadorTela'), { ssr: false }),
+  'screen-recorder': dynamic(() => import('@/components/tools/GravadorTela'), { ssr: false }),
+  'grabador-pantalla': dynamic(() => import('@/components/tools/GravadorTela'), { ssr: false }),
+
+  'testador-microfone-camera': dynamic(() => import('@/components/tools/TestadorMicrofoneCamera'), { ssr: false }),
+  'microphone-camera-tester': dynamic(() => import('@/components/tools/TestadorMicrofoneCamera'), { ssr: false }),
+  'probador-microfono-camara': dynamic(() => import('@/components/tools/TestadorMicrofoneCamera'), { ssr: false }),
+
+  'gerador-numero-aleatorio': dynamic(() => import('@/components/tools/GeradorNumeroAleatorio'), { ssr: false }),
+  'random-number-generator': dynamic(() => import('@/components/tools/GeradorNumeroAleatorio'), { ssr: false }),
+  'generador-numero-aleatorio': dynamic(() => import('@/components/tools/GeradorNumeroAleatorio'), { ssr: false }),
+
+  'gerador-loteria': dynamic(() => import('@/components/tools/GeradorLoteria'), { ssr: false }),
+  'lottery-generator': dynamic(() => import('@/components/tools/GeradorLoteria'), { ssr: false }),
+  'generador-loteria': dynamic(() => import('@/components/tools/GeradorLoteria'), { ssr: false }),
+
+  'amigo-oculto': dynamic(() => import('@/components/tools/AmigoOculto'), { ssr: false }),
+  'secret-santa': dynamic(() => import('@/components/tools/AmigoOculto'), { ssr: false }),
+  'amigo-secreto': dynamic(() => import('@/components/tools/AmigoOculto'), { ssr: false }),
+
+  'roleta-sorte': dynamic(() => import('@/components/tools/RoletaSorte'), { ssr: false }),
+  'wheel-of-fortune': dynamic(() => import('@/components/tools/RoletaSorte'), { ssr: false }),
+  'rueda-fortuna': dynamic(() => import('@/components/tools/RoletaSorte'), { ssr: false }),
+
+  'validador-regex': dynamic(() => import('@/components/tools/ValidadorRegex'), { ssr: false }),
+  'regex-validator': dynamic(() => import('@/components/tools/ValidadorRegex'), { ssr: false }),
+  'validador-regex-es': dynamic(() => import('@/components/tools/ValidadorRegex'), { ssr: false }),
+
+  'gerador-politicas': dynamic(() => import('@/components/tools/GeradorPoliticas'), { ssr: false }),
+  'policy-generator': dynamic(() => import('@/components/tools/GeradorPoliticas'), { ssr: false }),
+  'generador-politicas': dynamic(() => import('@/components/tools/GeradorPoliticas'), { ssr: false }),
+
+  'gerador-paleta-cores': dynamic(() => import('@/components/tools/GeradorPaletaCores'), { ssr: false }),
+  'color-palette-generator': dynamic(() => import('@/components/tools/GeradorPaletaCores'), { ssr: false }),
+  'generador-paleta-colores': dynamic(() => import('@/components/tools/GeradorPaletaCores'), { ssr: false }),
 };
 
 interface ClientToolLoaderProps {

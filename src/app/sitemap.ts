@@ -36,6 +36,17 @@ const toolSlugMap: Record<string, Record<string, string>> = {
   'calculadora-juros': { en: 'compound-interest-calculator', pt: 'calculadora-juros', es: 'calculadora-intereses' },
   'consulta-whois': { en: 'whois-lookup', pt: 'consulta-whois', es: 'consulta-whois' },
   'feriados-2026': { en: 'holidays-2026', pt: 'feriados-2026', es: 'feriados-2026' },
+  'teleprompter': { en: 'teleprompter', pt: 'teleprompter', es: 'teleprompter' },
+  'calculadora-roi': { en: 'roi-calculator', pt: 'calculadora-roi', es: 'calculadora-roi' },
+  'gravador-tela': { en: 'screen-recorder', pt: 'gravador-tela', es: 'grabador-pantalla' },
+  'testador-microfone-camera': { en: 'microphone-camera-tester', pt: 'testador-microfone-camera', es: 'probador-microfono-camara' },
+  'gerador-numero-aleatorio': { en: 'random-number-generator', pt: 'gerador-numero-aleatorio', es: 'generador-numero-aleatorio' },
+  'gerador-loteria': { en: 'lottery-generator', pt: 'gerador-loteria', es: 'generador-loteria' },
+  'amigo-oculto': { en: 'secret-santa', pt: 'amigo-oculto', es: 'amigo-secreto' },
+  'roleta-sorte': { en: 'wheel-of-fortune', pt: 'roleta-sorte', es: 'rueda-fortuna' },
+  'validador-regex': { en: 'regex-validator', pt: 'validador-regex', es: 'validador-regex' },
+  'gerador-politicas': { en: 'policy-generator', pt: 'gerador-politicas', es: 'generador-politicas' },
+  'gerador-paleta-cores': { en: 'color-palette-generator', pt: 'gerador-paleta-cores', es: 'generador-paleta-colores' },
 };
 
 export default function sitemap(): MetadataRoute.Sitemap {

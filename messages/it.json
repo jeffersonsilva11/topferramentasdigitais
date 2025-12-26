@@ -226,6 +226,72 @@
       "slug": "festivita-2026",
       "description": "Elenco completo delle festività nazionali del 2026 per vari paesi",
       "metaDescription": "Festività nazionali 2026. Calendario completo delle festività di Italia, USA, Brasile, Messico, Argentina, Cile, Colombia e Spagna."
+    },
+    "teleprompter": {
+      "name": "Teleprompter Online",
+      "slug": "teleprompter",
+      "description": "Teleprompter professionale con regolazioni di velocità e specchiatura",
+      "metaDescription": "Teleprompter online gratuito con controllo della velocità, dimensione del carattere, modalità specchio e schermo intero. Perfetto per registrazioni e presentazioni."
+    },
+    "calculadora-roi": {
+      "name": "Calcolatrice ROI",
+      "slug": "calcolatrice-roi",
+      "description": "Calcola il ritorno sull'investimento (ROI) facilmente",
+      "metaDescription": "Calcolatrice ROI online gratuita. Calcola il ritorno sull'investimento, profitto e redditività con URL condivisibile."
+    },
+    "gravador-tela": {
+      "name": "Registratore Schermo e Webcam",
+      "slug": "registratore-schermo",
+      "description": "Registra il tuo schermo, webcam o entrambi con audio",
+      "metaDescription": "Registratore schermo e webcam online gratuito. Registra il tuo schermo, fotocamera o entrambi con audio. Nessun caricamento, 100% privato."
+    },
+    "testador-microfone-camera": {
+      "name": "Tester Microfono e Fotocamera",
+      "slug": "tester-microfono-fotocamera",
+      "description": "Testa se il tuo microfono e webcam funzionano",
+      "metaDescription": "Tester microfono e fotocamera online gratuito. Verifica se i tuoi dispositivi audio e video funzionano correttamente."
+    },
+    "gerador-numero-aleatorio": {
+      "name": "Generatore Numeri Casuali",
+      "slug": "generatore-numeri-casuali",
+      "description": "Genera numeri casuali con o senza ripetizione",
+      "metaDescription": "Generatore numeri casuali online gratuito. Genera numeri con intervallo personalizzabile, con o senza ripetizione."
+    },
+    "gerador-loteria": {
+      "name": "Generatore Numeri Lotteria",
+      "slug": "generatore-lotteria",
+      "description": "Genera numeri per EuroMillions, Powerball e altre lotterie",
+      "metaDescription": "Generatore numeri lotteria online gratuito. EuroMillions, Powerball, Mega-Sena e lotterie personalizzate."
+    },
+    "amigo-oculto": {
+      "name": "Babbo Natale Segreto",
+      "slug": "babbo-natale-segreto",
+      "description": "Organizza estrazioni Babbo Natale Segreto facilmente",
+      "metaDescription": "Organizza Babbo Natale Segreto online gratuitamente. Estrazione automatica Secret Santa con rivelazione individuale ed esportazione."
+    },
+    "roleta-sorte": {
+      "name": "Ruota della Fortuna",
+      "slug": "ruota-fortuna",
+      "description": "Crea una ruota personalizzata per estrazioni",
+      "metaDescription": "Ruota della fortuna online gratuita. Crea ruote personalizzate per estrazioni con animazione fluida e cronologia."
+    },
+    "validador-regex": {
+      "name": "Validatore e Generatore Regex",
+      "slug": "validatore-regex",
+      "description": "Testa e valida espressioni regolari in tempo reale",
+      "metaDescription": "Validatore Regex online gratuito. Testa espressioni regolari con evidenziazione delle corrispondenze, spiegazioni e pattern comuni."
+    },
+    "gerador-politicas": {
+      "name": "Generatore Politiche e Termini",
+      "slug": "generatore-politiche",
+      "description": "Genera Privacy Policy, Terms of Service e Cookie Policy",
+      "metaDescription": "Generatore politiche e termini online gratuito. Crea Privacy Policy, Terms of Service e Cookie Policy personalizzati."
+    },
+    "gerador-paleta-cores": {
+      "name": "Generatore Palette Colori",
+      "slug": "generatore-palette-colori",
+      "description": "Crea palette di colori professionali con contrasto WCAG",
+      "metaDescription": "Generatore palette colori online gratuito. Crea palette professionali con HEX, RGB, HSL, contrasto WCAG ed esportazione CSS/JSON."
     }
   },
   "footer": {

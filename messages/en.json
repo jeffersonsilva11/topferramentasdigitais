@@ -226,6 +226,72 @@
       "slug": "holidays-2026",
       "description": "Complete list of 2026 national holidays for various countries",
       "metaDescription": "National holidays 2026. Complete calendar of holidays for USA, Brazil, Mexico, Argentina, Chile, Colombia and Spain."
+    },
+    "teleprompter": {
+      "name": "Online Teleprompter",
+      "slug": "teleprompter",
+      "description": "Professional teleprompter with speed and mirroring adjustments",
+      "metaDescription": "Free online teleprompter with speed control, font size, mirror mode and fullscreen. Perfect for video recordings and presentations."
+    },
+    "calculadora-roi": {
+      "name": "ROI Calculator",
+      "slug": "roi-calculator",
+      "description": "Calculate return on investment (ROI) easily",
+      "metaDescription": "Free ROI calculator online. Calculate return on investment, profit and profitability with shareable URL."
+    },
+    "gravador-tela": {
+      "name": "Screen and Webcam Recorder",
+      "slug": "screen-recorder",
+      "description": "Record your screen, webcam or both with audio",
+      "metaDescription": "Free screen and webcam recorder online. Record your screen, camera or both with audio. No upload, 100% private."
+    },
+    "testador-microfone-camera": {
+      "name": "Microphone and Camera Tester",
+      "slug": "microphone-camera-tester",
+      "description": "Test if your microphone and webcam are working",
+      "metaDescription": "Free microphone and camera tester online. Check if your audio and video devices are working correctly."
+    },
+    "gerador-numero-aleatorio": {
+      "name": "Random Number Generator",
+      "slug": "random-number-generator",
+      "description": "Generate random numbers with or without repetition",
+      "metaDescription": "Free random number generator online. Generate numbers with customizable range, with or without repetition."
+    },
+    "gerador-loteria": {
+      "name": "Lottery Number Generator",
+      "slug": "lottery-generator",
+      "description": "Generate numbers for Mega Millions, Powerball and other lotteries",
+      "metaDescription": "Free lottery number generator online. Mega Millions, Powerball, EuroMillions and custom lotteries."
+    },
+    "amigo-oculto": {
+      "name": "Secret Santa",
+      "slug": "secret-santa",
+      "description": "Organize secret santa draws easily",
+      "metaDescription": "Organize secret santa online for free. Automatic Secret Santa draw with individual reveal and export."
+    },
+    "roleta-sorte": {
+      "name": "Wheel of Fortune",
+      "slug": "wheel-of-fortune",
+      "description": "Create a custom wheel for drawings",
+      "metaDescription": "Free wheel of fortune online. Create custom wheels for drawings with smooth animation and history."
+    },
+    "validador-regex": {
+      "name": "Regex Validator and Generator",
+      "slug": "regex-validator",
+      "description": "Test and validate regular expressions in real-time",
+      "metaDescription": "Free Regex validator online. Test regular expressions with match highlighting, explanations and common patterns."
+    },
+    "gerador-politicas": {
+      "name": "Policies and Terms Generator",
+      "slug": "policy-generator",
+      "description": "Generate Privacy Policy, Terms of Service and Cookie Policy",
+      "metaDescription": "Free policies and terms generator online. Create customized Privacy Policy, Terms of Service and Cookie Policy."
+    },
+    "gerador-paleta-cores": {
+      "name": "Color Palette Generator",
+      "slug": "color-palette-generator",
+      "description": "Create professional color palettes with WCAG contrast",
+      "metaDescription": "Free color palette generator online. Create professional palettes with HEX, RGB, HSL, WCAG contrast and CSS/JSON export."
     }
   },
   "footer": {
