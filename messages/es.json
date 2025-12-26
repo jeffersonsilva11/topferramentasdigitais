@@ -226,6 +226,72 @@
       "slug": "feriados-2026",
       "description": "Lista completa de feriados nacionales de 2026 para diversos países",
       "metaDescription": "Feriados nacionales 2026. Calendario completo de feriados de España, México, Argentina, Chile, Colombia, Brasil y Estados Unidos."
+    },
+    "teleprompter": {
+      "name": "Teleprompter Online",
+      "slug": "teleprompter",
+      "description": "Teleprompter profesional con ajustes de velocidad y espejado",
+      "metaDescription": "Teleprompter online gratis con control de velocidad, tamaño de fuente, modo espejo y pantalla completa. Perfecto para grabaciones y presentaciones."
+    },
+    "calculadora-roi": {
+      "name": "Calculadora de ROI",
+      "slug": "calculadora-roi",
+      "description": "Calcula el retorno de inversión (ROI) fácilmente",
+      "metaDescription": "Calculadora de ROI online gratis. Calcula el retorno de inversión, ganancia y rentabilidad con URL compartible."
+    },
+    "gravador-tela": {
+      "name": "Grabador de Pantalla y Webcam",
+      "slug": "grabador-pantalla",
+      "description": "Graba tu pantalla, webcam o ambos con audio",
+      "metaDescription": "Grabador de pantalla y webcam online gratis. Graba tu pantalla, cámara o ambos con audio. Sin carga, 100% privado."
+    },
+    "testador-microfone-camera": {
+      "name": "Probador de Micrófono y Cámara",
+      "slug": "probador-microfono-camara",
+      "description": "Prueba si tu micrófono y webcam funcionan",
+      "metaDescription": "Probador de micrófono y cámara online gratis. Verifica si tus dispositivos de audio y video funcionan correctamente."
+    },
+    "gerador-numero-aleatorio": {
+      "name": "Generador de Números Aleatorios",
+      "slug": "generador-numero-aleatorio",
+      "description": "Genera números aleatorios con o sin repetición",
+      "metaDescription": "Generador de números aleatorios online gratis. Genera números con rango personalizable, con o sin repetición."
+    },
+    "gerador-loteria": {
+      "name": "Generador de Números de Lotería",
+      "slug": "generador-loteria",
+      "description": "Genera números para Powerball, EuroMillones y otras loterías",
+      "metaDescription": "Generador de números de lotería online gratis. Powerball, EuroMillones, Mega-Sena y loterías personalizadas."
+    },
+    "amigo-oculto": {
+      "name": "Amigo Secreto (Secret Santa)",
+      "slug": "amigo-secreto",
+      "description": "Organiza sorteos de amigo secreto fácilmente",
+      "metaDescription": "Organiza amigo secreto online gratis. Sorteo automático de Secret Santa con revelación individual y exportación."
+    },
+    "roleta-sorte": {
+      "name": "Rueda de la Fortuna",
+      "slug": "rueda-fortuna",
+      "description": "Crea una rueda personalizada para sorteos",
+      "metaDescription": "Rueda de la fortuna online gratis. Crea ruedas personalizadas para sorteos con animación suave e historial."
+    },
+    "validador-regex": {
+      "name": "Validador y Generador de Regex",
+      "slug": "validador-regex",
+      "description": "Prueba y valida expresiones regulares en tiempo real",
+      "metaDescription": "Validador de Regex online gratis. Prueba expresiones regulares con resaltado de coincidencias, explicaciones y patrones comunes."
+    },
+    "gerador-politicas": {
+      "name": "Generador de Políticas y Términos",
+      "slug": "generador-politicas",
+      "description": "Genera Privacy Policy, Terms of Service y Cookie Policy",
+      "metaDescription": "Generador de políticas y términos online gratis. Crea Privacy Policy, Terms of Service y Cookie Policy personalizados."
+    },
+    "gerador-paleta-cores": {
+      "name": "Generador de Paleta de Colores",
+      "slug": "generador-paleta-colores",
+      "description": "Crea paletas de colores profesionales con contraste WCAG",
+      "metaDescription": "Generador de paleta de colores online gratis. Crea paletas profesionales con HEX, RGB, HSL, contraste WCAG y export CSS/JSON."
     }
   },
   "footer": {

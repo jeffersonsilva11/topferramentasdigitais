@@ -226,6 +226,72 @@
       "slug": "jours-feries-2026",
       "description": "Liste complète des jours fériés nationaux de 2026 pour divers pays",
       "metaDescription": "Jours fériés nationaux 2026. Calendrier complet des jours fériés de France, États-Unis, Brésil, Mexique, Argentine, Chili, Colombie et Espagne."
+    },
+    "teleprompter": {
+      "name": "Télésouffleur en Ligne",
+      "slug": "telesouffleur",
+      "description": "Télésouffleur professionnel avec réglages de vitesse et miroir",
+      "metaDescription": "Télésouffleur en ligne gratuit avec contrôle de vitesse, taille de police, mode miroir et plein écran. Parfait pour enregistrements et présentations."
+    },
+    "calculadora-roi": {
+      "name": "Calculateur ROI",
+      "slug": "calculateur-roi",
+      "description": "Calculez le retour sur investissement (ROI) facilement",
+      "metaDescription": "Calculateur ROI en ligne gratuit. Calculez le retour sur investissement, profit et rentabilité avec URL partageable."
+    },
+    "gravador-tela": {
+      "name": "Enregistreur d'Écran et Webcam",
+      "slug": "enregistreur-ecran",
+      "description": "Enregistrez votre écran, webcam ou les deux avec audio",
+      "metaDescription": "Enregistreur d'écran et webcam en ligne gratuit. Enregistrez votre écran, caméra ou les deux avec audio. Aucun téléchargement, 100% privé."
+    },
+    "testador-microfone-camera": {
+      "name": "Testeur de Microphone et Caméra",
+      "slug": "testeur-microphone-camera",
+      "description": "Testez si votre microphone et webcam fonctionnent",
+      "metaDescription": "Testeur de microphone et caméra en ligne gratuit. Vérifiez si vos appareils audio et vidéo fonctionnent correctement."
+    },
+    "gerador-numero-aleatorio": {
+      "name": "Générateur de Nombres Aléatoires",
+      "slug": "generateur-nombres-aleatoires",
+      "description": "Générez des nombres aléatoires avec ou sans répétition",
+      "metaDescription": "Générateur de nombres aléatoires en ligne gratuit. Générez des nombres avec plage personnalisable, avec ou sans répétition."
+    },
+    "gerador-loteria": {
+      "name": "Générateur de Numéros de Loterie",
+      "slug": "generateur-loterie",
+      "description": "Générez des numéros pour EuroMillions, Powerball et autres loteries",
+      "metaDescription": "Générateur de numéros de loterie en ligne gratuit. EuroMillions, Powerball, Mega-Sena et loteries personnalisées."
+    },
+    "amigo-oculto": {
+      "name": "Père Noël Secret",
+      "slug": "pere-noel-secret",
+      "description": "Organisez des tirages au sort de Père Noël Secret facilement",
+      "metaDescription": "Organisez Père Noël Secret en ligne gratuitement. Tirage automatique avec révélation individuelle et exportation."
+    },
+    "roleta-sorte": {
+      "name": "Roue de la Fortune",
+      "slug": "roue-fortune",
+      "description": "Créez une roue personnalisée pour tirages au sort",
+      "metaDescription": "Roue de la fortune en ligne gratuite. Créez des roues personnalisées pour tirages avec animation fluide et historique."
+    },
+    "validador-regex": {
+      "name": "Validateur et Générateur Regex",
+      "slug": "validateur-regex",
+      "description": "Testez et validez les expressions régulières en temps réel",
+      "metaDescription": "Validateur Regex en ligne gratuit. Testez expressions régulières avec mise en évidence des correspondances, explications et motifs courants."
+    },
+    "gerador-politicas": {
+      "name": "Générateur de Politiques et Conditions",
+      "slug": "generateur-politiques",
+      "description": "Générez Privacy Policy, Terms of Service et Cookie Policy",
+      "metaDescription": "Générateur de politiques et conditions en ligne gratuit. Créez Privacy Policy, Terms of Service et Cookie Policy personnalisés."
+    },
+    "gerador-paleta-cores": {
+      "name": "Générateur de Palette de Couleurs",
+      "slug": "generateur-palette-couleurs",
+      "description": "Créez des palettes de couleurs professionnelles avec contraste WCAG",
+      "metaDescription": "Générateur de palette de couleurs en ligne gratuit. Créez palettes professionnelles avec HEX, RGB, HSL, contraste WCAG et export CSS/JSON."
     }
   },
   "footer": {

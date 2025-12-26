@@ -226,6 +226,72 @@
       "slug": "feiertage-2026",
       "description": "Vollständige Liste der nationalen Feiertage von 2026 für verschiedene Länder",
       "metaDescription": "Nationale Feiertage 2026. Vollständiger Kalender der Feiertage von Deutschland, USA, Brasilien, Mexiko, Argentinien, Chile, Kolumbien und Spanien."
+    },
+    "teleprompter": {
+      "name": "Online-Teleprompter",
+      "slug": "teleprompter",
+      "description": "Professioneller Teleprompter mit Geschwindigkeit und Spiegelung",
+      "metaDescription": "Kostenloser Online-Teleprompter mit Geschwindigkeitsregelung, Schriftgröße, Spiegelmodus und Vollbild. Perfekt für Aufnahmen und Präsentationen."
+    },
+    "calculadora-roi": {
+      "name": "ROI-Rechner",
+      "slug": "roi-rechner",
+      "description": "Berechnen Sie die Kapitalrendite (ROI) einfach",
+      "metaDescription": "Kostenloser Online-ROI-Rechner. Berechnen Sie Kapitalrendite, Gewinn und Rentabilität mit teilbarer URL."
+    },
+    "gravador-tela": {
+      "name": "Bildschirm- und Webcam-Rekorder",
+      "slug": "bildschirmrekorder",
+      "description": "Nehmen Sie Ihren Bildschirm, Webcam oder beides mit Audio auf",
+      "metaDescription": "Kostenloser Bildschirm- und Webcam-Rekorder online. Nehmen Sie Ihren Bildschirm, Kamera oder beides mit Audio auf. Kein Upload, 100% privat."
+    },
+    "testador-microfone-camera": {
+      "name": "Mikrofon- und Kamera-Tester",
+      "slug": "mikrofon-kamera-tester",
+      "description": "Testen Sie ob Ihr Mikrofon und Webcam funktionieren",
+      "metaDescription": "Kostenloser Mikrofon- und Kamera-Tester online. Überprüfen Sie ob Ihre Audio- und Videogeräte richtig funktionieren."
+    },
+    "gerador-numero-aleatorio": {
+      "name": "Zufallszahlengenerator",
+      "slug": "zufallszahlengenerator",
+      "description": "Generieren Sie Zufallszahlen mit oder ohne Wiederholung",
+      "metaDescription": "Kostenloser Online-Zufallszahlengenerator. Generieren Sie Zahlen mit anpassbarem Bereich, mit oder ohne Wiederholung."
+    },
+    "gerador-loteria": {
+      "name": "Lotto-Zahlengenerator",
+      "slug": "lotto-generator",
+      "description": "Generieren Sie Zahlen für EuroMillions, Powerball und andere Lotterien",
+      "metaDescription": "Kostenloser Online-Lotto-Zahlengenerator. EuroMillions, Powerball, Mega-Sena und benutzerdefinierte Lotterien."
+    },
+    "amigo-oculto": {
+      "name": "Wichteln (Secret Santa)",
+      "slug": "wichteln",
+      "description": "Organisieren Sie Wichtel-Ziehungen einfach",
+      "metaDescription": "Organisieren Sie Wichteln online kostenlos. Automatische Secret Santa-Ziehung mit individueller Enthüllung und Export."
+    },
+    "roleta-sorte": {
+      "name": "Glücksrad",
+      "slug": "gluecksrad",
+      "description": "Erstellen Sie ein benutzerdefiniertes Rad für Ziehungen",
+      "metaDescription": "Kostenloses Online-Glücksrad. Erstellen Sie benutzerdefinierte Räder für Ziehungen mit flüssiger Animation und Verlauf."
+    },
+    "validador-regex": {
+      "name": "Regex-Validator und Generator",
+      "slug": "regex-validator",
+      "description": "Testen und validieren Sie reguläre Ausdrücke in Echtzeit",
+      "metaDescription": "Kostenloser Online-Regex-Validator. Testen Sie reguläre Ausdrücke mit Match-Hervorhebung, Erklärungen und häufigen Mustern."
+    },
+    "gerador-politicas": {
+      "name": "Richtlinien- und Bedingungsgenerator",
+      "slug": "richtlinien-generator",
+      "description": "Generieren Sie Privacy Policy, Terms of Service und Cookie Policy",
+      "metaDescription": "Kostenloser Generator für Richtlinien und Bedingungen online. Erstellen Sie benutzerdefinierte Privacy Policy, Terms of Service und Cookie Policy."
+    },
+    "gerador-paleta-cores": {
+      "name": "Farbpaletten-Generator",
+      "slug": "farbpaletten-generator",
+      "description": "Erstellen Sie professionelle Farbpaletten mit WCAG-Kontrast",
+      "metaDescription": "Kostenloser Online-Farbpaletten-Generator. Erstellen Sie professionelle Paletten mit HEX, RGB, HSL, WCAG-Kontrast und CSS/JSON-Export."
     }
   },
   "footer": {
