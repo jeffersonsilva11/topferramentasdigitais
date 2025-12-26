@@ -111,10 +111,6 @@ const toolComponents = {
   'compound-interest-calculator': dynamic(() => import('@/components/tools/CalculadoraJuros'), { ssr: false }),
   'calculadora-intereses': dynamic(() => import('@/components/tools/CalculadoraJuros'), { ssr: false }),
 
-  'consulta-whois': dynamic(() => import('@/components/tools/ConsultaWHOIS'), { ssr: false }),
-  'whois-lookup': dynamic(() => import('@/components/tools/ConsultaWHOIS'), { ssr: false }),
-  'consulta-whois-es': dynamic(() => import('@/components/tools/ConsultaWHOIS'), { ssr: false }),
-
   'feriados-2026': dynamic(() => import('@/components/tools/FeriadosNacionais'), { ssr: false }),
   'holidays-2026': dynamic(() => import('@/components/tools/FeriadosNacionais'), { ssr: false }),
   'feriados-2026-es': dynamic(() => import('@/components/tools/FeriadosNacionais'), { ssr: false }),

@@ -273,16 +273,6 @@ export const tools: Tool[] = [
   },
   {
     id: '29',
-    name: 'Consulta WHOIS',
-    description: 'Consulte informações de domínios e proprietários',
-    icon: '🌐',
-    slug: 'consulta-whois',
-    category: 'Rede',
-    keywords: ['whois', 'domínio', 'dns', 'proprietário domínio', 'registro br'],
-    metaDescription: 'Consulta WHOIS online grátis. Verifique informações de domínios, proprietários, datas de registro e expiração.',
-  },
-  {
-    id: '30',
     name: 'Feriados Nacionais 2026',
     description: 'Calendário de feriados 2026 - Brasil e mundo',
     icon: '📅',

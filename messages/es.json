@@ -221,12 +221,6 @@
       "description": "Calcula rendimiento de inversiones con interés compuesto",
       "metaDescription": "Calculadora de interés compuesto online gratis. Simula inversiones, ahorros y CDs con interés compuesto."
     },
-    "consulta-whois": {
-      "name": "Consulta WHOIS",
-      "slug": "consulta-whois",
-      "description": "Consulta información de registro de dominios (WHOIS)",
-      "metaDescription": "Consulta WHOIS online gratis. Ve información de propietario, fecha de registro y expiración de dominios."
-    },
     "feriados-2026": {
       "name": "Feriados Nacionales 2026",
       "slug": "feriados-2026",

@@ -221,12 +221,6 @@
       "description": "Calculate investment returns with compound interest",
       "metaDescription": "Free compound interest calculator online. Simulate investments, savings and CDs with compound interest."
     },
-    "consulta-whois": {
-      "name": "WHOIS Lookup",
-      "slug": "whois-lookup",
-      "description": "Query domain registration information (WHOIS)",
-      "metaDescription": "Free WHOIS lookup online. View owner information, registration and expiration dates of domains."
-    },
     "feriados-2026": {
       "name": "National Holidays 2026",
       "slug": "holidays-2026",

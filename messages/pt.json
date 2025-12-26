@@ -221,12 +221,6 @@
       "description": "Calcule rendimento de investimentos com juros compostos",
       "metaDescription": "Calculadora de juros compostos online grátis. Simule investimentos, poupança e CDBs com juros compostos."
     },
-    "consulta-whois": {
-      "name": "Consulta WHOIS",
-      "slug": "consulta-whois",
-      "description": "Consulte informações de registro de domínios (WHOIS)",
-      "metaDescription": "Consulta WHOIS online grátis. Veja informações de proprietário, data de registro e expiração de domínios."
-    },
     "feriados-2026": {
       "name": "Feriados Nacionais 2026",
       "slug": "feriados-2026",

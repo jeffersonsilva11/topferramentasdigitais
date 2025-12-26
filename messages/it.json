@@ -221,12 +221,6 @@
       "description": "Calcola il rendimento degli investimenti con interessi composti",
       "metaDescription": "Calcolatrice interessi composti online gratuita. Simula investimenti, risparmi e depositi con interessi composti."
     },
-    "consulta-whois": {
-      "name": "Consultazione WHOIS",
-      "slug": "consultazione-whois",
-      "description": "Consulta informazioni di registrazione domini (WHOIS)",
-      "metaDescription": "Consultazione WHOIS online gratuita. Visualizza informazioni sul proprietario, data di registrazione e scadenza dei domini."
-    },
     "feriados-2026": {
       "name": "Festività Nazionali 2026",
       "slug": "festivita-2026",

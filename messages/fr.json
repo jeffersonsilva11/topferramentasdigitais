@@ -221,12 +221,6 @@
       "description": "Calculez le rendement des investissements avec intérêts composés",
       "metaDescription": "Calculatrice d'intérêts composés en ligne gratuite. Simulez investissements, épargne et dépôts avec intérêts composés."
     },
-    "consulta-whois": {
-      "name": "Consultation WHOIS",
-      "slug": "consultation-whois",
-      "description": "Consultez les informations d'enregistrement des domaines (WHOIS)",
-      "metaDescription": "Consultation WHOIS en ligne gratuite. Voir les informations du propriétaire, date d'enregistrement et expiration des domaines."
-    },
     "feriados-2026": {
       "name": "Jours Fériés Nationaux 2026",
       "slug": "jours-feries-2026",
