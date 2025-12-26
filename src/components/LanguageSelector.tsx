@@ -1,7 +1,7 @@
 'use client';
 
 import { useLocale, useTranslations } from 'next-intl';
-import { usePathname, useRouter } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
 import { useTransition } from 'react';
 
 export default function LanguageSelector() {
@@ -14,12 +14,14 @@ export default function LanguageSelector() {
   const changeLanguage = (newLocale: string) => {
     if (newLocale === locale) return;
 
-    const segments = pathname.split('/');
-    segments[1] = newLocale;
-    const newPath = segments.join('/');
+    // Remover o locale atual do pathname e adicionar o novo
+    // pathname pode ser: /pt, /pt/slug, etc.
+    const pathWithoutLocale = pathname.replace(`/${locale}`, '') || '/';
+    const newPath = `/${newLocale}${pathWithoutLocale === '/' ? '' : pathWithoutLocale}`;
 
     startTransition(() => {
       router.push(newPath);
+      router.refresh();
     });
   };
 
