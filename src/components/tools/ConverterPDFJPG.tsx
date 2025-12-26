@@ -5,7 +5,8 @@ import * as pdfjsLib from 'pdfjs-dist';
 
 // Configurar o worker do PDF.js
 if (typeof window !== 'undefined') {
-  pdfjsLib.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.js`;
+  // Usar HTTPS explicitamente para evitar problemas com localhost
+  pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.js`;
 }
 
 interface ConvertedImage {
