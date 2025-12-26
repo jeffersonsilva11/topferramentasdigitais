@@ -1,14 +1,13 @@
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
-import { useTranslations } from 'next-intl';
 import { tools } from '@/lib/tools';
 import AdSlot from '@/components/AdSlot';
 
 // Import tool components
 import MeuIP from '@/components/tools/MeuIP';
 import GeradorQRCode from '@/components/tools/GeradorQRCode';
-import ContadorPalavras from '@/components/tools/ContadorPalavras';
+import ContadorTexto from '@/components/tools/ContadorTexto';
 import ConverterPDFJPG from '@/components/tools/ConverterPDFJPG';
 import ConverterJPGPDF from '@/components/tools/ConverterJPGPDF';
 import ComprimirImagem from '@/components/tools/ComprimirImagem';
@@ -16,7 +15,6 @@ import RedimensionarImagem from '@/components/tools/RedimensionarImagem';
 import CalculadoraPorcentagem from '@/components/tools/CalculadoraPorcentagem';
 import GeradorSenha from '@/components/tools/GeradorSenha';
 import ConverterPNGJPG from '@/components/tools/ConverterPNGJPG';
-import ContadorCaracteres from '@/components/tools/ContadorCaracteres';
 import GeradorLoremIpsum from '@/components/tools/GeradorLoremIpsum';
 import SiteOnline from '@/components/tools/SiteOnline';
 import MeuUserAgent from '@/components/tools/MeuUserAgent';
@@ -26,6 +24,17 @@ import GeradorHash from '@/components/tools/GeradorHash';
 import JSONFormatter from '@/components/tools/JSONFormatter';
 import ConversorBytes from '@/components/tools/ConversorBytes';
 import GeradorUUID from '@/components/tools/GeradorUUID';
+// New tools
+import GeradorLinkWhatsApp from '@/components/tools/GeradorLinkWhatsApp';
+import GeradorChavePix from '@/components/tools/GeradorChavePix';
+import ListaEmojis from '@/components/tools/ListaEmojis';
+import CronometroTimer from '@/components/tools/CronometroTimer';
+import CotacaoMoedas from '@/components/tools/CotacaoMoedas';
+import ConversorJSONCSV from '@/components/tools/ConversorJSONCSV';
+import GeradorUTM from '@/components/tools/GeradorUTM';
+import CalculadoraJuros from '@/components/tools/CalculadoraJuros';
+import ConsultaWHOIS from '@/components/tools/ConsultaWHOIS';
+import FeriadosNacionais from '@/components/tools/FeriadosNacionais';
 
 const toolComponents: Record<string, React.ComponentType> = {
   'meu-ip': MeuIP,
@@ -34,9 +43,8 @@ const toolComponents: Record<string, React.ComponentType> = {
   'gerador-qr-code': GeradorQRCode,
   'qr-code-generator': GeradorQRCode,
   'generador-codigo-qr': GeradorQRCode,
-  'contador-palavras': ContadorPalavras,
-  'word-counter': ContadorPalavras,
-  'contador-palabras': ContadorPalavras,
+  'contador-texto': ContadorTexto,
+  'text-counter': ContadorTexto,
   'converter-pdf-jpg': ConverterPDFJPG,
   'convert-pdf-to-jpg': ConverterPDFJPG,
   'convertir-pdf-jpg': ConverterPDFJPG,
@@ -58,8 +66,6 @@ const toolComponents: Record<string, React.ComponentType> = {
   'converter-png-jpg': ConverterPNGJPG,
   'convert-png-to-jpg': ConverterPNGJPG,
   'convertir-png-jpg': ConverterPNGJPG,
-  'contador-caracteres': ContadorCaracteres,
-  'character-counter': ContadorCaracteres,
   'gerador-lorem-ipsum': GeradorLoremIpsum,
   'lorem-ipsum-generator': GeradorLoremIpsum,
   'generador-lorem-ipsum': GeradorLoremIpsum,
@@ -85,6 +91,36 @@ const toolComponents: Record<string, React.ComponentType> = {
   'gerador-uuid': GeradorUUID,
   'uuid-generator': GeradorUUID,
   'generador-uuid': GeradorUUID,
+  'gerador-link-whatsapp': GeradorLinkWhatsApp,
+  'whatsapp-link-generator': GeradorLinkWhatsApp,
+  'generador-enlace-whatsapp': GeradorLinkWhatsApp,
+  'gerador-chave-pix': GeradorChavePix,
+  'pix-key-generator': GeradorChavePix,
+  'generador-clave-pix': GeradorChavePix,
+  'lista-emojis': ListaEmojis,
+  'emoji-list': ListaEmojis,
+  'lista-emojis-es': ListaEmojis,
+  'cronometro-timer': CronometroTimer,
+  'stopwatch-timer': CronometroTimer,
+  'cronometro-temporizador': CronometroTimer,
+  'cotacao-moedas': CotacaoMoedas,
+  'currency-exchange': CotacaoMoedas,
+  'cotizacion-monedas': CotacaoMoedas,
+  'conversor-json-csv': ConversorJSONCSV,
+  'json-csv-converter': ConversorJSONCSV,
+  'conversor-json-csv-es': ConversorJSONCSV,
+  'gerador-utm': GeradorUTM,
+  'utm-generator': GeradorUTM,
+  'generador-utm': GeradorUTM,
+  'calculadora-juros': CalculadoraJuros,
+  'compound-interest-calculator': CalculadoraJuros,
+  'calculadora-intereses': CalculadoraJuros,
+  'consulta-whois': ConsultaWHOIS,
+  'whois-lookup': ConsultaWHOIS,
+  'consulta-whois-es': ConsultaWHOIS,
+  'feriados-2026': FeriadosNacionais,
+  'holidays-2026': FeriadosNacionais,
+  'feriados-2026-es': FeriadosNacionais,
 };
 
 function getToolKeyBySlug(slug: string) {
@@ -93,8 +129,7 @@ function getToolKeyBySlug(slug: string) {
     'cual-es-mi-ip': 'meu-ip',
     'qr-code-generator': 'gerador-qr-code',
     'generador-codigo-qr': 'gerador-qr-code',
-    'word-counter': 'contador-palavras',
-    'contador-palabras': 'contador-palavras',
+    'text-counter': 'contador-texto',
     'convert-pdf-to-jpg': 'converter-pdf-jpg',
     'convertir-pdf-jpg': 'converter-pdf-jpg',
     'convert-jpg-to-pdf': 'converter-jpg-pdf',
@@ -109,7 +144,6 @@ function getToolKeyBySlug(slug: string) {
     'generador-contrasenas': 'gerador-senha',
     'convert-png-to-jpg': 'converter-png-jpg',
     'convertir-png-jpg': 'converter-png-jpg',
-    'character-counter': 'contador-caracteres',
     'lorem-ipsum-generator': 'gerador-lorem-ipsum',
     'generador-lorem-ipsum': 'gerador-lorem-ipsum',
     'website-status-checker': 'site-online',
@@ -126,6 +160,26 @@ function getToolKeyBySlug(slug: string) {
     'bytes-converter': 'conversor-bytes',
     'uuid-generator': 'gerador-uuid',
     'generador-uuid': 'gerador-uuid',
+    'whatsapp-link-generator': 'gerador-link-whatsapp',
+    'generador-enlace-whatsapp': 'gerador-link-whatsapp',
+    'pix-key-generator': 'gerador-chave-pix',
+    'generador-clave-pix': 'gerador-chave-pix',
+    'emoji-list': 'lista-emojis',
+    'lista-emojis-es': 'lista-emojis',
+    'stopwatch-timer': 'cronometro-timer',
+    'cronometro-temporizador': 'cronometro-timer',
+    'currency-exchange': 'cotacao-moedas',
+    'cotizacion-monedas': 'cotacao-moedas',
+    'json-csv-converter': 'conversor-json-csv',
+    'conversor-json-csv-es': 'conversor-json-csv',
+    'utm-generator': 'gerador-utm',
+    'generador-utm': 'gerador-utm',
+    'compound-interest-calculator': 'calculadora-juros',
+    'calculadora-intereses': 'calculadora-juros',
+    'whois-lookup': 'consulta-whois',
+    'consulta-whois-es': 'consulta-whois',
+    'holidays-2026': 'feriados-2026',
+    'feriados-2026-es': 'feriados-2026',
   };
 
   return slugMap[slug] || slug;

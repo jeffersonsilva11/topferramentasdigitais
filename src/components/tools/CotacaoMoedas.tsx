@@ -6,7 +6,12 @@ interface ExchangeRates {
   [key: string]: number;
 }
 
-const currencies = {
+interface CurrencyInfo {
+  name: string;
+  flag: string;
+}
+
+const currencies: Record<string, CurrencyInfo> = {
   USD: { name: 'Dólar Americano', flag: '🇺🇸' },
   EUR: { name: 'Euro', flag: '🇪🇺' },
   GBP: { name: 'Libra Esterlina', flag: '🇬🇧' },

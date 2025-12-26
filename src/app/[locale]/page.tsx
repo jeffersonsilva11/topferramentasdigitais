@@ -1,4 +1,3 @@
-import { useTranslations } from 'next-intl';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import ToolCard from '@/components/ToolCard';
 import AdSlot from '@/components/AdSlot';

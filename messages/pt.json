@@ -71,11 +71,11 @@
       "description": "Crie QR codes personalizados gratuitamente",
       "metaDescription": "Gere QR codes gratuitamente online. Crie códigos QR personalizados para URLs, textos e mais."
     },
-    "contador-palavras": {
-      "name": "Contador de Palavras",
-      "slug": "contador-palavras",
-      "description": "Conte palavras, caracteres e parágrafos em tempo real",
-      "metaDescription": "Contador de palavras online gratuito. Conte palavras, caracteres, frases e parágrafos em tempo real."
+    "contador-texto": {
+      "name": "Contador de Texto",
+      "slug": "contador-texto",
+      "description": "Conte palavras, caracteres, frases e parágrafos em tempo real",
+      "metaDescription": "Contador de texto online gratuito. Conte palavras, caracteres, frases, parágrafos e tempo de leitura em tempo real."
     },
     "converter-pdf-jpg": {
       "name": "Converter PDF para JPG",
@@ -118,12 +118,6 @@
       "slug": "converter-png-jpg",
       "description": "Converta imagens PNG para formato JPG",
       "metaDescription": "Converta PNG para JPG online grátis. Transforme imagens PNG em JPG rapidamente."
-    },
-    "contador-caracteres": {
-      "name": "Contador de Caracteres",
-      "slug": "contador-caracteres",
-      "description": "Conte caracteres com e sem espaços",
-      "metaDescription": "Contador de caracteres online grátis. Conte letras, caracteres com e sem espaços em tempo real."
     },
     "gerador-lorem-ipsum": {
       "name": "Gerador Lorem Ipsum",
@@ -178,6 +172,66 @@
       "slug": "gerador-uuid",
       "description": "Gere identificadores únicos universais (UUID v4)",
       "metaDescription": "Gerador de UUID online grátis. Crie identificadores únicos universais (UUID v4) instantaneamente."
+    },
+    "gerador-link-whatsapp": {
+      "name": "Gerador de Link WhatsApp",
+      "slug": "gerador-link-whatsapp",
+      "description": "Crie links diretos para conversa no WhatsApp com mensagem pré-definida",
+      "metaDescription": "Gerador de link WhatsApp online grátis. Crie links wa.me com mensagem pré-definida e QR Code instantaneamente."
+    },
+    "gerador-chave-pix": {
+      "name": "Gerador de Chave PIX",
+      "slug": "gerador-chave-pix",
+      "description": "Gere QR Code e código copia e cola para pagamento PIX",
+      "metaDescription": "Gerador de chave PIX online grátis. Crie QR Code PIX e código copia e cola para receber pagamentos."
+    },
+    "lista-emojis": {
+      "name": "Lista de Emojis",
+      "slug": "lista-emojis",
+      "description": "Copie emojis facilmente - mais de 700 emojis categorizados",
+      "metaDescription": "Lista completa de emojis para copiar. Mais de 700 emojis organizados por categoria. Copie e cole facilmente."
+    },
+    "cronometro-timer": {
+      "name": "Cronômetro e Timer Online",
+      "slug": "cronometro-timer",
+      "description": "Cronômetro regressivo e progressivo com modo tela cheia",
+      "metaDescription": "Cronômetro online grátis. Timer regressivo e progressivo com alarme sonoro e modo fullscreen."
+    },
+    "cotacao-moedas": {
+      "name": "Cotação de Moedas",
+      "slug": "cotacao-moedas",
+      "description": "Conversor de moedas em tempo real com taxas atualizadas",
+      "metaDescription": "Cotação de moedas em tempo real. Conversor de moedas com taxas do Banco Central Europeu atualizadas diariamente."
+    },
+    "conversor-json-csv": {
+      "name": "Conversor JSON para CSV",
+      "slug": "conversor-json-csv",
+      "description": "Converta JSON para CSV e CSV para JSON bidirecionalmente",
+      "metaDescription": "Conversor JSON CSV online grátis. Converta JSON para CSV e CSV para JSON facilmente."
+    },
+    "gerador-utm": {
+      "name": "Gerador de UTMs",
+      "slug": "gerador-utm",
+      "description": "Crie URLs com parâmetros UTM para rastreamento de campanhas",
+      "metaDescription": "Gerador de UTM online grátis. Crie URLs com parâmetros utm_source, utm_medium e utm_campaign para Google Analytics."
+    },
+    "calculadora-juros": {
+      "name": "Calculadora de Juros Compostos",
+      "slug": "calculadora-juros",
+      "description": "Calcule rendimento de investimentos com juros compostos",
+      "metaDescription": "Calculadora de juros compostos online grátis. Simule investimentos, poupança e CDBs com juros compostos."
+    },
+    "consulta-whois": {
+      "name": "Consulta WHOIS",
+      "slug": "consulta-whois",
+      "description": "Consulte informações de registro de domínios (WHOIS)",
+      "metaDescription": "Consulta WHOIS online grátis. Veja informações de proprietário, data de registro e expiração de domínios."
+    },
+    "feriados-2026": {
+      "name": "Feriados Nacionais 2026",
+      "slug": "feriados-2026",
+      "description": "Lista completa de feriados nacionais de 2026 para diversos países",
+      "metaDescription": "Feriados nacionais 2026. Calendário completo de feriados do Brasil, Estados Unidos, México, Argentina, Chile, Colômbia e Espanha."
     }
   },
   "footer": {

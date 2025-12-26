@@ -10,7 +10,6 @@ export default function CronometroTimer() {
   const [timerMinutes, setTimerMinutes] = useState(5);
   const [timerSeconds, setTimerSeconds] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
-  const audioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
     let interval: NodeJS.Timeout;
@@ -38,7 +37,8 @@ export default function CronometroTimer() {
   const playAlarm = () => {
     // Criar som de alarme
     try {
-      const audioContext = new (window.AudioContext || (window as any).webkitAudioContext)();
+      const AudioContextClass = window.AudioContext || (window as typeof window & { webkitAudioContext: typeof AudioContext }).webkitAudioContext;
+      const audioContext = new AudioContextClass();
       const oscillator = audioContext.createOscillator();
       const gainNode = audioContext.createGain();
 

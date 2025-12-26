@@ -71,11 +71,11 @@
       "description": "Create custom QR codes for free",
       "metaDescription": "Generate QR codes for free online. Create custom QR codes for URLs, texts and more."
     },
-    "contador-palavras": {
-      "name": "Word Counter",
-      "slug": "word-counter",
-      "description": "Count words, characters and paragraphs in real-time",
-      "metaDescription": "Free online word counter. Count words, characters, sentences and paragraphs in real-time."
+    "contador-texto": {
+      "name": "Text Counter",
+      "slug": "text-counter",
+      "description": "Count words, characters, sentences and paragraphs in real-time",
+      "metaDescription": "Free online text counter. Count words, characters, sentences, paragraphs and reading time in real-time."
     },
     "converter-pdf-jpg": {
       "name": "Convert PDF to JPG",
@@ -118,12 +118,6 @@
       "slug": "convert-png-to-jpg",
       "description": "Convert PNG images to JPG format",
       "metaDescription": "Convert PNG to JPG online for free. Transform PNG images to JPG quickly."
-    },
-    "contador-caracteres": {
-      "name": "Character Counter",
-      "slug": "character-counter",
-      "description": "Count characters with and without spaces",
-      "metaDescription": "Free online character counter. Count letters, characters with and without spaces in real-time."
     },
     "gerador-lorem-ipsum": {
       "name": "Lorem Ipsum Generator",
@@ -178,6 +172,66 @@
       "slug": "uuid-generator",
       "description": "Generate universally unique identifiers (UUID v4)",
       "metaDescription": "Free UUID generator online. Create universally unique identifiers (UUID v4) instantly."
+    },
+    "gerador-link-whatsapp": {
+      "name": "WhatsApp Link Generator",
+      "slug": "whatsapp-link-generator",
+      "description": "Create direct WhatsApp links with pre-filled messages",
+      "metaDescription": "Free WhatsApp link generator online. Create wa.me links with pre-filled messages and QR Code instantly."
+    },
+    "gerador-chave-pix": {
+      "name": "PIX Key Generator",
+      "slug": "pix-key-generator",
+      "description": "Generate QR Code and copy-paste code for PIX payment",
+      "metaDescription": "Free PIX key generator online. Create PIX QR Code and copy-paste code to receive payments."
+    },
+    "lista-emojis": {
+      "name": "Emoji List",
+      "slug": "emoji-list",
+      "description": "Copy emojis easily - over 700 categorized emojis",
+      "metaDescription": "Complete list of emojis to copy. Over 700 emojis organized by category. Copy and paste easily."
+    },
+    "cronometro-timer": {
+      "name": "Online Stopwatch & Timer",
+      "slug": "stopwatch-timer",
+      "description": "Countdown and count-up timer with fullscreen mode",
+      "metaDescription": "Free online stopwatch. Countdown and count-up timer with sound alarm and fullscreen mode."
+    },
+    "cotacao-moedas": {
+      "name": "Currency Exchange",
+      "slug": "currency-exchange",
+      "description": "Real-time currency converter with updated rates",
+      "metaDescription": "Real-time currency exchange rates. Currency converter with European Central Bank rates updated daily."
+    },
+    "conversor-json-csv": {
+      "name": "JSON to CSV Converter",
+      "slug": "json-csv-converter",
+      "description": "Convert JSON to CSV and CSV to JSON bidirectionally",
+      "metaDescription": "Free JSON CSV converter online. Convert JSON to CSV and CSV to JSON easily."
+    },
+    "gerador-utm": {
+      "name": "UTM Generator",
+      "slug": "utm-generator",
+      "description": "Create URLs with UTM parameters for campaign tracking",
+      "metaDescription": "Free UTM generator online. Create URLs with utm_source, utm_medium and utm_campaign parameters for Google Analytics."
+    },
+    "calculadora-juros": {
+      "name": "Compound Interest Calculator",
+      "slug": "compound-interest-calculator",
+      "description": "Calculate investment returns with compound interest",
+      "metaDescription": "Free compound interest calculator online. Simulate investments, savings and CDs with compound interest."
+    },
+    "consulta-whois": {
+      "name": "WHOIS Lookup",
+      "slug": "whois-lookup",
+      "description": "Query domain registration information (WHOIS)",
+      "metaDescription": "Free WHOIS lookup online. View owner information, registration and expiration dates of domains."
+    },
+    "feriados-2026": {
+      "name": "National Holidays 2026",
+      "slug": "holidays-2026",
+      "description": "Complete list of 2026 national holidays for various countries",
+      "metaDescription": "National holidays 2026. Complete calendar of holidays for USA, Brazil, Mexico, Argentina, Chile, Colombia and Spain."
     }
   },
   "footer": {

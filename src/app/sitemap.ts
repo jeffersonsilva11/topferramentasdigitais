@@ -9,7 +9,7 @@ const locales = ['en', 'pt', 'es'];
 const toolSlugMap: Record<string, Record<string, string>> = {
   'meu-ip': { en: 'what-is-my-ip', pt: 'meu-ip', es: 'cual-es-mi-ip' },
   'gerador-qr-code': { en: 'qr-code-generator', pt: 'gerador-qr-code', es: 'generador-codigo-qr' },
-  'contador-palavras': { en: 'word-counter', pt: 'contador-palavras', es: 'contador-palabras' },
+  'contador-texto': { en: 'text-counter', pt: 'contador-texto', es: 'contador-texto' },
   'converter-pdf-jpg': { en: 'convert-pdf-to-jpg', pt: 'converter-pdf-jpg', es: 'convertir-pdf-jpg' },
   'converter-jpg-pdf': { en: 'convert-jpg-to-pdf', pt: 'converter-jpg-pdf', es: 'convertir-jpg-pdf' },
   'comprimir-imagem': { en: 'image-compressor', pt: 'comprimir-imagem', es: 'comprimir-imagen' },
@@ -17,7 +17,6 @@ const toolSlugMap: Record<string, Record<string, string>> = {
   'calculadora-porcentagem': { en: 'percentage-calculator', pt: 'calculadora-porcentagem', es: 'calculadora-porcentaje' },
   'gerador-senha': { en: 'password-generator', pt: 'gerador-senha', es: 'generador-contrasenas' },
   'converter-png-jpg': { en: 'convert-png-to-jpg', pt: 'converter-png-jpg', es: 'convertir-png-jpg' },
-  'contador-caracteres': { en: 'character-counter', pt: 'contador-caracteres', es: 'contador-caracteres' },
   'gerador-lorem-ipsum': { en: 'lorem-ipsum-generator', pt: 'gerador-lorem-ipsum', es: 'generador-lorem-ipsum' },
   'site-online': { en: 'website-status-checker', pt: 'site-online', es: 'sitio-online' },
   'meu-user-agent': { en: 'my-user-agent', pt: 'meu-user-agent', es: 'mi-user-agent' },
@@ -27,6 +26,16 @@ const toolSlugMap: Record<string, Record<string, string>> = {
   'json-formatter': { en: 'json-formatter', pt: 'json-formatter', es: 'formateador-json' },
   'conversor-bytes': { en: 'bytes-converter', pt: 'conversor-bytes', es: 'conversor-bytes' },
   'gerador-uuid': { en: 'uuid-generator', pt: 'gerador-uuid', es: 'generador-uuid' },
+  'gerador-link-whatsapp': { en: 'whatsapp-link-generator', pt: 'gerador-link-whatsapp', es: 'generador-enlace-whatsapp' },
+  'gerador-chave-pix': { en: 'pix-key-generator', pt: 'gerador-chave-pix', es: 'generador-clave-pix' },
+  'lista-emojis': { en: 'emoji-list', pt: 'lista-emojis', es: 'lista-emojis' },
+  'cronometro-timer': { en: 'stopwatch-timer', pt: 'cronometro-timer', es: 'cronometro-temporizador' },
+  'cotacao-moedas': { en: 'currency-exchange', pt: 'cotacao-moedas', es: 'cotizacion-monedas' },
+  'conversor-json-csv': { en: 'json-csv-converter', pt: 'conversor-json-csv', es: 'conversor-json-csv' },
+  'gerador-utm': { en: 'utm-generator', pt: 'gerador-utm', es: 'generador-utm' },
+  'calculadora-juros': { en: 'compound-interest-calculator', pt: 'calculadora-juros', es: 'calculadora-intereses' },
+  'consulta-whois': { en: 'whois-lookup', pt: 'consulta-whois', es: 'consulta-whois' },
+  'feriados-2026': { en: 'holidays-2026', pt: 'feriados-2026', es: 'feriados-2026' },
 };
 
 export default function sitemap(): MetadataRoute.Sitemap {
