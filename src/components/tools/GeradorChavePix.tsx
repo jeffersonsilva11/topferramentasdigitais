@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import QRCode from 'qrcode';
 import { createStaticPix } from 'pix-utils';
 
@@ -13,6 +13,7 @@ export default function GeradorChavePix() {
   const [descricao, setDescricao] = useState('');
   const [qrCodeUrl, setQrCodeUrl] = useState('');
   const [pixCopia, setPixCopia] = useState('');
+  const qrCodeSectionRef = useRef<HTMLDivElement>(null);
 
   const gerarQRCode = async () => {
     if (!chavePix.trim()) {
@@ -64,6 +65,14 @@ export default function GeradorChavePix() {
       });
 
       setQrCodeUrl(qr);
+
+      // Scroll automático até o QR Code gerado
+      setTimeout(() => {
+        qrCodeSectionRef.current?.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+        });
+      }, 100);
     } catch (error) {
       console.error('Erro ao gerar PIX:', error);
       alert('Erro ao gerar QR Code PIX. Verifique os dados informados.');
@@ -182,7 +191,7 @@ export default function GeradorChavePix() {
       </button>
 
       {qrCodeUrl && (
-        <div className="space-y-6">
+        <div ref={qrCodeSectionRef} className="space-y-6">
           <div className="bg-gradient-to-br from-green-50 to-teal-50 border-2 border-green-200 rounded-lg p-6 text-center">
             <h3 className="font-bold text-lg mb-4">QR Code PIX Gerado!</h3>
             <img src={qrCodeUrl} alt="QR Code PIX" className="mx-auto rounded-lg shadow-lg mb-4" />
