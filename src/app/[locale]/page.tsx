@@ -1,7 +1,6 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
-import ToolCard from '@/components/ToolCard';
+import ToolsGrid from '@/components/ToolsGrid';
 import AdSlot from '@/components/AdSlot';
-import { tools } from '@/lib/tools';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -58,16 +57,12 @@ async function HomePage({ locale }: { locale: string }) {
         <AdSlot position="top" />
       </div>
 
-      {/* Tools Grid */}
+      {/* Search, Filter & Tools Grid */}
       <section className="mb-12" aria-labelledby="tools-heading">
         <h2 id="tools-heading" className="text-2xl font-bold text-gray-800 dark:text-gray-200 mb-6 text-center">
           {t('chooseTool')}
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" role="list">
-          {tools.map((tool) => (
-            <ToolCard key={tool.id} tool={tool} />
-          ))}
-        </div>
+        <ToolsGrid />
       </section>
 
       {/* Ad Slot - Middle */}

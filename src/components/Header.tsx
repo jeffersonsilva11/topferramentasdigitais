@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useTranslations, useLocale } from 'next-intl';
 import LanguageSelector from './LanguageSelector';
+import MobileMenu from './MobileMenu';
 
 export default function Header() {
   const pathname = usePathname();
@@ -39,12 +40,13 @@ export default function Header() {
               {!isHome && (
                 <Link
                   href={`/${locale}`}
-                  className="px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 dark:bg-primary-700 dark:hover:bg-primary-600 transition font-medium focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
+                  className="hidden sm:inline-flex px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 dark:bg-primary-700 dark:hover:bg-primary-600 transition font-medium focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
                   aria-label={locale === 'en' ? 'Back to homepage' : locale === 'pt' ? 'Voltar para página inicial' : 'Volver a la página de inicio'}
                 >
                   ← {t('backToHome')}
                 </Link>
               )}
+              <MobileMenu />
             </div>
           </nav>
         </div>
