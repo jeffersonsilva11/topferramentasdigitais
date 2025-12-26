@@ -373,5 +373,84 @@
       "email": "Email: privacy@topferramentasdigitais.com"
     },
     "footer": "All Rights Reserved"
+  },
+  "cookiePolicy": {
+    "title": "Cookie Policy",
+    "metaDescription": "Cookie Policy - Learn about the cookies we use and how to manage them. Complete transparency on data collection.",
+    "backToHome": "Back to Home",
+    "lastUpdated": "Last Updated",
+    "updateDate": "December 2024",
+    "introduction": {
+      "title": "Introduction",
+      "p1": "This Cookie Policy explains what cookies are, how we use them on our website, and how you can manage your cookie preferences.",
+      "p2": "We use cookies to improve your browsing experience, analyze site traffic, and display personalized content and advertisements."
+    },
+    "whatAreCookies": {
+      "title": "What Are Cookies?",
+      "desc": "Cookies are small text files stored on your device (computer, tablet, or mobile) when you visit a website. They help websites remember your preferences and improve your browsing experience."
+    },
+    "cookieTypes": {
+      "title": "Types of Cookies We Use",
+      "intro": "We use different types of cookies for different purposes:",
+      "necessary": {
+        "title": "Necessary Cookies",
+        "alwaysActive": "Always Active",
+        "desc": "Essential for the website to function properly. These cookies cannot be disabled as they are required for core features like security, network management, and consent preferences.",
+        "examplesTitle": "Examples:",
+        "example1": "user_consent - Stores your cookie preferences",
+        "example2": "Language preferences - Remembers your selected language",
+        "retention": "12 months"
+      },
+      "analytics": {
+        "title": "Analytics Cookies",
+        "desc": "Help us understand how visitors interact with our website by collecting and reporting information anonymously. We use Google Analytics to analyze site usage.",
+        "examplesTitle": "Examples (Google Analytics):",
+        "example1": "_ga - Distinguishes unique users",
+        "example2": "_gid - Distinguishes unique users (24 hours)",
+        "example3": "_gat - Used to throttle request rate",
+        "retention": "14 months (GA), 24 hours (GID), 1 minute (GAT)"
+      },
+      "advertising": {
+        "title": "Advertising Cookies",
+        "desc": "Used to deliver relevant advertisements based on your interests. They also limit the number of times you see an ad and help measure advertising campaign effectiveness.",
+        "examplesTitle": "Examples (Google Ads):",
+        "example1": "IDE - Used by Google DoubleClick to register and report user actions",
+        "example2": "DSID - Used to identify a signed-in user on non-Google sites",
+        "example3": "FLC - Google Advertising conversion tracking",
+        "retention": "24 months"
+      }
+    },
+    "optional": "Optional",
+    "retention": "Retention",
+    "thirdParty": {
+      "title": "Third-Party Cookies",
+      "intro": "Some cookies are placed by third-party services that appear on our pages:",
+      "google": {
+        "title": "Google (Analytics & Ads)",
+        "desc": "We use Google Analytics to analyze website traffic and Google Ads to display relevant advertisements.",
+        "link": "Google Privacy Policy"
+      }
+    },
+    "manageCookies": {
+      "title": "How to Manage Cookies",
+      "intro": "You have full control over which cookies you accept:",
+      "method1": "Use our Cookie Settings (available in the cookie banner) to customize your preferences",
+      "method2": "Change your browser settings to block or delete cookies",
+      "method3": "Use third-party tools to control advertising cookies"
+    },
+    "browserSettings": {
+      "title": "Browser-Specific Cookie Settings",
+      "intro": "Learn how to manage cookies in different browsers:"
+    },
+    "updates": {
+      "title": "Updates to This Policy",
+      "desc": "We may update this Cookie Policy from time to time to reflect changes in technology or legislation. Any updates will be posted on this page with a revised date."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "desc": "If you have questions about our use of cookies, please contact us at:",
+      "email": "Email: privacy@topferramentasdigitais.com"
+    },
+    "footer": "All Rights Reserved"
   }
 }

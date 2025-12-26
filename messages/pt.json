@@ -373,5 +373,84 @@
       "email": "Email: privacy@topferramentasdigitais.com"
     },
     "footer": "Todos os Direitos Reservados"
+  },
+  "cookiePolicy": {
+    "title": "Política de Cookies",
+    "metaDescription": "Política de Cookies - Saiba sobre os cookies que usamos e como gerenciá-los. Transparência completa sobre coleta de dados.",
+    "backToHome": "Voltar para Home",
+    "lastUpdated": "Última Atualização",
+    "updateDate": "Dezembro 2024",
+    "introduction": {
+      "title": "Introdução",
+      "p1": "Esta Política de Cookies explica o que são cookies, como os usamos em nosso site e como você pode gerenciar suas preferências de cookies.",
+      "p2": "Usamos cookies para melhorar sua experiência de navegação, analisar o tráfego do site e exibir conteúdo e anúncios personalizados."
+    },
+    "whatAreCookies": {
+      "title": "O Que São Cookies?",
+      "desc": "Cookies são pequenos arquivos de texto armazenados no seu dispositivo (computador, tablet ou celular) quando você visita um site. Eles ajudam os sites a lembrar suas preferências e melhorar sua experiência de navegação."
+    },
+    "cookieTypes": {
+      "title": "Tipos de Cookies Que Usamos",
+      "intro": "Usamos diferentes tipos de cookies para diferentes finalidades:",
+      "necessary": {
+        "title": "Cookies Necessários",
+        "alwaysActive": "Sempre Ativo",
+        "desc": "Essenciais para o funcionamento adequado do site. Esses cookies não podem ser desativados, pois são necessários para recursos essenciais como segurança, gerenciamento de rede e preferências de consentimento.",
+        "examplesTitle": "Exemplos:",
+        "example1": "user_consent - Armazena suas preferências de cookies",
+        "example2": "Preferências de idioma - Lembra o idioma selecionado",
+        "retention": "12 meses"
+      },
+      "analytics": {
+        "title": "Cookies Analíticos",
+        "desc": "Nos ajudam a entender como os visitantes interagem com nosso site, coletando e relatando informações anonimamente. Usamos Google Analytics para analisar o uso do site.",
+        "examplesTitle": "Exemplos (Google Analytics):",
+        "example1": "_ga - Distingue usuários únicos",
+        "example2": "_gid - Distingue usuários únicos (24 horas)",
+        "example3": "_gat - Usado para controlar taxa de solicitações",
+        "retention": "14 meses (GA), 24 horas (GID), 1 minuto (GAT)"
+      },
+      "advertising": {
+        "title": "Cookies de Publicidade",
+        "desc": "Usados para entregar anúncios relevantes com base em seus interesses. Também limitam o número de vezes que você vê um anúncio e ajudam a medir a eficácia de campanhas publicitárias.",
+        "examplesTitle": "Exemplos (Google Ads):",
+        "example1": "IDE - Usado pelo Google DoubleClick para registrar e relatar ações do usuário",
+        "example2": "DSID - Usado para identificar um usuário conectado em sites não-Google",
+        "example3": "FLC - Rastreamento de conversão de publicidade Google",
+        "retention": "24 meses"
+      }
+    },
+    "optional": "Opcional",
+    "retention": "Retenção",
+    "thirdParty": {
+      "title": "Cookies de Terceiros",
+      "intro": "Alguns cookies são colocados por serviços de terceiros que aparecem em nossas páginas:",
+      "google": {
+        "title": "Google (Analytics & Ads)",
+        "desc": "Usamos Google Analytics para analisar o tráfego do site e Google Ads para exibir anúncios relevantes.",
+        "link": "Política de Privacidade do Google"
+      }
+    },
+    "manageCookies": {
+      "title": "Como Gerenciar Cookies",
+      "intro": "Você tem controle total sobre quais cookies aceitar:",
+      "method1": "Use nossas Configurações de Cookies (disponíveis no banner de cookies) para personalizar suas preferências",
+      "method2": "Altere as configurações do navegador para bloquear ou deletar cookies",
+      "method3": "Use ferramentas de terceiros para controlar cookies de publicidade"
+    },
+    "browserSettings": {
+      "title": "Configurações de Cookies por Navegador",
+      "intro": "Aprenda a gerenciar cookies em diferentes navegadores:"
+    },
+    "updates": {
+      "title": "Atualizações Desta Política",
+      "desc": "Podemos atualizar esta Política de Cookies periodicamente para refletir mudanças na tecnologia ou legislação. Quaisquer atualizações serão publicadas nesta página com uma data revisada."
+    },
+    "contact": {
+      "title": "Entre em Contato",
+      "desc": "Se você tiver dúvidas sobre nosso uso de cookies, entre em contato conosco:",
+      "email": "Email: privacy@topferramentasdigitais.com"
+    },
+    "footer": "Todos os Direitos Reservados"
   }
 }

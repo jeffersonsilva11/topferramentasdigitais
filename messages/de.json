@@ -373,5 +373,84 @@
       "email": "E-Mail: privacy@topferramentasdigitais.com"
     },
     "footer": "Alle Rechte Vorbehalten"
+  },
+  "cookiePolicy": {
+    "title": "Cookie-Richtlinie",
+    "metaDescription": "Cookie-Richtlinie - Erfahren Sie mehr über die Cookies, die wir verwenden und wie Sie diese verwalten. Vollständige Transparenz bei der Datenerfassung.",
+    "backToHome": "Zurück zur Startseite",
+    "lastUpdated": "Letzte Aktualisierung",
+    "updateDate": "Dezember 2024",
+    "introduction": {
+      "title": "Einführung",
+      "p1": "Diese Cookie-Richtlinie erklärt, was Cookies sind, wie wir sie auf unserer Website verwenden und wie Sie Ihre Cookie-Einstellungen verwalten können.",
+      "p2": "Wir verwenden Cookies, um Ihr Surferlebnis zu verbessern, den Website-Traffic zu analysieren und personalisierte Inhalte und Werbung anzuzeigen."
+    },
+    "whatAreCookies": {
+      "title": "Was Sind Cookies?",
+      "desc": "Cookies sind kleine Textdateien, die auf Ihrem Gerät (Computer, Tablet oder Mobilgerät) gespeichert werden, wenn Sie eine Website besuchen. Sie helfen Websites, sich an Ihre Präferenzen zu erinnern und Ihr Surferlebnis zu verbessern."
+    },
+    "cookieTypes": {
+      "title": "Von Uns Verwendete Cookie-Typen",
+      "intro": "Wir verwenden verschiedene Arten von Cookies für verschiedene Zwecke:",
+      "necessary": {
+        "title": "Notwendige Cookies",
+        "alwaysActive": "Immer Aktiv",
+        "desc": "Unerlässlich für das ordnungsgemäße Funktionieren der Website. Diese Cookies können nicht deaktiviert werden, da sie für Kernfunktionen wie Sicherheit, Netzwerkverwaltung und Zustimmungspräferenzen erforderlich sind.",
+        "examplesTitle": "Beispiele:",
+        "example1": "user_consent - Speichert Ihre Cookie-Einstellungen",
+        "example2": "Sprachpräferenzen - Merkt sich Ihre ausgewählte Sprache",
+        "retention": "12 Monate"
+      },
+      "analytics": {
+        "title": "Analyse-Cookies",
+        "desc": "Helfen uns zu verstehen, wie Besucher mit unserer Website interagieren, indem Informationen anonym gesammelt und berichtet werden. Wir verwenden Google Analytics zur Analyse der Website-Nutzung.",
+        "examplesTitle": "Beispiele (Google Analytics):",
+        "example1": "_ga - Unterscheidet eindeutige Benutzer",
+        "example2": "_gid - Unterscheidet eindeutige Benutzer (24 Stunden)",
+        "example3": "_gat - Wird verwendet, um die Anfragerate zu drosseln",
+        "retention": "14 Monate (GA), 24 Stunden (GID), 1 Minute (GAT)"
+      },
+      "advertising": {
+        "title": "Werbe-Cookies",
+        "desc": "Werden verwendet, um relevante Werbung basierend auf Ihren Interessen zu liefern. Sie begrenzen auch die Häufigkeit, mit der Sie eine Anzeige sehen, und helfen, die Wirksamkeit von Werbekampagnen zu messen.",
+        "examplesTitle": "Beispiele (Google Ads):",
+        "example1": "IDE - Wird von Google DoubleClick verwendet, um Benutzeraktionen zu registrieren und zu melden",
+        "example2": "DSID - Wird verwendet, um einen angemeldeten Benutzer auf Nicht-Google-Websites zu identifizieren",
+        "example3": "FLC - Google Advertising-Conversion-Tracking",
+        "retention": "24 Monate"
+      }
+    },
+    "optional": "Optional",
+    "retention": "Aufbewahrung",
+    "thirdParty": {
+      "title": "Drittanbieter-Cookies",
+      "intro": "Einige Cookies werden von Drittanbieterdiensten platziert, die auf unseren Seiten erscheinen:",
+      "google": {
+        "title": "Google (Analytics & Ads)",
+        "desc": "Wir verwenden Google Analytics zur Analyse des Website-Traffics und Google Ads zur Anzeige relevanter Werbung.",
+        "link": "Google-Datenschutzrichtlinie"
+      }
+    },
+    "manageCookies": {
+      "title": "Wie Sie Cookies Verwalten",
+      "intro": "Sie haben die volle Kontrolle darüber, welche Cookies Sie akzeptieren:",
+      "method1": "Verwenden Sie unsere Cookie-Einstellungen (verfügbar im Cookie-Banner), um Ihre Präferenzen anzupassen",
+      "method2": "Ändern Sie Ihre Browsereinstellungen, um Cookies zu blockieren oder zu löschen",
+      "method3": "Verwenden Sie Tools von Drittanbietern zur Kontrolle von Werbe-Cookies"
+    },
+    "browserSettings": {
+      "title": "Browserspezifische Cookie-Einstellungen",
+      "intro": "Erfahren Sie, wie Sie Cookies in verschiedenen Browsern verwalten:"
+    },
+    "updates": {
+      "title": "Aktualisierungen Dieser Richtlinie",
+      "desc": "Wir können diese Cookie-Richtlinie von Zeit zu Zeit aktualisieren, um Änderungen in Technologie oder Gesetzgebung widerzuspiegeln. Alle Aktualisierungen werden auf dieser Seite mit einem überarbeiteten Datum veröffentlicht."
+    },
+    "contact": {
+      "title": "Kontaktieren Sie Uns",
+      "desc": "Wenn Sie Fragen zu unserer Verwendung von Cookies haben, kontaktieren Sie uns bitte unter:",
+      "email": "E-Mail: privacy@topferramentasdigitais.com"
+    },
+    "footer": "Alle Rechte Vorbehalten"
   }
 }

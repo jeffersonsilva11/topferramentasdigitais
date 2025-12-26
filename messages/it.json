@@ -373,5 +373,84 @@
       "email": "Email: privacy@topferramentasdigitais.com"
     },
     "footer": "Tutti i Diritti Riservati"
+  },
+  "cookiePolicy": {
+    "title": "Informativa sui Cookie",
+    "metaDescription": "Informativa sui Cookie - Scopri i cookie che utilizziamo e come gestirli. Trasparenza completa sulla raccolta dati.",
+    "backToHome": "Torna alla Home",
+    "lastUpdated": "Ultimo Aggiornamento",
+    "updateDate": "Dicembre 2024",
+    "introduction": {
+      "title": "Introduzione",
+      "p1": "Questa Informativa sui Cookie spiega cosa sono i cookie, come li utilizziamo sul nostro sito web e come puoi gestire le tue preferenze sui cookie.",
+      "p2": "Utilizziamo i cookie per migliorare la tua esperienza di navigazione, analizzare il traffico del sito e visualizzare contenuti e pubblicità personalizzati."
+    },
+    "whatAreCookies": {
+      "title": "Cosa Sono i Cookie?",
+      "desc": "I cookie sono piccoli file di testo memorizzati sul tuo dispositivo (computer, tablet o cellulare) quando visiti un sito web. Aiutano i siti web a ricordare le tue preferenze e migliorare la tua esperienza di navigazione."
+    },
+    "cookieTypes": {
+      "title": "Tipi di Cookie Utilizzati",
+      "intro": "Utilizziamo diversi tipi di cookie per scopi diversi:",
+      "necessary": {
+        "title": "Cookie Necessari",
+        "alwaysActive": "Sempre Attivi",
+        "desc": "Essenziali per il corretto funzionamento del sito web. Questi cookie non possono essere disabilitati in quanto sono necessari per funzionalità essenziali come sicurezza, gestione della rete e preferenze di consenso.",
+        "examplesTitle": "Esempi:",
+        "example1": "user_consent - Memorizza le tue preferenze sui cookie",
+        "example2": "Preferenze linguistiche - Ricorda la lingua selezionata",
+        "retention": "12 mesi"
+      },
+      "analytics": {
+        "title": "Cookie Analitici",
+        "desc": "Ci aiutano a capire come i visitatori interagiscono con il nostro sito web raccogliendo e riportando informazioni in modo anonimo. Utilizziamo Google Analytics per analizzare l'utilizzo del sito.",
+        "examplesTitle": "Esempi (Google Analytics):",
+        "example1": "_ga - Distingue gli utenti unici",
+        "example2": "_gid - Distingue gli utenti unici (24 ore)",
+        "example3": "_gat - Utilizzato per limitare la frequenza delle richieste",
+        "retention": "14 mesi (GA), 24 ore (GID), 1 minuto (GAT)"
+      },
+      "advertising": {
+        "title": "Cookie Pubblicitari",
+        "desc": "Utilizzati per fornire pubblicità rilevanti in base ai tuoi interessi. Limitano anche il numero di volte che vedi un annuncio e aiutano a misurare l'efficacia delle campagne pubblicitarie.",
+        "examplesTitle": "Esempi (Google Ads):",
+        "example1": "IDE - Utilizzato da Google DoubleClick per registrare e segnalare le azioni dell'utente",
+        "example2": "DSID - Utilizzato per identificare un utente connesso su siti non Google",
+        "example3": "FLC - Tracciamento conversione pubblicità Google",
+        "retention": "24 mesi"
+      }
+    },
+    "optional": "Opzionale",
+    "retention": "Conservazione",
+    "thirdParty": {
+      "title": "Cookie di Terze Parti",
+      "intro": "Alcuni cookie vengono inseriti da servizi di terze parti che appaiono sulle nostre pagine:",
+      "google": {
+        "title": "Google (Analytics e Ads)",
+        "desc": "Utilizziamo Google Analytics per analizzare il traffico del sito web e Google Ads per visualizzare annunci pertinenti.",
+        "link": "Informativa sulla Privacy di Google"
+      }
+    },
+    "manageCookies": {
+      "title": "Come Gestire i Cookie",
+      "intro": "Hai il pieno controllo su quali cookie accettare:",
+      "method1": "Usa le nostre Impostazioni Cookie (disponibili nel banner dei cookie) per personalizzare le tue preferenze",
+      "method2": "Modifica le impostazioni del browser per bloccare o eliminare i cookie",
+      "method3": "Usa strumenti di terze parti per controllare i cookie pubblicitari"
+    },
+    "browserSettings": {
+      "title": "Impostazioni Cookie per Browser",
+      "intro": "Scopri come gestire i cookie in diversi browser:"
+    },
+    "updates": {
+      "title": "Aggiornamenti di Questa Informativa",
+      "desc": "Potremmo aggiornare questa Informativa sui Cookie di tanto in tanto per riflettere cambiamenti nella tecnologia o nella legislazione. Eventuali aggiornamenti verranno pubblicati su questa pagina con una data revisionata."
+    },
+    "contact": {
+      "title": "Contattaci",
+      "desc": "Se hai domande sul nostro utilizzo dei cookie, contattaci a:",
+      "email": "Email: privacy@topferramentasdigitais.com"
+    },
+    "footer": "Tutti i Diritti Riservati"
   }
 }
