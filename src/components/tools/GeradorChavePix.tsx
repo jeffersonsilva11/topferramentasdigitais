@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import QRCode from 'qrcode';
+import { createStaticPix } from 'pix-utils';
 
 export default function GeradorChavePix() {
   const [chavePix, setChavePix] = useState('');
@@ -13,43 +14,59 @@ export default function GeradorChavePix() {
   const [qrCodeUrl, setQrCodeUrl] = useState('');
   const [pixCopia, setPixCopia] = useState('');
 
-  const gerarPixCopiaECola = () => {
-    // Formato simplificado do PIX Copia e Cola
-    // Nota: Esta é uma versão simplificada. Para produção, use biblioteca como 'pix-utils'
-    const payload = `00020126${chavePix.length.toString().padStart(2, '0')}${chavePix}${
-      valor ? `5303986540${valor.length}${valor}` : ''
-    }5802BR${nome ? `59${nome.length.toString().padStart(2, '0')}${nome}` : ''}${
-      cidade ? `60${cidade.length.toString().padStart(2, '0')}${cidade}` : ''
-    }${txid ? `62${(txid.length + 4).toString().padStart(2, '0')}05${txid.length.toString().padStart(2, '0')}${txid}` : ''}6304`;
-
-    // Calcula CRC16 (simplificado - em produção usar biblioteca)
-    const crc = '0000'; // Placeholder - implementar CRC16 real
-
-    return payload + crc;
-  };
-
   const gerarQRCode = async () => {
     if (!chavePix.trim()) {
       alert('Por favor, insira uma chave PIX');
       return;
     }
 
-    try {
-      const payload = gerarPixCopiaECola();
-      setPixCopia(payload);
+    if (!nome.trim()) {
+      alert('Por favor, insira o nome do beneficiário');
+      return;
+    }
 
-      const qr = await QRCode.toDataURL(payload, {
+    if (!cidade.trim()) {
+      alert('Por favor, insira a cidade');
+      return;
+    }
+
+    try {
+      // Criar payload PIX usando pix-utils
+      const pixConfig: any = {
+        key: chavePix.trim(),
+        name: nome.trim(),
+        city: cidade.trim(),
+      };
+
+      // Adicionar campos opcionais apenas se preenchidos
+      if (valor && parseFloat(valor) > 0) {
+        pixConfig.amount = parseFloat(valor);
+      }
+
+      if (txid.trim()) {
+        pixConfig.transactionId = txid.trim();
+      }
+
+      if (descricao.trim()) {
+        pixConfig.message = descricao.trim();
+      }
+
+      const payload = createStaticPix(pixConfig);
+      setPixCopia(payload.toBRCode());
+
+      const qr = await QRCode.toDataURL(payload.toBRCode(), {
         width: 400,
         margin: 2,
         color: {
-          dark: '#00000',
+          dark: '#000000',
           light: '#FFFFFF',
         },
       });
 
       setQrCodeUrl(qr);
-    } catch {
-      alert('Erro ao gerar QR Code PIX');
+    } catch (error) {
+      console.error('Erro ao gerar PIX:', error);
+      alert('Erro ao gerar QR Code PIX. Verifique os dados informados.');
     }
   };
 
@@ -102,7 +119,7 @@ export default function GeradorChavePix() {
 
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-2">
-            Nome do beneficiário:
+            Nome do beneficiário: *
           </label>
           <input
             type="text"
@@ -115,7 +132,7 @@ export default function GeradorChavePix() {
 
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-2">
-            Cidade:
+            Cidade: *
           </label>
           <input
             type="text"
@@ -128,13 +145,16 @@ export default function GeradorChavePix() {
 
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-2">
-            ID da transação (TXID):
+            ID da transação (opcional):
+            <span className="block text-xs font-normal text-gray-500 mt-1">
+              Identificador para controle interno (ex: pedido123)
+            </span>
           </label>
           <input
             type="text"
             value={txid}
             onChange={(e) => setTxid(e.target.value)}
-            placeholder="PGTO123"
+            placeholder="Deixe vazio se não precisar"
             maxLength={25}
             className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
           />
