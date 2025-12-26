@@ -33,25 +33,25 @@ export default function GeradorChavePix() {
     try {
       // Criar payload PIX usando pix-utils
       const pixConfig: any = {
-        key: chavePix.trim(),
-        name: nome.trim(),
-        city: cidade.trim(),
+        pixKey: chavePix.trim(),
+        merchantName: nome.trim(),
+        merchantCity: cidade.trim(),
       };
 
       // Adicionar campos opcionais apenas se preenchidos
       if (valor && parseFloat(valor) > 0) {
-        pixConfig.amount = parseFloat(valor);
+        pixConfig.transactionAmount = parseFloat(valor);
       }
 
       if (txid.trim()) {
-        pixConfig.transactionId = txid.trim();
+        pixConfig.txid = txid.trim();
       }
 
       if (descricao.trim()) {
-        pixConfig.message = descricao.trim();
+        pixConfig.infoAdicional = descricao.trim();
       }
 
-      const payload = createStaticPix(pixConfig);
+      const payload = createStaticPix(pixConfig).throwIfError();
       setPixCopia(payload.toBRCode());
 
       const qr = await QRCode.toDataURL(payload.toBRCode(), {

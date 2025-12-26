@@ -20,8 +20,8 @@ export default function ConsultaWHOIS() {
       // Limpar o domínio removendo protocolo e path
       const cleanDomain = domain.replace(/^https?:\/\//, '').replace(/^www\./, '').split('/')[0];
 
-      // Usar API gratuita Who-Dat (sem autenticação)
-      const response = await fetch(`https://who-dat.as93.net/api/whois/${cleanDomain}`);
+      // Usar nossa rota API que faz proxy para Who-Dat (evita CORS)
+      const response = await fetch(`/api/whois?domain=${encodeURIComponent(cleanDomain)}`);
 
       if (!response.ok) {
         throw new Error('API indisponível');
