@@ -1,13 +1,7 @@
 'use client';
 
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import * as pdfjsLib from 'pdfjs-dist';
-
-// Configurar o worker do PDF.js
-if (typeof window !== 'undefined') {
-  // Usar worker local para evitar problemas com CDN
-  pdfjsLib.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.mjs';
-}
 
 interface ConvertedImage {
   dataUrl: string;
@@ -21,6 +15,13 @@ export default function ConverterPDFJPG() {
   const [progress, setProgress] = useState(0);
   const [quality, setQuality] = useState(90);
   const fileInputRef = useRef<HTMLInputElement>(null);
+
+  // Configurar o worker do PDF.js após o componente montar
+  useEffect(() => {
+    if (typeof window !== 'undefined' && pdfjsLib.GlobalWorkerOptions) {
+      pdfjsLib.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.mjs';
+    }
+  }, []);
 
   const handleFileSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
