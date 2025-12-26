@@ -51,6 +51,11 @@ export default async function LocaleLayout({
         {/* Google AdSense will be loaded via GoogleAnalytics component after consent */}
       </head>
       <body className="font-sans bg-white dark:bg-dark-950 text-gray-900 dark:text-gray-100 transition-colors antialiased">
+        {/* Skip to main content - Accessibility */}
+        <a href="#main-content" className="skip-to-main">
+          {locale === 'en' ? 'Skip to main content' : locale === 'pt' ? 'Pular para o conteúdo principal' : 'Saltar al contenido principal'}
+        </a>
+
         <NextIntlClientProvider messages={messages}>
           <ConsentProvider>
             {/* Google Analytics with Consent Mode v2 */}
@@ -62,7 +67,7 @@ export default async function LocaleLayout({
 
             {/* Main Layout */}
             <Header />
-            <main className="min-h-screen">
+            <main id="main-content" className="min-h-screen">
               {children}
             </main>
             <Footer />
