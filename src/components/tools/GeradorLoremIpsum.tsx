@@ -86,7 +86,7 @@ export default function GeradorLoremIpsum() {
           </label>
           <select
             value={type}
-            onChange={(e) => setType(e.target.value as any)}
+            onChange={(e) => setType(e.target.value as 'paragraphs' | 'sentences' | 'words')}
             className="w-full px-4 py-2 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
           >
             <option value="paragraphs">Parágrafos</option>

@@ -6,7 +6,7 @@ export default function MeuIP() {
   const [ip, setIp] = useState<string>('');
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string>('');
-  const [ipInfo, setIpInfo] = useState<any>(null);
+  const [ipInfo, setIpInfo] = useState<Record<string, string> | null>(null);
 
   useEffect(() => {
     fetchIP();
@@ -26,10 +26,10 @@ export default function MeuIP() {
         const infoResponse = await fetch(`https://ipapi.co/${data.ip}/json/`);
         const infoData = await infoResponse.json();
         setIpInfo(infoData);
-      } catch (err) {
+      } catch {
         // Informações adicionais são opcionais
       }
-    } catch (err) {
+    } catch {
       setError('Não foi possível obter o IP. Verifique sua conexão.');
     } finally {
       setLoading(false);

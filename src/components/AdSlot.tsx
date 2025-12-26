@@ -26,13 +26,14 @@ export default function AdSlot({ position, className = '' }: AdSlotProps) {
       }
     );
 
-    if (adRef.current) {
-      observer.observe(adRef.current);
+    const currentRef = adRef.current;
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (adRef.current) {
-        observer.unobserve(adRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, [isVisible]);
@@ -41,7 +42,7 @@ export default function AdSlot({ position, className = '' }: AdSlotProps) {
   useEffect(() => {
     if (isVisible && typeof window !== 'undefined') {
       try {
-        // @ts-ignore
+        // @ts-expect-error - adsbygoogle is injected by Google
         (window.adsbygoogle = window.adsbygoogle || []).push({});
       } catch (err) {
         console.error('AdSense error:', err);

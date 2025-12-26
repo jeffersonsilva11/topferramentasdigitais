@@ -21,8 +21,9 @@ export default function JSONFormatter() {
       const parsed = JSON.parse(input);
       const formatted = JSON.stringify(parsed, null, indent);
       setOutput(formatted);
-    } catch (err: any) {
-      setError(`Erro ao processar JSON: ${err.message}`);
+    } catch (err) {
+      const message = err instanceof Error ? err.message : 'Erro desconhecido';
+      setError(`Erro ao processar JSON: ${message}`);
     }
   };
 
@@ -39,8 +40,9 @@ export default function JSONFormatter() {
       const parsed = JSON.parse(input);
       const minified = JSON.stringify(parsed);
       setOutput(minified);
-    } catch (err: any) {
-      setError(`Erro ao processar JSON: ${err.message}`);
+    } catch (err) {
+      const message = err instanceof Error ? err.message : 'Erro desconhecido';
+      setError(`Erro ao processar JSON: ${message}`);
     }
   };
 
@@ -55,8 +57,9 @@ export default function JSONFormatter() {
     try {
       JSON.parse(input);
       alert('✅ JSON válido!');
-    } catch (err: any) {
-      setError(`❌ JSON inválido: ${err.message}`);
+    } catch (err) {
+      const message = err instanceof Error ? err.message : 'Erro desconhecido';
+      setError(`❌ JSON inválido: ${message}`);
     }
   };
 

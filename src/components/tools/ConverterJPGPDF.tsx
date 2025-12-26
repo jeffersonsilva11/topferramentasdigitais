@@ -169,7 +169,7 @@ export default function ConverterJPGPDF() {
         <ul className="list-disc list-inside space-y-1">
           <li>Selecione uma ou mais imagens JPG ou PNG</li>
           <li>As imagens serão adicionadas ao PDF na ordem selecionada</li>
-          <li>Clique em "Converter para PDF" para gerar o arquivo</li>
+          <li>Clique em &quot;Converter para PDF&quot; para gerar o arquivo</li>
           <li>Tudo funciona localmente - suas imagens não são enviadas para servidores</li>
         </ul>
       </div>

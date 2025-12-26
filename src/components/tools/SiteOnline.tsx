@@ -30,7 +30,7 @@ export default function SiteOnline() {
 
       // Tentar fazer um HEAD request através de um proxy CORS
       // Nota: Em produção, você precisaria de um backend ou serviço de proxy
-      const response = await fetch(testUrl, {
+      await fetch(testUrl, {
         method: 'HEAD',
         mode: 'no-cors', // Isso vai limitar o que podemos verificar
       });
@@ -44,7 +44,7 @@ export default function SiteOnline() {
         message: `Site está acessível! (Tempo de resposta aproximado: ${responseTime}ms)`,
         time: responseTime,
       });
-    } catch (error: any) {
+    } catch {
       setResult({
         status: 'offline',
         message: 'Não foi possível acessar o site. Pode estar offline ou bloqueando verificações.',

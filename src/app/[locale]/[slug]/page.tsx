@@ -188,13 +188,13 @@ export async function generateStaticParams() {
 }
 
 export default async function ToolPage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
-  const { locale, slug } = await params;
+  const { slug } = await params;
   const toolKey = getToolKeyBySlug(slug);
 
-  return <ToolPageContent locale={locale} slug={slug} toolKey={toolKey} />;
+  return <ToolPageContent slug={slug} toolKey={toolKey} />;
 }
 
-function ToolPageContent({ locale, slug, toolKey }: { locale: string; slug: string; toolKey: string }) {
+function ToolPageContent({ slug, toolKey }: { slug: string; toolKey: string }) {
   const t = useTranslations(`tools.${toolKey}`);
   const tSite = useTranslations('site');
 
