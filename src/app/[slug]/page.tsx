@@ -50,8 +50,9 @@ const toolComponents: Record<string, React.ComponentType> = {
 };
 
 // Gerar metadata dinâmica para SEO
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const tool = getToolBySlug(params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const tool = getToolBySlug(slug);
 
   if (!tool) {
     return {
@@ -80,8 +81,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function ToolPage({ params }: { params: { slug: string } }) {
-  const tool = getToolBySlug(params.slug);
+export default async function ToolPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const tool = getToolBySlug(slug);
 
   if (!tool) {
     notFound();
