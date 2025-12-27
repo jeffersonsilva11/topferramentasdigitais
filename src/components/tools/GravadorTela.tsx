@@ -127,7 +127,7 @@ export default function GravadorTela() {
 
     } catch (error) {
       console.error('Error starting recording:', error);
-      alert('Failed to start recording. Please ensure you granted the necessary permissions.');
+      alert(t('alertPermissionDenied'));
     }
   };
 
@@ -225,7 +225,7 @@ export default function GravadorTela() {
               <div className="text-4xl mb-2">🖥️</div>
               <p className="font-semibold">{t('modeScreen')}</p>
               <p className="text-sm text-gray-600 dark:text-gray-400">
-                Record your screen
+                {t('modeScreenDesc')}
               </p>
             </button>
 
@@ -240,7 +240,7 @@ export default function GravadorTela() {
               <div className="text-4xl mb-2">📹</div>
               <p className="font-semibold">{t('modeWebcam')}</p>
               <p className="text-sm text-gray-600 dark:text-gray-400">
-                Record from camera
+                {t('modeWebcamDesc')}
               </p>
             </button>
 
@@ -255,7 +255,7 @@ export default function GravadorTela() {
               <div className="text-4xl mb-2">🎬</div>
               <p className="font-semibold">{t('modeScreenWebcam')}</p>
               <p className="text-sm text-gray-600 dark:text-gray-400">
-                Picture-in-picture
+                {t('modeScreenWebcamDesc')}
               </p>
             </button>
           </div>
@@ -363,12 +363,12 @@ export default function GravadorTela() {
               onClick={resetRecording}
               className="w-full"
             >
-              🔄 Record Again
+              {t('recordAgain')}
             </Button>
           </div>
 
           <div className="mt-4 text-sm text-gray-600 dark:text-gray-400">
-            <p>💡 Tip: Most browsers support WebM format. For MP4, you may need to convert the file using a separate tool.</p>
+            <p>{t('tipText')}</p>
           </div>
         </div>
       )}
@@ -387,10 +387,9 @@ export default function GravadorTela() {
 
       {/* Browser Compatibility */}
       <div className="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-400 p-4 rounded">
-        <p className="font-semibold mb-2">⚠️ Browser Compatibility:</p>
+        <p className="font-semibold mb-2">⚠️ {t('browserCompatibility')}</p>
         <p className="text-sm text-gray-700 dark:text-gray-300">
-          This tool works best in modern browsers like Chrome, Edge, Firefox, and Opera.
-          Safari has limited support for screen recording.
+          {t('browserCompatibilityText')}
         </p>
       </div>
     </div>

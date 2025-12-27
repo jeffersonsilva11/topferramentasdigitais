@@ -175,7 +175,7 @@ export default function GeradorPaletaCores() {
 
   const copyColor = (hex: string) => {
     navigator.clipboard.writeText(hex);
-    alert(`Color ${hex} copied to clipboard!`);
+    alert(t('alertColorCopied'));
   };
 
   const exportCSS = () => {
@@ -185,7 +185,7 @@ export default function GeradorPaletaCores() {
 
     const fullCSS = `:root {\n${css}\n}`;
     navigator.clipboard.writeText(fullCSS);
-    alert('CSS variables copied to clipboard!');
+    alert(t('alertCSSCopied'));
   };
 
   const exportJSON = () => {
@@ -201,7 +201,7 @@ export default function GeradorPaletaCores() {
     );
 
     navigator.clipboard.writeText(json);
-    alert('JSON copied to clipboard!');
+    alert(t('alertJSONCopied'));
   };
 
   const saveFavorite = () => {
@@ -210,7 +210,7 @@ export default function GeradorPaletaCores() {
     const newFavorites = [...favorites, palette].slice(0, 10); // Keep last 10
     setFavorites(newFavorites);
     localStorage.setItem('color-palette-favorites', JSON.stringify(newFavorites));
-    alert('Palette saved to favorites!');
+    alert(t('alertPaletteSaved'));
   };
 
   const loadFavorite = (index: number) => {
@@ -396,7 +396,7 @@ export default function GeradorPaletaCores() {
           </div>
 
           <div className="mt-4 text-xs text-gray-600 dark:text-gray-400">
-            <p>WCAG Standards: AAA (7:1) • AA (4.5:1) • AA Large (3:1)</p>
+            <p>{t('wcagStandards')}</p>
           </div>
         </div>
       )}

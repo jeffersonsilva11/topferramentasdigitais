@@ -19,22 +19,22 @@ export default function GeradorNumeroAleatorio() {
     const qty = parseInt(quantity);
 
     if (isNaN(minNum) || isNaN(maxNum) || isNaN(qty)) {
-      alert('Please enter valid numbers');
+      alert(t('alertValidNumbers'));
       return;
     }
 
     if (minNum >= maxNum) {
-      alert('Minimum must be less than maximum');
+      alert(t('alertMinLessThanMax'));
       return;
     }
 
     if (qty < 1) {
-      alert('Quantity must be at least 1');
+      alert(t('alertQuantityMin'));
       return;
     }
 
     if (!allowDuplicates && qty > (maxNum - minNum + 1)) {
-      alert('Cannot generate more unique numbers than the range allows');
+      alert(t('alertCannotGenerateUnique'));
       return;
     }
 
@@ -60,7 +60,7 @@ export default function GeradorNumeroAleatorio() {
 
   const copyResults = () => {
     navigator.clipboard.writeText(results.join(', '));
-    alert('Numbers copied to clipboard!');
+    alert(t('numbersCopied'));
   };
 
   const clearHistory = () => {
@@ -166,7 +166,7 @@ export default function GeradorNumeroAleatorio() {
 
           <div className="bg-gray-50 dark:bg-dark-800 rounded-lg p-4">
             <p className="text-sm font-medium text-gray-600 dark:text-gray-400">
-              Generated {results.length} number{results.length !== 1 ? 's' : ''}:
+              {t('generatedCount', { count: results.length })}:
             </p>
             <p className="text-lg font-mono">
               {results.join(', ')}
@@ -206,13 +206,13 @@ export default function GeradorNumeroAleatorio() {
 
       {/* Info */}
       <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-400 p-4 rounded">
-        <p className="font-semibold mb-2">ℹ️ How it works:</p>
+        <p className="font-semibold mb-2">ℹ️ {t('howItWorks')}</p>
         <ul className="text-sm text-gray-700 dark:text-gray-300 space-y-1 list-disc list-inside">
-          <li>Set your minimum and maximum values</li>
-          <li>Choose how many numbers you want to generate</li>
-          <li>Optionally allow or prevent duplicate numbers</li>
-          <li>Click "Generate" to get your random numbers</li>
-          <li>Previous results are saved in the history</li>
+          <li>{t('howItWorksStep1')}</li>
+          <li>{t('howItWorksStep2')}</li>
+          <li>{t('howItWorksStep3')}</li>
+          <li>{t('howItWorksStep4')}</li>
+          <li>{t('howItWorksStep5')}</li>
         </ul>
       </div>
     </div>

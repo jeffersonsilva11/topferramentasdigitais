@@ -33,7 +33,7 @@ export default function RoletaSorte() {
 
   const addItem = () => {
     if (!newLabel.trim()) {
-      alert('Please enter a label');
+      alert(t('alertEnterLabel'));
       return;
     }
 
@@ -49,7 +49,7 @@ export default function RoletaSorte() {
 
   const removeItem = (id: string) => {
     if (items.length <= 2) {
-      alert('You need at least 2 items on the wheel');
+      alert(t('alertMinItems'));
       return;
     }
     setItems(items.filter(item => item.id !== id));
@@ -64,7 +64,7 @@ export default function RoletaSorte() {
   const spin = () => {
     if (isSpinning) return;
     if (items.length < 2) {
-      alert('Add at least 2 items to spin');
+      alert(t('alertMinItemsToSpin'));
       return;
     }
 
@@ -264,7 +264,7 @@ export default function RoletaSorte() {
         </div>
 
         <p className="text-xs text-gray-500 dark:text-gray-400 mt-3">
-          Minimum 2 items required. Click on labels to edit them.
+          {t('minItemsRequired')}
         </p>
       </div>
 
@@ -300,13 +300,13 @@ export default function RoletaSorte() {
 
       {/* Info */}
       <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-400 p-4 rounded">
-        <p className="font-semibold mb-2">ℹ️ How to use:</p>
+        <p className="font-semibold mb-2">ℹ️ {t('howToUse')}</p>
         <ul className="text-sm text-gray-700 dark:text-gray-300 space-y-1 list-disc list-inside">
           <li>{t('minItems')}</li>
-          <li>Click item labels to edit them</li>
-          <li>Click "Spin the Wheel" to randomly select a winner</li>
-          <li>The wheel uses fair randomization - all items have equal chances</li>
-          <li>View your spin history at the bottom</li>
+          <li>{t('howToUseStep1')}</li>
+          <li>{t('howToUseStep2')}</li>
+          <li>{t('howToUseStep3')}</li>
+          <li>{t('howToUseStep4')}</li>
         </ul>
       </div>
     </div>

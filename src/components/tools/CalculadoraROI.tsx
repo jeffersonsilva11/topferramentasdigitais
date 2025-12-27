@@ -37,7 +37,7 @@ export default function CalculadoraROI() {
     const revenueValue = rev ?? parseFloat(revenue);
 
     if (isNaN(investmentValue) || isNaN(revenueValue) || investmentValue === 0) {
-      alert('Please enter valid investment and revenue values');
+      alert(t('alertInvalidValues'));
       return;
     }
 
@@ -83,7 +83,7 @@ export default function CalculadoraROI() {
 
   const copyShareableUrl = () => {
     navigator.clipboard.writeText(shareableUrl);
-    alert('URL copied to clipboard!');
+    alert(t('alertUrlCopied'));
   };
 
   const getROIInterpretation = (roiValue: number) => {
@@ -91,31 +91,31 @@ export default function CalculadoraROI() {
       return {
         color: 'text-red-600',
         emoji: '📉',
-        text: 'Negative ROI - This investment resulted in a loss.',
+        text: t('interpretationNegative'),
       };
     } else if (roiValue === 0) {
       return {
         color: 'text-gray-600',
         emoji: '➖',
-        text: 'Break-even - No profit or loss on this investment.',
+        text: t('interpretationBreakEven'),
       };
     } else if (roiValue < 50) {
       return {
         color: 'text-yellow-600',
         emoji: '📊',
-        text: 'Modest ROI - This investment generated some profit.',
+        text: t('interpretationModest'),
       };
     } else if (roiValue < 100) {
       return {
         color: 'text-green-600',
         emoji: '📈',
-        text: 'Good ROI - This is a profitable investment.',
+        text: t('interpretationGood'),
       };
     } else {
       return {
         color: 'text-green-700',
         emoji: '🚀',
-        text: 'Excellent ROI - This investment has generated significant returns!',
+        text: t('interpretationExcellent'),
       };
     }
   };
@@ -166,7 +166,7 @@ export default function CalculadoraROI() {
               type="text"
               value={timePeriod}
               onChange={(e) => setTimePeriod(e.target.value)}
-              placeholder="e.g., 12 months, 2 years"
+              placeholder={t('timePeriodPlaceholder')}
               className="w-full px-4 py-3 border-2 border-gray-300 dark:border-dark-700 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
             />
           </div>
@@ -184,7 +184,7 @@ export default function CalculadoraROI() {
               variant="outline"
               onClick={handleReset}
             >
-              Reset
+              {t('reset')}
             </Button>
           </div>
         </div>
@@ -237,7 +237,7 @@ export default function CalculadoraROI() {
                 {getROIInterpretation(roi).emoji} {getROIInterpretation(roi).text}
               </p>
               <p className="text-sm text-gray-700 dark:text-gray-300">
-                For every $1 invested, you {roi >= 0 ? 'gained' : 'lost'} ${Math.abs(roi / 100).toFixed(2)}.
+                {t('forEveryDollar', { action: roi >= 0 ? t('gained') : t('lost'), amount: Math.abs(roi / 100).toFixed(2) })}
               </p>
             </div>
 
