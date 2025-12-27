@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import Button from '@/components/ui/Button';
 
 type PolicyType = 'privacy' | 'terms' | 'cookies';
@@ -16,6 +16,7 @@ interface FormData {
 
 export default function GeradorPoliticas() {
   const t = useTranslations('policyGeneratorUI');
+  const locale = useLocale();
   const [policyType, setPolicyType] = useState<PolicyType>('privacy');
   const [formData, setFormData] = useState<FormData>({
     companyName: '',
@@ -31,6 +32,69 @@ export default function GeradorPoliticas() {
   };
 
   const generatePrivacyPolicy = () => {
+    if (locale === 'pt') {
+      return `POLÍTICA DE PRIVACIDADE
+
+Última atualização: ${formData.lastUpdated}
+
+Esta Política de Privacidade descreve como ${formData.companyName} ("nós", "nosso" ou "nossa empresa") coleta, usa e compartilha suas informações pessoais quando você visita ${formData.websiteUrl} (o "Website").
+
+1. INFORMAÇÕES QUE COLETAMOS
+
+Coletamos informações que você nos fornece diretamente quando usa nosso Website, incluindo:
+- Informações de contato (nome, email, telefone)
+- Informações de uso (páginas visitadas, tempo gasto, cliques)
+- Informações técnicas (endereço IP, tipo de navegador, sistema operacional)
+
+2. COMO USAMOS SUAS INFORMAÇÕES
+
+Usamos as informações coletadas para:
+- Fornecer e melhorar nossos serviços
+- Comunicar com você sobre atualizações e ofertas
+- Personalizar sua experiência
+- Analisar e melhorar o desempenho do Website
+- Cumprir obrigações legais
+
+3. COMPARTILHAMENTO DE INFORMAÇÕES
+
+Não vendemos suas informações pessoais. Podemos compartilhar suas informações com:
+- Prestadores de serviços que nos ajudam a operar o Website
+- Autoridades legais quando exigido por lei
+- Parceiros de negócios com seu consentimento
+
+4. COOKIES E TECNOLOGIAS DE RASTREAMENTO
+
+Usamos cookies e tecnologias similares para melhorar sua experiência. Você pode controlar o uso de cookies através das configurações do seu navegador.
+
+5. SEUS DIREITOS
+
+Você tem o direito de:
+- Acessar suas informações pessoais
+- Corrigir informações incorretas
+- Solicitar a exclusão de suas informações
+- Optar por não receber comunicações de marketing
+- Solicitar portabilidade de dados
+
+6. SEGURANÇA DE DADOS
+
+Implementamos medidas de segurança apropriadas para proteger suas informações contra acesso não autorizado, alteração, divulgação ou destruição.
+
+7. ALTERAÇÕES NESTA POLÍTICA
+
+Podemos atualizar esta Política de Privacidade periodicamente. Notificaremos você sobre quaisquer alterações publicando a nova política nesta página e atualizando a data de "Última atualização".
+
+8. ENTRE EM CONTATO
+
+Se você tiver dúvidas sobre esta Política de Privacidade, entre em contato conosco:
+Email: ${formData.contactEmail}
+Website: ${formData.websiteUrl}
+País: ${formData.country}
+
+---
+AVISO LEGAL: Este é um modelo e não constitui aconselhamento jurídico. Consulte um advogado qualificado para garantir conformidade com as leis aplicáveis.
+`;
+    }
+
     return `PRIVACY POLICY
 
 Last updated: ${formData.lastUpdated}
@@ -108,6 +172,69 @@ DISCLAIMER: This is a template and does not constitute legal advice. Please cons
   };
 
   const generateTermsOfService = () => {
+    if (locale === 'pt') {
+      return `TERMOS DE SERVIÇO
+
+Última atualização: ${formData.lastUpdated}
+
+Por favor, leia estes Termos de Serviço ("Termos") cuidadosamente antes de usar ${formData.websiteUrl} (o "Website") operado por ${formData.companyName} ("nós", "nosso" ou "nossa empresa").
+
+1. ACEITAÇÃO DOS TERMOS
+
+Ao acessar ou usar o Website, você concorda em estar vinculado a estes Termos. Se você não concorda com qualquer parte destes termos, não deve usar nosso Website.
+
+2. USO DO WEBSITE
+
+Você concorda em usar o Website apenas para fins legais e de maneira que não viole os direitos de terceiros ou restrinja ou iniba o uso do Website por terceiros.
+
+3. PROPRIEDADE INTELECTUAL
+
+O Website e seu conteúdo original, recursos e funcionalidades são e permanecerão propriedade exclusiva de ${formData.companyName}. O Website é protegido por leis de direitos autorais, marcas registradas e outras leis.
+
+4. CONTEÚDO DO USUÁRIO
+
+Nosso Website permite que você publique, vincule, armazene, compartilhe e disponibilize certas informações, textos, gráficos ou outros materiais ("Conteúdo").
+
+Você é responsável pelo Conteúdo que publica no Website, incluindo sua legalidade, confiabilidade e adequação.
+
+5. LINKS PARA OUTROS WEBSITES
+
+Nosso Website pode conter links para websites ou serviços de terceiros que não são de propriedade ou controlados por ${formData.companyName}.
+
+Não temos controle sobre e não assumimos responsabilidade pelo conteúdo, políticas de privacidade ou práticas de websites ou serviços de terceiros.
+
+6. RESCISÃO
+
+Podemos encerrar ou suspender seu acesso imediatamente, sem aviso prévio ou responsabilidade, por qualquer motivo, incluindo, sem limitação, se você violar os Termos.
+
+7. LIMITAÇÃO DE RESPONSABILIDADE
+
+Em nenhuma circunstância ${formData.companyName} será responsável por quaisquer danos indiretos, incidentais, especiais, consequenciais ou punitivos, incluindo perda de lucros, dados, uso ou outros prejuízos intangíveis.
+
+8. ISENÇÃO DE GARANTIAS
+
+O Website é fornecido "como está" e "conforme disponível" sem garantias de qualquer tipo, expressas ou implícitas.
+
+9. LEI APLICÁVEL
+
+Estes Termos serão regidos e interpretados de acordo com as leis de ${formData.country}, sem considerar suas disposições sobre conflito de leis.
+
+10. ALTERAÇÕES
+
+Reservamos o direito de modificar ou substituir estes Termos a qualquer momento. É sua responsabilidade verificar periodicamente estes Termos para quaisquer alterações.
+
+11. ENTRE EM CONTATO
+
+Se você tiver dúvidas sobre estes Termos, entre em contato conosco:
+Email: ${formData.contactEmail}
+Website: ${formData.websiteUrl}
+País: ${formData.country}
+
+---
+AVISO LEGAL: Este é um modelo e não constitui aconselhamento jurídico. Consulte um advogado qualificado para garantir conformidade com as leis aplicáveis.
+`;
+    }
+
     return `TERMS OF SERVICE
 
 Last updated: ${formData.lastUpdated}
@@ -191,6 +318,71 @@ DISCLAIMER: This is a template and does not constitute legal advice. Please cons
   };
 
   const generateCookiePolicy = () => {
+    if (locale === 'pt') {
+      return `POLÍTICA DE COOKIES
+
+Última atualização: ${formData.lastUpdated}
+
+Esta Política de Cookies explica como ${formData.companyName} ("nós", "nosso" ou "nossa empresa") usa cookies e tecnologias similares quando você visita ${formData.websiteUrl} (o "Website").
+
+1. O QUE SÃO COOKIES?
+
+Cookies são pequenos arquivos de texto armazenados no seu dispositivo (computador, tablet ou celular) quando você visita um website. Eles ajudam os websites a lembrar suas preferências e melhorar sua experiência de navegação.
+
+2. COMO USAMOS COOKIES?
+
+Usamos cookies para:
+- Essenciais: Necessários para o funcionamento básico do Website
+- Desempenho: Coletam informações sobre como você usa o Website
+- Funcionalidade: Lembram suas preferências e escolhas
+- Publicidade: Fornecem anúncios relevantes para você
+
+3. TIPOS DE COOKIES QUE USAMOS
+
+a) Cookies Estritamente Necessários
+Estes cookies são essenciais para o funcionamento do Website. Sem estes cookies, alguns serviços não podem ser fornecidos.
+
+b) Cookies de Desempenho
+Estes cookies nos ajudam a entender como os visitantes interagem com o Website, coletando e relatando informações anonimamente.
+
+c) Cookies de Funcionalidade
+Estes cookies permitem que o Website lembre suas escolhas (como idioma ou região) e forneça recursos aprimorados e personalizados.
+
+d) Cookies de Publicidade/Direcionamento
+Estes cookies são usados para entregar anúncios mais relevantes para você e seus interesses. Também são usados para limitar o número de vezes que você vê um anúncio.
+
+4. COOKIES DE TERCEIROS
+
+Além de nossos próprios cookies, também podemos usar vários cookies de terceiros para relatar estatísticas de uso do Website e fornecer anúncios através do Website.
+
+5. COMO CONTROLAR COOKIES?
+
+Você pode controlar e/ou excluir cookies como desejar. Você pode deletar todos os cookies já presentes no seu computador e configurar a maioria dos navegadores para impedir que sejam colocados.
+
+Opções de controle de cookies:
+- Configurações do navegador: Todos os navegadores modernos permitem que você gerencie cookies
+- Ferramentas de terceiros: Existem ferramentas online que ajudam a gerenciar cookies
+
+6. SINAIS DE NÃO RASTREAR
+
+Alguns navegadores incluem um recurso de "Não Rastrear" (DNT). Atualmente, nosso Website não responde a sinais DNT.
+
+7. ATUALIZAÇÕES DESTA POLÍTICA
+
+Podemos atualizar esta Política de Cookies periodicamente para refletir mudanças na tecnologia ou legislação. Quaisquer atualizações serão publicadas nesta página.
+
+8. ENTRE EM CONTATO
+
+Se você tiver dúvidas sobre nosso uso de cookies, entre em contato conosco:
+Email: ${formData.contactEmail}
+Website: ${formData.websiteUrl}
+País: ${formData.country}
+
+---
+AVISO LEGAL: Este é um modelo e não constitui aconselhamento jurídico. Consulte um advogado qualificado para garantir conformidade com as leis aplicáveis (LGPD, GDPR, CCPA, etc.).
+`;
+    }
+
     return `COOKIE POLICY
 
 Last updated: ${formData.lastUpdated}

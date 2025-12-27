@@ -11,45 +11,53 @@ interface RegexPreset {
   example: string;
 }
 
-// Presets will be created using t() in the component
+// Preset patterns (names and descriptions will be added via translations)
 const regexPresetPatterns = [
   {
-    key: 'email',
+    nameKey: 'presetEmailName',
+    descKey: 'presetEmailDesc',
     pattern: '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$',
     example: 'user@example.com',
   },
   {
-    key: 'url',
+    nameKey: 'presetUrlName',
+    descKey: 'presetUrlDesc',
     pattern: '^https?:\\/\\/(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b([-a-zA-Z0-9()@:%_\\+.~#?&//=]*)$',
     example: 'https://www.example.com',
   },
   {
-    key: 'phone',
+    nameKey: 'presetPhoneName',
+    descKey: 'presetPhoneDesc',
     pattern: '^\\+?1?\\s*\\(?\\d{3}\\)?[\\s.-]?\\d{3}[\\s.-]?\\d{4}$',
     example: '(555) 123-4567',
   },
   {
-    key: 'date',
+    nameKey: 'presetDateName',
+    descKey: 'presetDateDesc',
     pattern: '^\\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\\d|3[01])$',
     example: '2025-01-31',
   },
   {
-    key: 'hexColor',
+    nameKey: 'presetHexColorName',
+    descKey: 'presetHexColorDesc',
     pattern: '^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$',
     example: '#FF5733',
   },
   {
-    key: 'ipv4',
+    nameKey: 'presetIpv4Name',
+    descKey: 'presetIpv4Desc',
     pattern: '^((25[0-5]|2[0-4]\\d|1\\d{2}|[1-9]?\\d)\\.){3}(25[0-5]|2[0-4]\\d|1\\d{2}|[1-9]?\\d)$',
     example: '192.168.1.1',
   },
   {
-    key: 'username',
+    nameKey: 'presetUsernameName',
+    descKey: 'presetUsernameDesc',
     pattern: '^[a-zA-Z0-9_-]{3,16}$',
     example: 'user_name123',
   },
   {
-    key: 'creditCard',
+    nameKey: 'presetCreditCardName',
+    descKey: 'presetCreditCardDesc',
     pattern: '^\\d{4}[\\s-]?\\d{4}[\\s-]?\\d{4}[\\s-]?\\d{4}$',
     example: '1234 5678 9012 3456',
   },
@@ -64,11 +72,11 @@ export default function ValidadorRegex() {
   const [error, setError] = useState<string>('');
   const [explanation, setExplanation] = useState<string>('');
 
-  // Create presets with translated descriptions
+  // Create presets with translated names and descriptions
   const regexPresets: RegexPreset[] = regexPresetPatterns.map(preset => ({
-    name: t(`preset${preset.key.charAt(0).toUpperCase() + preset.key.slice(1)}Name`),
+    name: t(preset.nameKey),
     pattern: preset.pattern,
-    description: t(`preset${preset.key.charAt(0).toUpperCase() + preset.key.slice(1)}Desc`),
+    description: t(preset.descKey),
     example: preset.example,
   }));
 
@@ -99,21 +107,21 @@ export default function ValidadorRegex() {
   const generateExplanation = (regex: string) => {
     const parts: string[] = [];
 
-    if (regex.includes('^')) parts.push(t('explainStart'));
-    if (regex.includes('$')) parts.push(t('explainEnd'));
-    if (regex.includes('\\d')) parts.push(t('explainDigit'));
-    if (regex.includes('\\w')) parts.push(t('explainWord'));
-    if (regex.includes('\\s')) parts.push(t('explainWhitespace'));
-    if (regex.includes('+')) parts.push(t('explainOneOrMore'));
-    if (regex.includes('*')) parts.push(t('explainZeroOrMore'));
-    if (regex.includes('?')) parts.push(t('explainOptional'));
-    if (regex.includes('[')) parts.push(t('explainCharSet'));
-    if (regex.includes('(')) parts.push(t('explainCapturing'));
-    if (regex.includes('|')) parts.push(t('explainOr'));
-    if (regex.includes('{')) parts.push(t('explainQuantity'));
-    if (regex.includes('.')) parts.push(t('explainAny'));
+    if (regex.includes('^')) parts.push('Início da string');
+    if (regex.includes('$')) parts.push('Fim da string');
+    if (regex.includes('\\d')) parts.push('Dígitos');
+    if (regex.includes('\\w')) parts.push('Caracteres de palavra');
+    if (regex.includes('\\s')) parts.push('Espaços em branco');
+    if (regex.includes('+')) parts.push('Um ou mais');
+    if (regex.includes('*')) parts.push('Zero ou mais');
+    if (regex.includes('?')) parts.push('Opcional');
+    if (regex.includes('[')) parts.push('Conjunto de caracteres');
+    if (regex.includes('(')) parts.push('Grupo de captura');
+    if (regex.includes('|')) parts.push('OU lógico');
+    if (regex.includes('{')) parts.push('Quantidade específica');
+    if (regex.includes('.')) parts.push('Qualquer caractere');
 
-    setExplanation(parts.length > 0 ? parts.join(' • ') : t('explainSimple'));
+    setExplanation(parts.length > 0 ? parts.join(' • ') : 'Padrão regex simples');
   };
 
   const loadPreset = (preset: RegexPreset) => {
@@ -205,7 +213,7 @@ export default function ValidadorRegex() {
               />
             </div>
             <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
-              {t('flagsExplanation')}
+              g (global), i (case-insensitive), m (multiline)
             </p>
           </div>
 
@@ -245,21 +253,21 @@ export default function ValidadorRegex() {
               {/* Match Results */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4">
-                  <p className="text-sm text-gray-600 dark:text-gray-400">{t('matchesFound')}</p>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">Correspondências Encontradas</p>
                   <p className="text-2xl font-bold text-primary-600">
                     {matches ? matches.length : 0}
                   </p>
                 </div>
 
                 <div className="bg-green-50 dark:bg-green-900/20 rounded-lg p-4">
-                  <p className="text-sm text-gray-600 dark:text-gray-400">{t('patternValid')}</p>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">Padrão Válido</p>
                   <p className="text-2xl font-bold text-green-600">
                     {error ? '❌' : '✅'}
                   </p>
                 </div>
 
                 <div className="bg-purple-50 dark:bg-purple-900/20 rounded-lg p-4">
-                  <p className="text-sm text-gray-600 dark:text-gray-400">{t('hasMatch')}</p>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">Tem Correspondência</p>
                   <p className="text-2xl font-bold text-purple-600">
                     {matches && matches.length > 0 ? '✅' : '❌'}
                   </p>
@@ -269,7 +277,7 @@ export default function ValidadorRegex() {
               {/* Explanation */}
               {explanation && (
                 <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-400 p-4 rounded">
-                  <p className="font-semibold mb-2">📝 {t('patternIncludes')}</p>
+                  <p className="font-semibold mb-2">📝 O padrão inclui</p>
                   <p className="text-sm text-gray-700 dark:text-gray-300">{explanation}</p>
                 </div>
               )}
@@ -277,12 +285,12 @@ export default function ValidadorRegex() {
               {/* Match Details */}
               {matches && matches.length > 0 && (
                 <div>
-                  <p className="text-sm font-medium mb-2">{t('matchDetails')}</p>
+                  <p className="text-sm font-medium mb-2">Detalhes das Correspondências</p>
                   <div className="space-y-2">
                     {matches.map((match, index) => (
                       <div key={index} className="bg-gray-50 dark:bg-dark-800 rounded-lg p-3">
                         <p className="text-sm">
-                          <span className="text-gray-500 dark:text-gray-400">{t('matchNumber', { number: index + 1 })}</span>{' '}
+                          <span className="text-gray-500 dark:text-gray-400">Correspondência #{index + 1}:</span>{' '}
                           <span className="font-mono font-semibold">{match}</span>
                         </p>
                       </div>
@@ -329,7 +337,7 @@ export default function ValidadorRegex() {
               <li><code className="bg-gray-100 dark:bg-dark-800 px-2 py-1 rounded">\d</code> - {t('refDigit')}</li>
               <li><code className="bg-gray-100 dark:bg-dark-800 px-2 py-1 rounded">\w</code> - {t('refWord')}</li>
               <li><code className="bg-gray-100 dark:bg-dark-800 px-2 py-1 rounded">\s</code> - {t('refWhitespace')}</li>
-              <li><code className="bg-gray-100 dark:bg-dark-800 px-2 py-1 rounded">.</code> - {t('refAny')}</li>
+              <li><code className="bg-gray-100 dark:bg-dark-800 px-2 py-1 rounded">.</code> - Qualquer caractere</li>
             </ul>
           </div>
 
@@ -338,16 +346,16 @@ export default function ValidadorRegex() {
             <ul className="space-y-1 text-gray-700 dark:text-gray-300 font-mono">
               <li><code className="bg-gray-100 dark:bg-dark-800 px-2 py-1 rounded">*</code> - {t('refZeroOrMore')}</li>
               <li><code className="bg-gray-100 dark:bg-dark-800 px-2 py-1 rounded">+</code> - {t('refOneOrMore')}</li>
-              <li><code className="bg-gray-100 dark:bg-dark-800 px-2 py-1 rounded">?</code> - {t('refZeroOrOne')}</li>
-              <li><code className="bg-gray-100 dark:bg-dark-800 px-2 py-1 rounded">{'{n,m}'}</code> - {t('refBetween')}</li>
+              <li><code className="bg-gray-100 dark:bg-dark-800 px-2 py-1 rounded">?</code> - {t('refOptional')}</li>
+              <li><code className="bg-gray-100 dark:bg-dark-800 px-2 py-1 rounded">{'{n,m}'}</code> - {t('refRange')}</li>
             </ul>
           </div>
 
           <div>
             <p className="font-semibold mb-2">{t('refAnchors')}</p>
             <ul className="space-y-1 text-gray-700 dark:text-gray-300 font-mono">
-              <li><code className="bg-gray-100 dark:bg-dark-800 px-2 py-1 rounded">^</code> - {t('refStartString')}</li>
-              <li><code className="bg-gray-100 dark:bg-dark-800 px-2 py-1 rounded">$</code> - {t('refEndString')}</li>
+              <li><code className="bg-gray-100 dark:bg-dark-800 px-2 py-1 rounded">^</code> - {t('refStart')}</li>
+              <li><code className="bg-gray-100 dark:bg-dark-800 px-2 py-1 rounded">$</code> - {t('refEnd')}</li>
               <li><code className="bg-gray-100 dark:bg-dark-800 px-2 py-1 rounded">\b</code> - {t('refWordBoundary')}</li>
             </ul>
           </div>
@@ -355,9 +363,9 @@ export default function ValidadorRegex() {
           <div>
             <p className="font-semibold mb-2">{t('refGroups')}</p>
             <ul className="space-y-1 text-gray-700 dark:text-gray-300 font-mono">
-              <li><code className="bg-gray-100 dark:bg-dark-800 px-2 py-1 rounded">()</code> - {t('refCapturingGroup')}</li>
-              <li><code className="bg-gray-100 dark:bg-dark-800 px-2 py-1 rounded">(?:)</code> - {t('refNonCapturing')}</li>
-              <li><code className="bg-gray-100 dark:bg-dark-800 px-2 py-1 rounded">[]</code> - {t('refCharSet')}</li>
+              <li><code className="bg-gray-100 dark:bg-dark-800 px-2 py-1 rounded">()</code> - {t('refGroup')}</li>
+              <li><code className="bg-gray-100 dark:bg-dark-800 px-2 py-1 rounded">(?:)</code> - {t('refNonCapture')}</li>
+              <li><code className="bg-gray-100 dark:bg-dark-800 px-2 py-1 rounded">[]</code> - Conjunto de caracteres</li>
               <li><code className="bg-gray-100 dark:bg-dark-800 px-2 py-1 rounded">|</code> - {t('refOr')}</li>
             </ul>
           </div>

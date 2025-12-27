@@ -33,7 +33,7 @@ export default function RoletaSorte() {
 
   const addItem = () => {
     if (!newLabel.trim()) {
-      alert(t('alertEnterLabel'));
+      alert(t('alertItemRequired'));
       return;
     }
 
@@ -64,7 +64,7 @@ export default function RoletaSorte() {
   const spin = () => {
     if (isSpinning) return;
     if (items.length < 2) {
-      alert(t('alertMinItemsToSpin'));
+      alert(t('alertMinItems'));
       return;
     }
 
@@ -264,7 +264,7 @@ export default function RoletaSorte() {
         </div>
 
         <p className="text-xs text-gray-500 dark:text-gray-400 mt-3">
-          {t('minItemsRequired')}
+          {t('minItems')}
         </p>
       </div>
 
