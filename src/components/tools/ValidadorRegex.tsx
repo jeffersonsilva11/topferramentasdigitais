@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { useTranslations } from 'next-intl';
 import Button from '@/components/ui/Button';
 
 interface RegexPreset {
@@ -62,6 +63,7 @@ const regexPresets: RegexPreset[] = [
 ];
 
 export default function ValidadorRegex() {
+  const t = useTranslations('regexValidatorUI');
   const [pattern, setPattern] = useState('');
   const [flags, setFlags] = useState('g');
   const [testString, setTestString] = useState('');
@@ -171,13 +173,13 @@ export default function ValidadorRegex() {
     <div className="space-y-6">
       {/* Regex Tester */}
       <div className="bg-white dark:bg-dark-900 rounded-xl shadow-lg p-6">
-        <h2 className="text-xl font-bold mb-4">Regex Tester</h2>
+        <h2 className="text-xl font-bold mb-4">{t('title')}</h2>
 
         <div className="space-y-4">
           {/* Pattern Input */}
           <div>
             <label className="block text-sm font-medium mb-2">
-              Regular Expression Pattern
+              {t('pattern')}
             </label>
             <div className="flex gap-2">
               <span className="flex items-center px-3 bg-gray-100 dark:bg-dark-800 border-2 border-gray-300 dark:border-dark-700 rounded-l-lg">
@@ -209,12 +211,12 @@ export default function ValidadorRegex() {
           {/* Test String */}
           <div>
             <label className="block text-sm font-medium mb-2">
-              Test String
+              {t('testString')}
             </label>
             <textarea
               value={testString}
               onChange={(e) => setTestString(e.target.value)}
-              placeholder="Enter text to test against the regex"
+              placeholder={t('testStringPlaceholder')}
               className="w-full px-4 py-3 border-2 border-gray-300 dark:border-dark-700 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent resize-none"
               rows={4}
             />
@@ -233,7 +235,7 @@ export default function ValidadorRegex() {
             <div className="space-y-3">
               {/* Highlighted Text */}
               <div>
-                <p className="text-sm font-medium mb-2">Highlighted Matches:</p>
+                <p className="text-sm font-medium mb-2">{t('matches')}:</p>
                 <div className="bg-gray-50 dark:bg-dark-800 rounded-lg p-4 font-mono text-sm break-words">
                   {highlightMatches()}
                 </div>
@@ -294,7 +296,7 @@ export default function ValidadorRegex() {
 
       {/* Presets */}
       <div className="bg-white dark:bg-dark-900 rounded-xl shadow-lg p-6">
-        <h2 className="text-xl font-bold mb-4">Common Patterns</h2>
+        <h2 className="text-xl font-bold mb-4">{t('commonPresets')}</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
           {regexPresets.map((preset) => (
@@ -317,7 +319,7 @@ export default function ValidadorRegex() {
 
       {/* Quick Reference */}
       <div className="bg-white dark:bg-dark-900 rounded-xl shadow-lg p-6">
-        <h2 className="text-xl font-bold mb-4">Quick Reference</h2>
+        <h2 className="text-xl font-bold mb-4">{t('quickReference')}</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
           <div>

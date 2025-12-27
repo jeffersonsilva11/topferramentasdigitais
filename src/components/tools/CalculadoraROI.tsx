@@ -1,9 +1,11 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { useTranslations } from 'next-intl';
 import Button from '@/components/ui/Button';
 
 export default function CalculadoraROI() {
+  const t = useTranslations('roiCalculatorUI');
   const [investment, setInvestment] = useState<string>('');
   const [revenue, setRevenue] = useState<string>('');
   const [timePeriod, setTimePeriod] = useState<string>('');
@@ -122,19 +124,19 @@ export default function CalculadoraROI() {
     <div className="space-y-6">
       {/* Input Section */}
       <div className="bg-white dark:bg-dark-900 rounded-xl shadow-lg p-6">
-        <h2 className="text-xl font-bold mb-4">ROI Calculator</h2>
+        <h2 className="text-xl font-bold mb-4">{t('title')}</h2>
 
         <div className="space-y-4">
           {/* Investment Input */}
           <div>
             <label className="block text-sm font-medium mb-2">
-              Investment Amount ($)
+              {t('investment')}
             </label>
             <input
               type="number"
               value={investment}
               onChange={(e) => setInvestment(e.target.value)}
-              placeholder="e.g., 10000"
+              placeholder={t('investmentPlaceholder')}
               className="w-full px-4 py-3 border-2 border-gray-300 dark:border-dark-700 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
               step="0.01"
             />
@@ -143,13 +145,13 @@ export default function CalculadoraROI() {
           {/* Revenue Input */}
           <div>
             <label className="block text-sm font-medium mb-2">
-              Total Revenue / Return ($)
+              {t('revenue')}
             </label>
             <input
               type="number"
               value={revenue}
               onChange={(e) => setRevenue(e.target.value)}
-              placeholder="e.g., 15000"
+              placeholder={t('revenuePlaceholder')}
               className="w-full px-4 py-3 border-2 border-gray-300 dark:border-dark-700 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
               step="0.01"
             />
@@ -158,7 +160,7 @@ export default function CalculadoraROI() {
           {/* Time Period (Optional) */}
           <div>
             <label className="block text-sm font-medium mb-2">
-              Time Period (Optional)
+              {t('timePeriod')}
             </label>
             <input
               type="text"
@@ -176,7 +178,7 @@ export default function CalculadoraROI() {
               onClick={handleCalculate}
               className="flex-1"
             >
-              Calculate ROI
+              {t('calculate')}
             </Button>
             <Button
               variant="outline"
@@ -191,14 +193,14 @@ export default function CalculadoraROI() {
       {/* Results Section */}
       {roi !== null && profit !== null && (
         <div className="bg-white dark:bg-dark-900 rounded-xl shadow-lg p-6">
-          <h2 className="text-xl font-bold mb-4">Results</h2>
+          <h2 className="text-xl font-bold mb-4">{t('results')}</h2>
 
           <div className="space-y-4">
             {/* ROI Percentage */}
             <div className="bg-gradient-to-r from-primary-50 to-primary-100 dark:from-primary-900/20 dark:to-primary-800/20 rounded-lg p-6">
               <div className="text-center">
                 <p className="text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">
-                  Return on Investment (ROI)
+                  {t('roi')}
                 </p>
                 <p className={`text-5xl font-bold ${getROIInterpretation(roi).color}`}>
                   {roi.toFixed(2)}%
@@ -210,7 +212,7 @@ export default function CalculadoraROI() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="bg-gray-50 dark:bg-dark-800 rounded-lg p-4">
                 <p className="text-sm font-medium text-gray-600 dark:text-gray-400 mb-1">
-                  Profit / Loss
+                  {t('profit')}
                 </p>
                 <p className={`text-2xl font-bold ${profit >= 0 ? 'text-green-600' : 'text-red-600'}`}>
                   ${profit.toFixed(2)}
@@ -220,7 +222,7 @@ export default function CalculadoraROI() {
               {timePeriod && (
                 <div className="bg-gray-50 dark:bg-dark-800 rounded-lg p-4">
                   <p className="text-sm font-medium text-gray-600 dark:text-gray-400 mb-1">
-                    Time Period
+                    {t('timePeriod')}
                   </p>
                   <p className="text-2xl font-bold">
                     {timePeriod}
@@ -241,7 +243,7 @@ export default function CalculadoraROI() {
 
             {/* Formula Explanation */}
             <div className="bg-gray-50 dark:bg-dark-800 rounded-lg p-4">
-              <p className="text-sm font-medium mb-2">📐 Formula Used:</p>
+              <p className="text-sm font-medium mb-2">📐 {t('formula')}</p>
               <code className="text-xs bg-white dark:bg-dark-900 px-3 py-2 rounded block">
                 ROI = ((Revenue - Investment) / Investment) × 100
               </code>
@@ -254,7 +256,7 @@ export default function CalculadoraROI() {
             {shareableUrl && (
               <div>
                 <label className="block text-sm font-medium mb-2">
-                  📤 Shareable URL
+                  {t('shareableUrl')}
                 </label>
                 <div className="flex gap-2">
                   <input
@@ -267,7 +269,7 @@ export default function CalculadoraROI() {
                     variant="secondary"
                     onClick={copyShareableUrl}
                   >
-                    Copy
+                    {t('copy')}
                   </Button>
                 </div>
               </div>
@@ -278,13 +280,9 @@ export default function CalculadoraROI() {
 
       {/* Info Section */}
       <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-400 p-4 rounded">
-        <p className="font-semibold mb-2">💡 What is ROI?</p>
-        <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">
-          Return on Investment (ROI) is a performance metric used to evaluate the efficiency or profitability of an investment.
-          It measures the amount of return relative to the investment cost.
-        </p>
+        <p className="font-semibold mb-2">💡 {t('whatIsROI')}</p>
         <p className="text-sm text-gray-700 dark:text-gray-300">
-          A positive ROI means the investment was profitable, while a negative ROI indicates a loss.
+          {t('roiExplanation')}
         </p>
       </div>
     </div>

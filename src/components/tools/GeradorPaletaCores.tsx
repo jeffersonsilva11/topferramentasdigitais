@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { useTranslations } from 'next-intl';
 import Button from '@/components/ui/Button';
 
 interface Color {
@@ -21,6 +22,7 @@ const moodPresets: Record<Mood, { hueRange: [number, number]; satRange: [number,
 };
 
 export default function GeradorPaletaCores() {
+  const t = useTranslations('colorPaletteUI');
   const [baseColor, setBaseColor] = useState('#3B82F6');
   const [mood, setMood] = useState<Mood>('professional');
   const [palette, setPalette] = useState<Color[]>([]);
@@ -225,13 +227,13 @@ export default function GeradorPaletaCores() {
     <div className="space-y-6">
       {/* Generator Settings */}
       <div className="bg-white dark:bg-dark-900 rounded-xl shadow-lg p-6">
-        <h2 className="text-xl font-bold mb-4">Generate Palette</h2>
+        <h2 className="text-xl font-bold mb-4">{t('title')}</h2>
 
         <div className="space-y-4">
           {/* Base Color */}
           <div>
             <label className="block text-sm font-medium mb-2">
-              Base Color
+              {t('baseColor')}
             </label>
             <div className="flex gap-3">
               <input
@@ -252,7 +254,7 @@ export default function GeradorPaletaCores() {
           {/* Mood Selection */}
           <div>
             <label className="block text-sm font-medium mb-2">
-              Mood / Style
+              {t('mood')}
             </label>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
               {(Object.keys(moodPresets) as Mood[]).map((m) => (
@@ -276,7 +278,7 @@ export default function GeradorPaletaCores() {
             onClick={generatePalette}
             className="w-full"
           >
-            🎨 Generate Palette
+            {t('generate')}
           </Button>
         </div>
       </div>
@@ -285,14 +287,14 @@ export default function GeradorPaletaCores() {
       {palette.length > 0 && (
         <div className="bg-white dark:bg-dark-900 rounded-xl shadow-lg p-6">
           <div className="flex items-center justify-between mb-4">
-            <h2 className="text-xl font-bold">Your Palette</h2>
+            <h2 className="text-xl font-bold">{t('palette')}</h2>
             <div className="flex gap-2">
               <Button
                 variant="outline"
                 onClick={saveFavorite}
                 size="sm"
               >
-                ⭐ Save
+                {t('save')}
               </Button>
               <Button
                 variant="secondary"
@@ -349,7 +351,7 @@ export default function GeradorPaletaCores() {
       {/* Contrast Checker */}
       {palette.length >= 2 && (
         <div className="bg-white dark:bg-dark-900 rounded-xl shadow-lg p-6">
-          <h2 className="text-xl font-bold mb-4">WCAG Contrast Ratios</h2>
+          <h2 className="text-xl font-bold mb-4">{t('wcagRatios')}</h2>
 
           <div className="space-y-3">
             {palette.slice(0, 3).map((color1, i) => (
@@ -402,7 +404,7 @@ export default function GeradorPaletaCores() {
       {/* Favorites */}
       {favorites.length > 0 && (
         <div className="bg-white dark:bg-dark-900 rounded-xl shadow-lg p-6">
-          <h2 className="text-xl font-bold mb-4">Saved Favorites</h2>
+          <h2 className="text-xl font-bold mb-4">{t('favorites')}</h2>
 
           <div className="space-y-3">
             {favorites.map((fav, index) => (
@@ -425,7 +427,7 @@ export default function GeradorPaletaCores() {
                     onClick={() => loadFavorite(index)}
                     size="sm"
                   >
-                    Load
+                    {t('load')}
                   </Button>
                   <button
                     onClick={() => deleteFavorite(index)}
@@ -442,13 +444,13 @@ export default function GeradorPaletaCores() {
 
       {/* Info */}
       <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-400 p-4 rounded">
-        <p className="font-semibold mb-2">💡 Tips for designers:</p>
+        <p className="font-semibold mb-2">💡 {t('tips')}</p>
         <ul className="text-sm text-gray-700 dark:text-gray-300 space-y-1 list-disc list-inside">
-          <li>Choose a mood that matches your brand personality</li>
-          <li>Use WCAG contrast ratios to ensure accessibility</li>
-          <li>Click on any color to copy its HEX value</li>
-          <li>Export palettes as CSS variables or JSON for your projects</li>
-          <li>Save your favorite palettes for future reference</li>
+          <li>{t('tip1')}</li>
+          <li>{t('tip2')}</li>
+          <li>{t('tip3')}</li>
+          <li>{t('tip4')}</li>
+          <li>{t('tip5')}</li>
         </ul>
       </div>
     </div>

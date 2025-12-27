@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 import Button from '@/components/ui/Button';
 
 type PolicyType = 'privacy' | 'terms' | 'cookies';
@@ -14,6 +15,7 @@ interface FormData {
 }
 
 export default function GeradorPoliticas() {
+  const t = useTranslations('policyGeneratorUI');
   const [policyType, setPolicyType] = useState<PolicyType>('privacy');
   const [formData, setFormData] = useState<FormData>({
     companyName: '',
@@ -322,19 +324,16 @@ DISCLAIMER: This is a template and does not constitute legal advice. Please cons
       {/* Disclaimer */}
       <div className="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-400 p-4 rounded">
         <p className="font-semibold text-yellow-800 dark:text-yellow-400 mb-2">
-          ⚠️ LEGAL DISCLAIMER
+          ⚠️ {t('legalDisclaimer')}
         </p>
         <p className="text-sm text-yellow-700 dark:text-yellow-300">
-          This tool generates template policies for informational purposes only.
-          It does NOT constitute legal advice. Please consult with a qualified attorney
-          to ensure your policies comply with all applicable laws and regulations
-          (GDPR, CCPA, etc.) specific to your jurisdiction and business.
+          {t('disclaimerText')}
         </p>
       </div>
 
       {/* Policy Type Selection */}
       <div className="bg-white dark:bg-dark-900 rounded-xl shadow-lg p-6">
-        <h2 className="text-xl font-bold mb-4">Select Policy Type</h2>
+        <h2 className="text-xl font-bold mb-4">{t('template')}</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <button
@@ -346,7 +345,7 @@ DISCLAIMER: This is a template and does not constitute legal advice. Please cons
             }`}
           >
             <div className="text-3xl mb-2">🔒</div>
-            <p className="font-semibold">Privacy Policy</p>
+            <p className="font-semibold">{t('privacyPolicy')}</p>
             <p className="text-sm text-gray-600 dark:text-gray-400">
               How you handle user data
             </p>
@@ -361,7 +360,7 @@ DISCLAIMER: This is a template and does not constitute legal advice. Please cons
             }`}
           >
             <div className="text-3xl mb-2">📜</div>
-            <p className="font-semibold">Terms of Service</p>
+            <p className="font-semibold">{t('termsOfService')}</p>
             <p className="text-sm text-gray-600 dark:text-gray-400">
               Rules for using your service
             </p>
@@ -376,7 +375,7 @@ DISCLAIMER: This is a template and does not constitute legal advice. Please cons
             }`}
           >
             <div className="text-3xl mb-2">🍪</div>
-            <p className="font-semibold">Cookie Policy</p>
+            <p className="font-semibold">{t('cookiePolicy')}</p>
             <p className="text-sm text-gray-600 dark:text-gray-400">
               Cookie usage disclosure
             </p>
@@ -386,57 +385,57 @@ DISCLAIMER: This is a template and does not constitute legal advice. Please cons
 
       {/* Form */}
       <div className="bg-white dark:bg-dark-900 rounded-xl shadow-lg p-6">
-        <h2 className="text-xl font-bold mb-4">Company Information</h2>
+        <h2 className="text-xl font-bold mb-4">{t('companyInfo')}</h2>
 
         <div className="space-y-4">
           <div>
             <label className="block text-sm font-medium mb-2">
-              Company Name *
+              {t('companyName')}
             </label>
             <input
               type="text"
               value={formData.companyName}
               onChange={(e) => updateField('companyName', e.target.value)}
-              placeholder="e.g., Acme Corporation"
+              placeholder={t('companyNamePlaceholder')}
               className="w-full px-4 py-3 border-2 border-gray-300 dark:border-dark-700 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
             />
           </div>
 
           <div>
             <label className="block text-sm font-medium mb-2">
-              Website URL *
+              {t('website')}
             </label>
             <input
               type="url"
               value={formData.websiteUrl}
               onChange={(e) => updateField('websiteUrl', e.target.value)}
-              placeholder="https://www.example.com"
+              placeholder={t('websitePlaceholder')}
               className="w-full px-4 py-3 border-2 border-gray-300 dark:border-dark-700 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
             />
           </div>
 
           <div>
             <label className="block text-sm font-medium mb-2">
-              Country/Jurisdiction *
+              {t('country')}
             </label>
             <input
               type="text"
               value={formData.country}
               onChange={(e) => updateField('country', e.target.value)}
-              placeholder="e.g., United States, Brazil, United Kingdom"
+              placeholder={t('countryPlaceholder')}
               className="w-full px-4 py-3 border-2 border-gray-300 dark:border-dark-700 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
             />
           </div>
 
           <div>
             <label className="block text-sm font-medium mb-2">
-              Contact Email *
+              {t('email')}
             </label>
             <input
               type="email"
               value={formData.contactEmail}
               onChange={(e) => updateField('contactEmail', e.target.value)}
-              placeholder="contact@example.com"
+              placeholder={t('emailPlaceholder')}
               className="w-full px-4 py-3 border-2 border-gray-300 dark:border-dark-700 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
             />
           </div>
@@ -458,7 +457,7 @@ DISCLAIMER: This is a template and does not constitute legal advice. Please cons
             onClick={generate}
             className="w-full"
           >
-            📄 Generate Policy
+            {t('generate')}
           </Button>
         </div>
       </div>
@@ -467,21 +466,21 @@ DISCLAIMER: This is a template and does not constitute legal advice. Please cons
       {generatedPolicy && (
         <div className="bg-white dark:bg-dark-900 rounded-xl shadow-lg p-6">
           <div className="flex items-center justify-between mb-4">
-            <h2 className="text-xl font-bold">Generated Policy</h2>
+            <h2 className="text-xl font-bold">{t('generatedDocument')}</h2>
             <div className="flex gap-2">
               <Button
                 variant="secondary"
                 onClick={copyToClipboard}
                 size="sm"
               >
-                📋 Copy
+                {t('copy')}
               </Button>
               <Button
                 variant="secondary"
                 onClick={downloadPolicy}
                 size="sm"
               >
-                💾 Download
+                {t('download')}
               </Button>
             </div>
           </div>
@@ -493,7 +492,7 @@ DISCLAIMER: This is a template and does not constitute legal advice. Please cons
           />
 
           <p className="text-xs text-gray-500 dark:text-gray-400 mt-2">
-            You can edit the generated policy directly in the text area above.
+            {t('edit')}
           </p>
         </div>
       )}

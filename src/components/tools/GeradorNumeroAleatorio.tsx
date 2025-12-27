@@ -1,9 +1,11 @@
 'use client';
 
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 import Button from '@/components/ui/Button';
 
 export default function GeradorNumeroAleatorio() {
+  const t = useTranslations('randomGeneratorUI');
   const [min, setMin] = useState<string>('1');
   const [max, setMax] = useState<string>('100');
   const [quantity, setQuantity] = useState<string>('1');
@@ -69,14 +71,14 @@ export default function GeradorNumeroAleatorio() {
     <div className="space-y-6">
       {/* Input Section */}
       <div className="bg-white dark:bg-dark-900 rounded-xl shadow-lg p-6">
-        <h2 className="text-xl font-bold mb-4">Settings</h2>
+        <h2 className="text-xl font-bold mb-4">{t('title')}</h2>
 
         <div className="space-y-4">
           {/* Range */}
           <div className="grid grid-cols-2 gap-4">
             <div>
               <label className="block text-sm font-medium mb-2">
-                Minimum
+                {t('min')}
               </label>
               <input
                 type="number"
@@ -87,7 +89,7 @@ export default function GeradorNumeroAleatorio() {
             </div>
             <div>
               <label className="block text-sm font-medium mb-2">
-                Maximum
+                {t('max')}
               </label>
               <input
                 type="number"
@@ -101,7 +103,7 @@ export default function GeradorNumeroAleatorio() {
           {/* Quantity */}
           <div>
             <label className="block text-sm font-medium mb-2">
-              How many numbers?
+              {t('quantity')}
             </label>
             <input
               type="number"
@@ -122,7 +124,7 @@ export default function GeradorNumeroAleatorio() {
               className="w-4 h-4 text-primary-600 rounded focus:ring-2 focus:ring-primary-500"
             />
             <label htmlFor="duplicates" className="ml-2 text-sm font-medium">
-              Allow duplicate numbers
+              {t('allowDuplicates')}
             </label>
           </div>
 
@@ -132,7 +134,7 @@ export default function GeradorNumeroAleatorio() {
             onClick={generateNumbers}
             className="w-full"
           >
-            🎲 Generate Random Numbers
+            {t('generate')}
           </Button>
         </div>
       </div>
@@ -141,13 +143,13 @@ export default function GeradorNumeroAleatorio() {
       {results.length > 0 && (
         <div className="bg-white dark:bg-dark-900 rounded-xl shadow-lg p-6">
           <div className="flex items-center justify-between mb-4">
-            <h2 className="text-xl font-bold">Results</h2>
+            <h2 className="text-xl font-bold">{t('results')}</h2>
             <Button
               variant="outline"
               onClick={copyResults}
               size="sm"
             >
-              📋 Copy
+              {t('copy')}
             </Button>
           </div>
 
@@ -177,13 +179,13 @@ export default function GeradorNumeroAleatorio() {
       {history.length > 0 && (
         <div className="bg-white dark:bg-dark-900 rounded-xl shadow-lg p-6">
           <div className="flex items-center justify-between mb-4">
-            <h2 className="text-xl font-bold">History</h2>
+            <h2 className="text-xl font-bold">{t('history')}</h2>
             <Button
               variant="outline"
               onClick={clearHistory}
               size="sm"
             >
-              🗑️ Clear
+              {t('clear')}
             </Button>
           </div>
 

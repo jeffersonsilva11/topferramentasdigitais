@@ -1,11 +1,13 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
+import { useTranslations } from 'next-intl';
 import Button from '@/components/ui/Button';
 
 type RecordingMode = 'screen' | 'webcam' | 'screen-webcam';
 
 export default function GravadorTela() {
+  const t = useTranslations('screenRecorderUI');
   const [mode, setMode] = useState<RecordingMode>('screen');
   const [isRecording, setIsRecording] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
@@ -201,17 +203,16 @@ export default function GravadorTela() {
     <div className="space-y-6">
       {/* Privacy Disclaimer */}
       <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-400 p-4 rounded">
-        <p className="font-semibold mb-2">🔒 Privacy Notice</p>
+        <p className="font-semibold mb-2">🔒 {t('privacyNotice')}</p>
         <p className="text-sm text-gray-700 dark:text-gray-300">
-          All recordings are processed locally in your browser. No data is uploaded to any server.
-          Your recordings are completely private and secure.
+          {t('privacyText')}
         </p>
       </div>
 
       {/* Mode Selection */}
       {!isRecording && (
         <div className="bg-white dark:bg-dark-900 rounded-xl shadow-lg p-6">
-          <h2 className="text-xl font-bold mb-4">Recording Mode</h2>
+          <h2 className="text-xl font-bold mb-4">{t('recordingMode')}</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <button
               onClick={() => setMode('screen')}
@@ -222,7 +223,7 @@ export default function GravadorTela() {
               }`}
             >
               <div className="text-4xl mb-2">🖥️</div>
-              <p className="font-semibold">Screen Only</p>
+              <p className="font-semibold">{t('modeScreen')}</p>
               <p className="text-sm text-gray-600 dark:text-gray-400">
                 Record your screen
               </p>
@@ -237,7 +238,7 @@ export default function GravadorTela() {
               }`}
             >
               <div className="text-4xl mb-2">📹</div>
-              <p className="font-semibold">Webcam Only</p>
+              <p className="font-semibold">{t('modeWebcam')}</p>
               <p className="text-sm text-gray-600 dark:text-gray-400">
                 Record from camera
               </p>
@@ -252,7 +253,7 @@ export default function GravadorTela() {
               }`}
             >
               <div className="text-4xl mb-2">🎬</div>
-              <p className="font-semibold">Screen + Webcam</p>
+              <p className="font-semibold">{t('modeScreenWebcam')}</p>
               <p className="text-sm text-gray-600 dark:text-gray-400">
                 Picture-in-picture
               </p>
@@ -266,7 +267,7 @@ export default function GravadorTela() {
         <div className="bg-white dark:bg-dark-900 rounded-xl shadow-lg p-6">
           <div className="flex items-center justify-between mb-4">
             <h2 className="text-xl font-bold">
-              {isPaused ? '⏸️ Paused' : '🔴 Recording'}
+              {isPaused ? `${t('paused')}` : `${t('recording')}`}
             </h2>
             <div className="text-2xl font-mono font-bold text-primary-600">
               {formatTime(recordingTime)}
@@ -303,13 +304,13 @@ export default function GravadorTela() {
               variant="secondary"
               onClick={pauseRecording}
             >
-              {isPaused ? '▶️ Resume' : '⏸️ Pause'}
+              {isPaused ? `${t('resumeRecording')}` : `${t('pauseRecording')}`}
             </Button>
             <Button
               variant="danger"
               onClick={stopRecording}
             >
-              ⏹️ Stop Recording
+              {t('stopRecording')}
             </Button>
           </div>
         </div>
@@ -323,7 +324,7 @@ export default function GravadorTela() {
             onClick={startRecording}
             className="w-full text-lg py-4"
           >
-            🎥 Start Recording
+            {t('startRecording')}
           </Button>
         </div>
       )}
@@ -331,7 +332,7 @@ export default function GravadorTela() {
       {/* Recorded Video */}
       {videoUrl && (
         <div className="bg-white dark:bg-dark-900 rounded-xl shadow-lg p-6">
-          <h2 className="text-xl font-bold mb-4">Recorded Video</h2>
+          <h2 className="text-xl font-bold mb-4">{t('preview')}</h2>
 
           <video
             src={videoUrl}
@@ -346,7 +347,7 @@ export default function GravadorTela() {
                 onClick={() => downloadRecording('webm')}
                 className="flex-1"
               >
-                💾 Download WebM
+                {t('download')}
               </Button>
               {/* MP4 export note: Browser support varies */}
               <Button
@@ -354,7 +355,7 @@ export default function GravadorTela() {
                 onClick={() => downloadRecording('webm')}
                 className="flex-1"
               >
-                💾 Download Video
+                {t('download')}
               </Button>
             </div>
             <Button
@@ -374,14 +375,13 @@ export default function GravadorTela() {
 
       {/* Info Section */}
       <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-400 p-4 rounded">
-        <p className="font-semibold mb-2">ℹ️ How to use:</p>
+        <p className="font-semibold mb-2">{t('instructions')}</p>
         <ul className="text-sm text-gray-700 dark:text-gray-300 space-y-1 list-disc list-inside">
-          <li>Choose your recording mode (screen, webcam, or both)</li>
-          <li>Click "Start Recording" and grant the necessary permissions</li>
-          <li>Your browser will ask which screen/window to share</li>
-          <li>Use pause/resume during recording if needed</li>
-          <li>Click "Stop Recording" when done</li>
-          <li>Download your video in WebM format</li>
+          <li>{t('instruction1')}</li>
+          <li>{t('instruction2')}</li>
+          <li>{t('instruction3')}</li>
+          <li>{t('instruction4')}</li>
+          <li>{t('instruction5')}</li>
         </ul>
       </div>
 

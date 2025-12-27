@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 import Button from '@/components/ui/Button';
 
 interface LotteryPreset {
@@ -21,6 +22,7 @@ const lotteryPresets: LotteryPreset[] = [
 ];
 
 export default function GeradorLoteria() {
+  const t = useTranslations('lotteryGeneratorUI');
   const [selectedPreset, setSelectedPreset] = useState<LotteryPreset>(lotteryPresets[0]);
   const [customMain, setCustomMain] = useState({ count: 6, min: 1, max: 100 });
   const [customExtra, setCustomExtra] = useState({ count: 0, min: 1, max: 10 });
@@ -92,7 +94,7 @@ export default function GeradorLoteria() {
     <div className="space-y-6">
       {/* Preset Selection */}
       <div className="bg-white dark:bg-dark-900 rounded-xl shadow-lg p-6">
-        <h2 className="text-xl font-bold mb-4">Choose Lottery Type</h2>
+        <h2 className="text-xl font-bold mb-4">{t('title')}</h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
           {lotteryPresets.map((preset) => (
@@ -118,12 +120,12 @@ export default function GeradorLoteria() {
       {/* Custom Settings */}
       {selectedPreset.name === 'Custom' && (
         <div className="bg-white dark:bg-dark-900 rounded-xl shadow-lg p-6">
-          <h2 className="text-xl font-bold mb-4">Custom Settings</h2>
+          <h2 className="text-xl font-bold mb-4">{t('preset')}</h2>
 
           <div className="space-y-4">
             {/* Main Numbers */}
             <div>
-              <label className="block text-sm font-medium mb-2">Main Numbers</label>
+              <label className="block text-sm font-medium mb-2">{t('mainNumbers')}</label>
               <div className="grid grid-cols-3 gap-3">
                 <div>
                   <label className="block text-xs text-gray-600 dark:text-gray-400 mb-1">Count</label>
@@ -158,7 +160,7 @@ export default function GeradorLoteria() {
 
             {/* Extra Numbers */}
             <div>
-              <label className="block text-sm font-medium mb-2">Extra Numbers (Optional)</label>
+              <label className="block text-sm font-medium mb-2">{t('extraNumbers')}</label>
               <div className="grid grid-cols-3 gap-3">
                 <div>
                   <label className="block text-xs text-gray-600 dark:text-gray-400 mb-1">Count</label>
@@ -203,7 +205,7 @@ export default function GeradorLoteria() {
           onClick={generateLottery}
           className="w-full text-lg py-4"
         >
-          🍀 Generate Lucky Numbers
+          {t('generate')}
         </Button>
       </div>
 
@@ -211,7 +213,7 @@ export default function GeradorLoteria() {
       {results && (
         <div className="bg-white dark:bg-dark-900 rounded-xl shadow-lg p-6">
           <div className="flex items-center justify-between mb-4">
-            <h2 className="text-xl font-bold">Your Lucky Numbers</h2>
+            <h2 className="text-xl font-bold">{t('results')}</h2>
             <Button
               variant="outline"
               onClick={copyResults}
@@ -225,7 +227,7 @@ export default function GeradorLoteria() {
             {/* Main Numbers */}
             <div>
               <p className="text-sm font-medium text-gray-600 dark:text-gray-400 mb-3">
-                Main Numbers:
+                {t('main')}:
               </p>
               <div className="flex flex-wrap gap-3">
                 {results.main.map((num, index) => (
@@ -243,7 +245,7 @@ export default function GeradorLoteria() {
             {results.extra && results.extra.length > 0 && (
               <div>
                 <p className="text-sm font-medium text-gray-600 dark:text-gray-400 mb-3">
-                  Extra Numbers:
+                  {t('extra')}:
                 </p>
                 <div className="flex flex-wrap gap-3">
                   {results.extra.map((num, index) => (
@@ -265,7 +267,7 @@ export default function GeradorLoteria() {
       {history.length > 0 && (
         <div className="bg-white dark:bg-dark-900 rounded-xl shadow-lg p-6">
           <div className="flex items-center justify-between mb-4">
-            <h2 className="text-xl font-bold">History</h2>
+            <h2 className="text-xl font-bold">{t('history')}</h2>
             <Button
               variant="outline"
               onClick={clearHistory}
@@ -298,9 +300,7 @@ export default function GeradorLoteria() {
       <div className="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-400 p-4 rounded">
         <p className="font-semibold mb-2">⚠️ Disclaimer:</p>
         <p className="text-sm text-gray-700 dark:text-gray-300">
-          These are randomly generated numbers for entertainment purposes only.
-          We do not guarantee any wins or take responsibility for lottery results.
-          Please gamble responsibly.
+          {t('info')}
         </p>
       </div>
     </div>
