@@ -391,6 +391,16 @@ export const tools: Tool[] = [
     keywords: ['paleta cores', 'color palette', 'cores', 'design', 'wcag', 'contraste'],
     metaDescription: 'Gerador de paleta de cores online grátis. Crie paletas profissionais com HEX, RGB, HSL, contraste WCAG e export CSS/JSON.',
   },
+  {
+    id: '41',
+    name: 'Teste de Velocidade de Internet',
+    description: 'Meça a velocidade da sua conexão: download, upload, ping e jitter',
+    icon: '⚡',
+    slug: 'teste-velocidade-internet',
+    category: 'Rede',
+    keywords: ['teste velocidade', 'speed test', 'velocidade internet', 'download', 'upload', 'ping', 'internet'],
+    metaDescription: 'Teste de velocidade de internet online grátis. Meça download, upload, ping e jitter da sua conexão. Resultados instantâneos e precisos.',
+  },
 ];
 
 export function getToolBySlug(slug: string): Tool | undefined {

@@ -156,6 +156,14 @@ const toolComponents = {
   'gerador-paleta-cores': dynamic(() => import('@/components/tools/GeradorPaletaCores'), { ssr: false }),
   'color-palette-generator': dynamic(() => import('@/components/tools/GeradorPaletaCores'), { ssr: false }),
   'generador-paleta-colores': dynamic(() => import('@/components/tools/GeradorPaletaCores'), { ssr: false }),
+
+  'teste-velocidade-internet': dynamic(() => import('@/components/tools/TesteVelocidadeInternet'), { ssr: false }),
+  'internet-speed-test': dynamic(() => import('@/components/tools/TesteVelocidadeInternet'), { ssr: false }),
+  'prueba-velocidad-internet': dynamic(() => import('@/components/tools/TesteVelocidadeInternet'), { ssr: false }),
+  'test-vitesse-internet': dynamic(() => import('@/components/tools/TesteVelocidadeInternet'), { ssr: false }),
+  'internet-geschwindigkeitstest': dynamic(() => import('@/components/tools/TesteVelocidadeInternet'), { ssr: false }),
+  'test-skorosti-interneta': dynamic(() => import('@/components/tools/TesteVelocidadeInternet'), { ssr: false }),
+  'test-velocita-internet': dynamic(() => import('@/components/tools/TesteVelocidadeInternet'), { ssr: false }),
 };
 
 interface ClientToolLoaderProps {

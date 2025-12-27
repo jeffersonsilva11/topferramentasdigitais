@@ -292,6 +292,12 @@
       "slug": "generateur-palette-couleurs",
       "description": "Créez des palettes de couleurs professionnelles avec contraste WCAG",
       "metaDescription": "Générateur de palette de couleurs en ligne gratuit. Créez palettes professionnelles avec HEX, RGB, HSL, contraste WCAG et export CSS/JSON."
+    },
+    "test-vitesse-internet": {
+      "name": "Test de Vitesse Internet",
+      "slug": "test-vitesse-internet",
+      "description": "Testez la vitesse de votre connexion internet avec les métriques de téléchargement, téléversement, ping et gigue",
+      "metaDescription": "Test de vitesse internet gratuit en ligne. Vérifiez votre vitesse de téléchargement, téléversement, ping et gigue instantanément."
     }
   },
   "footer": {
@@ -519,5 +525,45 @@
   "theme": {
     "switchToLight": "Passer en mode clair",
     "switchToDark": "Passer en mode sombre"
+  },
+  "speedTestUI": {
+    "title": "Test de Vitesse Internet",
+    "startMessage": "Cliquez sur le bouton ci-dessous pour commencer à tester la vitesse de votre connexion",
+    "startTest": "⚡ Démarrer le Test",
+    "stopTest": "⏹️ Arrêter le Test",
+    "testAgain": "🔄 Tester à Nouveau",
+    "shareResult": "Partager le Résultat",
+    "shareText": "Résultat de mon test de vitesse internet :",
+    "copied": "✅ Résultat copié!",
+    "testingPing": "Test de latence et de gigue en cours...",
+    "testingDownload": "Test de vitesse de téléchargement en cours...",
+    "testingUpload": "Test de vitesse de téléversement en cours...",
+    "download": "Téléchargement",
+    "upload": "Téléversement",
+    "ping": "Ping",
+    "jitter": "Gigue",
+    "connectionStatus": "État de la Connexion",
+    "statusExcellent": "Excellent",
+    "statusGood": "Bon",
+    "statusAverage": "Moyen",
+    "statusSlow": "Lent",
+    "statusPoor": "Mauvais",
+    "whatIsTitle": "Qu'est-ce que chaque métrique ?",
+    "downloadTitle": "Vitesse de Téléchargement",
+    "downloadDesc": "La vitesse de téléchargement mesure la rapidité de réception des données d'internet. Plus c'est rapide, mieux c'est pour le streaming, les téléchargements et la navigation.",
+    "uploadTitle": "Vitesse de Téléversement",
+    "uploadDesc": "La vitesse de téléversement mesure la rapidité de l'envoi des données vers internet. Important pour les vidéoconférences, le partage de fichiers et les téléversements.",
+    "pingTitle": "Ping (Latence)",
+    "pingDesc": "Le ping mesure le temps de réponse de votre connexion en millisecondes. Plus c'est bas, mieux c'est pour les jeux en ligne et les appels vidéo.",
+    "jitterTitle": "Gigue (Variation)",
+    "jitterDesc": "La gigue mesure la variation du ping. Des valeurs basses indiquent une connexion stable, importante pour le streaming et les appels vidéo.",
+    "tipsTitle": "💡 Conseils pour Améliorer Votre Connexion",
+    "tip1": "Connectez votre appareil directement au routeur via un câble ethernet pour une vitesse plus élevée",
+    "tip2": "Positionnez le routeur dans un endroit central et surélevé, loin des murs et des obstacles",
+    "tip3": "Fermez les applications et les téléchargements que vous n'utilisez pas pour libérer la bande passante",
+    "tip4": "Redémarrez régulièrement le routeur pour effacer la mémoire et améliorer les performances",
+    "tip5": "Vérifiez les mises à jour du firmware disponibles pour votre routeur",
+    "privacyTitle": "Confidentialité",
+    "privacyText": "Ce test s'exécute à 100% dans votre navigateur. Aucune donnée personnelle n'est collectée ou stockée. Nous utilisons des serveurs publics de Cloudflare pour effectuer les mesures de vitesse."
   }
 }

@@ -47,6 +47,7 @@ const toolSlugMap: Record<string, Record<string, string>> = {
   'validador-regex': { en: 'regex-validator', pt: 'validador-regex', es: 'validador-regex' },
   'gerador-politicas': { en: 'policy-generator', pt: 'gerador-politicas', es: 'generador-politicas' },
   'gerador-paleta-cores': { en: 'color-palette-generator', pt: 'gerador-paleta-cores', es: 'generador-paleta-colores' },
+  'teste-velocidade-internet': { en: 'internet-speed-test', pt: 'teste-velocidade-internet', es: 'prueba-velocidad-internet' },
 };
 
 export default function sitemap(): MetadataRoute.Sitemap {

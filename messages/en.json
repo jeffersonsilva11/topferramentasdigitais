@@ -292,6 +292,12 @@
       "slug": "color-palette-generator",
       "description": "Create professional color palettes with WCAG contrast",
       "metaDescription": "Free color palette generator online. Create professional palettes with HEX, RGB, HSL, WCAG contrast and CSS/JSON export."
+    },
+    "internet-speed-test": {
+      "name": "Internet Speed Test",
+      "slug": "internet-speed-test",
+      "description": "Test your internet connection speed with download, upload, ping and jitter metrics",
+      "metaDescription": "Free internet speed test online. Check your download speed, upload speed, ping and jitter instantly."
     }
   },
   "footer": {
@@ -781,5 +787,45 @@
     "colorFormats": "Color Formats",
     "copy": "Copy",
     "copied": "Copied!"
+  },
+  "speedTestUI": {
+    "title": "Internet Speed Test",
+    "startMessage": "Click the button below to start testing your connection speed",
+    "startTest": "⚡ Start Test",
+    "stopTest": "⏹️ Stop Test",
+    "testAgain": "🔄 Test Again",
+    "shareResult": "Share Result",
+    "shareText": "My internet speed test result:",
+    "copied": "✅ Result copied!",
+    "testingPing": "Testing latency and jitter...",
+    "testingDownload": "Testing download speed...",
+    "testingUpload": "Testing upload speed...",
+    "download": "Download",
+    "upload": "Upload",
+    "ping": "Ping",
+    "jitter": "Jitter",
+    "connectionStatus": "Connection Status",
+    "statusExcellent": "Excellent",
+    "statusGood": "Good",
+    "statusAverage": "Average",
+    "statusSlow": "Slow",
+    "statusPoor": "Poor",
+    "whatIsTitle": "What is each metric?",
+    "downloadTitle": "Download Speed",
+    "downloadDesc": "Download speed measures how fast you can receive data from the internet. The higher, the better for streaming, downloads, and browsing.",
+    "uploadTitle": "Upload Speed",
+    "uploadDesc": "Upload speed measures how fast you can send data to the internet. Important for video conferences, sharing files, and uploads.",
+    "pingTitle": "Ping (Latency)",
+    "pingDesc": "Ping measures your connection response time in milliseconds. The lower, the better for online gaming and video calls.",
+    "jitterTitle": "Jitter (Variation)",
+    "jitterDesc": "Jitter measures ping variation. Low values indicate a stable connection, important for streaming and video calls.",
+    "tipsTitle": "💡 Tips to Improve Your Connection",
+    "tip1": "Connect your device directly to the router via ethernet cable for faster speeds",
+    "tip2": "Position the router in a central and elevated location, away from walls and obstacles",
+    "tip3": "Close applications and downloads you're not using to free up bandwidth",
+    "tip4": "Restart the router regularly to clear memory and improve performance",
+    "tip5": "Check for available firmware updates for your router",
+    "privacyTitle": "Privacy",
+    "privacyText": "This test runs 100% in your browser. No personal data is collected or stored. We use public Cloudflare servers to perform speed measurements."
   }
 }

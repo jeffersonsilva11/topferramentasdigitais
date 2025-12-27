@@ -292,6 +292,12 @@
       "slug": "generador-paleta-colores",
       "description": "Crea paletas de colores profesionales con contraste WCAG",
       "metaDescription": "Generador de paleta de colores online gratis. Crea paletas profesionales con HEX, RGB, HSL, contraste WCAG y export CSS/JSON."
+    },
+    "prueba-velocidad-internet": {
+      "name": "Prueba de Velocidad de Internet",
+      "slug": "prueba-velocidad-internet",
+      "description": "Prueba la velocidad de tu conexión internet con métricas de descarga, subida, ping y jitter",
+      "metaDescription": "Prueba de velocidad de internet online gratis. Comprueba tu velocidad de descarga, subida, ping y jitter al instante."
     }
   },
   "footer": {
@@ -519,5 +525,45 @@
   "theme": {
     "switchToLight": "Cambiar a modo claro",
     "switchToDark": "Cambiar a modo oscuro"
+  },
+  "speedTestUI": {
+    "title": "Prueba de Velocidad de Internet",
+    "startMessage": "Haz clic en el botón de abajo para iniciar la prueba de velocidad de tu conexión",
+    "startTest": "⚡ Iniciar Prueba",
+    "stopTest": "⏹️ Detener Prueba",
+    "testAgain": "🔄 Probar de Nuevo",
+    "shareResult": "Compartir Resultado",
+    "shareText": "Resultado de mi prueba de velocidad de internet:",
+    "copied": "✅ Resultado copiado!",
+    "testingPing": "Comprobando latencia y jitter...",
+    "testingDownload": "Comprobando velocidad de descarga...",
+    "testingUpload": "Comprobando velocidad de subida...",
+    "download": "Descarga",
+    "upload": "Subida",
+    "ping": "Ping",
+    "jitter": "Jitter",
+    "connectionStatus": "Estado de la Conexión",
+    "statusExcellent": "Excelente",
+    "statusGood": "Buena",
+    "statusAverage": "Media",
+    "statusSlow": "Lenta",
+    "statusPoor": "Mala",
+    "whatIsTitle": "¿Qué es cada métrica?",
+    "downloadTitle": "Velocidad de Descarga",
+    "downloadDesc": "La velocidad de descarga mide qué tan rápido puedes recibir datos de internet. Cuanto mayor sea, mejor para streaming, descargas y navegación.",
+    "uploadTitle": "Velocidad de Subida",
+    "uploadDesc": "La velocidad de subida mide qué tan rápido puedes enviar datos a internet. Importante para videoconferencias, compartir archivos y subidas.",
+    "pingTitle": "Ping (Latencia)",
+    "pingDesc": "El ping mide el tiempo de respuesta de tu conexión en milisegundos. Cuanto menor, mejor para juegos en línea y videollamadas.",
+    "jitterTitle": "Jitter (Variación)",
+    "jitterDesc": "Jitter mide la variación del ping. Valores bajos indican una conexión estable, importante para streaming y videollamadas.",
+    "tipsTitle": "💡 Consejos para Mejorar tu Conexión",
+    "tip1": "Conecta tu dispositivo directamente al router mediante cable ethernet para mayor velocidad",
+    "tip2": "Posiciona el router en un lugar central y elevado, lejos de paredes y obstáculos",
+    "tip3": "Cierra aplicaciones y descargas que no estés usando para liberar ancho de banda",
+    "tip4": "Reinicia el router regularmente para limpiar la memoria y mejorar el rendimiento",
+    "tip5": "Verifica si hay actualizaciones de firmware disponibles para tu router",
+    "privacyTitle": "Privacidad",
+    "privacyText": "Esta prueba se ejecuta 100% en tu navegador. No se recopilan ni se almacenan datos personales. Usamos servidores públicos de Cloudflare para realizar las mediciones de velocidad."
   }
 }
