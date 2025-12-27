@@ -83,7 +83,7 @@ export default function GeradorLoteria() {
       ? `Main: ${results.main.join(', ')} | Extra: ${results.extra.join(', ')}`
       : results.main.join(', ');
     navigator.clipboard.writeText(text);
-    alert('Numbers copied to clipboard!');
+    alert(t('numbersCopied'));
   };
 
   const clearHistory = () => {
@@ -219,7 +219,7 @@ export default function GeradorLoteria() {
               onClick={copyResults}
               size="sm"
             >
-              📋 Copy
+              {t('copy')}
             </Button>
           </div>
 

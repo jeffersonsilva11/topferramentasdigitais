@@ -26,12 +26,12 @@ export default function AmigoOculto() {
 
   const addParticipant = () => {
     if (!newName.trim()) {
-      alert('Please enter a name');
+      alert(t('alertEnterName'));
       return;
     }
 
     if (participants.some(p => p.name.toLowerCase() === newName.toLowerCase())) {
-      alert('This name already exists');
+      alert(t('alertNameExists'));
       return;
     }
 
@@ -61,7 +61,7 @@ export default function AmigoOculto() {
 
   const drawNames = () => {
     if (participants.length < 3) {
-      alert('You need at least 3 participants for Secret Santa');
+      alert(t('alertMinParticipants'));
       return;
     }
 
@@ -126,7 +126,7 @@ export default function AmigoOculto() {
       .join('\n');
 
     navigator.clipboard.writeText(text);
-    alert('Results copied to clipboard!');
+    alert(t('resultsCopied'));
   };
 
   return (
@@ -267,7 +267,7 @@ export default function AmigoOculto() {
               onClick={copyResults}
               className="flex-1"
             >
-              📋 Copy All
+              {t('copyAll')}
             </Button>
             <Button
               variant="secondary"
@@ -281,7 +281,7 @@ export default function AmigoOculto() {
               onClick={resetDraw}
               className="flex-1"
             >
-              🔄 New Draw
+              {t('newDraw')}
             </Button>
           </div>
         </div>
@@ -300,10 +300,9 @@ export default function AmigoOculto() {
 
       {/* Privacy Notice */}
       <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-400 p-4 rounded">
-        <p className="font-semibold mb-2">🔒 Privacy:</p>
+        <p className="font-semibold mb-2">🔒 {t('privacyNotice')}</p>
         <p className="text-sm text-gray-700 dark:text-gray-300">
-          All data stays in your browser. No information is sent to any server.
-          Names and assignments are completely private and secure.
+          {t('privacyNoticeText')}
         </p>
       </div>
     </div>

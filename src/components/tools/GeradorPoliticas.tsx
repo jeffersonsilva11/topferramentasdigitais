@@ -283,7 +283,7 @@ DISCLAIMER: This is a template and does not constitute legal advice. Please cons
 
   const generate = () => {
     if (!formData.companyName || !formData.websiteUrl || !formData.contactEmail) {
-      alert('Please fill in all required fields (Company Name, Website URL, Contact Email)');
+      alert(t('alertFillRequired'));
       return;
     }
 
@@ -305,7 +305,7 @@ DISCLAIMER: This is a template and does not constitute legal advice. Please cons
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(generatedPolicy);
-    alert('Policy copied to clipboard!');
+    alert(t('alertPolicyCopied'));
   };
 
   const downloadPolicy = () => {
@@ -347,7 +347,7 @@ DISCLAIMER: This is a template and does not constitute legal advice. Please cons
             <div className="text-3xl mb-2">🔒</div>
             <p className="font-semibold">{t('privacyPolicy')}</p>
             <p className="text-sm text-gray-600 dark:text-gray-400">
-              How you handle user data
+              {t('privacyPolicyDesc')}
             </p>
           </button>
 
@@ -362,7 +362,7 @@ DISCLAIMER: This is a template and does not constitute legal advice. Please cons
             <div className="text-3xl mb-2">📜</div>
             <p className="font-semibold">{t('termsOfService')}</p>
             <p className="text-sm text-gray-600 dark:text-gray-400">
-              Rules for using your service
+              {t('termsOfServiceDesc')}
             </p>
           </button>
 
@@ -377,7 +377,7 @@ DISCLAIMER: This is a template and does not constitute legal advice. Please cons
             <div className="text-3xl mb-2">🍪</div>
             <p className="font-semibold">{t('cookiePolicy')}</p>
             <p className="text-sm text-gray-600 dark:text-gray-400">
-              Cookie usage disclosure
+              {t('cookiePolicyDesc')}
             </p>
           </button>
         </div>
@@ -442,7 +442,7 @@ DISCLAIMER: This is a template and does not constitute legal advice. Please cons
 
           <div>
             <label className="block text-sm font-medium mb-2">
-              Last Updated Date
+              {t('lastUpdated')}
             </label>
             <input
               type="date"
@@ -499,13 +499,13 @@ DISCLAIMER: This is a template and does not constitute legal advice. Please cons
 
       {/* Info */}
       <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-400 p-4 rounded">
-        <p className="font-semibold mb-2">ℹ️ What to do next:</p>
+        <p className="font-semibold mb-2">ℹ️ {t('whatToDoNext')}</p>
         <ul className="text-sm text-gray-700 dark:text-gray-300 space-y-1 list-decimal list-inside">
-          <li>Review and customize the generated policy to match your specific practices</li>
-          <li>Have the policy reviewed by a qualified attorney</li>
-          <li>Add the policy to your website (usually in the footer)</li>
-          <li>Keep the policy updated as your practices or laws change</li>
-          <li>Ensure users can easily access and understand your policies</li>
+          <li>{t('nextStep1')}</li>
+          <li>{t('nextStep2')}</li>
+          <li>{t('nextStep3')}</li>
+          <li>{t('nextStep4')}</li>
+          <li>{t('nextStep5')}</li>
         </ul>
       </div>
     </div>
