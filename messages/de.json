@@ -292,6 +292,12 @@
       "slug": "farbpaletten-generator",
       "description": "Erstellen Sie professionelle Farbpaletten mit WCAG-Kontrast",
       "metaDescription": "Kostenloser Online-Farbpaletten-Generator. Erstellen Sie professionelle Paletten mit HEX, RGB, HSL, WCAG-Kontrast und CSS/JSON-Export."
+    },
+    "internet-geschwindigkeitstest": {
+      "name": "Internet-Geschwindigkeitstest",
+      "slug": "internet-geschwindigkeitstest",
+      "description": "Testen Sie Ihre Internetverbindungsgeschwindigkeit mit Download-, Upload-, Ping- und Jitter-Metriken",
+      "metaDescription": "Kostenloser Internet-Geschwindigkeitstest online. Überprüfen Sie Ihre Download-, Upload-, Ping- und Jitter-Geschwindigkeit sofort."
     }
   },
   "footer": {
@@ -519,5 +525,45 @@
   "theme": {
     "switchToLight": "Zum hellen Modus wechseln",
     "switchToDark": "Zum dunklen Modus wechseln"
+  },
+  "speedTestUI": {
+    "title": "Internet-Geschwindigkeitstest",
+    "startMessage": "Klicken Sie auf die Schaltfläche unten, um mit dem Test Ihrer Verbindungsgeschwindigkeit zu beginnen",
+    "startTest": "⚡ Test Starten",
+    "stopTest": "⏹️ Test Stoppen",
+    "testAgain": "🔄 Erneut Testen",
+    "shareResult": "Ergebnis Teilen",
+    "shareText": "Mein Internet-Geschwindigkeitstestergebnis:",
+    "copied": "✅ Ergebnis kopiert!",
+    "testingPing": "Latenz und Jitter werden getestet...",
+    "testingDownload": "Download-Geschwindigkeit wird getestet...",
+    "testingUpload": "Upload-Geschwindigkeit wird getestet...",
+    "download": "Download",
+    "upload": "Upload",
+    "ping": "Ping",
+    "jitter": "Jitter",
+    "connectionStatus": "Verbindungsstatus",
+    "statusExcellent": "Ausgezeichnet",
+    "statusGood": "Gut",
+    "statusAverage": "Durchschnittlich",
+    "statusSlow": "Langsam",
+    "statusPoor": "Schlecht",
+    "whatIsTitle": "Was ist jede Metrik?",
+    "downloadTitle": "Download-Geschwindigkeit",
+    "downloadDesc": "Die Download-Geschwindigkeit misst, wie schnell Sie Daten aus dem Internet empfangen können. Je höher, desto besser für Streaming, Downloads und Browsing.",
+    "uploadTitle": "Upload-Geschwindigkeit",
+    "uploadDesc": "Die Upload-Geschwindigkeit misst, wie schnell Sie Daten ins Internet senden können. Wichtig für Videokonferenzen, Dateifreigabe und Uploads.",
+    "pingTitle": "Ping (Latenz)",
+    "pingDesc": "Ping misst Ihre Verbindungsantwortzeit in Millisekunden. Je niedriger, desto besser für Online-Spiele und Videoanrufe.",
+    "jitterTitle": "Jitter (Schwankung)",
+    "jitterDesc": "Jitter misst die Ping-Schwankung. Niedrige Werte deuten auf eine stabile Verbindung hin, wichtig für Streaming und Videoanrufe.",
+    "tipsTitle": "💡 Tipps zur Verbesserung Ihrer Verbindung",
+    "tip1": "Verbinden Sie Ihr Gerät direkt über ein Ethernet-Kabel mit dem Router, um höhere Geschwindigkeiten zu erreichen",
+    "tip2": "Positionieren Sie den Router an einem zentralen und erhöhten Ort, entfernt von Wänden und Hindernissen",
+    "tip3": "Schließen Sie Anwendungen und Downloads, die Sie nicht verwenden, um Bandbreite freizugeben",
+    "tip4": "Starten Sie den Router regelmäßig neu, um den Speicher zu löschen und die Leistung zu verbessern",
+    "tip5": "Überprüfen Sie verfügbare Firmware-Updates für Ihren Router",
+    "privacyTitle": "Datenschutz",
+    "privacyText": "Dieser Test wird zu 100% in Ihrem Browser ausgeführt. Es werden keine persönlichen Daten erfasst oder gespeichert. Wir verwenden öffentliche Cloudflare-Server für Geschwindigkeitsmessungen."
   }
 }
