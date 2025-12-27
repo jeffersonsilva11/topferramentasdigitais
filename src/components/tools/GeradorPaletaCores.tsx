@@ -233,7 +233,7 @@ export default function GeradorPaletaCores() {
           {/* Base Color */}
           <div>
             <label className="block text-sm font-medium mb-2">
-              {t('baseColor')}
+              Cor Base
             </label>
             <div className="flex gap-3">
               <input
@@ -287,14 +287,14 @@ export default function GeradorPaletaCores() {
       {palette.length > 0 && (
         <div className="bg-white dark:bg-dark-900 rounded-xl shadow-lg p-6">
           <div className="flex items-center justify-between mb-4">
-            <h2 className="text-xl font-bold">{t('palette')}</h2>
+            <h2 className="text-xl font-bold">{t('generatedPalette')}</h2>
             <div className="flex gap-2">
               <Button
                 variant="outline"
                 onClick={saveFavorite}
                 size="sm"
               >
-                {t('save')}
+                ⭐ Salvar
               </Button>
               <Button
                 variant="secondary"
@@ -351,7 +351,7 @@ export default function GeradorPaletaCores() {
       {/* Contrast Checker */}
       {palette.length >= 2 && (
         <div className="bg-white dark:bg-dark-900 rounded-xl shadow-lg p-6">
-          <h2 className="text-xl font-bold mb-4">{t('wcagRatios')}</h2>
+          <h2 className="text-xl font-bold mb-4">{t('contrastChecker')}</h2>
 
           <div className="space-y-3">
             {palette.slice(0, 3).map((color1, i) => (
@@ -396,7 +396,7 @@ export default function GeradorPaletaCores() {
           </div>
 
           <div className="mt-4 text-xs text-gray-600 dark:text-gray-400">
-            <p>{t('wcagStandards')}</p>
+            <p>AAA: 7:1+ | AA: 4.5:1+ | AA Large: 3:1+ (textos maiores que 18pt)</p>
           </div>
         </div>
       )}
@@ -427,7 +427,7 @@ export default function GeradorPaletaCores() {
                     onClick={() => loadFavorite(index)}
                     size="sm"
                   >
-                    {t('load')}
+                    📥 Carregar
                   </Button>
                   <button
                     onClick={() => deleteFavorite(index)}

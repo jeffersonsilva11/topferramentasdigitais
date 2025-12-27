@@ -298,9 +298,9 @@ export default function GeradorLoteria() {
 
       {/* Disclaimer */}
       <div className="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-400 p-4 rounded">
-        <p className="font-semibold mb-2">⚠️ Disclaimer:</p>
+        <p className="font-semibold mb-2">{t('disclaimer')}</p>
         <p className="text-sm text-gray-700 dark:text-gray-300">
-          {t('info')}
+          {t('disclaimerText')}
         </p>
       </div>
     </div>

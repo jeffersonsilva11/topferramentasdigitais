@@ -26,12 +26,12 @@ export default function AmigoOculto() {
 
   const addParticipant = () => {
     if (!newName.trim()) {
-      alert(t('alertEnterName'));
+      alert(t('alertNameRequired'));
       return;
     }
 
     if (participants.some(p => p.name.toLowerCase() === newName.toLowerCase())) {
-      alert(t('alertNameExists'));
+      alert('Este nome já foi adicionado');
       return;
     }
 
@@ -126,7 +126,7 @@ export default function AmigoOculto() {
       .join('\n');
 
     navigator.clipboard.writeText(text);
-    alert(t('resultsCopied'));
+    alert('Resultados copiados!');
   };
 
   return (
@@ -267,7 +267,7 @@ export default function AmigoOculto() {
               onClick={copyResults}
               className="flex-1"
             >
-              {t('copyAll')}
+              📋 Copiar Todos
             </Button>
             <Button
               variant="secondary"
@@ -281,7 +281,7 @@ export default function AmigoOculto() {
               onClick={resetDraw}
               className="flex-1"
             >
-              {t('newDraw')}
+              {t('reset')}
             </Button>
           </div>
         </div>
