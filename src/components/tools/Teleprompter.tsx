@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef, useCallback } from 'react';
+import { useTranslations } from 'next-intl';
 import Button from '@/components/ui/Button';
 
 interface TeleprompterSettings {
@@ -13,6 +14,7 @@ interface TeleprompterSettings {
 }
 
 export default function Teleprompter() {
+  const t = useTranslations('teleprompterUI');
   const [text, setText] = useState('');
   const [isPlaying, setIsPlaying] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
@@ -148,13 +150,13 @@ export default function Teleprompter() {
       {/* Settings Panel */}
       {!isFullscreen && (
         <div className="bg-white dark:bg-dark-900 rounded-xl shadow-lg p-6">
-          <h2 className="text-xl font-bold mb-4">Settings</h2>
+          <h2 className="text-xl font-bold mb-4">{t('settings')}</h2>
 
           <div className="space-y-4">
             {/* Speed Control */}
             <div>
               <label className="block text-sm font-medium mb-2">
-                Speed: {settings.speed}
+                {t('speed')}: {settings.speed}
               </label>
               <input
                 type="range"
@@ -169,7 +171,7 @@ export default function Teleprompter() {
             {/* Font Size */}
             <div>
               <label className="block text-sm font-medium mb-2">
-                Font Size: {settings.fontSize}px
+                {t('fontSize')}: {settings.fontSize}px
               </label>
               <input
                 type="range"
@@ -184,7 +186,7 @@ export default function Teleprompter() {
             {/* Line Height */}
             <div>
               <label className="block text-sm font-medium mb-2">
-                Line Spacing: {settings.lineHeight}
+                {t('lineSpacing')}: {settings.lineHeight}
               </label>
               <input
                 type="range"
@@ -201,7 +203,7 @@ export default function Teleprompter() {
             <div className="grid grid-cols-2 gap-4">
               <div>
                 <label className="block text-sm font-medium mb-2">
-                  Background Color
+                  {t('backgroundColor')}
                 </label>
                 <input
                   type="color"
@@ -212,7 +214,7 @@ export default function Teleprompter() {
               </div>
               <div>
                 <label className="block text-sm font-medium mb-2">
-                  Text Color
+                  {t('textColor')}
                 </label>
                 <input
                   type="color"
@@ -233,7 +235,7 @@ export default function Teleprompter() {
                 className="w-4 h-4 text-primary-600 rounded focus:ring-2 focus:ring-primary-500"
               />
               <label htmlFor="mirror" className="ml-2 text-sm font-medium">
-                Mirror Mode (Horizontal Flip)
+                {t('mirrorMode')}
               </label>
             </div>
           </div>
@@ -243,11 +245,11 @@ export default function Teleprompter() {
       {/* Text Input */}
       {!isFullscreen && (
         <div className="bg-white dark:bg-dark-900 rounded-xl shadow-lg p-6">
-          <h2 className="text-xl font-bold mb-4">Script</h2>
+          <h2 className="text-xl font-bold mb-4">{t('script')}</h2>
           <textarea
             value={text}
             onChange={(e) => setText(e.target.value)}
-            placeholder="Enter your script here..."
+            placeholder={t('scriptPlaceholder')}
             className="w-full h-64 px-4 py-3 border-2 border-gray-300 dark:border-dark-700 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent resize-none"
           />
         </div>
@@ -270,6 +272,7 @@ export default function Teleprompter() {
             overflow: 'auto',
             padding: '2rem',
             scrollBehavior: 'smooth',
+            textAlign: 'center',
           }}
           className="relative"
         >
@@ -288,21 +291,21 @@ export default function Teleprompter() {
             variant="primary"
             onClick={togglePlayPause}
           >
-            {isPlaying ? '⏸️ Pause' : '▶️ Play'}
+            {isPlaying ? t('pause') : t('play')}
           </Button>
 
           <Button
             variant="secondary"
             onClick={resetScroll}
           >
-            🔄 Reset
+            {t('reset')}
           </Button>
 
           <Button
             variant="secondary"
             onClick={toggleFullscreen}
           >
-            {isFullscreen ? '🗗 Exit Fullscreen' : '⛶ Fullscreen'}
+            {isFullscreen ? t('exitFullscreen') : t('fullscreen')}
           </Button>
         </div>
       </div>
@@ -310,12 +313,12 @@ export default function Teleprompter() {
       {/* Keyboard Shortcuts Info */}
       {!isFullscreen && (
         <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-400 p-4 rounded">
-          <p className="font-semibold mb-2">⌨️ Keyboard Shortcuts (in fullscreen):</p>
+          <p className="font-semibold mb-2">{t('keyboardShortcuts')}</p>
           <ul className="text-sm space-y-1 text-gray-700 dark:text-gray-300">
-            <li><strong>Space:</strong> Play/Pause</li>
-            <li><strong>↑ Arrow Up:</strong> Increase speed</li>
-            <li><strong>↓ Arrow Down:</strong> Decrease speed</li>
-            <li><strong>R:</strong> Reset to beginning</li>
+            <li><strong>{t('shortcutSpace')}</strong></li>
+            <li><strong>{t('shortcutUp')}</strong></li>
+            <li><strong>{t('shortcutDown')}</strong></li>
+            <li><strong>{t('shortcutR')}</strong></li>
           </ul>
         </div>
       )}

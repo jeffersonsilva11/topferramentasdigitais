@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
+import { useTranslations } from 'next-intl';
 import Button from '@/components/ui/Button';
 
 interface DeviceInfo {
@@ -10,6 +11,7 @@ interface DeviceInfo {
 }
 
 export default function TestadorMicrofoneCamera() {
+  const t = useTranslations('deviceTesterUI');
   const [audioDevices, setAudioDevices] = useState<DeviceInfo[]>([]);
   const [videoDevices, setVideoDevices] = useState<DeviceInfo[]>([]);
   const [selectedAudioDevice, setSelectedAudioDevice] = useState<string>('');
@@ -56,7 +58,6 @@ export default function TestadorMicrofoneCamera() {
       }
     } catch (error) {
       console.error('Error enumerating devices:', error);
-      alert('Failed to access devices. Please grant permissions.');
     }
   };
 
@@ -96,7 +97,7 @@ export default function TestadorMicrofoneCamera() {
       const dataArray = new Uint8Array(analyser.frequencyBinCount);
 
       const checkAudioLevel = () => {
-        if (!analyserRef.current || !isMicTesting) return;
+        if (!analyserRef.current) return;
 
         analyser.getByteFrequencyData(dataArray);
         const average = dataArray.reduce((a, b) => a + b) / dataArray.length;
@@ -122,6 +123,7 @@ export default function TestadorMicrofoneCamera() {
   const stopMicTest = () => {
     if (animationFrameRef.current) {
       cancelAnimationFrame(animationFrameRef.current);
+      animationFrameRef.current = undefined;
     }
 
     if (audioStreamRef.current) {
@@ -134,6 +136,7 @@ export default function TestadorMicrofoneCamera() {
       audioContextRef.current = null;
     }
 
+    analyserRef.current = null;
     setIsMicTesting(false);
     setAudioLevel(0);
   };
@@ -196,10 +199,10 @@ export default function TestadorMicrofoneCamera() {
 
   const getStatusText = (status: 'idle' | 'testing' | 'pass' | 'fail') => {
     switch (status) {
-      case 'idle': return 'Not tested';
-      case 'testing': return 'Testing...';
-      case 'pass': return 'Working';
-      case 'fail': return 'Failed';
+      case 'idle': return t('statusIdle');
+      case 'testing': return t('statusTesting');
+      case 'pass': return t('statusPass');
+      case 'fail': return t('statusFail');
     }
   };
 
@@ -207,22 +210,21 @@ export default function TestadorMicrofoneCamera() {
     <div className="space-y-6">
       {/* Privacy Notice */}
       <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-400 p-4 rounded">
-        <p className="font-semibold mb-2">🔒 Privacy Notice</p>
+        <p className="font-semibold mb-2">{t('privacyNotice')}</p>
         <p className="text-sm text-gray-700 dark:text-gray-300">
-          All testing is done locally in your browser. No audio or video is recorded or sent to any server.
-          This tool only checks if your devices are working properly.
+          {t('privacyText')}
         </p>
       </div>
 
       {/* Device Lists */}
       <div className="bg-white dark:bg-dark-900 rounded-xl shadow-lg p-6">
-        <h2 className="text-xl font-bold mb-4">Available Devices</h2>
+        <h2 className="text-xl font-bold mb-4">{t('availableDevices')}</h2>
 
         <div className="space-y-4">
           {/* Audio Devices */}
           <div>
             <label className="block text-sm font-medium mb-2">
-              🎤 Microphones ({audioDevices.length})
+              {t('microphones')} ({audioDevices.length})
             </label>
             {audioDevices.length > 0 ? (
               <select
@@ -237,14 +239,14 @@ export default function TestadorMicrofoneCamera() {
                 ))}
               </select>
             ) : (
-              <p className="text-sm text-gray-500">No microphones found</p>
+              <p className="text-sm text-gray-500">{t('noMicrophones')}</p>
             )}
           </div>
 
           {/* Video Devices */}
           <div>
             <label className="block text-sm font-medium mb-2">
-              📹 Cameras ({videoDevices.length})
+              {t('cameras')} ({videoDevices.length})
             </label>
             {videoDevices.length > 0 ? (
               <select
@@ -259,7 +261,7 @@ export default function TestadorMicrofoneCamera() {
                 ))}
               </select>
             ) : (
-              <p className="text-sm text-gray-500">No cameras found</p>
+              <p className="text-sm text-gray-500">{t('noCameras')}</p>
             )}
           </div>
         </div>
@@ -269,14 +271,14 @@ export default function TestadorMicrofoneCamera() {
           onClick={getDevices}
           className="mt-4"
         >
-          🔄 Refresh Devices
+          {t('refreshDevices')}
         </Button>
       </div>
 
       {/* Microphone Test */}
       <div className="bg-white dark:bg-dark-900 rounded-xl shadow-lg p-6">
         <div className="flex items-center justify-between mb-4">
-          <h2 className="text-xl font-bold">🎤 Microphone Test</h2>
+          <h2 className="text-xl font-bold">{t('microphoneTest')}</h2>
           <div className={`text-lg font-semibold ${getStatusColor(micStatus)}`}>
             {getStatusIcon(micStatus)} {getStatusText(micStatus)}
           </div>
@@ -284,7 +286,7 @@ export default function TestadorMicrofoneCamera() {
 
         {isMicTesting && (
           <div className="mb-4">
-            <p className="text-sm font-medium mb-2">Audio Level:</p>
+            <p className="text-sm font-medium mb-2">{t('audioLevel')}</p>
             <div className="w-full h-8 bg-gray-200 dark:bg-dark-800 rounded-full overflow-hidden">
               <div
                 className="h-full bg-gradient-to-r from-green-400 to-green-600 transition-all duration-100"
@@ -292,7 +294,7 @@ export default function TestadorMicrofoneCamera() {
               />
             </div>
             <p className="text-xs text-gray-500 mt-1">
-              Speak into your microphone to see the level change
+              {t('speakPrompt')}
             </p>
           </div>
         )}
@@ -304,14 +306,14 @@ export default function TestadorMicrofoneCamera() {
               onClick={startMicTest}
               disabled={audioDevices.length === 0}
             >
-              🎤 Test Microphone
+              {t('testMicrophone')}
             </Button>
           ) : (
             <Button
               variant="danger"
               onClick={stopMicTest}
             >
-              ⏹️ Stop Test
+              {t('stopTest')}
             </Button>
           )}
         </div>
@@ -320,7 +322,7 @@ export default function TestadorMicrofoneCamera() {
       {/* Camera Test */}
       <div className="bg-white dark:bg-dark-900 rounded-xl shadow-lg p-6">
         <div className="flex items-center justify-between mb-4">
-          <h2 className="text-xl font-bold">📹 Camera Test</h2>
+          <h2 className="text-xl font-bold">{t('cameraTest')}</h2>
           <div className={`text-lg font-semibold ${getStatusColor(cameraStatus)}`}>
             {getStatusIcon(cameraStatus)} {getStatusText(cameraStatus)}
           </div>
@@ -344,14 +346,14 @@ export default function TestadorMicrofoneCamera() {
               onClick={startCameraTest}
               disabled={videoDevices.length === 0}
             >
-              📹 Test Camera
+              {t('testCamera')}
             </Button>
           ) : (
             <Button
               variant="danger"
               onClick={stopCameraTest}
             >
-              ⏹️ Stop Test
+              {t('stopTest')}
             </Button>
           )}
         </div>
@@ -359,13 +361,13 @@ export default function TestadorMicrofoneCamera() {
 
       {/* Instructions */}
       <div className="bg-green-50 dark:bg-green-900/20 border-l-4 border-green-400 p-4 rounded">
-        <p className="font-semibold mb-2">ℹ️ How to use:</p>
+        <p className="font-semibold mb-2">{t('howToUse')}</p>
         <ul className="text-sm text-gray-700 dark:text-gray-300 space-y-1 list-disc list-inside">
-          <li>Grant microphone and camera permissions when prompted</li>
-          <li>Select the device you want to test from the dropdown</li>
-          <li>Click "Test Microphone" and speak - you should see the audio level change</li>
-          <li>Click "Test Camera" to see a live preview from your camera</li>
-          <li>Green checkmark (✅) means the device is working properly</li>
+          <li>{t('instruction1')}</li>
+          <li>{t('instruction2')}</li>
+          <li>{t('instruction3')}</li>
+          <li>{t('instruction4')}</li>
+          <li>{t('instruction5')}</li>
         </ul>
       </div>
     </div>

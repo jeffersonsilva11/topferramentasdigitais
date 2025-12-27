@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 import Button from '@/components/ui/Button';
 
 interface Participant {
@@ -15,6 +16,7 @@ interface Assignment {
 }
 
 export default function AmigoOculto() {
+  const t = useTranslations('secretSantaUI');
   const [participants, setParticipants] = useState<Participant[]>([]);
   const [newName, setNewName] = useState('');
   const [newEmail, setNewEmail] = useState('');
@@ -132,33 +134,33 @@ export default function AmigoOculto() {
       {/* Add Participants */}
       {!isDrawn && (
         <div className="bg-white dark:bg-dark-900 rounded-xl shadow-lg p-6">
-          <h2 className="text-xl font-bold mb-4">Add Participants</h2>
+          <h2 className="text-xl font-bold mb-4">{t('addParticipant')}</h2>
 
           <div className="space-y-3 mb-4">
             <div>
               <label className="block text-sm font-medium mb-2">
-                Name *
+                {t('name')}
               </label>
               <input
                 type="text"
                 value={newName}
                 onChange={(e) => setNewName(e.target.value)}
                 onKeyPress={(e) => e.key === 'Enter' && addParticipant()}
-                placeholder="Enter participant name"
+                placeholder={t('namePlaceholder')}
                 className="w-full px-4 py-3 border-2 border-gray-300 dark:border-dark-700 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
               />
             </div>
 
             <div>
               <label className="block text-sm font-medium mb-2">
-                Email (Optional)
+                {t('email')}
               </label>
               <input
                 type="email"
                 value={newEmail}
                 onChange={(e) => setNewEmail(e.target.value)}
                 onKeyPress={(e) => e.key === 'Enter' && addParticipant()}
-                placeholder="email@example.com"
+                placeholder={t('emailPlaceholder')}
                 className="w-full px-4 py-3 border-2 border-gray-300 dark:border-dark-700 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
               />
             </div>
@@ -168,7 +170,7 @@ export default function AmigoOculto() {
               onClick={addParticipant}
               className="w-full"
             >
-              ➕ Add Participant
+              {t('add')}
             </Button>
           </div>
 
@@ -176,7 +178,7 @@ export default function AmigoOculto() {
           {participants.length > 0 && (
             <div>
               <p className="text-sm font-medium mb-2">
-                Participants ({participants.length}):
+                {t('participants')} ({participants.length}):
               </p>
               <div className="space-y-2">
                 {participants.map((p) => (
@@ -214,10 +216,10 @@ export default function AmigoOculto() {
             onClick={drawNames}
             className="w-full text-lg py-4"
           >
-            🎁 Draw Names
+            {t('draw')}
           </Button>
           <p className="text-sm text-gray-600 dark:text-gray-400 text-center mt-2">
-            Minimum 3 participants required
+            {t('minParticipants')}
           </p>
         </div>
       )}
@@ -225,7 +227,7 @@ export default function AmigoOculto() {
       {/* Results - Individual Reveal */}
       {isDrawn && (
         <div className="bg-white dark:bg-dark-900 rounded-xl shadow-lg p-6">
-          <h2 className="text-xl font-bold mb-4">🎅 Secret Santa Results</h2>
+          <h2 className="text-xl font-bold mb-4">{t('results')}</h2>
 
           <div className="space-y-3 mb-4">
             {assignments.map((assignment, index) => (
@@ -241,12 +243,12 @@ export default function AmigoOculto() {
                       onClick={() => revealAssignment(assignment.giver)}
                       size="sm"
                     >
-                      🎁 Reveal
+                      {t('reveal')}
                     </Button>
                   ) : (
                     <div className="text-right">
                       <p className="text-sm text-gray-600 dark:text-gray-400">
-                        Gives gift to:
+                        {t('youDraw')}:
                       </p>
                       <p className="text-xl font-bold text-primary-600">
                         {assignment.receiver}
@@ -272,7 +274,7 @@ export default function AmigoOculto() {
               onClick={exportResults}
               className="flex-1"
             >
-              💾 Export
+              {t('export')}
             </Button>
             <Button
               variant="outline"
@@ -287,13 +289,12 @@ export default function AmigoOculto() {
 
       {/* Info */}
       <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-400 p-4 rounded">
-        <p className="font-semibold mb-2">ℹ️ How to use:</p>
+        <p className="font-semibold mb-2">{t('instructions')}</p>
         <ul className="text-sm text-gray-700 dark:text-gray-300 space-y-1 list-disc list-inside">
-          <li>Add at least 3 participants (names are required, emails are optional)</li>
-          <li>Click "Draw Names" to randomly assign Secret Santa pairs</li>
-          <li>Each participant can click "Reveal" to see who they should give a gift to</li>
-          <li>No one will be assigned to themselves</li>
-          <li>Export or copy the results to share with participants</li>
+          <li>{t('instruction1')}</li>
+          <li>{t('instruction2')}</li>
+          <li>{t('instruction3')}</li>
+          <li>{t('instruction4')}</li>
         </ul>
       </div>
 
