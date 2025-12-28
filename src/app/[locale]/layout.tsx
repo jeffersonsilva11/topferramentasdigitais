@@ -5,12 +5,17 @@ import { notFound } from 'next/navigation';
 import '../globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import BottomNav from '@/components/BottomNav';
+import LiveRegion from '@/components/LiveRegion';
 import { ConsentProvider } from '@/contexts/ConsentContext';
 import { ThemeProvider } from '@/contexts/ThemeContext';
 import CookieBanner from '@/components/CookieConsent/CookieBanner';
 import CookieSettings from '@/components/CookieConsent/CookieSettings';
 import GoogleAnalytics from '@/components/Analytics/GoogleAnalytics';
 import ToastProvider from '@/components/ui/ToastProvider';
+import GlobalKeyboardShortcuts from '@/components/GlobalKeyboardShortcuts';
+import PWAInstallPrompt from '@/components/PWAInstallPrompt';
+import ServiceWorkerRegistration from '@/components/ServiceWorkerRegistration';
 
 const locales = ['en', 'pt', 'es', 'fr', 'de', 'ru', 'it'];
 
@@ -50,9 +55,17 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <head>
+        {/* PWA Manifest */}
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#3b82f6" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="apple-mobile-web-app-title" content="TopTools" />
+
         {/* Google AdSense will be loaded via GoogleAnalytics component after consent */}
       </head>
-      <body className="font-sans bg-white dark:bg-dark-950 text-gray-900 dark:text-gray-100 transition-colors antialiased">
+      <body className="font-sans bg-white dark:bg-dark-950 dim:bg-dim-950 text-gray-900 dark:text-gray-100 dim:text-dim-100 transition-colors antialiased">
         {/* Skip to main content - Accessibility */}
         <a href="#main-content" className="skip-to-main">
           {locale === 'en' && 'Skip to main content'}
@@ -73,16 +86,29 @@ export default async function LocaleLayout({
               {/* Toast Notifications */}
               <ToastProvider />
 
+              {/* Global Keyboard Shortcuts */}
+              <GlobalKeyboardShortcuts />
+
+              {/* PWA Components */}
+              <ServiceWorkerRegistration />
+              <PWAInstallPrompt />
+
+              {/* Live Region for Screen Readers */}
+              <LiveRegion />
+
               {/* Cookie Consent Components */}
               <CookieBanner />
               <CookieSettings />
 
               {/* Main Layout */}
               <Header />
-              <main id="main-content" className="min-h-screen">
+              <main id="main-content" className="min-h-screen pb-20 lg:pb-0">
                 {children}
               </main>
               <Footer />
+
+              {/* Mobile Bottom Navigation */}
+              <BottomNav />
             </ConsentProvider>
           </ThemeProvider>
         </NextIntlClientProvider>

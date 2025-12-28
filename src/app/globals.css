@@ -9,6 +9,13 @@
   --background-secondary-rgb: 249, 250, 251;
 }
 
+.dim {
+  /* Dim mode colors - Middle ground between light and dark */
+  --foreground-rgb: 226, 232, 240;
+  --background-rgb: 30, 41, 59;
+  --background-secondary-rgb: 51, 65, 85;
+}
+
 .dark {
   /* Dark mode colors - #121212 instead of pure black for better UX */
   --foreground-rgb: 243, 244, 246;
@@ -29,6 +36,12 @@ body {
   /* Enhanced focus-visible for all interactive elements */
   *:focus-visible {
     @apply outline-none ring-2 ring-primary-500 ring-offset-2 rounded;
+  }
+
+  /* Dim mode focus indicators */
+  .dim *:focus-visible {
+    @apply ring-primary-400 ring-offset-2;
+    ring-offset-color: rgb(30, 41, 59);
   }
 
   /* Dark mode focus indicators */
@@ -95,6 +108,15 @@ body {
     animation: shimmer 2s infinite;
   }
 
+  .dim .shimmer {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.15) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+
   .dark .shimmer {
     background: linear-gradient(
       90deg,
@@ -112,6 +134,11 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.3);
   }
 
+  .dim .glass {
+    background: rgba(30, 41, 59, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
   .dark .glass {
     background: rgba(18, 18, 18, 0.7);
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -123,6 +150,11 @@ body {
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  .dim .glass-strong {
+    background: rgba(30, 41, 59, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.25);
   }
 
   .dark .glass-strong {
@@ -162,6 +194,10 @@ body {
   .hover-lift:hover {
     transform: translateY(-4px);
     box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+
+  .dim .hover-lift:hover {
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.25), 0 10px 10px -5px rgba(0, 0, 0, 0.15);
   }
 
   .dark .hover-lift:hover {
@@ -216,6 +252,10 @@ body {
   color: inherit;
 }
 
+.dim ::selection {
+  background-color: rgb(59, 130, 246, 0.35);
+}
+
 .dark ::selection {
   background-color: rgb(96, 165, 250, 0.3);
 }
@@ -260,6 +300,12 @@ body {
   -webkit-backdrop-filter: blur(20px) saturate(180%);
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+}
+
+.dim .glass-modern {
+  background: rgba(30, 41, 59, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25);
 }
 
 .dark .glass-modern {

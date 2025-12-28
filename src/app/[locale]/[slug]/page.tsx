@@ -4,6 +4,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { tools } from '@/lib/tools';
 import AdSlot from '@/components/AdSlot';
 import ClientToolLoader from '@/components/ClientToolLoader';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 function getToolKeyBySlug(slug: string) {
   const slugMap: Record<string, string> = {
@@ -148,6 +149,9 @@ async function ToolPageContent({ locale, slug, toolKey }: { locale: string; slug
 
   return (
     <div className="container mx-auto px-4 py-8">
+      {/* Breadcrumbs */}
+      <Breadcrumbs />
+
       {/* Ad Slot - Top */}
       <div className="mb-8">
         <AdSlot position="top" />
