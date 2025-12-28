@@ -22,11 +22,16 @@ export default function GravadorTela() {
   const timerRef = useRef<NodeJS.Timeout | null>(null);
   const videoPreviewRef = useRef<HTMLVideoElement>(null);
   const webcamPreviewRef = useRef<HTMLVideoElement>(null);
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const animationFrameRef = useRef<number | null>(null);
 
   // Cleanup streams on unmount
   useEffect(() => {
     return () => {
       stopAllStreams();
+      if (animationFrameRef.current) {
+        cancelAnimationFrame(animationFrameRef.current);
+      }
     };
   }, []);
 
@@ -37,6 +42,51 @@ export default function GravadorTela() {
     screenStreamRef.current = null;
     webcamStreamRef.current = null;
     combinedStreamRef.current = null;
+
+    if (animationFrameRef.current) {
+      cancelAnimationFrame(animationFrameRef.current);
+      animationFrameRef.current = null;
+    }
+  };
+
+  const drawCanvas = (
+    canvas: HTMLCanvasElement,
+    screenVideo: HTMLVideoElement,
+    webcamVideo: HTMLVideoElement
+  ) => {
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
+    const draw = () => {
+      if (screenVideo.readyState === screenVideo.HAVE_ENOUGH_DATA &&
+          webcamVideo.readyState === webcamVideo.HAVE_ENOUGH_DATA) {
+        // Draw screen (full canvas)
+        ctx.drawImage(screenVideo, 0, 0, canvas.width, canvas.height);
+
+        // Draw webcam (bottom-right corner, 20% of screen width)
+        const pipWidth = canvas.width * 0.20;
+        const pipHeight = (pipWidth * 3) / 4; // 4:3 aspect ratio
+        const pipX = canvas.width - pipWidth - 20;
+        const pipY = canvas.height - pipHeight - 20;
+
+        // Draw border/shadow for PiP
+        ctx.shadowColor = 'rgba(0, 0, 0, 0.5)';
+        ctx.shadowBlur = 10;
+        ctx.strokeStyle = '#ffffff';
+        ctx.lineWidth = 3;
+        ctx.strokeRect(pipX, pipY, pipWidth, pipHeight);
+
+        // Draw webcam
+        ctx.shadowBlur = 0;
+        ctx.drawImage(webcamVideo, pipX, pipY, pipWidth, pipHeight);
+      }
+
+      if (isRecording && !isPaused) {
+        animationFrameRef.current = requestAnimationFrame(draw);
+      }
+    };
+
+    draw();
   };
 
   const startRecording = async () => {
@@ -49,14 +99,26 @@ export default function GravadorTela() {
           audio: true,
         });
         screenStreamRef.current = stream;
+
+        // Show preview
+        if (videoPreviewRef.current) {
+          videoPreviewRef.current.srcObject = stream;
+          videoPreviewRef.current.play();
+        }
       } else if (mode === 'webcam') {
         stream = await navigator.mediaDevices.getUserMedia({
           video: true,
           audio: true,
         });
         webcamStreamRef.current = stream;
+
+        // Show preview
+        if (videoPreviewRef.current) {
+          videoPreviewRef.current.srcObject = stream;
+          videoPreviewRef.current.play();
+        }
       } else {
-        // screen-webcam mode
+        // screen-webcam mode - Use Canvas for Picture-in-Picture
         const screenStream = await navigator.mediaDevices.getDisplayMedia({
           video: { mediaSource: 'screen' },
           audio: true,
@@ -69,25 +131,43 @@ export default function GravadorTela() {
         screenStreamRef.current = screenStream;
         webcamStreamRef.current = webcamStream;
 
-        // Show webcam preview
-        if (webcamPreviewRef.current) {
-          webcamPreviewRef.current.srcObject = webcamStream;
-          webcamPreviewRef.current.play();
+        // Create hidden video elements to capture streams
+        const screenVideo = document.createElement('video');
+        const webcamVideo = document.createElement('video');
+
+        screenVideo.srcObject = screenStream;
+        webcamVideo.srcObject = webcamStream;
+        screenVideo.play();
+        webcamVideo.play();
+
+        // Setup canvas
+        const canvas = canvasRef.current;
+        if (!canvas) throw new Error('Canvas not available');
+
+        // Set canvas size to match screen resolution
+        const screenTrack = screenStream.getVideoTracks()[0];
+        const settings = screenTrack.getSettings();
+        canvas.width = settings.width || 1920;
+        canvas.height = settings.height || 1080;
+
+        // Wait for videos to be ready
+        await Promise.all([
+          new Promise(resolve => { screenVideo.onloadedmetadata = resolve; }),
+          new Promise(resolve => { webcamVideo.onloadedmetadata = resolve; })
+        ]);
+
+        // Start drawing to canvas
+        drawCanvas(canvas, screenVideo, webcamVideo);
+
+        // Get canvas stream and add audio from screen
+        const canvasStream = canvas.captureStream(30); // 30 FPS
+        const audioTrack = screenStream.getAudioTracks()[0];
+        if (audioTrack) {
+          canvasStream.addTrack(audioTrack);
         }
 
-        // Combine streams (screen video + screen audio + webcam video)
-        const videoTrack = screenStream.getVideoTracks()[0];
-        const audioTrack = screenStream.getAudioTracks()[0];
-        const webcamVideoTrack = webcamStream.getVideoTracks()[0];
-
-        stream = new MediaStream([videoTrack, audioTrack, webcamVideoTrack]);
+        stream = canvasStream;
         combinedStreamRef.current = stream;
-      }
-
-      // Show preview
-      if (videoPreviewRef.current && mode !== 'screen-webcam') {
-        videoPreviewRef.current.srcObject = stream;
-        videoPreviewRef.current.play();
       }
 
       // Setup MediaRecorder
@@ -275,27 +355,18 @@ export default function GravadorTela() {
           </div>
 
           <div className="relative bg-black rounded-lg overflow-hidden aspect-video mb-4">
-            {mode !== 'screen-webcam' ? (
+            {mode === 'screen-webcam' ? (
+              <canvas
+                ref={canvasRef}
+                className="w-full h-full object-contain"
+              />
+            ) : (
               <video
                 ref={videoPreviewRef}
                 autoPlay
                 muted
                 className="w-full h-full object-contain"
               />
-            ) : (
-              <>
-                {/* Screen preview would go here in production */}
-                <div className="w-full h-full flex items-center justify-center text-white">
-                  <p>Recording screen + webcam...</p>
-                </div>
-                {/* Webcam PiP */}
-                <video
-                  ref={webcamPreviewRef}
-                  autoPlay
-                  muted
-                  className="absolute bottom-4 right-4 w-48 h-36 object-cover rounded-lg border-2 border-white shadow-lg"
-                />
-              </>
             )}
           </div>
 
@@ -341,23 +412,13 @@ export default function GravadorTela() {
           />
 
           <div className="space-y-3">
-            <div className="flex flex-wrap gap-3">
-              <Button
-                variant="primary"
-                onClick={() => downloadRecording('webm')}
-                className="flex-1"
-              >
-                {t('download')}
-              </Button>
-              {/* MP4 export note: Browser support varies */}
-              <Button
-                variant="secondary"
-                onClick={() => downloadRecording('webm')}
-                className="flex-1"
-              >
-                {t('download')}
-              </Button>
-            </div>
+            <Button
+              variant="primary"
+              onClick={() => downloadRecording('webm')}
+              className="w-full"
+            >
+              {t('download')}
+            </Button>
             <Button
               variant="outline"
               onClick={resetRecording}
@@ -368,7 +429,7 @@ export default function GravadorTela() {
           </div>
 
           <div className="mt-4 text-sm text-gray-600 dark:text-gray-400">
-            <p>{t('tipText')}</p>
+            <p>{t('formatTip')}</p>
           </div>
         </div>
       )}
