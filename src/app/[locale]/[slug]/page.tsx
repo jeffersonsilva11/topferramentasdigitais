@@ -62,6 +62,12 @@ function getToolKeyBySlug(slug: string) {
     'consulta-whois-es': 'consulta-whois',
     'holidays-2026': 'feriados-2026',
     'feriados-2026-es': 'feriados-2026',
+    'internet-speed-test': 'teste-velocidade-internet',
+    'prueba-velocidad-internet': 'teste-velocidade-internet',
+    'internet-geschwindigkeitstest': 'teste-velocidade-internet',
+    'test-vitesse-internet': 'teste-velocidade-internet',
+    'test-skorosti-interneta': 'teste-velocidade-internet',
+    'test-velocita-internet': 'teste-velocidade-internet',
   };
 
   return slugMap[slug] || slug;
