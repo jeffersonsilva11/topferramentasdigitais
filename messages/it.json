@@ -545,7 +545,8 @@
     "shortcutSpace": "Spazio: Riproduci/Pausa",
     "shortcutUp": "↑ Freccia Su: Aumenta velocità",
     "shortcutDown": "↓ Freccia Giù: Diminuisci velocità",
-    "shortcutR": "R: Ripristina all'inizio"
+    "shortcutR": "R: Ripristina all'inizio",
+    "shortcutH": "H: Mostra/Nascondi aiuto"
   },
   "roiCalculatorUI": {
     "title": "Calcolatrice ROI",
@@ -659,6 +660,7 @@
     "alertQuantityExceeded": "La quantità non può essere maggiore dell'intervallo quando i duplicati non sono consentiti",
     "generatedCount": "numero(i) generato(i)",
     "howItWorksTitle": "ℹ️ Come funziona:",
+    "howItWorks": "Come funziona:",
     "howItWorksStep1": "Imposta l'intervallo minimo e massimo",
     "howItWorksStep2": "Scegli quanti numeri vuoi generare",
     "howItWorksStep3": "Abilita 'Consenti Duplicati' se vuoi numeri ripetuti",
@@ -816,7 +818,7 @@
     "refZeroOrMore": "* - Zero o più",
     "refOptional": "? - Zero o uno (opzionale)",
     "refExactly": "{n} - Esattamente n volte",
-    "refRange": "{n,m} - Tra n e m volte",
+    "refRange": "Tra n ed m volte",
     "refAnchors": "Ancoraggi",
     "refStart": "^ - Inizio della stringa",
     "refEnd": "$ - Fine della stringa",
@@ -826,6 +828,7 @@
     "refNonCapture": "(?:abc) - Gruppo senza cattura",
     "refOr": "| - OR logico (a|b)",
     "refTips": "💡 Suggerimenti",
+    "tips": "Suggerimenti",
     "tip1": "Usa ^ e $ per corrispondere all'intera stringa",
     "tip2": "Usa \\d+ per una o più cifre",
     "tip3": "Usa .* per qualsiasi cosa (greedy)",
@@ -865,7 +868,8 @@
     "nextStep4": "Aggiorna la data 'Ultimo Aggiornamento' ogni volta che apporti modifiche",
     "nextStep5": "Conserva una copia archiviata di tutte le versioni del documento",
     "legalDisclaimer": "⚖️ Disclaimer Legale",
-    "disclaimerText": "Questo documento è un modello base generato automaticamente. NON costituisce consulenza legale. Consulta un avvocato per rivedere e personalizzare secondo le tue esigenze specifiche e la legislazione locale."
+    "disclaimerText": "Questo documento è un modello base generato automaticamente. NON costituisce consulenza legale. Consulta un avvocato per rivedere e personalizzare secondo le tue esigenze specifiche e la legislazione locale.",
+    "lastUpdated": "Ultimo Aggiornamento"
   },
   "colorPaletteUI": {
     "title": "Generatore Palette Colori",

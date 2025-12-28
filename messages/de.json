@@ -545,7 +545,8 @@
     "shortcutSpace": "Leertaste: Abspielen/Pause",
     "shortcutUp": "↑ Pfeil Nach Oben: Geschwindigkeit erhöhen",
     "shortcutDown": "↓ Pfeil Nach Unten: Geschwindigkeit verringern",
-    "shortcutR": "R: Zum Anfang zurücksetzen"
+    "shortcutR": "R: Zum Anfang zurücksetzen",
+    "shortcutH": "H: Hilfe ein-/ausblenden"
   },
   "roiCalculatorUI": {
     "title": "ROI-Rechner",
@@ -659,6 +660,7 @@
     "alertQuantityExceeded": "Die Anzahl kann nicht größer sein als der Bereich, wenn Duplikate nicht zulässig sind",
     "generatedCount": "Zahl(en) generiert",
     "howItWorksTitle": "ℹ️ So funktioniert's:",
+    "howItWorks": "So funktioniert es:",
     "howItWorksStep1": "Legen Sie den minimalen und maximalen Bereich fest",
     "howItWorksStep2": "Wählen Sie, wie viele Zahlen Sie generieren möchten",
     "howItWorksStep3": "Aktivieren Sie 'Duplikate Zulassen', wenn Sie wiederholte Zahlen möchten",
@@ -816,7 +818,7 @@
     "refZeroOrMore": "* - Null oder mehr",
     "refOptional": "? - Null oder eins (optional)",
     "refExactly": "{n} - Genau n Mal",
-    "refRange": "{n,m} - Zwischen n und m Mal",
+    "refRange": "Zwischen n und m Mal",
     "refAnchors": "Anker",
     "refStart": "^ - Anfang der Zeichenfolge",
     "refEnd": "$ - Ende der Zeichenfolge",
@@ -826,6 +828,7 @@
     "refNonCapture": "(?:abc) - Nicht-Erfassungsgruppe",
     "refOr": "| - Logisches ODER (a|b)",
     "refTips": "💡 Tipps",
+    "tips": "Tipps",
     "tip1": "Verwenden Sie ^ und $, um die gesamte Zeichenfolge zu matchen",
     "tip2": "Verwenden Sie \\d+ für eine oder mehrere Ziffern",
     "tip3": "Verwenden Sie .* für alles (gierig)",
@@ -865,7 +868,8 @@
     "nextStep4": "Aktualisieren Sie das Datum der 'Letzten Aktualisierung', wenn Sie Änderungen vornehmen",
     "nextStep5": "Bewahren Sie eine archivierte Kopie aller Dokumentversionen auf",
     "legalDisclaimer": "⚖️ Rechtlicher Haftungsausschluss",
-    "disclaimerText": "Dieses Dokument ist eine automatisch generierte Basisvorlage. Es stellt KEINE Rechtsberatung dar. Konsultieren Sie einen Anwalt, um es gemäß Ihren spezifischen Bedürfnissen und der lokalen Gesetzgebung zu überprüfen und anzupassen."
+    "disclaimerText": "Dieses Dokument ist eine automatisch generierte Basisvorlage. Es stellt KEINE Rechtsberatung dar. Konsultieren Sie einen Anwalt, um es gemäß Ihren spezifischen Bedürfnissen und der lokalen Gesetzgebung zu überprüfen und anzupassen.",
+    "lastUpdated": "Letzte Aktualisierung"
   },
   "colorPaletteUI": {
     "title": "Farbpaletten-Generator",

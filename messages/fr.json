@@ -545,7 +545,8 @@
     "shortcutSpace": "Espace : Lecture/Pause",
     "shortcutUp": "↑ Flèche Haut : Augmenter la vitesse",
     "shortcutDown": "↓ Flèche Bas : Diminuer la vitesse",
-    "shortcutR": "R : Réinitialiser au début"
+    "shortcutR": "R : Réinitialiser au début",
+    "shortcutH": "H : Afficher/Masquer l'aide"
   },
   "roiCalculatorUI": {
     "title": "Calculateur ROI",
@@ -659,6 +660,7 @@
     "alertQuantityExceeded": "La quantité ne peut pas être supérieure à la plage lorsque les doublons ne sont pas autorisés",
     "generatedCount": "nombre(s) généré(s)",
     "howItWorksTitle": "ℹ️ Comment ça marche :",
+    "howItWorks": "Comment ça marche :",
     "howItWorksStep1": "Définissez la plage minimale et maximale",
     "howItWorksStep2": "Choisissez combien de nombres vous souhaitez générer",
     "howItWorksStep3": "Activez 'Autoriser les Doublons' si vous voulez des nombres répétés",
@@ -816,7 +818,7 @@
     "refZeroOrMore": "* - Zéro ou plusieurs",
     "refOptional": "? - Zéro ou un (optionnel)",
     "refExactly": "{n} - Exactement n fois",
-    "refRange": "{n,m} - Entre n et m fois",
+    "refRange": "Entre n et m fois",
     "refAnchors": "Ancres",
     "refStart": "^ - Début de chaîne",
     "refEnd": "$ - Fin de chaîne",
@@ -826,6 +828,7 @@
     "refNonCapture": "(?:abc) - Groupe sans capture",
     "refOr": "| - OU logique (a|b)",
     "refTips": "💡 Conseils",
+    "tips": "Conseils",
     "tip1": "Utilisez ^ et $ pour faire correspondre la chaîne entière",
     "tip2": "Utilisez \\d+ pour un ou plusieurs chiffres",
     "tip3": "Utilisez .* pour n'importe quoi (gourmand)",
@@ -865,7 +868,8 @@
     "nextStep4": "Mettez à jour la date de 'Dernière Mise à Jour' chaque fois que vous apportez des modifications",
     "nextStep5": "Conservez une copie archivée de toutes les versions du document",
     "legalDisclaimer": "⚖️ Avertissement Juridique",
-    "disclaimerText": "Ce document est un modèle de base généré automatiquement. Il ne constitue PAS un conseil juridique. Consultez un avocat pour réviser et personnaliser selon vos besoins spécifiques et la législation locale."
+    "disclaimerText": "Ce document est un modèle de base généré automatiquement. Il ne constitue PAS un conseil juridique. Consultez un avocat pour réviser et personnaliser selon vos besoins spécifiques et la législation locale.",
+    "lastUpdated": "Dernière Mise à Jour"
   },
   "colorPaletteUI": {
     "title": "Générateur de Palette de Couleurs",

@@ -545,7 +545,8 @@
     "shortcutSpace": "Espaço: Reproduzir/Pausar",
     "shortcutUp": "↑ Seta para cima: Aumentar velocidade",
     "shortcutDown": "↓ Seta para baixo: Diminuir velocidade",
-    "shortcutR": "R: Reiniciar do início"
+    "shortcutR": "R: Reiniciar do início",
+    "shortcutH": "H: Mostrar/Ocultar ajuda"
   },
   "roiCalculatorUI": {
     "title": "Calculadora de ROI",
@@ -659,6 +660,7 @@
     "alertQuantityExceeded": "A quantidade não pode ser maior que o intervalo quando duplicatas não são permitidas",
     "generatedCount": "número(s) gerado(s)",
     "howItWorksTitle": "ℹ️ Como funciona:",
+    "howItWorks": "Como funciona:",
     "howItWorksStep1": "Defina o intervalo mínimo e máximo",
     "howItWorksStep2": "Escolha quantos números deseja gerar",
     "howItWorksStep3": "Ative 'Permitir Duplicados' se quiser números repetidos",
@@ -816,7 +818,7 @@
     "refZeroOrMore": "* - Zero ou mais",
     "refOptional": "? - Zero ou um (opcional)",
     "refExactly": "{n} - Exatamente n vezes",
-    "refRange": "{n,m} - Entre n e m vezes",
+    "refRange": "Entre n e m vezes",
     "refAnchors": "Âncoras",
     "refStart": "^ - Início da string",
     "refEnd": "$ - Fim da string",
@@ -826,6 +828,7 @@
     "refNonCapture": "(?:abc) - Grupo sem captura",
     "refOr": "| - OU lógico (a|b)",
     "refTips": "💡 Dicas",
+    "tips": "Dicas",
     "tip1": "Use ^ e $ para corresponder a string inteira",
     "tip2": "Use \\d+ para um ou mais dígitos",
     "tip3": "Use .* para qualquer coisa (greedy)",
@@ -865,7 +868,8 @@
     "nextStep4": "Atualize a data de 'Última Atualização' sempre que fizer alterações",
     "nextStep5": "Mantenha uma cópia arquivada de todas as versões do documento",
     "legalDisclaimer": "⚖️ Aviso Legal",
-    "disclaimerText": "Este documento é um modelo básico gerado automaticamente. Ele NÃO constitui aconselhamento jurídico. Consulte um advogado para revisar e personalizar de acordo com suas necessidades específicas e legislação local."
+    "disclaimerText": "Este documento é um modelo básico gerado automaticamente. Ele NÃO constitui aconselhamento jurídico. Consulte um advogado para revisar e personalizar de acordo com suas necessidades específicas e legislação local.",
+    "lastUpdated": "Última Atualização"
   },
   "colorPaletteUI": {
     "title": "Gerador de Paleta de Cores",
