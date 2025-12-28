@@ -293,7 +293,7 @@
       "description": "Erstellen Sie professionelle Farbpaletten mit WCAG-Kontrast",
       "metaDescription": "Kostenloser Online-Farbpaletten-Generator. Erstellen Sie professionelle Paletten mit HEX, RGB, HSL, WCAG-Kontrast und CSS/JSON-Export."
     },
-    "internet-geschwindigkeitstest": {
+    "teste-velocidade-internet": {
       "name": "Internet-Geschwindigkeitstest",
       "slug": "internet-geschwindigkeitstest",
       "description": "Testen Sie Ihre Internetverbindungsgeschwindigkeit mit Download-, Upload-, Ping- und Jitter-Metriken",
