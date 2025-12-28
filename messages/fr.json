@@ -293,7 +293,7 @@
       "description": "Créez des palettes de couleurs professionnelles avec contraste WCAG",
       "metaDescription": "Générateur de palette de couleurs en ligne gratuit. Créez palettes professionnelles avec HEX, RGB, HSL, contraste WCAG et export CSS/JSON."
     },
-    "test-vitesse-internet": {
+    "teste-velocidade-internet": {
       "name": "Test de Vitesse Internet",
       "slug": "test-vitesse-internet",
       "description": "Testez la vitesse de votre connexion internet avec les métriques de téléchargement, téléversement, ping et gigue",
