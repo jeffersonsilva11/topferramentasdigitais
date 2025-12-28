@@ -28,7 +28,7 @@ export default function TestadorMicrofoneCamera() {
   const analyserRef = useRef<AnalyserNode | null>(null);
   const audioStreamRef = useRef<MediaStream | null>(null);
   const videoStreamRef = useRef<MediaStream | null>(null);
-  const animationFrameRef = useRef<number>();
+  const animationFrameRef = useRef<number | undefined>(undefined);
   const videoRef = useRef<HTMLVideoElement>(null);
 
   // Enumerate devices

@@ -95,7 +95,7 @@ export default function GravadorTela() {
 
       if (mode === 'screen') {
         stream = await navigator.mediaDevices.getDisplayMedia({
-          video: { mediaSource: 'screen' },
+          video: true,
           audio: true,
         });
         screenStreamRef.current = stream;
@@ -120,7 +120,7 @@ export default function GravadorTela() {
       } else {
         // screen-webcam mode - Use Canvas for Picture-in-Picture
         const screenStream = await navigator.mediaDevices.getDisplayMedia({
-          video: { mediaSource: 'screen' },
+          video: true,
           audio: true,
         });
         const webcamStream = await navigator.mediaDevices.getUserMedia({
