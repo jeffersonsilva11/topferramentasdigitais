@@ -97,7 +97,7 @@ export default function AmigoOculto() {
   };
 
   const revealAssignment = (giverName: string) => {
-    setRevealedAssignments(prev => new Set([...prev, giverName]));
+    setRevealedAssignments(prev => new Set(Array.from(prev).concat(giverName)));
   };
 
   const resetDraw = () => {

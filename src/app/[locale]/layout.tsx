@@ -10,6 +10,7 @@ import { ThemeProvider } from '@/contexts/ThemeContext';
 import CookieBanner from '@/components/CookieConsent/CookieBanner';
 import CookieSettings from '@/components/CookieConsent/CookieSettings';
 import GoogleAnalytics from '@/components/Analytics/GoogleAnalytics';
+import ToastProvider from '@/components/ui/ToastProvider';
 
 const locales = ['en', 'pt', 'es', 'fr', 'de', 'ru', 'it'];
 
@@ -68,6 +69,9 @@ export default async function LocaleLayout({
             <ConsentProvider>
               {/* Google Analytics with Consent Mode v2 */}
               <GoogleAnalytics />
+
+              {/* Toast Notifications */}
+              <ToastProvider />
 
               {/* Cookie Consent Components */}
               <CookieBanner />

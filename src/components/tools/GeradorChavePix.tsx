@@ -33,6 +33,7 @@ export default function GeradorChavePix() {
 
     try {
       // Criar payload PIX usando pix-utils
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const pixConfig: any = {
         pixKey: chavePix.trim(),
         merchantName: nome.trim(),

@@ -30,7 +30,7 @@ export default function Teleprompter() {
 
   const containerRef = useRef<HTMLDivElement>(null);
   const textContainerRef = useRef<HTMLDivElement>(null);
-  const animationFrameRef = useRef<number>();
+  const animationFrameRef = useRef<number | undefined>(undefined);
   const scrollPositionRef = useRef(0);
 
   // Load from localStorage

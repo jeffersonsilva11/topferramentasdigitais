@@ -10,7 +10,7 @@ interface ConvertedImage {
 
 declare global {
   interface Window {
-    pdfjsLib: any;
+    pdfjsLib: typeof import('pdfjs-dist');
   }
 }
 

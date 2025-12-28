@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, ReactElement } from 'react';
 import { useTranslations } from 'next-intl';
 import Button from '@/components/ui/Button';
 
@@ -229,7 +229,7 @@ export default function ValidadorRegex() {
 
     try {
       const regex = new RegExp(pattern, flags);
-      const parts: JSX.Element[] = [];
+      const parts: ReactElement[] = [];
       let lastIndex = 0;
 
       testString.replace(regex, (match, ...args) => {
