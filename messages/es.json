@@ -545,7 +545,8 @@
     "shortcutSpace": "Espacio: Reproducir/Pausar",
     "shortcutUp": "↑ Flecha Arriba: Aumentar velocidad",
     "shortcutDown": "↓ Flecha Abajo: Disminuir velocidad",
-    "shortcutR": "R: Reiniciar al principio"
+    "shortcutR": "R: Reiniciar al principio",
+    "shortcutH": "H: Mostrar/Ocultar ayuda"
   },
   "roiCalculatorUI": {
     "title": "Calculadora de ROI",
@@ -659,6 +660,7 @@
     "alertQuantityExceeded": "La cantidad no puede ser mayor que el rango cuando no se permiten duplicados",
     "generatedCount": "número(s) generado(s)",
     "howItWorksTitle": "ℹ️ Cómo funciona:",
+    "howItWorks": "Cómo funciona:",
     "howItWorksStep1": "Establece el rango mínimo y máximo",
     "howItWorksStep2": "Elige cuántos números deseas generar",
     "howItWorksStep3": "Activa 'Permitir Duplicados' si quieres números repetidos",
@@ -816,7 +818,7 @@
     "refZeroOrMore": "* - Cero o más",
     "refOptional": "? - Cero o uno (opcional)",
     "refExactly": "{n} - Exactamente n veces",
-    "refRange": "{n,m} - Entre n y m veces",
+    "refRange": "Entre n y m veces",
     "refAnchors": "Anclas",
     "refStart": "^ - Inicio de la cadena",
     "refEnd": "$ - Fin de la cadena",
@@ -826,6 +828,7 @@
     "refNonCapture": "(?:abc) - Grupo sin captura",
     "refOr": "| - O lógico (a|b)",
     "refTips": "💡 Consejos",
+    "tips": "Consejos",
     "tip1": "Usa ^ y $ para coincidir con la cadena completa",
     "tip2": "Usa \\d+ para uno o más dígitos",
     "tip3": "Usa .* para cualquier cosa (greedy)",
@@ -865,7 +868,8 @@
     "nextStep4": "Actualiza la fecha de 'Última Actualización' cada vez que hagas cambios",
     "nextStep5": "Mantén una copia archivada de todas las versiones del documento",
     "legalDisclaimer": "⚖️ Aviso Legal",
-    "disclaimerText": "Este documento es una plantilla básica generada automáticamente. NO constituye asesoramiento legal. Consulta a un abogado para revisar y personalizar según tus necesidades específicas y legislación local."
+    "disclaimerText": "Este documento es una plantilla básica generada automáticamente. NO constituye asesoramiento legal. Consulta a un abogado para revisar y personalizar según tus necesidades específicas y legislación local.",
+    "lastUpdated": "Última Actualización"
   },
   "colorPaletteUI": {
     "title": "Generador de Paleta de Colores",

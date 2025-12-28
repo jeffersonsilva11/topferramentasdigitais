@@ -18,6 +18,7 @@ export default function Teleprompter() {
   const [text, setText] = useState('');
   const [isPlaying, setIsPlaying] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
+  const [showHelp, setShowHelp] = useState(true);
   const [settings, setSettings] = useState<TeleprompterSettings>({
     speed: 50,
     fontSize: 32,
@@ -98,6 +99,9 @@ export default function Teleprompter() {
       } else if (e.code === 'KeyR') {
         e.preventDefault();
         resetScroll();
+      } else if (e.code === 'KeyH') {
+        e.preventDefault();
+        setShowHelp(prev => !prev);
       }
     };
 
@@ -276,6 +280,29 @@ export default function Teleprompter() {
           }}
           className="relative"
         >
+          {/* Fullscreen Keyboard Shortcuts Overlay */}
+          {isFullscreen && showHelp && (
+            <div className="fixed top-4 right-4 bg-black/80 text-white px-6 py-4 rounded-lg shadow-2xl z-50 backdrop-blur-sm border border-white/20">
+              <div className="flex items-center justify-between mb-2">
+                <p className="font-bold text-sm">{t('keyboardShortcuts')}</p>
+                <button
+                  onClick={() => setShowHelp(false)}
+                  className="ml-4 text-white/60 hover:text-white text-xl leading-none"
+                  aria-label="Close help"
+                >
+                  ×
+                </button>
+              </div>
+              <ul className="text-xs space-y-1">
+                <li><strong>ESPAÇO:</strong> {t('shortcutSpace').replace('Espaço: ', '')}</li>
+                <li><strong>↑:</strong> {t('shortcutUp').replace('↑ Seta para cima: ', '')}</li>
+                <li><strong>↓:</strong> {t('shortcutDown').replace('↓ Seta para baixo: ', '')}</li>
+                <li><strong>R:</strong> {t('shortcutR').replace('R: ', '')}</li>
+                <li><strong>H:</strong> {t('shortcutH').replace('H: ', '')}</li>
+              </ul>
+            </div>
+          )}
+
           <div className="max-w-4xl mx-auto">
             {text.split('\n').map((line, index) => (
               <p key={index} className="mb-4">

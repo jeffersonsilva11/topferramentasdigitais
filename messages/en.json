@@ -545,7 +545,8 @@
     "shortcutSpace": "Space: Play/Pause",
     "shortcutUp": "↑ Arrow Up: Increase speed",
     "shortcutDown": "↓ Arrow Down: Decrease speed",
-    "shortcutR": "R: Reset to beginning"
+    "shortcutR": "R: Reset to beginning",
+    "shortcutH": "H: Show/Hide help"
   },
   "roiCalculatorUI": {
     "title": "ROI Calculator",
@@ -659,6 +660,7 @@
     "alertQuantityExceeded": "Quantity cannot be greater than the range when duplicates are not allowed",
     "generatedCount": "number(s) generated",
     "howItWorksTitle": "ℹ️ How it works:",
+    "howItWorks": "How it works:",
     "howItWorksStep1": "Set the minimum and maximum range",
     "howItWorksStep2": "Choose how many numbers you want to generate",
     "howItWorksStep3": "Enable 'Allow Duplicates' if you want repeated numbers",
@@ -816,7 +818,7 @@
     "refZeroOrMore": "* - Zero or more",
     "refOptional": "? - Zero or one (optional)",
     "refExactly": "{n} - Exactly n times",
-    "refRange": "{n,m} - Between n and m times",
+    "refRange": "Between n and m times",
     "refAnchors": "Anchors",
     "refStart": "^ - Start of string",
     "refEnd": "$ - End of string",
@@ -826,6 +828,7 @@
     "refNonCapture": "(?:abc) - Non-capture group",
     "refOr": "| - Logical OR (a|b)",
     "refTips": "💡 Tips",
+    "tips": "Tips",
     "tip1": "Use ^ and $ to match the entire string",
     "tip2": "Use \\d+ for one or more digits",
     "tip3": "Use .* for anything (greedy)",
@@ -865,7 +868,8 @@
     "nextStep4": "Update the 'Last Updated' date whenever you make changes",
     "nextStep5": "Keep an archived copy of all document versions",
     "legalDisclaimer": "⚖️ Legal Disclaimer",
-    "disclaimerText": "This document is a basic template generated automatically. It does NOT constitute legal advice. Consult a lawyer to review and customize according to your specific needs and local legislation."
+    "disclaimerText": "This document is a basic template generated automatically. It does NOT constitute legal advice. Consult a lawyer to review and customize according to your specific needs and local legislation.",
+    "lastUpdated": "Last Updated"
   },
   "colorPaletteUI": {
     "title": "Color Palette Generator",
