@@ -1,8 +1,10 @@
 'use client';
 
+import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useTranslations, useLocale } from 'next-intl';
+import { motion } from 'framer-motion';
 import LanguageSelector from './LanguageSelector';
 import ThemeToggle from './ThemeToggle';
 import MobileMenu from './MobileMenu';
@@ -11,6 +13,7 @@ export default function Header() {
   const pathname = usePathname();
   const locale = useLocale();
   const t = useTranslations('site');
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const isHome = pathname === `/${locale}` || pathname === '/';
 
@@ -37,6 +40,25 @@ export default function Header() {
 
           <nav aria-label={locale === 'en' ? 'Main navigation' : locale === 'pt' ? 'Navegação principal' : 'Navegación principal'}>
             <div className="flex items-center gap-3">
+              {/* Mobile Menu Button */}
+              <motion.button
+                onClick={() => setIsMobileMenuOpen(true)}
+                whileTap={{ scale: 0.9 }}
+                className="
+                  lg:hidden p-2 rounded-lg
+                  text-gray-700 dark:text-gray-300 dim:text-dim-200
+                  hover:bg-gray-100 dark:hover:bg-dark-800 dim:hover:bg-dim-800
+                  transition-colors
+                  focus-visible:ring-2 focus-visible:ring-primary-500
+                "
+                aria-label={locale === 'en' ? 'Open menu' : locale === 'pt' ? 'Abrir menu' : 'Abrir menú'}
+                aria-expanded={isMobileMenuOpen}
+              >
+                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </motion.button>
+
               <ThemeToggle />
               <LanguageSelector />
               {!isHome && (
@@ -48,9 +70,11 @@ export default function Header() {
                   ← {t('backToHome')}
                 </Link>
               )}
-              <MobileMenu />
             </div>
           </nav>
+
+          {/* Mobile Menu */}
+          <MobileMenu isOpen={isMobileMenuOpen} onClose={() => setIsMobileMenuOpen(false)} />
         </div>
       </div>
     </header>

@@ -1,168 +1,180 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useTranslations, useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
+import { motion, AnimatePresence, useDragControls } from 'framer-motion';
 import { usePathname } from 'next/navigation';
 
-export default function MobileMenu() {
+interface MobileMenuProps {
+  isOpen: boolean;
+  onClose: () => void;
+}
+
+export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
   const locale = useLocale();
   const pathname = usePathname();
-  const tCategories = useTranslations('categories');
-  const [isOpen, setIsOpen] = useState(false);
+  const t = useTranslations('navigation');
+  const dragControls = useDragControls();
 
-  // Close menu when route changes
+  // Close on route change
   useEffect(() => {
-    setIsOpen(false);
-  }, [pathname]);
+    onClose();
+  }, [pathname, onClose]);
 
-  // Prevent body scroll when menu is open
-  useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'unset';
-    }
-    return () => {
-      document.body.style.overflow = 'unset';
-    };
-  }, [isOpen]);
-
-  // Close menu on Escape key
+  // Close on escape key
   useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') {
-        setIsOpen(false);
-      }
+      if (e.key === 'Escape') onClose();
     };
-    document.addEventListener('keydown', handleEscape);
-    return () => document.removeEventListener('keydown', handleEscape);
-  }, []);
+    if (isOpen) {
+      window.addEventListener('keydown', handleEscape);
+      // Prevent body scroll
+      document.body.style.overflow = 'hidden';
+    }
+    return () => {
+      window.removeEventListener('keydown', handleEscape);
+      document.body.style.overflow = '';
+    };
+  }, [isOpen, onClose]);
 
-  const categories = [
-    { id: 'converters', icon: '🔄', color: 'blue' },
-    { id: 'generators', icon: '⚙️', color: 'green' },
-    { id: 'calculators', icon: '🔢', color: 'purple' },
-    { id: 'text', icon: '📝', color: 'orange' },
-    { id: 'images', icon: '🖼️', color: 'pink' },
-    { id: 'security', icon: '🔐', color: 'indigo' },
+  const menuItems = [
+    { href: `/${locale}`, label: t('home') || 'Home', icon: '🏠' },
+    { href: `/${locale}#tools`, label: t('tools') || 'Tools', icon: '🛠️' },
+    { href: `/${locale}/privacy-policy`, label: t('privacy') || 'Privacy', icon: '🔒' },
+    { href: `/${locale}/cookie-policy`, label: t('cookies') || 'Cookies', icon: '🍪' },
   ];
 
   return (
-    <>
-      {/* Hamburger Button */}
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="lg:hidden p-2 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-dark-800 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-colors"
-        aria-label={isOpen ? (locale === 'en' ? 'Close menu' : locale === 'pt' ? 'Fechar menu' : 'Cerrar menú') : (locale === 'en' ? 'Open menu' : locale === 'pt' ? 'Abrir menu' : 'Abrir menú')}
-        aria-expanded={isOpen}
-        aria-controls="mobile-menu"
-      >
-        <svg
-          className="w-6 h-6"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          aria-hidden="true"
-        >
-          {isOpen ? (
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-          ) : (
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-          )}
-        </svg>
-      </button>
-
-      {/* Backdrop */}
+    <AnimatePresence>
       {isOpen && (
-        <div
-          className="fixed inset-0 bg-black/50 dark:bg-black/70 z-40 lg:hidden animate-fade-in"
-          onClick={() => setIsOpen(false)}
-          aria-hidden="true"
-        />
-      )}
+        <>
+          {/* Backdrop */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
+            onClick={onClose}
+            className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[90] lg:hidden"
+            aria-hidden="true"
+          />
 
-      {/* Mobile Menu Panel */}
-      <div
-        id="mobile-menu"
-        className={`fixed top-0 right-0 h-full w-80 bg-white dark:bg-dark-900 shadow-2xl z-50 transform transition-transform duration-300 ease-in-out lg:hidden ${
-          isOpen ? 'translate-x-0' : 'translate-x-full'
-        }`}
-        role="dialog"
-        aria-modal="true"
-        aria-label={locale === 'en' ? 'Mobile navigation menu' : locale === 'pt' ? 'Menu de navegação mobile' : 'Menú de navegación móvil'}
-      >
-        {/* Header */}
-        <div className="flex items-center justify-between p-4 border-b border-gray-200 dark:border-dark-700">
-          <h2 className="text-lg font-bold text-gray-900 dark:text-gray-100">
-            {locale === 'en' ? 'Menu' : locale === 'pt' ? 'Menu' : 'Menú'}
-          </h2>
-          <button
-            onClick={() => setIsOpen(false)}
-            className="p-2 rounded-lg text-gray-500 hover:bg-gray-100 dark:hover:bg-dark-800 focus:outline-none focus:ring-2 focus:ring-primary-500"
-            aria-label={locale === 'en' ? 'Close menu' : locale === 'pt' ? 'Fechar menu' : 'Cerrar menú'}
+          {/* Drawer */}
+          <motion.div
+            initial={{ x: '-100%' }}
+            animate={{ x: 0 }}
+            exit={{ x: '-100%' }}
+            transition={{ type: 'spring', damping: 30, stiffness: 300 }}
+            drag="x"
+            dragConstraints={{ left: 0, right: 0 }}
+            dragElastic={{ left: 0.2, right: 0 }}
+            dragControls={dragControls}
+            onDragEnd={(_, info) => {
+              if (info.offset.x < -100 || info.velocity.x < -500) {
+                onClose();
+              }
+            }}
+            className="
+              fixed top-0 left-0 bottom-0 z-[100]
+              w-[280px] max-w-[85vw]
+              bg-white dark:bg-dark-900 dim:bg-dim-900
+              shadow-2xl
+              overflow-y-auto
+              lg:hidden
+            "
+            role="dialog"
+            aria-modal="true"
+            aria-label="Mobile navigation"
           >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
-        </div>
+            {/* Drag Handle */}
+            <div
+              className="absolute top-4 right-4 w-1 h-12 bg-gray-300 dark:bg-dark-700 dim:bg-dim-700 rounded-full cursor-grab active:cursor-grabbing"
+              onPointerDown={(e) => dragControls.start(e)}
+            />
 
-        {/* Menu Content */}
-        <nav className="overflow-y-auto h-[calc(100%-73px)]" aria-label={locale === 'en' ? 'Mobile navigation' : locale === 'pt' ? 'Navegação mobile' : 'Navegación móvil'}>
-          {/* Home Link */}
-          <div className="p-4 border-b border-gray-200 dark:border-dark-700">
-            <Link
-              href={`/${locale}`}
-              className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-50 dark:hover:bg-dark-800 text-gray-900 dark:text-gray-100 font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500"
-            >
-              <span className="text-xl" role="img" aria-label={locale === 'en' ? 'Home' : locale === 'pt' ? 'Início' : 'Inicio'}>🏠</span>
-              {locale === 'en' ? 'Home' : locale === 'pt' ? 'Início' : 'Inicio'}
-            </Link>
-          </div>
+            {/* Header */}
+            <div className="flex items-center justify-between p-6 border-b border-gray-200 dark:border-dark-700 dim:border-dim-700">
+              <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100 dim:text-dim-100">
+                Menu
+              </h2>
+              <motion.button
+                onClick={onClose}
+                whileTap={{ scale: 0.9 }}
+                className="
+                  p-2 rounded-lg
+                  text-gray-500 dark:text-gray-400 dim:text-dim-400
+                  hover:bg-gray-100 dark:hover:bg-dark-800 dim:hover:bg-dim-800
+                  transition-colors
+                "
+                aria-label="Close menu"
+              >
+                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </motion.button>
+            </div>
 
-          {/* Categories */}
-          <div className="p-4">
-            <h3 className="px-4 text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-3">
-              {locale === 'en' ? 'Categories' : locale === 'pt' ? 'Categorias' : 'Categorías'}
-            </h3>
-            <ul className="space-y-1" role="list">
-              {categories.map((category) => (
-                <li key={category.id}>
-                  <Link
-                    href={`/${locale}#${category.id}`}
-                    className={`flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-${category.color}-50 dark:hover:bg-${category.color}-950 text-gray-700 dark:text-gray-300 hover:text-${category.color}-900 dark:hover:text-${category.color}-300 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500`}
-                  >
-                    <span className="text-xl" role="img" aria-hidden="true">{category.icon}</span>
-                    <span className="font-medium">{tCategories(`${category.id}.title`)}</span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+            {/* Menu Items */}
+            <nav className="p-4">
+              <ul className="space-y-2">
+                {menuItems.map((item, index) => {
+                  const isActive = pathname === item.href || (item.href.includes('#') && pathname === `/${locale}`);
 
-          {/* Additional Links */}
-          <div className="p-4 border-t border-gray-200 dark:border-dark-700">
-            <h3 className="px-4 text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-3">
-              {locale === 'en' ? 'More' : locale === 'pt' ? 'Mais' : 'Más'}
-            </h3>
-            <ul className="space-y-1">
-              <li>
-                <a
-                  href="#about"
-                  className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-50 dark:hover:bg-dark-800 text-gray-700 dark:text-gray-300 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500"
-                >
-                  <span className="text-xl" role="img" aria-label={locale === 'en' ? 'About' : locale === 'pt' ? 'Sobre' : 'Acerca de'}>ℹ️</span>
-                  <span className="font-medium">
-                    {locale === 'en' ? 'About' : locale === 'pt' ? 'Sobre' : 'Acerca de'}
-                  </span>
-                </a>
-              </li>
-              {/* TODO: Add Privacy Policy and Cookie Policy links when pages are created */}
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </>
+                  return (
+                    <motion.li
+                      key={item.href}
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: index * 0.05 }}
+                    >
+                      <Link
+                        href={item.href}
+                        className={`
+                          flex items-center gap-3 px-4 py-3 rounded-lg
+                          font-medium transition-all duration-200
+                          ${
+                            isActive
+                              ? 'bg-primary-100 dark:bg-primary-900/30 dim:bg-primary-900/20 text-primary-700 dark:text-primary-300 dim:text-primary-400'
+                              : 'text-gray-700 dark:text-gray-300 dim:text-dim-200 hover:bg-gray-100 dark:hover:bg-dark-800 dim:hover:bg-dim-800'
+                          }
+                        `}
+                        onClick={onClose}
+                      >
+                        <span className="text-2xl">{item.icon}</span>
+                        <span>{item.label}</span>
+                        {isActive && (
+                          <motion.div
+                            layoutId="mobile-active-indicator"
+                            className="ml-auto w-2 h-2 bg-primary-600 dark:bg-primary-400 dim:bg-primary-400 rounded-full"
+                            transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+                          />
+                        )}
+                      </Link>
+                    </motion.li>
+                  );
+                })}
+              </ul>
+            </nav>
+
+            {/* Footer Info */}
+            <div className="absolute bottom-0 left-0 right-0 p-6 border-t border-gray-200 dark:border-dark-700 dim:border-dim-700 bg-gray-50 dark:bg-dark-950 dim:bg-dim-950">
+              <p className="text-xs text-gray-500 dark:text-gray-400 dim:text-dim-400 text-center">
+                Top Digital Tools
+              </p>
+              <p className="text-xs text-gray-400 dark:text-gray-500 dim:text-dim-500 text-center mt-1">
+                {locale === 'en' && 'Swipe left to close'}
+                {locale === 'pt' && 'Deslize para a esquerda para fechar'}
+                {locale === 'es' && 'Desliza a la izquierda para cerrar'}
+                {locale === 'fr' && 'Glissez vers la gauche pour fermer'}
+                {locale === 'de' && 'Nach links wischen zum Schließen'}
+                {locale === 'ru' && 'Проведите влево, чтобы закрыть'}
+                {locale === 'it' && 'Scorri a sinistra per chiudere'}
+              </p>
+            </div>
+          </motion.div>
+        </>
+      )}
+    </AnimatePresence>
   );
 }

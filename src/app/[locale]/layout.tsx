@@ -5,6 +5,8 @@ import { notFound } from 'next/navigation';
 import '../globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import BottomNav from '@/components/BottomNav';
+import LiveRegion from '@/components/LiveRegion';
 import { ConsentProvider } from '@/contexts/ConsentContext';
 import { ThemeProvider } from '@/contexts/ThemeContext';
 import CookieBanner from '@/components/CookieConsent/CookieBanner';
@@ -91,16 +93,22 @@ export default async function LocaleLayout({
               <ServiceWorkerRegistration />
               <PWAInstallPrompt />
 
+              {/* Live Region for Screen Readers */}
+              <LiveRegion />
+
               {/* Cookie Consent Components */}
               <CookieBanner />
               <CookieSettings />
 
               {/* Main Layout */}
               <Header />
-              <main id="main-content" className="min-h-screen">
+              <main id="main-content" className="min-h-screen pb-20 lg:pb-0">
                 {children}
               </main>
               <Footer />
+
+              {/* Mobile Bottom Navigation */}
+              <BottomNav />
             </ConsentProvider>
           </ThemeProvider>
         </NextIntlClientProvider>
