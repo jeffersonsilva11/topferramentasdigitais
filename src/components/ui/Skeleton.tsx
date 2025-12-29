@@ -34,7 +34,6 @@ export default function Skeleton({
   const skeletonElement = (
     <motion.div
       className={combinedClassName}
-      style={style}
       animate={{
         backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'],
       }}

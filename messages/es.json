@@ -1126,6 +1126,18 @@
       "slug": "calendario-perpetuo-es",
       "description": "View calendar for any month and year",
       "metaDescription": "Perpetual calendar online free."
+    },
+    "comprimir-pdf": {
+      "name": "Comprimir PDF",
+      "slug": "comprimir-pdf-es",
+      "description": "Reduzca el tamaño de archivos PDF manteniendo la calidad",
+      "metaDescription": "Comprima PDFs en línea gratis. Reduzca el tamaño de archivos PDF manteniendo la calidad."
+    },
+    "comprimir-pdf-es": {
+      "name": "Comprimir PDF",
+      "slug": "comprimir-pdf-es",
+      "description": "Reduzca el tamaño de archivos PDF manteniendo la calidad",
+      "metaDescription": "Comprima PDFs en línea gratis. Reduzca el tamaño de archivos PDF manteniendo la calidad."
     }
   },
   "footer": {

@@ -244,6 +244,10 @@ const toolComponents = {
   'assinatura-email': dynamic(() => import('@/components/tools/AssinaturaEmail'), { ssr: false }),
   'email-signature': dynamic(() => import('@/components/tools/AssinaturaEmail'), { ssr: false }),
   'firma-email': dynamic(() => import('@/components/tools/AssinaturaEmail'), { ssr: false }),
+
+  'comprimir-pdf': dynamic(() => import('@/components/tools/ComprimirPDF'), { ssr: false }),
+  'compress-pdf': dynamic(() => import('@/components/tools/ComprimirPDF'), { ssr: false }),
+  'comprimir-pdf-es': dynamic(() => import('@/components/tools/ComprimirPDF'), { ssr: false }),
 };
 
 interface ClientToolLoaderProps {

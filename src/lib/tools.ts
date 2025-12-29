@@ -601,6 +601,16 @@ export const tools: Tool[] = [
     keywords: ['assinatura email', 'email signature', 'html email', 'assinatura profissional'],
     metaDescription: 'Gerador de assinatura de email online grátis. Crie assinaturas HTML profissionais para Gmail, Outlook e outros.',
   },
+  {
+    id: '61',
+    name: 'Comprimir PDF',
+    description: 'Reduza o tamanho de arquivos PDF mantendo a qualidade',
+    icon: '🗜️',
+    slug: 'comprimir-pdf',
+    category: 'PDF',
+    keywords: ['comprimir pdf', 'reduzir pdf', 'pdf compressor', 'otimizar pdf', 'compress pdf'],
+    metaDescription: 'Comprima PDFs online grátis. Reduza o tamanho de arquivos PDF mantendo a qualidade.',
+  },
 ];
 
 export function getToolBySlug(slug: string): Tool | undefined {

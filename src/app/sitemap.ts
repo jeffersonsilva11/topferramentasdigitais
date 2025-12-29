@@ -68,6 +68,7 @@ const toolSlugMap: Record<string, Record<string, string>> = {
   'calendario-perpetuo': { en: 'perpetual-calendar', pt: 'calendario-perpetuo', es: 'calendario-perpetuo' },
   'gerador-gradientes': { en: 'gradient-generator', pt: 'gerador-gradientes', es: 'generador-gradientes' },
   'assinatura-email': { en: 'email-signature', pt: 'assinatura-email', es: 'firma-email' },
+  'comprimir-pdf': { en: 'compress-pdf', pt: 'comprimir-pdf', es: 'comprimir-pdf-es' },
 };
 
 export default function sitemap(): MetadataRoute.Sitemap {

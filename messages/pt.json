@@ -1126,6 +1126,12 @@
       "slug": "calendario-perpetuo-es",
       "description": "Visualize o calendário de qualquer mês e ano",
       "metaDescription": "Calendário perpétuo online grátis. Visualize qualquer mês de qualquer ano de 1 a 9999."
+    },
+    "comprimir-pdf": {
+      "name": "Comprimir PDF",
+      "slug": "comprimir-pdf",
+      "description": "Reduza o tamanho de arquivos PDF mantendo a qualidade",
+      "metaDescription": "Comprima PDFs online grátis. Reduza o tamanho de arquivos PDF mantendo a qualidade."
     }
   },
   "footer": {
