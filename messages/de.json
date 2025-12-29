@@ -538,6 +538,594 @@
       "slug": "email-signature",
       "description": "Create professional HTML email signatures",
       "metaDescription": "Generate email signatures online free."
+    },
+    "my-ip": {
+      "name": "Meine IP-Adresse",
+      "slug": "my-ip",
+      "description": "Entdecken Sie Ihre öffentliche IP-Adresse sofort",
+      "metaDescription": "Entdecken Sie Ihre öffentliche IP-Adresse schnell und kostenlos. Online-Tool zur Überprüfung Ihrer IP."
+    },
+    "qr-code-generator": {
+      "name": "QR-Code-Generator",
+      "slug": "qr-code-generator",
+      "description": "Erstellen Sie kostenlos personalisierte QR-Codes",
+      "metaDescription": "QR-Codes kostenlos online generieren. Erstellen Sie personalisierte QR-Codes für URLs, Texte und mehr."
+    },
+    "text-counter": {
+      "name": "Textzähler",
+      "slug": "text-counter",
+      "description": "Zählen Sie Wörter, Zeichen, Sätze und Absätze in Echtzeit",
+      "metaDescription": "Kostenloser Online-Textzähler. Zählen Sie Wörter, Zeichen, Sätze, Absätze und Lesezeit in Echtzeit."
+    },
+    "convert-pdf-to-jpg": {
+      "name": "PDF in JPG konvertieren",
+      "slug": "convert-pdf-to-jpg",
+      "description": "Konvertieren Sie PDF-Seiten in JPG-Bilder",
+      "metaDescription": "PDF kostenlos online in JPG konvertieren. Wandeln Sie PDF-Seiten in hochwertige Bilder um."
+    },
+    "convert-jpg-to-pdf": {
+      "name": "JPG in PDF konvertieren",
+      "slug": "convert-jpg-to-pdf",
+      "description": "Verwandeln Sie JPG-Bilder in PDF-Dokumente",
+      "metaDescription": "JPG kostenlos online in PDF konvertieren. Verwandeln Sie Ihre Bilder einfach in PDF-Dokumente."
+    },
+    "resize-image": {
+      "name": "Bildgröße ändern",
+      "slug": "resize-image",
+      "description": "Ändern Sie die Abmessungen Ihrer Bilder einfach",
+      "metaDescription": "Bildgröße kostenlos online ändern. Ändern Sie Breite und Höhe unter Beibehaltung der Proportionen."
+    },
+    "percentage-calculator": {
+      "name": "Prozentrechner",
+      "slug": "percentage-calculator",
+      "description": "Berechnen Sie Prozentsätze schnell und einfach",
+      "metaDescription": "Kostenloser Online-Prozentrechner. Berechnen Sie Prozentsätze, Rabatte und Erhöhungen einfach."
+    },
+    "password-generator": {
+      "name": "Sicherer Passwort-Generator",
+      "slug": "password-generator",
+      "description": "Generieren Sie zufällig starke und sichere Passwörter",
+      "metaDescription": "Online-Generator für sichere Passwörter. Erstellen Sie starke Passwörter mit Buchstaben, Zahlen und Symbolen kostenlos."
+    },
+    "convert-png-to-jpg": {
+      "name": "PNG in JPG konvertieren",
+      "slug": "convert-png-to-jpg",
+      "description": "Konvertieren Sie PNG-Bilder in JPG-Format",
+      "metaDescription": "PNG kostenlos online in JPG konvertieren. Wandeln Sie PNG-Bilder schnell in JPG um."
+    },
+    "lorem-ipsum-generator": {
+      "name": "Lorem Ipsum Generator",
+      "slug": "lorem-ipsum-generator",
+      "description": "Generieren Sie Platzhaltertext für Ihre Projekte",
+      "metaDescription": "Kostenloser Online-Lorem-Ipsum-Generator. Erstellen Sie Platzhalttertexte für Ihre Projekte und Designs."
+    },
+    "my-user-agent": {
+      "name": "Mein User Agent",
+      "slug": "my-user-agent",
+      "description": "Entdecken Sie Informationen über Ihren Browser",
+      "metaDescription": "Entdecken Sie Ihren User Agent. Sehen Sie Informationen über Ihren Browser und Ihr Betriebssystem."
+    },
+    "convert-webp-to-jpg": {
+      "name": "WebP in JPG konvertieren",
+      "slug": "convert-webp-to-jpg",
+      "description": "Konvertieren Sie WebP-Bilder in JPG-Format",
+      "metaDescription": "WebP kostenlos online in JPG konvertieren. Wandeln Sie WebP-Bilder einfach in JPG um."
+    },
+    "hash-generator": {
+      "name": "Hash-Generator",
+      "slug": "hash-generator",
+      "description": "Generieren Sie MD5, SHA-1, SHA-256 Hashes von Texten",
+      "metaDescription": "Kostenloser Online-Hash-Generator. Erstellen Sie MD5, SHA-1 und SHA-256 Hashes von Texten."
+    },
+    "bytes-converter": {
+      "name": "MB/KB/GB-Konverter",
+      "slug": "bytes-converter",
+      "description": "Konvertieren Sie digitale Speichereinheiten",
+      "metaDescription": "Kostenloser Online-Byte-Konverter. Konvertieren Sie MB, KB, GB und andere Speichereinheiten."
+    },
+    "uuid-generator": {
+      "name": "UUID-Generator",
+      "slug": "uuid-generator",
+      "description": "Generieren Sie universell eindeutige Bezeichner (UUID v4)",
+      "metaDescription": "Kostenloser Online-UUID-Generator. Erstellen Sie sofort universell eindeutige Bezeichner (UUID v4)."
+    },
+    "whatsapp-link-generator": {
+      "name": "WhatsApp-Link-Generator",
+      "slug": "whatsapp-link-generator",
+      "description": "Erstellen Sie direkte Links für WhatsApp-Gespräche mit vordefinierter Nachricht",
+      "metaDescription": "Kostenloser Online-WhatsApp-Link-Generator. Erstellen Sie wa.me-Links mit vordefinierter Nachricht und QR-Code sofort."
+    },
+    "emoji-list": {
+      "name": "Emoji-Liste",
+      "slug": "emoji-list",
+      "description": "Kopieren Sie Emojis einfach - über 700 kategorisierte Emojis",
+      "metaDescription": "Vollständige Liste der zu kopierenden Emojis. Über 700 nach Kategorien organisierte Emojis. Einfach kopieren und einfügen."
+    },
+    "json-csv-converter": {
+      "name": "JSON zu CSV Konverter",
+      "slug": "json-csv-converter",
+      "description": "Konvertieren Sie JSON zu CSV und CSV zu JSON bidirektional",
+      "metaDescription": "Kostenloser Online-JSON-CSV-Konverter. Konvertieren Sie JSON zu CSV und CSV zu JSON einfach."
+    },
+    "utm-generator": {
+      "name": "UTM-Generator",
+      "slug": "utm-generator",
+      "description": "Erstellen Sie URLs mit UTM-Parametern für Kampagnen-Tracking",
+      "metaDescription": "Kostenloser Online-UTM-Generator. Erstellen Sie URLs mit utm_source, utm_medium und utm_campaign Parametern für Google Analytics."
+    },
+    "compound-interest-calculator": {
+      "name": "Zinseszinsrechner",
+      "slug": "compound-interest-calculator",
+      "description": "Berechnen Sie die Rendite von Investitionen mit Zinseszins",
+      "metaDescription": "Kostenloser Online-Zinseszinsrechner. Simulieren Sie Investitionen, Ersparnisse und Einlagen mit Zinseszins."
+    },
+    "holidays-2026": {
+      "name": "Nationale Feiertage 2026",
+      "slug": "holidays-2026",
+      "description": "Vollständige Liste der nationalen Feiertage von 2026 für verschiedene Länder",
+      "metaDescription": "Nationale Feiertage 2026. Vollständiger Kalender der Feiertage von Deutschland, USA, Brasilien, Mexiko, Argentinien, Chile, Kolumbien und Spanien."
+    },
+    "roi-calculator": {
+      "name": "ROI-Rechner",
+      "slug": "roi-calculator",
+      "description": "Berechnen Sie die Kapitalrendite (ROI) einfach",
+      "metaDescription": "Kostenloser Online-ROI-Rechner. Berechnen Sie Kapitalrendite, Gewinn und Rentabilität mit teilbarer URL."
+    },
+    "screen-recorder": {
+      "name": "Bildschirm- und Webcam-Rekorder",
+      "slug": "screen-recorder",
+      "description": "Nehmen Sie Ihren Bildschirm, Webcam oder beides mit Audio auf",
+      "metaDescription": "Kostenloser Bildschirm- und Webcam-Rekorder online. Nehmen Sie Ihren Bildschirm, Kamera oder beides mit Audio auf. Kein Upload, 100% privat."
+    },
+    "microphone-camera-tester": {
+      "name": "Mikrofon- und Kamera-Tester",
+      "slug": "microphone-camera-tester",
+      "description": "Testen Sie ob Ihr Mikrofon und Webcam funktionieren",
+      "metaDescription": "Kostenloser Mikrofon- und Kamera-Tester online. Überprüfen Sie ob Ihre Audio- und Videogeräte richtig funktionieren."
+    },
+    "random-number-generator": {
+      "name": "Zufallszahlengenerator",
+      "slug": "random-number-generator",
+      "description": "Generieren Sie Zufallszahlen mit oder ohne Wiederholung",
+      "metaDescription": "Kostenloser Online-Zufallszahlengenerator. Generieren Sie Zahlen mit anpassbarem Bereich, mit oder ohne Wiederholung."
+    },
+    "secret-santa": {
+      "name": "Wichteln (Secret Santa)",
+      "slug": "secret-santa",
+      "description": "Organisieren Sie Wichtel-Ziehungen einfach",
+      "metaDescription": "Organisieren Sie Wichteln online kostenlos. Automatische Secret Santa-Ziehung mit individueller Enthüllung und Export."
+    },
+    "wheel-of-fortune": {
+      "name": "Glücksrad",
+      "slug": "wheel-of-fortune",
+      "description": "Erstellen Sie ein benutzerdefiniertes Rad für Ziehungen",
+      "metaDescription": "Kostenloses Online-Glücksrad. Erstellen Sie benutzerdefinierte Räder für Ziehungen mit flüssiger Animation und Verlauf."
+    },
+    "regex-validator": {
+      "name": "Regex-Validator und Generator",
+      "slug": "regex-validator",
+      "description": "Testen und validieren Sie reguläre Ausdrücke in Echtzeit",
+      "metaDescription": "Kostenloser Online-Regex-Validator. Testen Sie reguläre Ausdrücke mit Match-Hervorhebung, Erklärungen und häufigen Mustern."
+    },
+    "policy-generator": {
+      "name": "Richtlinien- und Bedingungsgenerator",
+      "slug": "policy-generator",
+      "description": "Erstellen Sie Datenschutzrichtlinie, Nutzungsbedingungen und Cookie-Richtlinie",
+      "metaDescription": "Kostenloser Online-Generator für Richtlinien und Bedingungen. Erstellen Sie individuelle Datenschutzrichtlinie, Nutzungsbedingungen und Cookie-Richtlinie."
+    },
+    "color-palette-generator": {
+      "name": "Farbpaletten-Generator",
+      "slug": "color-palette-generator",
+      "description": "Erstellen Sie professionelle Farbpaletten mit WCAG-Kontrast",
+      "metaDescription": "Kostenloser Online-Farbpaletten-Generator. Erstellen Sie professionelle Paletten mit HEX, RGB, HSL, WCAG-Kontrast und CSS/JSON-Export."
+    },
+    "internet-speed-test": {
+      "name": "Internet-Geschwindigkeitstest",
+      "slug": "internet-speed-test",
+      "description": "Testen Sie Ihre Internetverbindungsgeschwindigkeit mit Download-, Upload-, Ping- und Jitter-Metriken",
+      "metaDescription": "Kostenloser Internet-Geschwindigkeitstest online. Überprüfen Sie Ihre Download-, Upload-, Ping- und Jitter-Geschwindigkeit sofort."
+    },
+    "cual-es-mi-ip": {
+      "name": "Meine IP-Adresse",
+      "slug": "cual-es-mi-ip",
+      "description": "Entdecken Sie Ihre öffentliche IP-Adresse sofort",
+      "metaDescription": "Entdecken Sie Ihre öffentliche IP-Adresse schnell und kostenlos. Online-Tool zur Überprüfung Ihrer IP."
+    },
+    "generador-codigo-qr": {
+      "name": "QR-Code-Generator",
+      "slug": "generador-codigo-qr",
+      "description": "Erstellen Sie kostenlos personalisierte QR-Codes",
+      "metaDescription": "QR-Codes kostenlos online generieren. Erstellen Sie personalisierte QR-Codes für URLs, Texte und mehr."
+    },
+    "convertir-pdf-jpg": {
+      "name": "PDF in JPG konvertieren",
+      "slug": "convertir-pdf-jpg",
+      "description": "Konvertieren Sie PDF-Seiten in JPG-Bilder",
+      "metaDescription": "PDF kostenlos online in JPG konvertieren. Wandeln Sie PDF-Seiten in hochwertige Bilder um."
+    },
+    "convertir-jpg-pdf": {
+      "name": "JPG in PDF konvertieren",
+      "slug": "convertir-jpg-pdf",
+      "description": "Verwandeln Sie JPG-Bilder in PDF-Dokumente",
+      "metaDescription": "JPG kostenlos online in PDF konvertieren. Verwandeln Sie Ihre Bilder einfach in PDF-Dokumente."
+    },
+    "comprimir-imagen": {
+      "name": "Bild komprimieren",
+      "slug": "comprimir-imagen",
+      "description": "Reduzieren Sie die Größe Ihrer Bilder ohne Qualitätsverlust",
+      "metaDescription": "Bilder kostenlos online komprimieren. Reduzieren Sie die Größe von JPG, PNG und WebP bei gleichbleibender Qualität."
+    },
+    "redimensionar-imagen": {
+      "name": "Bildgröße ändern",
+      "slug": "redimensionar-imagen",
+      "description": "Ändern Sie die Abmessungen Ihrer Bilder einfach",
+      "metaDescription": "Bildgröße kostenlos online ändern. Ändern Sie Breite und Höhe unter Beibehaltung der Proportionen."
+    },
+    "calculadora-porcentaje": {
+      "name": "Prozentrechner",
+      "slug": "calculadora-porcentaje",
+      "description": "Berechnen Sie Prozentsätze schnell und einfach",
+      "metaDescription": "Kostenloser Online-Prozentrechner. Berechnen Sie Prozentsätze, Rabatte und Erhöhungen einfach."
+    },
+    "generador-contrasenas": {
+      "name": "Sicherer Passwort-Generator",
+      "slug": "generador-contrasenas",
+      "description": "Generieren Sie zufällig starke und sichere Passwörter",
+      "metaDescription": "Online-Generator für sichere Passwörter. Erstellen Sie starke Passwörter mit Buchstaben, Zahlen und Symbolen kostenlos."
+    },
+    "convertir-png-jpg": {
+      "name": "PNG in JPG konvertieren",
+      "slug": "convertir-png-jpg",
+      "description": "Konvertieren Sie PNG-Bilder in JPG-Format",
+      "metaDescription": "PNG kostenlos online in JPG konvertieren. Wandeln Sie PNG-Bilder schnell in JPG um."
+    },
+    "generador-lorem-ipsum": {
+      "name": "Lorem Ipsum Generator",
+      "slug": "generador-lorem-ipsum",
+      "description": "Generieren Sie Platzhaltertext für Ihre Projekte",
+      "metaDescription": "Kostenloser Online-Lorem-Ipsum-Generator. Erstellen Sie Platzhalttertexte für Ihre Projekte und Designs."
+    },
+    "sitio-online": {
+      "name": "Website-Status prüfen",
+      "slug": "sitio-online",
+      "description": "Überprüfen Sie, ob eine Website erreichbar ist",
+      "metaDescription": "Testen Sie, ob eine Website online ist. Überprüfen Sie kostenlos die Verfügbarkeit von Websites."
+    },
+    "mi-user-agent": {
+      "name": "Mein User Agent",
+      "slug": "mi-user-agent",
+      "description": "Entdecken Sie Informationen über Ihren Browser",
+      "metaDescription": "Entdecken Sie Ihren User Agent. Sehen Sie Informationen über Ihren Browser und Ihr Betriebssystem."
+    },
+    "convertir-webp-jpg": {
+      "name": "WebP in JPG konvertieren",
+      "slug": "convertir-webp-jpg",
+      "description": "Konvertieren Sie WebP-Bilder in JPG-Format",
+      "metaDescription": "WebP kostenlos online in JPG konvertieren. Wandeln Sie WebP-Bilder einfach in JPG um."
+    },
+    "regla-de-tres": {
+      "name": "Online-Dreisatz",
+      "slug": "regla-de-tres",
+      "description": "Lösen Sie einfache Dreisatzberechnungen",
+      "metaDescription": "Kostenloser Online-Dreisatzrechner. Lösen Sie Proportionen und Berechnungen einfach."
+    },
+    "generador-hash": {
+      "name": "Hash-Generator",
+      "slug": "generador-hash",
+      "description": "Generieren Sie MD5, SHA-1, SHA-256 Hashes von Texten",
+      "metaDescription": "Kostenloser Online-Hash-Generator. Erstellen Sie MD5, SHA-1 und SHA-256 Hashes von Texten."
+    },
+    "generador-uuid": {
+      "name": "UUID-Generator",
+      "slug": "generador-uuid",
+      "description": "Generieren Sie universell eindeutige Bezeichner (UUID v4)",
+      "metaDescription": "Kostenloser Online-UUID-Generator. Erstellen Sie sofort universell eindeutige Bezeichner (UUID v4)."
+    },
+    "generador-enlace-whatsapp": {
+      "name": "WhatsApp-Link-Generator",
+      "slug": "generador-enlace-whatsapp",
+      "description": "Erstellen Sie direkte Links für WhatsApp-Gespräche mit vordefinierter Nachricht",
+      "metaDescription": "Kostenloser Online-WhatsApp-Link-Generator. Erstellen Sie wa.me-Links mit vordefinierter Nachricht und QR-Code sofort."
+    },
+    "generador-clave-pix": {
+      "name": "PIX-Schlüssel-Generator",
+      "slug": "generador-clave-pix",
+      "description": "Generieren Sie QR-Code und Kopier-Code für PIX-Zahlung",
+      "metaDescription": "Kostenloser Online-PIX-Schlüssel-Generator. Erstellen Sie PIX-QR-Code und Kopier-Code zum Empfangen von Zahlungen."
+    },
+    "cronometro-temporizador": {
+      "name": "Online-Stoppuhr und Timer",
+      "slug": "cronometro-temporizador",
+      "description": "Countdown und Count-up-Stoppuhr mit Vollbildmodus",
+      "metaDescription": "Kostenlose Online-Stoppuhr. Countdown und Count-up-Timer mit akustischem Alarm und Vollbildmodus."
+    },
+    "cotizacion-monedas": {
+      "name": "Währungskurse",
+      "slug": "cotizacion-monedas",
+      "description": "Echtzeit-Währungskonverter mit aktualisierten Kursen",
+      "metaDescription": "Währungskurse in Echtzeit. Währungskonverter mit täglich aktualisierten Kursen der Europäischen Zentralbank."
+    },
+    "generador-utm": {
+      "name": "UTM-Generator",
+      "slug": "generador-utm",
+      "description": "Erstellen Sie URLs mit UTM-Parametern für Kampagnen-Tracking",
+      "metaDescription": "Kostenloser Online-UTM-Generator. Erstellen Sie URLs mit utm_source, utm_medium und utm_campaign Parametern für Google Analytics."
+    },
+    "calculadora-intereses": {
+      "name": "Zinseszinsrechner",
+      "slug": "calculadora-intereses",
+      "description": "Berechnen Sie die Rendite von Investitionen mit Zinseszins",
+      "metaDescription": "Kostenloser Online-Zinseszinsrechner. Simulieren Sie Investitionen, Ersparnisse und Einlagen mit Zinseszins."
+    },
+    "grabador-pantalla": {
+      "name": "Bildschirm- und Webcam-Rekorder",
+      "slug": "grabador-pantalla",
+      "description": "Nehmen Sie Ihren Bildschirm, Webcam oder beides mit Audio auf",
+      "metaDescription": "Kostenloser Bildschirm- und Webcam-Rekorder online. Nehmen Sie Ihren Bildschirm, Kamera oder beides mit Audio auf. Kein Upload, 100% privat."
+    },
+    "probador-microfono-camara": {
+      "name": "Mikrofon- und Kamera-Tester",
+      "slug": "probador-microfono-camara",
+      "description": "Testen Sie ob Ihr Mikrofon und Webcam funktionieren",
+      "metaDescription": "Kostenloser Mikrofon- und Kamera-Tester online. Überprüfen Sie ob Ihre Audio- und Videogeräte richtig funktionieren."
+    },
+    "generador-numero-aleatorio": {
+      "name": "Zufallszahlengenerator",
+      "slug": "generador-numero-aleatorio",
+      "description": "Generieren Sie Zufallszahlen mit oder ohne Wiederholung",
+      "metaDescription": "Kostenloser Online-Zufallszahlengenerator. Generieren Sie Zahlen mit anpassbarem Bereich, mit oder ohne Wiederholung."
+    },
+    "generador-loteria": {
+      "name": "Lotto-Zahlengenerator",
+      "slug": "generador-loteria",
+      "description": "Generieren Sie Zahlen für EuroMillions, Powerball und andere Lotterien",
+      "metaDescription": "Kostenloser Online-Lotto-Zahlengenerator. EuroMillions, Powerball, Mega-Sena und benutzerdefinierte Lotterien."
+    },
+    "amigo-secreto": {
+      "name": "Wichteln (Secret Santa)",
+      "slug": "amigo-secreto",
+      "description": "Organisieren Sie Wichtel-Ziehungen einfach",
+      "metaDescription": "Organisieren Sie Wichteln online kostenlos. Automatische Secret Santa-Ziehung mit individueller Enthüllung und Export."
+    },
+    "rueda-fortuna": {
+      "name": "Glücksrad",
+      "slug": "rueda-fortuna",
+      "description": "Erstellen Sie ein benutzerdefiniertes Rad für Ziehungen",
+      "metaDescription": "Kostenloses Online-Glücksrad. Erstellen Sie benutzerdefinierte Räder für Ziehungen mit flüssiger Animation und Verlauf."
+    },
+    "generador-politicas": {
+      "name": "Richtlinien- und Bedingungsgenerator",
+      "slug": "generador-politicas",
+      "description": "Erstellen Sie Datenschutzrichtlinie, Nutzungsbedingungen und Cookie-Richtlinie",
+      "metaDescription": "Kostenloser Online-Generator für Richtlinien und Bedingungen. Erstellen Sie individuelle Datenschutzrichtlinie, Nutzungsbedingungen und Cookie-Richtlinie."
+    },
+    "generador-paleta-colores": {
+      "name": "Farbpaletten-Generator",
+      "slug": "generador-paleta-colores",
+      "description": "Erstellen Sie professionelle Farbpaletten mit WCAG-Kontrast",
+      "metaDescription": "Kostenloser Online-Farbpaletten-Generator. Erstellen Sie professionelle Paletten mit HEX, RGB, HSL, WCAG-Kontrast und CSS/JSON-Export."
+    },
+    "prueba-velocidad-internet": {
+      "name": "Internet-Geschwindigkeitstest",
+      "slug": "prueba-velocidad-internet",
+      "description": "Testen Sie Ihre Internetverbindungsgeschwindigkeit mit Download-, Upload-, Ping- und Jitter-Metriken",
+      "metaDescription": "Kostenloser Internet-Geschwindigkeitstest online. Überprüfen Sie Ihre Download-, Upload-, Ping- und Jitter-Geschwindigkeit sofort."
+    },
+    "fusionar-pdf": {
+      "name": "Merge PDFs",
+      "slug": "fusionar-pdf",
+      "description": "Combine multiple PDF files into a single document",
+      "metaDescription": "Merge multiple PDFs into a single file online and free."
+    },
+    "rotar-pdf": {
+      "name": "Rotate PDF",
+      "slug": "rotar-pdf",
+      "description": "Rotate PDF pages by 90°, 180°, 270° or 360°",
+      "metaDescription": "Rotate PDF pages online free."
+    },
+    "calculadora-edad": {
+      "name": "Age Calculator",
+      "slug": "calculadora-edad",
+      "description": "Calculate exact age in years, months and days",
+      "metaDescription": "Calculate your exact age online free."
+    },
+    "conversor-mayusculas": {
+      "name": "Case Converter",
+      "slug": "conversor-mayusculas",
+      "description": "Convert text between UPPERCASE, lowercase, camelCase",
+      "metaDescription": "Convert text case online free."
+    },
+    "eliminar-espacios": {
+      "name": "Space Remover",
+      "slug": "eliminar-espacios",
+      "description": "Remove extra spaces and duplicate lines",
+      "metaDescription": "Remove spaces online free."
+    },
+    "diferencia-fechas": {
+      "name": "Date Difference",
+      "slug": "diferencia-fechas",
+      "description": "Calculate difference between two dates",
+      "metaDescription": "Calculate date difference online free."
+    },
+    "calculadora-frecuencia-cardiaca": {
+      "name": "Heart Rate Calculator",
+      "slug": "calculadora-frecuencia-cardiaca",
+      "description": "Calculate your heart rate zones for training",
+      "metaDescription": "Calculate heart rate zones online free."
+    },
+    "conversor-zona-horaria": {
+      "name": "Timezone Converter",
+      "slug": "conversor-zona-horaria",
+      "description": "Convert times between different time zones",
+      "metaDescription": "Convert timezones online free."
+    },
+    "generador-gradientes": {
+      "name": "Gradient Generator",
+      "slug": "generador-gradientes",
+      "description": "Create beautiful CSS gradients",
+      "metaDescription": "Generate CSS gradients online free."
+    },
+    "firma-email": {
+      "name": "Email Signature",
+      "slug": "firma-email",
+      "description": "Create professional HTML email signatures",
+      "metaDescription": "Generate email signatures online free."
+    },
+    "what-is-my-ip": {
+      "name": "Meine IP-Adresse",
+      "slug": "what-is-my-ip",
+      "description": "Entdecken Sie Ihre öffentliche IP-Adresse sofort",
+      "metaDescription": "Entdecken Sie Ihre öffentliche IP-Adresse schnell und kostenlos. Online-Tool zur Überprüfung Ihrer IP."
+    },
+    "image-compressor": {
+      "name": "Bild komprimieren",
+      "slug": "image-compressor",
+      "description": "Reduzieren Sie die Größe Ihrer Bilder ohne Qualitätsverlust",
+      "metaDescription": "Bilder kostenlos online komprimieren. Reduzieren Sie die Größe von JPG, PNG und WebP bei gleichbleibender Qualität."
+    },
+    "website-status-checker": {
+      "name": "Website-Status prüfen",
+      "slug": "website-status-checker",
+      "description": "Überprüfen Sie, ob eine Website erreichbar ist",
+      "metaDescription": "Testen Sie, ob eine Website online ist. Überprüfen Sie kostenlos die Verfügbarkeit von Websites."
+    },
+    "rule-of-three-calculator": {
+      "name": "Online-Dreisatz",
+      "slug": "rule-of-three-calculator",
+      "description": "Lösen Sie einfache Dreisatzberechnungen",
+      "metaDescription": "Kostenloser Online-Dreisatzrechner. Lösen Sie Proportionen und Berechnungen einfach."
+    },
+    "formateador-json": {
+      "name": "JSON-Formatierer",
+      "slug": "formateador-json",
+      "description": "Formatieren und validieren Sie JSON-Code",
+      "metaDescription": "Kostenloser Online-JSON-Formatierer. Formatieren, validieren und verschönern Sie JSON-Code einfach."
+    },
+    "pix-key-generator": {
+      "name": "PIX-Schlüssel-Generator",
+      "slug": "pix-key-generator",
+      "description": "Generieren Sie QR-Code und Kopier-Code für PIX-Zahlung",
+      "metaDescription": "Kostenloser Online-PIX-Schlüssel-Generator. Erstellen Sie PIX-QR-Code und Kopier-Code zum Empfangen von Zahlungen."
+    },
+    "lista-emojis-es": {
+      "name": "Emoji-Liste",
+      "slug": "lista-emojis-es",
+      "description": "Kopieren Sie Emojis einfach - über 700 kategorisierte Emojis",
+      "metaDescription": "Vollständige Liste der zu kopierenden Emojis. Über 700 nach Kategorien organisierte Emojis. Einfach kopieren und einfügen."
+    },
+    "stopwatch-timer": {
+      "name": "Online-Stoppuhr und Timer",
+      "slug": "stopwatch-timer",
+      "description": "Countdown und Count-up-Stoppuhr mit Vollbildmodus",
+      "metaDescription": "Kostenlose Online-Stoppuhr. Countdown und Count-up-Timer mit akustischem Alarm und Vollbildmodus."
+    },
+    "currency-exchange": {
+      "name": "Währungskurse",
+      "slug": "currency-exchange",
+      "description": "Echtzeit-Währungskonverter mit aktualisierten Kursen",
+      "metaDescription": "Währungskurse in Echtzeit. Währungskonverter mit täglich aktualisierten Kursen der Europäischen Zentralbank."
+    },
+    "conversor-json-csv-es": {
+      "name": "JSON zu CSV Konverter",
+      "slug": "conversor-json-csv-es",
+      "description": "Konvertieren Sie JSON zu CSV und CSV zu JSON bidirektional",
+      "metaDescription": "Kostenloser Online-JSON-CSV-Konverter. Konvertieren Sie JSON zu CSV und CSV zu JSON einfach."
+    },
+    "calculadora-roi-es": {
+      "name": "ROI-Rechner",
+      "slug": "calculadora-roi-es",
+      "description": "Berechnen Sie die Kapitalrendite (ROI) einfach",
+      "metaDescription": "Kostenloser Online-ROI-Rechner. Berechnen Sie Kapitalrendite, Gewinn und Rentabilität mit teilbarer URL."
+    },
+    "lottery-generator": {
+      "name": "Lotto-Zahlengenerator",
+      "slug": "lottery-generator",
+      "description": "Generieren Sie Zahlen für EuroMillions, Powerball und andere Lotterien",
+      "metaDescription": "Kostenloser Online-Lotto-Zahlengenerator. EuroMillions, Powerball, Mega-Sena und benutzerdefinierte Lotterien."
+    },
+    "validador-regex-es": {
+      "name": "Regex-Validator und Generator",
+      "slug": "validador-regex-es",
+      "description": "Testen und validieren Sie reguläre Ausdrücke in Echtzeit",
+      "metaDescription": "Kostenloser Online-Regex-Validator. Testen Sie reguläre Ausdrücke mit Match-Hervorhebung, Erklärungen und häufigen Mustern."
+    },
+    "test-vitesse-internet": {
+      "name": "Internet-Geschwindigkeitstest",
+      "slug": "test-vitesse-internet",
+      "description": "Testen Sie Ihre Internetverbindungsgeschwindigkeit mit Download-, Upload-, Ping- und Jitter-Metriken",
+      "metaDescription": "Kostenloser Internet-Geschwindigkeitstest online. Überprüfen Sie Ihre Download-, Upload-, Ping- und Jitter-Geschwindigkeit sofort."
+    },
+    "internet-geschwindigkeitstest": {
+      "name": "Internet-Geschwindigkeitstest",
+      "slug": "internet-geschwindigkeitstest",
+      "description": "Testen Sie Ihre Internetverbindungsgeschwindigkeit mit Download-, Upload-, Ping- und Jitter-Metriken",
+      "metaDescription": "Kostenloser Internet-Geschwindigkeitstest online. Überprüfen Sie Ihre Download-, Upload-, Ping- und Jitter-Geschwindigkeit sofort."
+    },
+    "test-skorosti-interneta": {
+      "name": "Internet-Geschwindigkeitstest",
+      "slug": "test-skorosti-interneta",
+      "description": "Testen Sie Ihre Internetverbindungsgeschwindigkeit mit Download-, Upload-, Ping- und Jitter-Metriken",
+      "metaDescription": "Kostenloser Internet-Geschwindigkeitstest online. Überprüfen Sie Ihre Download-, Upload-, Ping- und Jitter-Geschwindigkeit sofort."
+    },
+    "test-velocita-internet": {
+      "name": "Internet-Geschwindigkeitstest",
+      "slug": "test-velocita-internet",
+      "description": "Testen Sie Ihre Internetverbindungsgeschwindigkeit mit Download-, Upload-, Ping- und Jitter-Metriken",
+      "metaDescription": "Kostenloser Internet-Geschwindigkeitstest online. Überprüfen Sie Ihre Download-, Upload-, Ping- und Jitter-Geschwindigkeit sofort."
+    },
+    "dividir-pdf-es": {
+      "name": "Split PDF",
+      "slug": "dividir-pdf-es",
+      "description": "Extract specific pages from a PDF file",
+      "metaDescription": "Split PDF online free. Extract specific pages or split by ranges."
+    },
+    "calculadora-imc-es": {
+      "name": "BMI Calculator",
+      "slug": "calculadora-imc-es",
+      "description": "Calculate your Body Mass Index and see your category",
+      "metaDescription": "Calculate your BMI online free."
+    },
+    "proteger-pdf-es": {
+      "name": "Protect PDF",
+      "slug": "proteger-pdf-es",
+      "description": "Add password protection to PDF files",
+      "metaDescription": "Protect PDFs with password online free."
+    },
+    "desbloquear-pdf-es": {
+      "name": "Unlock PDF",
+      "slug": "desbloquear-pdf-es",
+      "description": "Remove protection and restrictions from PDF files",
+      "metaDescription": "Unlock protected PDFs online free."
+    },
+    "calculadora-calorias-es": {
+      "name": "Calorie Calculator",
+      "slug": "calculadora-calorias-es",
+      "description": "Calculate your daily caloric needs based on BMR",
+      "metaDescription": "Calculate daily calories online free."
+    },
+    "calculadora-agua-es": {
+      "name": "Water Calculator",
+      "slug": "calculadora-agua-es",
+      "description": "Calculate how much water you should drink per day",
+      "metaDescription": "Calculate daily water intake online free."
+    },
+    "comparador-texto-es": {
+      "name": "Text Comparator",
+      "slug": "comparador-texto-es",
+      "description": "Compare two texts and identify differences",
+      "metaDescription": "Compare texts online free."
+    },
+    "conversor-unidades-es": {
+      "name": "Unit Converter",
+      "slug": "conversor-unidades-es",
+      "description": "Convert between different units of measurement",
+      "metaDescription": "Convert units online free."
+    },
+    "calendario-perpetuo-es": {
+      "name": "Perpetual Calendar",
+      "slug": "calendario-perpetuo-es",
+      "description": "View calendar for any month and year",
+      "metaDescription": "Perpetual calendar online free."
     }
   },
   "footer": {
