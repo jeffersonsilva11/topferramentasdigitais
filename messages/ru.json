@@ -298,6 +298,246 @@
       "slug": "test-skorosti-interneta",
       "description": "Протестируйте скорость вашего интернет-соединения с метриками загрузки, выгрузки, пинга и джиттера",
       "metaDescription": "Бесплатный тест скорости интернета онлайн. Проверьте скорость загрузки, выгрузки, пинга и джиттера мгновенно."
+    },
+    "mesclar-pdf": {
+      "name": "Merge PDFs",
+      "slug": "merge-pdf",
+      "description": "Combine multiple PDF files into a single document",
+      "metaDescription": "Merge multiple PDFs into a single file online and free."
+    },
+    "dividir-pdf": {
+      "name": "Split PDF",
+      "slug": "split-pdf",
+      "description": "Extract specific pages from a PDF file",
+      "metaDescription": "Split PDF online free. Extract specific pages or split by ranges."
+    },
+    "girar-pdf": {
+      "name": "Rotate PDF",
+      "slug": "rotate-pdf",
+      "description": "Rotate PDF pages by 90°, 180°, 270° or 360°",
+      "metaDescription": "Rotate PDF pages online free."
+    },
+    "proteger-pdf": {
+      "name": "Protect PDF",
+      "slug": "protect-pdf",
+      "description": "Add password protection to PDF files",
+      "metaDescription": "Protect PDFs with password online free."
+    },
+    "desbloquear-pdf": {
+      "name": "Unlock PDF",
+      "slug": "unlock-pdf",
+      "description": "Remove protection and restrictions from PDF files",
+      "metaDescription": "Unlock protected PDFs online free."
+    },
+    "calculadora-imc": {
+      "name": "BMI Calculator",
+      "slug": "bmi-calculator",
+      "description": "Calculate your Body Mass Index and see your category",
+      "metaDescription": "Calculate your BMI online free."
+    },
+    "calculadora-idade": {
+      "name": "Age Calculator",
+      "slug": "age-calculator",
+      "description": "Calculate exact age in years, months and days",
+      "metaDescription": "Calculate your exact age online free."
+    },
+    "calculadora-calorias": {
+      "name": "Calorie Calculator",
+      "slug": "calorie-calculator",
+      "description": "Calculate your daily caloric needs based on BMR",
+      "metaDescription": "Calculate daily calories online free."
+    },
+    "calculadora-agua": {
+      "name": "Water Calculator",
+      "slug": "water-calculator",
+      "description": "Calculate how much water you should drink per day",
+      "metaDescription": "Calculate daily water intake online free."
+    },
+    "calculadora-frequencia-cardiaca": {
+      "name": "Heart Rate Calculator",
+      "slug": "heart-rate-calculator",
+      "description": "Calculate your heart rate zones for training",
+      "metaDescription": "Calculate heart rate zones online free."
+    },
+    "diferenca-datas": {
+      "name": "Date Difference",
+      "slug": "date-difference",
+      "description": "Calculate difference between two dates",
+      "metaDescription": "Calculate date difference online free."
+    },
+    "conversor-fuso-horario": {
+      "name": "Timezone Converter",
+      "slug": "timezone-converter",
+      "description": "Convert times between different time zones",
+      "metaDescription": "Convert timezones online free."
+    },
+    "conversor-case": {
+      "name": "Case Converter",
+      "slug": "case-converter",
+      "description": "Convert text between UPPERCASE, lowercase, camelCase",
+      "metaDescription": "Convert text case online free."
+    },
+    "removedor-espacos": {
+      "name": "Space Remover",
+      "slug": "space-remover",
+      "description": "Remove extra spaces and duplicate lines",
+      "metaDescription": "Remove spaces online free."
+    },
+    "comparador-texto": {
+      "name": "Text Comparator",
+      "slug": "text-comparator",
+      "description": "Compare two texts and identify differences",
+      "metaDescription": "Compare texts online free."
+    },
+    "conversor-base64": {
+      "name": "Base64 Converter",
+      "slug": "base64-converter",
+      "description": "Encode and decode text in Base64",
+      "metaDescription": "Convert Base64 online free."
+    },
+    "conversor-unidades": {
+      "name": "Unit Converter",
+      "slug": "unit-converter",
+      "description": "Convert between different units of measurement",
+      "metaDescription": "Convert units online free."
+    },
+    "calendario-perpetuo": {
+      "name": "Perpetual Calendar",
+      "slug": "perpetual-calendar",
+      "description": "View calendar for any month and year",
+      "metaDescription": "Perpetual calendar online free."
+    },
+    "gerador-gradientes": {
+      "name": "Gradient Generator",
+      "slug": "gradient-generator",
+      "description": "Create beautiful CSS gradients",
+      "metaDescription": "Generate CSS gradients online free."
+    },
+    "assinatura-email": {
+      "name": "Email Signature",
+      "slug": "email-signature",
+      "description": "Create professional HTML email signatures",
+      "metaDescription": "Generate email signatures online free."
+    },
+    "merge-pdf": {
+      "name": "Merge PDFs",
+      "slug": "merge-pdf",
+      "description": "Combine multiple PDF files into a single document",
+      "metaDescription": "Merge multiple PDFs into a single file online and free."
+    },
+    "split-pdf": {
+      "name": "Split PDF",
+      "slug": "split-pdf",
+      "description": "Extract specific pages from a PDF file",
+      "metaDescription": "Split PDF online free. Extract specific pages or split by ranges."
+    },
+    "rotate-pdf": {
+      "name": "Rotate PDF",
+      "slug": "rotate-pdf",
+      "description": "Rotate PDF pages by 90°, 180°, 270° or 360°",
+      "metaDescription": "Rotate PDF pages online free."
+    },
+    "protect-pdf": {
+      "name": "Protect PDF",
+      "slug": "protect-pdf",
+      "description": "Add password protection to PDF files",
+      "metaDescription": "Protect PDFs with password online free."
+    },
+    "unlock-pdf": {
+      "name": "Unlock PDF",
+      "slug": "unlock-pdf",
+      "description": "Remove protection and restrictions from PDF files",
+      "metaDescription": "Unlock protected PDFs online free."
+    },
+    "bmi-calculator": {
+      "name": "BMI Calculator",
+      "slug": "bmi-calculator",
+      "description": "Calculate your Body Mass Index and see your category",
+      "metaDescription": "Calculate your BMI online free."
+    },
+    "age-calculator": {
+      "name": "Age Calculator",
+      "slug": "age-calculator",
+      "description": "Calculate exact age in years, months and days",
+      "metaDescription": "Calculate your exact age online free."
+    },
+    "calorie-calculator": {
+      "name": "Calorie Calculator",
+      "slug": "calorie-calculator",
+      "description": "Calculate your daily caloric needs based on BMR",
+      "metaDescription": "Calculate daily calories online free."
+    },
+    "water-calculator": {
+      "name": "Water Calculator",
+      "slug": "water-calculator",
+      "description": "Calculate how much water you should drink per day",
+      "metaDescription": "Calculate daily water intake online free."
+    },
+    "heart-rate-calculator": {
+      "name": "Heart Rate Calculator",
+      "slug": "heart-rate-calculator",
+      "description": "Calculate your heart rate zones for training",
+      "metaDescription": "Calculate heart rate zones online free."
+    },
+    "date-difference": {
+      "name": "Date Difference",
+      "slug": "date-difference",
+      "description": "Calculate difference between two dates",
+      "metaDescription": "Calculate date difference online free."
+    },
+    "timezone-converter": {
+      "name": "Timezone Converter",
+      "slug": "timezone-converter",
+      "description": "Convert times between different time zones",
+      "metaDescription": "Convert timezones online free."
+    },
+    "case-converter": {
+      "name": "Case Converter",
+      "slug": "case-converter",
+      "description": "Convert text between UPPERCASE, lowercase, camelCase",
+      "metaDescription": "Convert text case online free."
+    },
+    "space-remover": {
+      "name": "Space Remover",
+      "slug": "space-remover",
+      "description": "Remove extra spaces and duplicate lines",
+      "metaDescription": "Remove spaces online free."
+    },
+    "text-comparator": {
+      "name": "Text Comparator",
+      "slug": "text-comparator",
+      "description": "Compare two texts and identify differences",
+      "metaDescription": "Compare texts online free."
+    },
+    "base64-converter": {
+      "name": "Base64 Converter",
+      "slug": "base64-converter",
+      "description": "Encode and decode text in Base64",
+      "metaDescription": "Convert Base64 online free."
+    },
+    "unit-converter": {
+      "name": "Unit Converter",
+      "slug": "unit-converter",
+      "description": "Convert between different units of measurement",
+      "metaDescription": "Convert units online free."
+    },
+    "perpetual-calendar": {
+      "name": "Perpetual Calendar",
+      "slug": "perpetual-calendar",
+      "description": "View calendar for any month and year",
+      "metaDescription": "Perpetual calendar online free."
+    },
+    "gradient-generator": {
+      "name": "Gradient Generator",
+      "slug": "gradient-generator",
+      "description": "Create beautiful CSS gradients",
+      "metaDescription": "Generate CSS gradients online free."
+    },
+    "email-signature": {
+      "name": "Email Signature",
+      "slug": "email-signature",
+      "description": "Create professional HTML email signatures",
+      "metaDescription": "Generate email signatures online free."
     }
   },
   "footer": {

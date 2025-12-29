@@ -298,6 +298,246 @@
       "slug": "teste-velocidade-internet",
       "description": "Meça a velocidade da sua conexão: download, upload, ping e jitter",
       "metaDescription": "Teste de velocidade de internet online grátis. Meça download, upload, ping e jitter da sua conexão. Resultados instantâneos e precisos."
+    },
+    "mesclar-pdf": {
+      "name": "Mesclar PDFs",
+      "slug": "mesclar-pdf",
+      "description": "Combine múltiplos arquivos PDF em um único documento",
+      "metaDescription": "Mescle múltiplos PDFs em um único arquivo online e grátis. Arraste e solte para reordenar páginas."
+    },
+    "dividir-pdf": {
+      "name": "Dividir PDF",
+      "slug": "dividir-pdf",
+      "description": "Extraia páginas específicas de um arquivo PDF",
+      "metaDescription": "Divida PDF online grátis. Extraia páginas específicas ou divida por intervalos."
+    },
+    "girar-pdf": {
+      "name": "Girar PDF",
+      "slug": "girar-pdf",
+      "description": "Rotacione páginas PDF em 90°, 180°, 270° ou 360°",
+      "metaDescription": "Gire páginas de PDF online grátis. Rotacione todas as páginas em 90, 180 ou 270 graus."
+    },
+    "proteger-pdf": {
+      "name": "Proteger PDF",
+      "slug": "proteger-pdf",
+      "description": "Adicione proteção por senha a arquivos PDF",
+      "metaDescription": "Proteja PDFs com senha online grátis. Adicione segurança aos seus documentos PDF."
+    },
+    "desbloquear-pdf": {
+      "name": "Desbloquear PDF",
+      "slug": "desbloquear-pdf",
+      "description": "Remova proteção e restrições de arquivos PDF",
+      "metaDescription": "Desbloqueie PDFs protegidos online grátis. Remova restrições de arquivos PDF."
+    },
+    "calculadora-imc": {
+      "name": "Calculadora de IMC",
+      "slug": "calculadora-imc",
+      "description": "Calcule seu Índice de Massa Corporal e veja sua categoria",
+      "metaDescription": "Calcule seu IMC online grátis. Descubra seu índice de massa corporal e categoria de peso."
+    },
+    "calculadora-idade": {
+      "name": "Calculadora de Idade",
+      "slug": "calculadora-idade",
+      "description": "Calcule idade exata em anos, meses e dias",
+      "metaDescription": "Calcule sua idade exata em anos, meses e dias. Descubra quantos dias você viveu."
+    },
+    "calculadora-calorias": {
+      "name": "Calculadora de Calorias",
+      "slug": "calculadora-calorias",
+      "description": "Calcule suas necessidades calóricas diárias baseado em TMB",
+      "metaDescription": "Calcule quantas calorias você precisa por dia para manter, perder ou ganhar peso. Baseado na equação de Mifflin-St Jeor."
+    },
+    "calculadora-agua": {
+      "name": "Calculadora de Água",
+      "slug": "calculadora-agua",
+      "description": "Calcule quanto água você deve beber por dia",
+      "metaDescription": "Calcule sua ingestão diária recomendada de água baseada em peso, atividade e clima."
+    },
+    "calculadora-frequencia-cardiaca": {
+      "name": "Calculadora de Frequência Cardíaca",
+      "slug": "calculadora-frequencia-cardiaca",
+      "description": "Calcule suas zonas de frequência cardíaca para treino",
+      "metaDescription": "Calcule sua frequência cardíaca máxima e zonas de treino online grátis. Baseado na fórmula de Karvonen."
+    },
+    "diferenca-datas": {
+      "name": "Diferença entre Datas",
+      "slug": "diferenca-datas",
+      "description": "Calcule diferença entre duas datas em anos, meses e dias",
+      "metaDescription": "Calcule a diferença entre duas datas online grátis. Descubra anos, meses e dias entre datas."
+    },
+    "conversor-fuso-horario": {
+      "name": "Conversor de Fuso Horário",
+      "slug": "conversor-fuso-horario",
+      "description": "Converta horários entre diferentes fusos horários",
+      "metaDescription": "Converta horários entre fusos horários online grátis. Suporta todos os principais timezones do mundo."
+    },
+    "conversor-case": {
+      "name": "Conversor de Case",
+      "slug": "conversor-case",
+      "description": "Converta texto entre MAIÚSCULAS, minúsculas, camelCase e mais",
+      "metaDescription": "Converta texto entre diferentes formatos: MAIÚSCULAS, minúsculas, Title Case, camelCase, snake_case e kebab-case."
+    },
+    "removedor-espacos": {
+      "name": "Removedor de Espaços",
+      "slug": "removedor-espacos",
+      "description": "Remova espaços extras, linhas duplicadas e vazias",
+      "metaDescription": "Remova espaços extras, linhas duplicadas e vazias do texto online grátis. Limpe e organize seu texto."
+    },
+    "comparador-texto": {
+      "name": "Comparador de Texto",
+      "slug": "comparador-texto",
+      "description": "Compare dois textos e identifique diferenças",
+      "metaDescription": "Compare dois textos online grátis. Identifique diferenças por caracteres, palavras ou linhas."
+    },
+    "conversor-base64": {
+      "name": "Conversor Base64",
+      "slug": "conversor-base64",
+      "description": "Codifique e decodifique texto em Base64",
+      "metaDescription": "Converta texto para Base64 e vice-versa online grátis. Encode e decode Base64 instantaneamente."
+    },
+    "conversor-unidades": {
+      "name": "Conversor de Unidades",
+      "slug": "conversor-unidades",
+      "description": "Converta entre diferentes unidades de medida",
+      "metaDescription": "Converta unidades de comprimento, peso, temperatura e volume online grátis. Suporta todas as principais unidades de medida."
+    },
+    "calendario-perpetuo": {
+      "name": "Calendário Perpétuo",
+      "slug": "calendario-perpetuo",
+      "description": "Visualize o calendário de qualquer mês e ano",
+      "metaDescription": "Calendário perpétuo online grátis. Visualize qualquer mês de qualquer ano de 1 a 9999."
+    },
+    "gerador-gradientes": {
+      "name": "Gerador de Gradientes",
+      "slug": "gerador-gradientes",
+      "description": "Crie gradientes CSS lindos e copie o código",
+      "metaDescription": "Gerador de gradientes CSS online grátis. Crie gradientes lineares e radiais e copie o código CSS."
+    },
+    "assinatura-email": {
+      "name": "Assinatura de Email",
+      "slug": "assinatura-email",
+      "description": "Crie assinaturas HTML profissionais para email",
+      "metaDescription": "Gerador de assinatura de email online grátis. Crie assinaturas HTML profissionais para Gmail, Outlook e outros."
+    },
+    "merge-pdf": {
+      "name": "Mesclar PDFs",
+      "slug": "merge-pdf",
+      "description": "Combine múltiplos arquivos PDF em um único documento",
+      "metaDescription": "Mescle múltiplos PDFs em um único arquivo online e grátis. Arraste e solte para reordenar páginas."
+    },
+    "split-pdf": {
+      "name": "Dividir PDF",
+      "slug": "split-pdf",
+      "description": "Extraia páginas específicas de um arquivo PDF",
+      "metaDescription": "Divida PDF online grátis. Extraia páginas específicas ou divida por intervalos."
+    },
+    "rotate-pdf": {
+      "name": "Girar PDF",
+      "slug": "rotate-pdf",
+      "description": "Rotacione páginas PDF em 90°, 180°, 270° ou 360°",
+      "metaDescription": "Gire páginas de PDF online grátis. Rotacione todas as páginas em 90, 180 ou 270 graus."
+    },
+    "protect-pdf": {
+      "name": "Proteger PDF",
+      "slug": "protect-pdf",
+      "description": "Adicione proteção por senha a arquivos PDF",
+      "metaDescription": "Proteja PDFs com senha online grátis. Adicione segurança aos seus documentos PDF."
+    },
+    "unlock-pdf": {
+      "name": "Desbloquear PDF",
+      "slug": "unlock-pdf",
+      "description": "Remova proteção e restrições de arquivos PDF",
+      "metaDescription": "Desbloqueie PDFs protegidos online grátis. Remova restrições de arquivos PDF."
+    },
+    "bmi-calculator": {
+      "name": "Calculadora de IMC",
+      "slug": "bmi-calculator",
+      "description": "Calcule seu Índice de Massa Corporal e veja sua categoria",
+      "metaDescription": "Calcule seu IMC online grátis. Descubra seu índice de massa corporal e categoria de peso."
+    },
+    "age-calculator": {
+      "name": "Calculadora de Idade",
+      "slug": "age-calculator",
+      "description": "Calcule idade exata em anos, meses e dias",
+      "metaDescription": "Calcule sua idade exata em anos, meses e dias. Descubra quantos dias você viveu."
+    },
+    "calorie-calculator": {
+      "name": "Calculadora de Calorias",
+      "slug": "calorie-calculator",
+      "description": "Calcule suas necessidades calóricas diárias baseado em TMB",
+      "metaDescription": "Calcule quantas calorias você precisa por dia para manter, perder ou ganhar peso. Baseado na equação de Mifflin-St Jeor."
+    },
+    "water-calculator": {
+      "name": "Calculadora de Água",
+      "slug": "water-calculator",
+      "description": "Calcule quanto água você deve beber por dia",
+      "metaDescription": "Calcule sua ingestão diária recomendada de água baseada em peso, atividade e clima."
+    },
+    "heart-rate-calculator": {
+      "name": "Calculadora de Frequência Cardíaca",
+      "slug": "heart-rate-calculator",
+      "description": "Calcule suas zonas de frequência cardíaca para treino",
+      "metaDescription": "Calcule sua frequência cardíaca máxima e zonas de treino online grátis. Baseado na fórmula de Karvonen."
+    },
+    "date-difference": {
+      "name": "Diferença entre Datas",
+      "slug": "date-difference",
+      "description": "Calcule diferença entre duas datas em anos, meses e dias",
+      "metaDescription": "Calcule a diferença entre duas datas online grátis. Descubra anos, meses e dias entre datas."
+    },
+    "timezone-converter": {
+      "name": "Conversor de Fuso Horário",
+      "slug": "timezone-converter",
+      "description": "Converta horários entre diferentes fusos horários",
+      "metaDescription": "Converta horários entre fusos horários online grátis. Suporta todos os principais timezones do mundo."
+    },
+    "case-converter": {
+      "name": "Conversor de Case",
+      "slug": "case-converter",
+      "description": "Converta texto entre MAIÚSCULAS, minúsculas, camelCase e mais",
+      "metaDescription": "Converta texto entre diferentes formatos: MAIÚSCULAS, minúsculas, Title Case, camelCase, snake_case e kebab-case."
+    },
+    "space-remover": {
+      "name": "Removedor de Espaços",
+      "slug": "space-remover",
+      "description": "Remova espaços extras, linhas duplicadas e vazias",
+      "metaDescription": "Remova espaços extras, linhas duplicadas e vazias do texto online grátis. Limpe e organize seu texto."
+    },
+    "text-comparator": {
+      "name": "Comparador de Texto",
+      "slug": "text-comparator",
+      "description": "Compare dois textos e identifique diferenças",
+      "metaDescription": "Compare dois textos online grátis. Identifique diferenças por caracteres, palavras ou linhas."
+    },
+    "base64-converter": {
+      "name": "Conversor Base64",
+      "slug": "base64-converter",
+      "description": "Codifique e decodifique texto em Base64",
+      "metaDescription": "Converta texto para Base64 e vice-versa online grátis. Encode e decode Base64 instantaneamente."
+    },
+    "unit-converter": {
+      "name": "Conversor de Unidades",
+      "slug": "unit-converter",
+      "description": "Converta entre diferentes unidades de medida",
+      "metaDescription": "Converta unidades de comprimento, peso, temperatura e volume online grátis. Suporta todas as principais unidades de medida."
+    },
+    "perpetual-calendar": {
+      "name": "Calendário Perpétuo",
+      "slug": "perpetual-calendar",
+      "description": "Visualize o calendário de qualquer mês e ano",
+      "metaDescription": "Calendário perpétuo online grátis. Visualize qualquer mês de qualquer ano de 1 a 9999."
+    },
+    "gradient-generator": {
+      "name": "Gerador de Gradientes",
+      "slug": "gradient-generator",
+      "description": "Crie gradientes CSS lindos e copie o código",
+      "metaDescription": "Gerador de gradientes CSS online grátis. Crie gradientes lineares e radiais e copie o código CSS."
+    },
+    "email-signature": {
+      "name": "Assinatura de Email",
+      "slug": "email-signature",
+      "description": "Crie assinaturas HTML profissionais para email",
+      "metaDescription": "Gerador de assinatura de email online grátis. Crie assinaturas HTML profissionais para Gmail, Outlook e outros."
     }
   },
   "footer": {

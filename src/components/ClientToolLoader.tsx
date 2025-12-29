@@ -232,6 +232,18 @@ const toolComponents = {
   'conversor-unidades': dynamic(() => import('@/components/tools/ConversorUnidades'), { ssr: false }),
   'unit-converter': dynamic(() => import('@/components/tools/ConversorUnidades'), { ssr: false }),
   'conversor-unidades-es': dynamic(() => import('@/components/tools/ConversorUnidades'), { ssr: false }),
+
+  'calendario-perpetuo': dynamic(() => import('@/components/tools/CalendarioPerpetuo'), { ssr: false }),
+  'perpetual-calendar': dynamic(() => import('@/components/tools/CalendarioPerpetuo'), { ssr: false }),
+  'calendario-perpetuo-es': dynamic(() => import('@/components/tools/CalendarioPerpetuo'), { ssr: false }),
+
+  'gerador-gradientes': dynamic(() => import('@/components/tools/GeradorGradientes'), { ssr: false }),
+  'gradient-generator': dynamic(() => import('@/components/tools/GeradorGradientes'), { ssr: false }),
+  'generador-gradientes': dynamic(() => import('@/components/tools/GeradorGradientes'), { ssr: false }),
+
+  'assinatura-email': dynamic(() => import('@/components/tools/AssinaturaEmail'), { ssr: false }),
+  'email-signature': dynamic(() => import('@/components/tools/AssinaturaEmail'), { ssr: false }),
+  'firma-email': dynamic(() => import('@/components/tools/AssinaturaEmail'), { ssr: false }),
 };
 
 interface ClientToolLoaderProps {

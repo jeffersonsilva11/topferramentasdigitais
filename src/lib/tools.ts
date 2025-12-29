@@ -571,6 +571,36 @@ export const tools: Tool[] = [
     keywords: ['conversor unidades', 'converter medidas', 'comprimento', 'peso', 'temperatura', 'volume', 'unit converter'],
     metaDescription: 'Converta unidades de comprimento, peso, temperatura e volume online grátis. Suporta todas as principais unidades de medida.',
   },
+  {
+    id: '58',
+    name: 'Calendário Perpétuo',
+    description: 'Visualize o calendário de qualquer mês e ano',
+    icon: '📅',
+    slug: 'calendario-perpetuo',
+    category: 'Data',
+    keywords: ['calendário', 'calendar', 'perpetual calendar', 'datas', 'mês', 'ano'],
+    metaDescription: 'Calendário perpétuo online grátis. Visualize qualquer mês de qualquer ano de 1 a 9999.',
+  },
+  {
+    id: '59',
+    name: 'Gerador de Gradientes',
+    description: 'Crie gradientes CSS lindos e copie o código',
+    icon: '🎨',
+    slug: 'gerador-gradientes',
+    category: 'Design',
+    keywords: ['gradiente', 'gradient', 'css', 'cores', 'design', 'linear', 'radial'],
+    metaDescription: 'Gerador de gradientes CSS online grátis. Crie gradientes lineares e radiais e copie o código CSS.',
+  },
+  {
+    id: '60',
+    name: 'Assinatura de Email',
+    description: 'Crie assinaturas HTML profissionais para email',
+    icon: '✉️',
+    slug: 'assinatura-email',
+    category: 'Produtividade',
+    keywords: ['assinatura email', 'email signature', 'html email', 'assinatura profissional'],
+    metaDescription: 'Gerador de assinatura de email online grátis. Crie assinaturas HTML profissionais para Gmail, Outlook e outros.',
+  },
 ];
 
 export function getToolBySlug(slug: string): Tool | undefined {
