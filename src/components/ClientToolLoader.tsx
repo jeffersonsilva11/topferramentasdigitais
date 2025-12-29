@@ -164,6 +164,74 @@ const toolComponents = {
   'internet-geschwindigkeitstest': dynamic(() => import('@/components/tools/TesteVelocidadeInternet'), { ssr: false }),
   'test-skorosti-interneta': dynamic(() => import('@/components/tools/TesteVelocidadeInternet'), { ssr: false }),
   'test-velocita-internet': dynamic(() => import('@/components/tools/TesteVelocidadeInternet'), { ssr: false }),
+
+  'mesclar-pdf': dynamic(() => import('@/components/tools/MesclarPDF'), { ssr: false }),
+  'merge-pdf': dynamic(() => import('@/components/tools/MesclarPDF'), { ssr: false }),
+  'fusionar-pdf': dynamic(() => import('@/components/tools/MesclarPDF'), { ssr: false }),
+
+  'dividir-pdf': dynamic(() => import('@/components/tools/DividirPDF'), { ssr: false }),
+  'split-pdf': dynamic(() => import('@/components/tools/DividirPDF'), { ssr: false }),
+  'dividir-pdf-es': dynamic(() => import('@/components/tools/DividirPDF'), { ssr: false }),
+
+  'girar-pdf': dynamic(() => import('@/components/tools/GirarPDF'), { ssr: false }),
+  'rotate-pdf': dynamic(() => import('@/components/tools/GirarPDF'), { ssr: false }),
+  'rotar-pdf': dynamic(() => import('@/components/tools/GirarPDF'), { ssr: false }),
+
+  'calculadora-imc': dynamic(() => import('@/components/tools/CalculadoraIMC'), { ssr: false }),
+  'bmi-calculator': dynamic(() => import('@/components/tools/CalculadoraIMC'), { ssr: false }),
+  'calculadora-imc-es': dynamic(() => import('@/components/tools/CalculadoraIMC'), { ssr: false }),
+
+  'calculadora-idade': dynamic(() => import('@/components/tools/CalculadoraIdade'), { ssr: false }),
+  'age-calculator': dynamic(() => import('@/components/tools/CalculadoraIdade'), { ssr: false }),
+  'calculadora-edad': dynamic(() => import('@/components/tools/CalculadoraIdade'), { ssr: false }),
+
+  'conversor-case': dynamic(() => import('@/components/tools/ConversorCase'), { ssr: false }),
+  'case-converter': dynamic(() => import('@/components/tools/ConversorCase'), { ssr: false }),
+  'conversor-mayusculas': dynamic(() => import('@/components/tools/ConversorCase'), { ssr: false }),
+
+  'conversor-base64': dynamic(() => import('@/components/tools/ConversorBase64'), { ssr: false }),
+  'base64-converter': dynamic(() => import('@/components/tools/ConversorBase64'), { ssr: false }),
+  'conversor-base64-es': dynamic(() => import('@/components/tools/ConversorBase64'), { ssr: false }),
+
+  'removedor-espacos': dynamic(() => import('@/components/tools/RemovedorEspacos'), { ssr: false }),
+  'space-remover': dynamic(() => import('@/components/tools/RemovedorEspacos'), { ssr: false }),
+  'eliminar-espacios': dynamic(() => import('@/components/tools/RemovedorEspacos'), { ssr: false }),
+
+  'diferenca-datas': dynamic(() => import('@/components/tools/DiferencaDatas'), { ssr: false }),
+  'date-difference': dynamic(() => import('@/components/tools/DiferencaDatas'), { ssr: false }),
+  'diferencia-fechas': dynamic(() => import('@/components/tools/DiferencaDatas'), { ssr: false }),
+
+  'proteger-pdf': dynamic(() => import('@/components/tools/ProtegerPDF'), { ssr: false }),
+  'protect-pdf': dynamic(() => import('@/components/tools/ProtegerPDF'), { ssr: false }),
+  'proteger-pdf-es': dynamic(() => import('@/components/tools/ProtegerPDF'), { ssr: false }),
+
+  'desbloquear-pdf': dynamic(() => import('@/components/tools/DesbloquearPDF'), { ssr: false }),
+  'unlock-pdf': dynamic(() => import('@/components/tools/DesbloquearPDF'), { ssr: false }),
+  'desbloquear-pdf-es': dynamic(() => import('@/components/tools/DesbloquearPDF'), { ssr: false }),
+
+  'calculadora-calorias': dynamic(() => import('@/components/tools/CalculadoraCalorias'), { ssr: false }),
+  'calorie-calculator': dynamic(() => import('@/components/tools/CalculadoraCalorias'), { ssr: false }),
+  'calculadora-calorias-es': dynamic(() => import('@/components/tools/CalculadoraCalorias'), { ssr: false }),
+
+  'calculadora-agua': dynamic(() => import('@/components/tools/CalculadoraAgua'), { ssr: false }),
+  'water-calculator': dynamic(() => import('@/components/tools/CalculadoraAgua'), { ssr: false }),
+  'calculadora-agua-es': dynamic(() => import('@/components/tools/CalculadoraAgua'), { ssr: false }),
+
+  'calculadora-frequencia-cardiaca': dynamic(() => import('@/components/tools/CalculadoraFrequenciaCardiaca'), { ssr: false }),
+  'heart-rate-calculator': dynamic(() => import('@/components/tools/CalculadoraFrequenciaCardiaca'), { ssr: false }),
+  'calculadora-frecuencia-cardiaca': dynamic(() => import('@/components/tools/CalculadoraFrequenciaCardiaca'), { ssr: false }),
+
+  'conversor-fuso-horario': dynamic(() => import('@/components/tools/ConversorFusoHorario'), { ssr: false }),
+  'timezone-converter': dynamic(() => import('@/components/tools/ConversorFusoHorario'), { ssr: false }),
+  'conversor-zona-horaria': dynamic(() => import('@/components/tools/ConversorFusoHorario'), { ssr: false }),
+
+  'comparador-texto': dynamic(() => import('@/components/tools/ComparadorTexto'), { ssr: false }),
+  'text-comparator': dynamic(() => import('@/components/tools/ComparadorTexto'), { ssr: false }),
+  'comparador-texto-es': dynamic(() => import('@/components/tools/ComparadorTexto'), { ssr: false }),
+
+  'conversor-unidades': dynamic(() => import('@/components/tools/ConversorUnidades'), { ssr: false }),
+  'unit-converter': dynamic(() => import('@/components/tools/ConversorUnidades'), { ssr: false }),
+  'conversor-unidades-es': dynamic(() => import('@/components/tools/ConversorUnidades'), { ssr: false }),
 };
 
 interface ClientToolLoaderProps {
