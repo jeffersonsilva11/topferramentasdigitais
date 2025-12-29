@@ -1,105 +1,63 @@
 'use client';
 
-import { HTMLAttributes } from 'react';
-import { cn } from '@/lib/utils';
+import { motion } from 'framer-motion';
 
-export interface SkeletonProps extends HTMLAttributes<HTMLDivElement> {
-  variant?: 'text' | 'circular' | 'rectangular' | 'rounded';
+interface SkeletonProps {
+  className?: string;
+  variant?: 'text' | 'circular' | 'rectangular';
   width?: string | number;
   height?: string | number;
-  animation?: 'pulse' | 'wave' | 'none';
+  count?: number;
 }
 
 export default function Skeleton({
-  className,
+  className = '',
   variant = 'text',
   width,
   height,
-  animation = 'wave',
-  style,
-  ...props
+  count = 1,
 }: SkeletonProps) {
-  const baseStyles = 'bg-gray-200 dark:bg-dark-800';
+  const baseStyles = 'bg-gradient-to-r from-gray-200 via-gray-300 to-gray-200 dark:from-dark-700 dark:via-dark-600 dark:to-dark-700';
 
   const variantStyles = {
-    text: 'rounded h-4',
+    text: 'h-4 rounded',
     circular: 'rounded-full',
-    rectangular: 'rounded-none',
-    rounded: 'rounded-lg',
+    rectangular: 'rounded-lg',
   };
 
-  const animationStyles = {
-    pulse: 'animate-pulse-subtle',
-    wave: 'shimmer',
-    none: '',
-  };
+  const style: React.CSSProperties = {};
+  if (width) style.width = typeof width === 'number' ? `${width}px` : width;
+  if (height) style.height = typeof height === 'number' ? `${height}px` : height;
 
-  return (
-    <div
-      className={cn(
-        baseStyles,
-        variantStyles[variant],
-        animationStyles[animation],
-        className
-      )}
-      style={{
-        width: typeof width === 'number' ? `${width}px` : width,
-        height: typeof height === 'number' ? `${height}px` : height,
-        ...style,
+  const combinedClassName = `${baseStyles} ${variantStyles[variant]} ${className}`.trim();
+
+  const skeletonElement = (
+    <motion.div
+      className={combinedClassName}
+      animate={{
+        backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'],
       }}
-      aria-hidden="true"
-      {...props}
+      transition={{
+        duration: 1.5,
+        repeat: Infinity,
+        ease: 'linear',
+      }}
+      style={{
+        ...style,
+        backgroundSize: '200% 100%',
+      }}
     />
   );
-}
 
-// Preset skeleton components
-export function SkeletonText({ lines = 3, className }: { lines?: number; className?: string }) {
+  if (count === 1) {
+    return skeletonElement;
+  }
+
   return (
-    <div className={cn('space-y-2', className)}>
-      {Array.from({ length: lines }).map((_, i) => (
-        <Skeleton
-          key={i}
-          variant="text"
-          width={i === lines - 1 ? '70%' : '100%'}
-        />
+    <div className="space-y-3">
+      {Array.from({ length: count }).map((_, index) => (
+        <div key={index}>{skeletonElement}</div>
       ))}
     </div>
-  );
-}
-
-export function SkeletonCard({ className }: { className?: string }) {
-  return (
-    <div className={cn('space-y-4 p-6 bg-white dark:bg-dark-900 rounded-lg border border-gray-200 dark:border-dark-700', className)}>
-      <Skeleton variant="rounded" height={200} />
-      <Skeleton variant="text" width="60%" />
-      <SkeletonText lines={2} />
-      <div className="flex gap-2">
-        <Skeleton variant="rounded" width={80} height={32} />
-        <Skeleton variant="rounded" width={80} height={32} />
-      </div>
-    </div>
-  );
-}
-
-export function SkeletonAvatar({ size = 40, className }: { size?: number; className?: string }) {
-  return (
-    <Skeleton
-      variant="circular"
-      width={size}
-      height={size}
-      className={className}
-    />
-  );
-}
-
-export function SkeletonButton({ className }: { className?: string }) {
-  return (
-    <Skeleton
-      variant="rounded"
-      width={120}
-      height={40}
-      className={className}
-    />
   );
 }

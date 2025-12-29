@@ -298,6 +298,846 @@
       "slug": "internet-speed-test",
       "description": "Test your internet connection speed with download, upload, ping and jitter metrics",
       "metaDescription": "Free internet speed test online. Check your download speed, upload speed, ping and jitter instantly."
+    },
+    "mesclar-pdf": {
+      "name": "Merge PDFs",
+      "slug": "merge-pdf",
+      "description": "Combine multiple PDF files into a single document",
+      "metaDescription": "Merge multiple PDFs into a single file online and free. Drag and drop to reorder pages."
+    },
+    "dividir-pdf": {
+      "name": "Split PDF",
+      "slug": "split-pdf",
+      "description": "Extract specific pages from a PDF file",
+      "metaDescription": "Split PDF online free. Extract specific pages or split by ranges."
+    },
+    "girar-pdf": {
+      "name": "Rotate PDF",
+      "slug": "rotate-pdf",
+      "description": "Rotate PDF pages by 90°, 180°, 270° or 360°",
+      "metaDescription": "Rotate PDF pages online free. Rotate all pages by 90, 180 or 270 degrees."
+    },
+    "proteger-pdf": {
+      "name": "Protect PDF",
+      "slug": "protect-pdf",
+      "description": "Add password protection to PDF files",
+      "metaDescription": "Protect PDFs with password online free. Add security to your PDF documents."
+    },
+    "desbloquear-pdf": {
+      "name": "Unlock PDF",
+      "slug": "unlock-pdf",
+      "description": "Remove protection and restrictions from PDF files",
+      "metaDescription": "Unlock protected PDFs online free. Remove restrictions from PDF files."
+    },
+    "calculadora-imc": {
+      "name": "BMI Calculator",
+      "slug": "bmi-calculator",
+      "description": "Calculate your Body Mass Index and see your category",
+      "metaDescription": "Calculate your BMI online free. Discover your body mass index and weight category."
+    },
+    "calculadora-idade": {
+      "name": "Age Calculator",
+      "slug": "age-calculator",
+      "description": "Calculate exact age in years, months and days",
+      "metaDescription": "Calculate your exact age in years, months and days. Find out how many days you've lived."
+    },
+    "calculadora-calorias": {
+      "name": "Calorie Calculator",
+      "slug": "calorie-calculator",
+      "description": "Calculate your daily caloric needs based on BMR",
+      "metaDescription": "Calculate how many calories you need per day to maintain, lose or gain weight. Based on the Mifflin-St Jeor equation."
+    },
+    "calculadora-agua": {
+      "name": "Water Calculator",
+      "slug": "water-calculator",
+      "description": "Calculate how much water you should drink per day",
+      "metaDescription": "Calculate your recommended daily water intake based on weight, activity and climate."
+    },
+    "calculadora-frequencia-cardiaca": {
+      "name": "Heart Rate Calculator",
+      "slug": "heart-rate-calculator",
+      "description": "Calculate your heart rate zones for training",
+      "metaDescription": "Calculate your maximum heart rate and training zones online free. Based on the Karvonen formula."
+    },
+    "diferenca-datas": {
+      "name": "Date Difference",
+      "slug": "date-difference",
+      "description": "Calculate difference between two dates in years, months and days",
+      "metaDescription": "Calculate the difference between two dates online free. Discover years, months and days between dates."
+    },
+    "conversor-fuso-horario": {
+      "name": "Timezone Converter",
+      "slug": "timezone-converter",
+      "description": "Convert times between different time zones",
+      "metaDescription": "Convert times between time zones online free. Supports all major timezones worldwide."
+    },
+    "conversor-case": {
+      "name": "Case Converter",
+      "slug": "case-converter",
+      "description": "Convert text between UPPERCASE, lowercase, camelCase and more",
+      "metaDescription": "Convert text between different formats: UPPERCASE, lowercase, Title Case, camelCase, snake_case and kebab-case."
+    },
+    "removedor-espacos": {
+      "name": "Space Remover",
+      "slug": "space-remover",
+      "description": "Remove extra spaces, duplicate and empty lines",
+      "metaDescription": "Remove extra spaces, duplicate and empty lines from text online free. Clean and organize your text."
+    },
+    "comparador-texto": {
+      "name": "Text Comparator",
+      "slug": "text-comparator",
+      "description": "Compare two texts and identify differences",
+      "metaDescription": "Compare two texts online free. Identify differences by characters, words or lines."
+    },
+    "conversor-base64": {
+      "name": "Base64 Converter",
+      "slug": "base64-converter",
+      "description": "Encode and decode text in Base64",
+      "metaDescription": "Convert text to Base64 and vice versa online free. Encode and decode Base64 instantly."
+    },
+    "conversor-unidades": {
+      "name": "Unit Converter",
+      "slug": "unit-converter",
+      "description": "Convert between different units of measurement",
+      "metaDescription": "Convert units of length, weight, temperature and volume online free. Supports all major units of measurement."
+    },
+    "calendario-perpetuo": {
+      "name": "Perpetual Calendar",
+      "slug": "perpetual-calendar",
+      "description": "View the calendar for any month and year",
+      "metaDescription": "Perpetual calendar online free. View any month of any year from 1 to 9999."
+    },
+    "gerador-gradientes": {
+      "name": "Gradient Generator",
+      "slug": "gradient-generator",
+      "description": "Create beautiful CSS gradients and copy the code",
+      "metaDescription": "CSS gradient generator online free. Create linear and radial gradients and copy the CSS code."
+    },
+    "assinatura-email": {
+      "name": "Email Signature",
+      "slug": "email-signature",
+      "description": "Create professional HTML email signatures",
+      "metaDescription": "Email signature generator online free. Create professional HTML signatures for Gmail, Outlook and others."
+    },
+    "merge-pdf": {
+      "name": "Merge PDFs",
+      "slug": "merge-pdf",
+      "description": "Combine multiple PDF files into a single document",
+      "metaDescription": "Merge multiple PDFs into a single file online and free. Drag and drop to reorder pages."
+    },
+    "split-pdf": {
+      "name": "Split PDF",
+      "slug": "split-pdf",
+      "description": "Extract specific pages from a PDF file",
+      "metaDescription": "Split PDF online free. Extract specific pages or split by ranges."
+    },
+    "rotate-pdf": {
+      "name": "Rotate PDF",
+      "slug": "rotate-pdf",
+      "description": "Rotate PDF pages by 90°, 180°, 270° or 360°",
+      "metaDescription": "Rotate PDF pages online free. Rotate all pages by 90, 180 or 270 degrees."
+    },
+    "protect-pdf": {
+      "name": "Protect PDF",
+      "slug": "protect-pdf",
+      "description": "Add password protection to PDF files",
+      "metaDescription": "Protect PDFs with password online free. Add security to your PDF documents."
+    },
+    "unlock-pdf": {
+      "name": "Unlock PDF",
+      "slug": "unlock-pdf",
+      "description": "Remove protection and restrictions from PDF files",
+      "metaDescription": "Unlock protected PDFs online free. Remove restrictions from PDF files."
+    },
+    "bmi-calculator": {
+      "name": "BMI Calculator",
+      "slug": "bmi-calculator",
+      "description": "Calculate your Body Mass Index and see your category",
+      "metaDescription": "Calculate your BMI online free. Discover your body mass index and weight category."
+    },
+    "age-calculator": {
+      "name": "Age Calculator",
+      "slug": "age-calculator",
+      "description": "Calculate exact age in years, months and days",
+      "metaDescription": "Calculate your exact age in years, months and days. Find out how many days you've lived."
+    },
+    "calorie-calculator": {
+      "name": "Calorie Calculator",
+      "slug": "calorie-calculator",
+      "description": "Calculate your daily caloric needs based on BMR",
+      "metaDescription": "Calculate how many calories you need per day to maintain, lose or gain weight. Based on the Mifflin-St Jeor equation."
+    },
+    "water-calculator": {
+      "name": "Water Calculator",
+      "slug": "water-calculator",
+      "description": "Calculate how much water you should drink per day",
+      "metaDescription": "Calculate your recommended daily water intake based on weight, activity and climate."
+    },
+    "heart-rate-calculator": {
+      "name": "Heart Rate Calculator",
+      "slug": "heart-rate-calculator",
+      "description": "Calculate your heart rate zones for training",
+      "metaDescription": "Calculate your maximum heart rate and training zones online free. Based on the Karvonen formula."
+    },
+    "date-difference": {
+      "name": "Date Difference",
+      "slug": "date-difference",
+      "description": "Calculate difference between two dates in years, months and days",
+      "metaDescription": "Calculate the difference between two dates online free. Discover years, months and days between dates."
+    },
+    "timezone-converter": {
+      "name": "Timezone Converter",
+      "slug": "timezone-converter",
+      "description": "Convert times between different time zones",
+      "metaDescription": "Convert times between time zones online free. Supports all major timezones worldwide."
+    },
+    "case-converter": {
+      "name": "Case Converter",
+      "slug": "case-converter",
+      "description": "Convert text between UPPERCASE, lowercase, camelCase and more",
+      "metaDescription": "Convert text between different formats: UPPERCASE, lowercase, Title Case, camelCase, snake_case and kebab-case."
+    },
+    "space-remover": {
+      "name": "Space Remover",
+      "slug": "space-remover",
+      "description": "Remove extra spaces, duplicate and empty lines",
+      "metaDescription": "Remove extra spaces, duplicate and empty lines from text online free. Clean and organize your text."
+    },
+    "text-comparator": {
+      "name": "Text Comparator",
+      "slug": "text-comparator",
+      "description": "Compare two texts and identify differences",
+      "metaDescription": "Compare two texts online free. Identify differences by characters, words or lines."
+    },
+    "base64-converter": {
+      "name": "Base64 Converter",
+      "slug": "base64-converter",
+      "description": "Encode and decode text in Base64",
+      "metaDescription": "Convert text to Base64 and vice versa online free. Encode and decode Base64 instantly."
+    },
+    "unit-converter": {
+      "name": "Unit Converter",
+      "slug": "unit-converter",
+      "description": "Convert between different units of measurement",
+      "metaDescription": "Convert units of length, weight, temperature and volume online free. Supports all major units of measurement."
+    },
+    "perpetual-calendar": {
+      "name": "Perpetual Calendar",
+      "slug": "perpetual-calendar",
+      "description": "View the calendar for any month and year",
+      "metaDescription": "Perpetual calendar online free. View any month of any year from 1 to 9999."
+    },
+    "gradient-generator": {
+      "name": "Gradient Generator",
+      "slug": "gradient-generator",
+      "description": "Create beautiful CSS gradients and copy the code",
+      "metaDescription": "CSS gradient generator online free. Create linear and radial gradients and copy the CSS code."
+    },
+    "email-signature": {
+      "name": "Email Signature",
+      "slug": "email-signature",
+      "description": "Create professional HTML email signatures",
+      "metaDescription": "Email signature generator online free. Create professional HTML signatures for Gmail, Outlook and others."
+    },
+    "my-ip": {
+      "name": "What is My IP",
+      "slug": "my-ip",
+      "description": "Discover your public IP address instantly",
+      "metaDescription": "Find out what your public IP address is quickly and for free. Online tool to check your IP."
+    },
+    "qr-code-generator": {
+      "name": "QR Code Generator",
+      "slug": "qr-code-generator",
+      "description": "Create custom QR codes for free",
+      "metaDescription": "Generate QR codes for free online. Create custom QR codes for URLs, texts and more."
+    },
+    "text-counter": {
+      "name": "Text Counter",
+      "slug": "text-counter",
+      "description": "Count words, characters, sentences and paragraphs in real-time",
+      "metaDescription": "Free online text counter. Count words, characters, sentences, paragraphs and reading time in real-time."
+    },
+    "convert-pdf-to-jpg": {
+      "name": "Convert PDF to JPG",
+      "slug": "convert-pdf-to-jpg",
+      "description": "Convert PDF pages to JPG images",
+      "metaDescription": "Convert PDF to JPG online for free. Transform PDF pages into high-quality images."
+    },
+    "convert-jpg-to-pdf": {
+      "name": "Convert JPG to PDF",
+      "slug": "convert-jpg-to-pdf",
+      "description": "Transform JPG images into PDF documents",
+      "metaDescription": "Convert JPG to PDF online for free. Turn your images into PDF documents easily."
+    },
+    "resize-image": {
+      "name": "Resize Image",
+      "slug": "resize-image",
+      "description": "Change image dimensions easily",
+      "metaDescription": "Resize images online for free. Change width and height while maintaining proportions."
+    },
+    "percentage-calculator": {
+      "name": "Percentage Calculator",
+      "slug": "percentage-calculator",
+      "description": "Calculate percentages quickly and easily",
+      "metaDescription": "Free online percentage calculator. Calculate percentages, discounts and increases easily."
+    },
+    "password-generator": {
+      "name": "Password Generator",
+      "slug": "password-generator",
+      "description": "Generate strong and secure passwords randomly",
+      "metaDescription": "Secure password generator online. Create strong passwords with letters, numbers and symbols for free."
+    },
+    "convert-png-to-jpg": {
+      "name": "Convert PNG to JPG",
+      "slug": "convert-png-to-jpg",
+      "description": "Convert PNG images to JPG format",
+      "metaDescription": "Convert PNG to JPG online for free. Transform PNG images to JPG quickly."
+    },
+    "lorem-ipsum-generator": {
+      "name": "Lorem Ipsum Generator",
+      "slug": "lorem-ipsum-generator",
+      "description": "Generate placeholder text for your projects",
+      "metaDescription": "Free Lorem Ipsum generator online. Create placeholder texts for your projects and designs."
+    },
+    "my-user-agent": {
+      "name": "My User Agent",
+      "slug": "my-user-agent",
+      "description": "Discover information about your browser",
+      "metaDescription": "Discover your User Agent. View information about your browser and operating system."
+    },
+    "convert-webp-to-jpg": {
+      "name": "Convert WebP to JPG",
+      "slug": "convert-webp-to-jpg",
+      "description": "Convert WebP images to JPG format",
+      "metaDescription": "Convert WebP to JPG online for free. Transform WebP images to JPG easily."
+    },
+    "hash-generator": {
+      "name": "Hash Generator",
+      "slug": "hash-generator",
+      "description": "Generate MD5, SHA-1, SHA-256 hashes from texts",
+      "metaDescription": "Free Hash generator online. Create MD5, SHA-1 and SHA-256 hashes from texts."
+    },
+    "bytes-converter": {
+      "name": "Bytes Converter",
+      "slug": "bytes-converter",
+      "description": "Convert digital storage units",
+      "metaDescription": "Free bytes converter online. Convert MB, KB, GB and other storage units."
+    },
+    "uuid-generator": {
+      "name": "UUID Generator",
+      "slug": "uuid-generator",
+      "description": "Generate universally unique identifiers (UUID v4)",
+      "metaDescription": "Free UUID generator online. Create universally unique identifiers (UUID v4) instantly."
+    },
+    "whatsapp-link-generator": {
+      "name": "WhatsApp Link Generator",
+      "slug": "whatsapp-link-generator",
+      "description": "Create direct WhatsApp links with pre-filled messages",
+      "metaDescription": "Free WhatsApp link generator online. Create wa.me links with pre-filled messages and QR Code instantly."
+    },
+    "emoji-list": {
+      "name": "Emoji List",
+      "slug": "emoji-list",
+      "description": "Copy emojis easily - over 700 categorized emojis",
+      "metaDescription": "Complete list of emojis to copy. Over 700 emojis organized by category. Copy and paste easily."
+    },
+    "json-csv-converter": {
+      "name": "JSON to CSV Converter",
+      "slug": "json-csv-converter",
+      "description": "Convert JSON to CSV and CSV to JSON bidirectionally",
+      "metaDescription": "Free JSON CSV converter online. Convert JSON to CSV and CSV to JSON easily."
+    },
+    "utm-generator": {
+      "name": "UTM Generator",
+      "slug": "utm-generator",
+      "description": "Create URLs with UTM parameters for campaign tracking",
+      "metaDescription": "Free UTM generator online. Create URLs with utm_source, utm_medium and utm_campaign parameters for Google Analytics."
+    },
+    "compound-interest-calculator": {
+      "name": "Compound Interest Calculator",
+      "slug": "compound-interest-calculator",
+      "description": "Calculate investment returns with compound interest",
+      "metaDescription": "Free compound interest calculator online. Simulate investments, savings and CDs with compound interest."
+    },
+    "holidays-2026": {
+      "name": "National Holidays 2026",
+      "slug": "holidays-2026",
+      "description": "Complete list of 2026 national holidays for various countries",
+      "metaDescription": "National holidays 2026. Complete calendar of holidays for USA, Brazil, Mexico, Argentina, Chile, Colombia and Spain."
+    },
+    "roi-calculator": {
+      "name": "ROI Calculator",
+      "slug": "roi-calculator",
+      "description": "Calculate return on investment (ROI) easily",
+      "metaDescription": "Free ROI calculator online. Calculate return on investment, profit and profitability with shareable URL."
+    },
+    "screen-recorder": {
+      "name": "Screen and Webcam Recorder",
+      "slug": "screen-recorder",
+      "description": "Record your screen, webcam or both with audio",
+      "metaDescription": "Free screen and webcam recorder online. Record your screen, camera or both with audio. No upload, 100% private."
+    },
+    "microphone-camera-tester": {
+      "name": "Microphone and Camera Tester",
+      "slug": "microphone-camera-tester",
+      "description": "Test if your microphone and webcam are working",
+      "metaDescription": "Free microphone and camera tester online. Check if your audio and video devices are working correctly."
+    },
+    "random-number-generator": {
+      "name": "Random Number Generator",
+      "slug": "random-number-generator",
+      "description": "Generate random numbers with or without repetition",
+      "metaDescription": "Free random number generator online. Generate numbers with customizable range, with or without repetition."
+    },
+    "secret-santa": {
+      "name": "Secret Santa",
+      "slug": "secret-santa",
+      "description": "Organize secret santa draws easily",
+      "metaDescription": "Organize secret santa online for free. Automatic Secret Santa draw with individual reveal and export."
+    },
+    "wheel-of-fortune": {
+      "name": "Wheel of Fortune",
+      "slug": "wheel-of-fortune",
+      "description": "Create a custom wheel for drawings",
+      "metaDescription": "Free wheel of fortune online. Create custom wheels for drawings with smooth animation and history."
+    },
+    "regex-validator": {
+      "name": "Regex Validator and Generator",
+      "slug": "regex-validator",
+      "description": "Test and validate regular expressions in real-time",
+      "metaDescription": "Free Regex validator online. Test regular expressions with match highlighting, explanations and common patterns."
+    },
+    "policy-generator": {
+      "name": "Policies and Terms Generator",
+      "slug": "policy-generator",
+      "description": "Generate Privacy Policy, Terms of Service, and Cookie Policy",
+      "metaDescription": "Free online policy and terms generator. Create custom Privacy Policy, Terms of Service, and Cookie Policy."
+    },
+    "color-palette-generator": {
+      "name": "Color Palette Generator",
+      "slug": "color-palette-generator",
+      "description": "Create professional color palettes with WCAG contrast",
+      "metaDescription": "Free color palette generator online. Create professional palettes with HEX, RGB, HSL, WCAG contrast and CSS/JSON export."
+    },
+    "internet-speed-test": {
+      "name": "Internet Speed Test",
+      "slug": "internet-speed-test",
+      "description": "Test your internet connection speed with download, upload, ping and jitter metrics",
+      "metaDescription": "Free internet speed test online. Check your download speed, upload speed, ping and jitter instantly."
+    },
+    "cual-es-mi-ip": {
+      "name": "What is My IP",
+      "slug": "cual-es-mi-ip",
+      "description": "Discover your public IP address instantly",
+      "metaDescription": "Find out what your public IP address is quickly and for free. Online tool to check your IP."
+    },
+    "generador-codigo-qr": {
+      "name": "QR Code Generator",
+      "slug": "generador-codigo-qr",
+      "description": "Create custom QR codes for free",
+      "metaDescription": "Generate QR codes for free online. Create custom QR codes for URLs, texts and more."
+    },
+    "convertir-pdf-jpg": {
+      "name": "Convert PDF to JPG",
+      "slug": "convertir-pdf-jpg",
+      "description": "Convert PDF pages to JPG images",
+      "metaDescription": "Convert PDF to JPG online for free. Transform PDF pages into high-quality images."
+    },
+    "convertir-jpg-pdf": {
+      "name": "Convert JPG to PDF",
+      "slug": "convertir-jpg-pdf",
+      "description": "Transform JPG images into PDF documents",
+      "metaDescription": "Convert JPG to PDF online for free. Turn your images into PDF documents easily."
+    },
+    "comprimir-imagen": {
+      "name": "Image Compressor",
+      "slug": "comprimir-imagen",
+      "description": "Reduce image size without losing quality",
+      "metaDescription": "Compress images online for free. Reduce the size of JPG, PNG and WebP while maintaining quality."
+    },
+    "redimensionar-imagen": {
+      "name": "Resize Image",
+      "slug": "redimensionar-imagen",
+      "description": "Change image dimensions easily",
+      "metaDescription": "Resize images online for free. Change width and height while maintaining proportions."
+    },
+    "calculadora-porcentaje": {
+      "name": "Percentage Calculator",
+      "slug": "calculadora-porcentaje",
+      "description": "Calculate percentages quickly and easily",
+      "metaDescription": "Free online percentage calculator. Calculate percentages, discounts and increases easily."
+    },
+    "generador-contrasenas": {
+      "name": "Password Generator",
+      "slug": "generador-contrasenas",
+      "description": "Generate strong and secure passwords randomly",
+      "metaDescription": "Secure password generator online. Create strong passwords with letters, numbers and symbols for free."
+    },
+    "convertir-png-jpg": {
+      "name": "Convert PNG to JPG",
+      "slug": "convertir-png-jpg",
+      "description": "Convert PNG images to JPG format",
+      "metaDescription": "Convert PNG to JPG online for free. Transform PNG images to JPG quickly."
+    },
+    "generador-lorem-ipsum": {
+      "name": "Lorem Ipsum Generator",
+      "slug": "generador-lorem-ipsum",
+      "description": "Generate placeholder text for your projects",
+      "metaDescription": "Free Lorem Ipsum generator online. Create placeholder texts for your projects and designs."
+    },
+    "sitio-online": {
+      "name": "Is Website Online",
+      "slug": "sitio-online",
+      "description": "Check if a website is accessible",
+      "metaDescription": "Test if a website is online. Check website availability for free."
+    },
+    "mi-user-agent": {
+      "name": "My User Agent",
+      "slug": "mi-user-agent",
+      "description": "Discover information about your browser",
+      "metaDescription": "Discover your User Agent. View information about your browser and operating system."
+    },
+    "convertir-webp-jpg": {
+      "name": "Convert WebP to JPG",
+      "slug": "convertir-webp-jpg",
+      "description": "Convert WebP images to JPG format",
+      "metaDescription": "Convert WebP to JPG online for free. Transform WebP images to JPG easily."
+    },
+    "regla-de-tres": {
+      "name": "Rule of Three Calculator",
+      "slug": "regla-de-tres",
+      "description": "Solve simple rule of three calculations",
+      "metaDescription": "Free online rule of three calculator. Solve proportions and calculations easily."
+    },
+    "generador-hash": {
+      "name": "Hash Generator",
+      "slug": "generador-hash",
+      "description": "Generate MD5, SHA-1, SHA-256 hashes from texts",
+      "metaDescription": "Free Hash generator online. Create MD5, SHA-1 and SHA-256 hashes from texts."
+    },
+    "generador-uuid": {
+      "name": "UUID Generator",
+      "slug": "generador-uuid",
+      "description": "Generate universally unique identifiers (UUID v4)",
+      "metaDescription": "Free UUID generator online. Create universally unique identifiers (UUID v4) instantly."
+    },
+    "generador-enlace-whatsapp": {
+      "name": "WhatsApp Link Generator",
+      "slug": "generador-enlace-whatsapp",
+      "description": "Create direct WhatsApp links with pre-filled messages",
+      "metaDescription": "Free WhatsApp link generator online. Create wa.me links with pre-filled messages and QR Code instantly."
+    },
+    "generador-clave-pix": {
+      "name": "PIX Key Generator",
+      "slug": "generador-clave-pix",
+      "description": "Generate QR Code and copy-paste code for PIX payment",
+      "metaDescription": "Free PIX key generator online. Create PIX QR Code and copy-paste code to receive payments."
+    },
+    "cronometro-temporizador": {
+      "name": "Online Stopwatch & Timer",
+      "slug": "cronometro-temporizador",
+      "description": "Countdown and count-up timer with fullscreen mode",
+      "metaDescription": "Free online stopwatch. Countdown and count-up timer with sound alarm and fullscreen mode."
+    },
+    "cotizacion-monedas": {
+      "name": "Currency Exchange",
+      "slug": "cotizacion-monedas",
+      "description": "Real-time currency converter with updated rates",
+      "metaDescription": "Real-time currency exchange rates. Currency converter with European Central Bank rates updated daily."
+    },
+    "generador-utm": {
+      "name": "UTM Generator",
+      "slug": "generador-utm",
+      "description": "Create URLs with UTM parameters for campaign tracking",
+      "metaDescription": "Free UTM generator online. Create URLs with utm_source, utm_medium and utm_campaign parameters for Google Analytics."
+    },
+    "calculadora-intereses": {
+      "name": "Compound Interest Calculator",
+      "slug": "calculadora-intereses",
+      "description": "Calculate investment returns with compound interest",
+      "metaDescription": "Free compound interest calculator online. Simulate investments, savings and CDs with compound interest."
+    },
+    "grabador-pantalla": {
+      "name": "Screen and Webcam Recorder",
+      "slug": "grabador-pantalla",
+      "description": "Record your screen, webcam or both with audio",
+      "metaDescription": "Free screen and webcam recorder online. Record your screen, camera or both with audio. No upload, 100% private."
+    },
+    "probador-microfono-camara": {
+      "name": "Microphone and Camera Tester",
+      "slug": "probador-microfono-camara",
+      "description": "Test if your microphone and webcam are working",
+      "metaDescription": "Free microphone and camera tester online. Check if your audio and video devices are working correctly."
+    },
+    "generador-numero-aleatorio": {
+      "name": "Random Number Generator",
+      "slug": "generador-numero-aleatorio",
+      "description": "Generate random numbers with or without repetition",
+      "metaDescription": "Free random number generator online. Generate numbers with customizable range, with or without repetition."
+    },
+    "generador-loteria": {
+      "name": "Lottery Number Generator",
+      "slug": "generador-loteria",
+      "description": "Generate numbers for Mega Millions, Powerball and other lotteries",
+      "metaDescription": "Free lottery number generator online. Mega Millions, Powerball, EuroMillions and custom lotteries."
+    },
+    "amigo-secreto": {
+      "name": "Secret Santa",
+      "slug": "amigo-secreto",
+      "description": "Organize secret santa draws easily",
+      "metaDescription": "Organize secret santa online for free. Automatic Secret Santa draw with individual reveal and export."
+    },
+    "rueda-fortuna": {
+      "name": "Wheel of Fortune",
+      "slug": "rueda-fortuna",
+      "description": "Create a custom wheel for drawings",
+      "metaDescription": "Free wheel of fortune online. Create custom wheels for drawings with smooth animation and history."
+    },
+    "generador-politicas": {
+      "name": "Policies and Terms Generator",
+      "slug": "generador-politicas",
+      "description": "Generate Privacy Policy, Terms of Service, and Cookie Policy",
+      "metaDescription": "Free online policy and terms generator. Create custom Privacy Policy, Terms of Service, and Cookie Policy."
+    },
+    "generador-paleta-colores": {
+      "name": "Color Palette Generator",
+      "slug": "generador-paleta-colores",
+      "description": "Create professional color palettes with WCAG contrast",
+      "metaDescription": "Free color palette generator online. Create professional palettes with HEX, RGB, HSL, WCAG contrast and CSS/JSON export."
+    },
+    "prueba-velocidad-internet": {
+      "name": "Internet Speed Test",
+      "slug": "prueba-velocidad-internet",
+      "description": "Test your internet connection speed with download, upload, ping and jitter metrics",
+      "metaDescription": "Free internet speed test online. Check your download speed, upload speed, ping and jitter instantly."
+    },
+    "fusionar-pdf": {
+      "name": "Merge PDFs",
+      "slug": "fusionar-pdf",
+      "description": "Combine multiple PDF files into a single document",
+      "metaDescription": "Merge multiple PDFs into a single file online and free. Drag and drop to reorder pages."
+    },
+    "rotar-pdf": {
+      "name": "Rotate PDF",
+      "slug": "rotar-pdf",
+      "description": "Rotate PDF pages by 90°, 180°, 270° or 360°",
+      "metaDescription": "Rotate PDF pages online free. Rotate all pages by 90, 180 or 270 degrees."
+    },
+    "calculadora-edad": {
+      "name": "Age Calculator",
+      "slug": "calculadora-edad",
+      "description": "Calculate exact age in years, months and days",
+      "metaDescription": "Calculate your exact age in years, months and days. Find out how many days you've lived."
+    },
+    "conversor-mayusculas": {
+      "name": "Case Converter",
+      "slug": "conversor-mayusculas",
+      "description": "Convert text between UPPERCASE, lowercase, camelCase and more",
+      "metaDescription": "Convert text between different formats: UPPERCASE, lowercase, Title Case, camelCase, snake_case and kebab-case."
+    },
+    "eliminar-espacios": {
+      "name": "Space Remover",
+      "slug": "eliminar-espacios",
+      "description": "Remove extra spaces, duplicate and empty lines",
+      "metaDescription": "Remove extra spaces, duplicate and empty lines from text online free. Clean and organize your text."
+    },
+    "diferencia-fechas": {
+      "name": "Date Difference",
+      "slug": "diferencia-fechas",
+      "description": "Calculate difference between two dates in years, months and days",
+      "metaDescription": "Calculate the difference between two dates online free. Discover years, months and days between dates."
+    },
+    "calculadora-frecuencia-cardiaca": {
+      "name": "Heart Rate Calculator",
+      "slug": "calculadora-frecuencia-cardiaca",
+      "description": "Calculate your heart rate zones for training",
+      "metaDescription": "Calculate your maximum heart rate and training zones online free. Based on the Karvonen formula."
+    },
+    "conversor-zona-horaria": {
+      "name": "Timezone Converter",
+      "slug": "conversor-zona-horaria",
+      "description": "Convert times between different time zones",
+      "metaDescription": "Convert times between time zones online free. Supports all major timezones worldwide."
+    },
+    "generador-gradientes": {
+      "name": "Gradient Generator",
+      "slug": "generador-gradientes",
+      "description": "Create beautiful CSS gradients and copy the code",
+      "metaDescription": "CSS gradient generator online free. Create linear and radial gradients and copy the CSS code."
+    },
+    "firma-email": {
+      "name": "Email Signature",
+      "slug": "firma-email",
+      "description": "Create professional HTML email signatures",
+      "metaDescription": "Email signature generator online free. Create professional HTML signatures for Gmail, Outlook and others."
+    },
+    "what-is-my-ip": {
+      "name": "What is My IP",
+      "slug": "what-is-my-ip",
+      "description": "Discover your public IP address instantly",
+      "metaDescription": "Find out what your public IP address is quickly and for free. Online tool to check your IP."
+    },
+    "image-compressor": {
+      "name": "Image Compressor",
+      "slug": "image-compressor",
+      "description": "Reduce image size without losing quality",
+      "metaDescription": "Compress images online for free. Reduce the size of JPG, PNG and WebP while maintaining quality."
+    },
+    "website-status-checker": {
+      "name": "Is Website Online",
+      "slug": "website-status-checker",
+      "description": "Check if a website is accessible",
+      "metaDescription": "Test if a website is online. Check website availability for free."
+    },
+    "rule-of-three-calculator": {
+      "name": "Rule of Three Calculator",
+      "slug": "rule-of-three-calculator",
+      "description": "Solve simple rule of three calculations",
+      "metaDescription": "Free online rule of three calculator. Solve proportions and calculations easily."
+    },
+    "formateador-json": {
+      "name": "JSON Formatter",
+      "slug": "formateador-json",
+      "description": "Format and validate JSON code",
+      "metaDescription": "Free online JSON formatter. Format, validate and beautify JSON code easily."
+    },
+    "pix-key-generator": {
+      "name": "PIX Key Generator",
+      "slug": "pix-key-generator",
+      "description": "Generate QR Code and copy-paste code for PIX payment",
+      "metaDescription": "Free PIX key generator online. Create PIX QR Code and copy-paste code to receive payments."
+    },
+    "lista-emojis-es": {
+      "name": "Emoji List",
+      "slug": "lista-emojis-es",
+      "description": "Copy emojis easily - over 700 categorized emojis",
+      "metaDescription": "Complete list of emojis to copy. Over 700 emojis organized by category. Copy and paste easily."
+    },
+    "stopwatch-timer": {
+      "name": "Online Stopwatch & Timer",
+      "slug": "stopwatch-timer",
+      "description": "Countdown and count-up timer with fullscreen mode",
+      "metaDescription": "Free online stopwatch. Countdown and count-up timer with sound alarm and fullscreen mode."
+    },
+    "currency-exchange": {
+      "name": "Currency Exchange",
+      "slug": "currency-exchange",
+      "description": "Real-time currency converter with updated rates",
+      "metaDescription": "Real-time currency exchange rates. Currency converter with European Central Bank rates updated daily."
+    },
+    "conversor-json-csv-es": {
+      "name": "JSON to CSV Converter",
+      "slug": "conversor-json-csv-es",
+      "description": "Convert JSON to CSV and CSV to JSON bidirectionally",
+      "metaDescription": "Free JSON CSV converter online. Convert JSON to CSV and CSV to JSON easily."
+    },
+    "calculadora-roi-es": {
+      "name": "ROI Calculator",
+      "slug": "calculadora-roi-es",
+      "description": "Calculate return on investment (ROI) easily",
+      "metaDescription": "Free ROI calculator online. Calculate return on investment, profit and profitability with shareable URL."
+    },
+    "lottery-generator": {
+      "name": "Lottery Number Generator",
+      "slug": "lottery-generator",
+      "description": "Generate numbers for Mega Millions, Powerball and other lotteries",
+      "metaDescription": "Free lottery number generator online. Mega Millions, Powerball, EuroMillions and custom lotteries."
+    },
+    "validador-regex-es": {
+      "name": "Regex Validator and Generator",
+      "slug": "validador-regex-es",
+      "description": "Test and validate regular expressions in real-time",
+      "metaDescription": "Free Regex validator online. Test regular expressions with match highlighting, explanations and common patterns."
+    },
+    "test-vitesse-internet": {
+      "name": "Internet Speed Test",
+      "slug": "test-vitesse-internet",
+      "description": "Test your internet connection speed with download, upload, ping and jitter metrics",
+      "metaDescription": "Free internet speed test online. Check your download speed, upload speed, ping and jitter instantly."
+    },
+    "internet-geschwindigkeitstest": {
+      "name": "Internet Speed Test",
+      "slug": "internet-geschwindigkeitstest",
+      "description": "Test your internet connection speed with download, upload, ping and jitter metrics",
+      "metaDescription": "Free internet speed test online. Check your download speed, upload speed, ping and jitter instantly."
+    },
+    "test-skorosti-interneta": {
+      "name": "Internet Speed Test",
+      "slug": "test-skorosti-interneta",
+      "description": "Test your internet connection speed with download, upload, ping and jitter metrics",
+      "metaDescription": "Free internet speed test online. Check your download speed, upload speed, ping and jitter instantly."
+    },
+    "test-velocita-internet": {
+      "name": "Internet Speed Test",
+      "slug": "test-velocita-internet",
+      "description": "Test your internet connection speed with download, upload, ping and jitter metrics",
+      "metaDescription": "Free internet speed test online. Check your download speed, upload speed, ping and jitter instantly."
+    },
+    "dividir-pdf-es": {
+      "name": "Split PDF",
+      "slug": "dividir-pdf-es",
+      "description": "Extract specific pages from a PDF file",
+      "metaDescription": "Split PDF online free. Extract specific pages or split by ranges."
+    },
+    "calculadora-imc-es": {
+      "name": "BMI Calculator",
+      "slug": "calculadora-imc-es",
+      "description": "Calculate your Body Mass Index and see your category",
+      "metaDescription": "Calculate your BMI online free. Discover your body mass index and weight category."
+    },
+    "proteger-pdf-es": {
+      "name": "Protect PDF",
+      "slug": "proteger-pdf-es",
+      "description": "Add password protection to PDF files",
+      "metaDescription": "Protect PDFs with password online free. Add security to your PDF documents."
+    },
+    "desbloquear-pdf-es": {
+      "name": "Unlock PDF",
+      "slug": "desbloquear-pdf-es",
+      "description": "Remove protection and restrictions from PDF files",
+      "metaDescription": "Unlock protected PDFs online free. Remove restrictions from PDF files."
+    },
+    "calculadora-calorias-es": {
+      "name": "Calorie Calculator",
+      "slug": "calculadora-calorias-es",
+      "description": "Calculate your daily caloric needs based on BMR",
+      "metaDescription": "Calculate how many calories you need per day to maintain, lose or gain weight. Based on the Mifflin-St Jeor equation."
+    },
+    "calculadora-agua-es": {
+      "name": "Water Calculator",
+      "slug": "calculadora-agua-es",
+      "description": "Calculate how much water you should drink per day",
+      "metaDescription": "Calculate your recommended daily water intake based on weight, activity and climate."
+    },
+    "comparador-texto-es": {
+      "name": "Text Comparator",
+      "slug": "comparador-texto-es",
+      "description": "Compare two texts and identify differences",
+      "metaDescription": "Compare two texts online free. Identify differences by characters, words or lines."
+    },
+    "conversor-unidades-es": {
+      "name": "Unit Converter",
+      "slug": "conversor-unidades-es",
+      "description": "Convert between different units of measurement",
+      "metaDescription": "Convert units of length, weight, temperature and volume online free. Supports all major units of measurement."
+    },
+    "calendario-perpetuo-es": {
+      "name": "Perpetual Calendar",
+      "slug": "calendario-perpetuo-es",
+      "description": "View the calendar for any month and year",
+      "metaDescription": "Perpetual calendar online free. View any month of any year from 1 to 9999."
+    },
+    "comprimir-pdf": {
+      "name": "Compress PDF",
+      "slug": "compress-pdf",
+      "description": "Reduce PDF file size while maintaining quality",
+      "metaDescription": "Compress PDFs online for free. Reduce PDF file size while maintaining quality."
+    },
+    "compress-pdf": {
+      "name": "Compress PDF",
+      "slug": "compress-pdf",
+      "description": "Reduce PDF file size while maintaining quality",
+      "metaDescription": "Compress PDFs online for free. Reduce PDF file size while maintaining quality."
     }
   },
   "footer": {

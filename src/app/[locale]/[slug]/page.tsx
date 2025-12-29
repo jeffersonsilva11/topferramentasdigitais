@@ -88,26 +88,61 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     es: 'es_ES',
   };
 
+  // Get tool data for keywords
+  const tool = tools.find(t => t.slug === toolKey);
+  const keywords = tool?.keywords || [];
+
+  const baseUrl = 'https://ferramentasdigitais.com.br';
+  const currentUrl = `${baseUrl}/${locale}/${slug}`;
+  const ogImage = `${baseUrl}/og-image.png`; // Default OG image
+
   return {
     title,
     description,
+    keywords,
+    authors: [{ name: 'Ferramentas Digitais' }],
+    creator: 'Ferramentas Digitais',
+    publisher: 'Ferramentas Digitais',
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    },
     openGraph: {
       title,
       description,
+      url: currentUrl,
+      siteName: 'Ferramentas Digitais',
       locale: localeMap[locale] || 'en_US',
       type: 'website',
+      images: [
+        {
+          url: ogImage,
+          width: 1200,
+          height: 630,
+          alt: title,
+        },
+      ],
     },
     twitter: {
       card: 'summary_large_image',
       title,
       description,
+      site: '@ferramentasdigit',
+      creator: '@ferramentasdigit',
+      images: [ogImage],
     },
     alternates: {
-      canonical: `/${locale}/${slug}`,
+      canonical: currentUrl,
       languages: {
-        'en-US': `/en/${slug}`,
-        'pt-BR': `/pt/${slug}`,
-        'es-ES': `/es/${slug}`,
+        'en-US': `${baseUrl}/en/${slug}`,
+        'pt-BR': `${baseUrl}/pt/${slug}`,
+        'es-ES': `${baseUrl}/es/${slug}`,
       },
     },
   };
