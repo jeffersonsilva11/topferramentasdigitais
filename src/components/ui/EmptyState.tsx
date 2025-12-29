@@ -1,49 +1,50 @@
+'use client';
+
+import { motion } from 'framer-motion';
+import { ReactNode } from 'react';
+
 interface EmptyStateProps {
-  icon?: string;
+  icon?: ReactNode;
   title: string;
   description?: string;
   action?: {
     label: string;
     onClick: () => void;
   };
-  className?: string;
 }
 
-export default function EmptyState({
-  icon = '📭',
-  title,
-  description,
-  action,
-  className = '',
-}: EmptyStateProps) {
+export default function EmptyState({ icon, title, description, action }: EmptyStateProps) {
   return (
-    <div className={`flex flex-col items-center justify-center p-8 sm:p-12 text-center ${className}`}>
-      {/* Icon */}
-      <div className="text-6xl sm:text-7xl mb-4 animate-bounce-subtle" role="img" aria-label={title}>
-        {icon}
-      </div>
-
-      {/* Title */}
-      <h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-gray-100 mb-2">
-        {title}
-      </h3>
-
-      {/* Description */}
-      {description && (
-        <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-6 max-w-md">
-          {description}
-        </p>
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.4 }}
+      className="flex flex-col items-center justify-center py-12 px-4 text-center"
+    >
+      {icon && (
+        <motion.div
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ delay: 0.1, type: 'spring', stiffness: 200 }}
+          className="mb-4 text-6xl text-gray-400 dark:text-dark-500"
+        >
+          {icon}
+        </motion.div>
       )}
-
-      {/* Action button */}
+      <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">{title}</h3>
+      {description && (
+        <p className="text-sm text-gray-600 dark:text-gray-400 max-w-md mb-6">{description}</p>
+      )}
       {action && (
-        <button
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
           onClick={action.onClick}
-          className="px-6 py-3 bg-primary-600 text-white rounded-lg hover:bg-primary-700 dark:bg-primary-700 dark:hover:bg-primary-600 transition-all duration-220 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 font-medium"
+          className="px-6 py-2 bg-primary-600 text-white rounded-lg font-medium hover:bg-primary-700 transition-colors"
         >
           {action.label}
-        </button>
+        </motion.button>
       )}
-    </div>
+    </motion.div>
   );
 }

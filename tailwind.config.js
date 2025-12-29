@@ -146,7 +146,30 @@ module.exports = {
         '120': '120ms',
         '220': '220ms',
       },
+      // Accessibility: Improved focus styles
+      outlineWidth: {
+        3: '3px',
+      },
+      outlineOffset: {
+        3: '3px',
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    // Add accessibility plugin for better focus management
+    function({ addUtilities }) {
+      addUtilities({
+        '.focus-visible-ring': {
+          '@apply focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2': {},
+        },
+        '.focus-visible-ring-inset': {
+          '@apply focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-primary-500': {},
+        },
+        // Enhanced touch targets for mobile (min 44x44px as per WCAG)
+        '.touch-target': {
+          '@apply min-h-[44px] min-w-[44px] inline-flex items-center justify-center': {},
+        },
+      });
+    },
+  ],
 }
