@@ -300,124 +300,124 @@
       "metaDescription": "Prueba de velocidad de internet online gratis. Comprueba tu velocidad de descarga, subida, ping y jitter al instante."
     },
     "mesclar-pdf": {
-      "name": "Merge PDFs",
+      "name": "Fusionar PDFs",
       "slug": "merge-pdf",
-      "description": "Combine multiple PDF files into a single document",
-      "metaDescription": "Merge multiple PDFs into a single file online and free."
+      "description": "Combina múltiples archivos PDF en un único documento",
+      "metaDescription": "Fusiona múltiples PDFs en un único archivo online y gratis. Arrastra y suelta para reordenar páginas."
     },
     "dividir-pdf": {
-      "name": "Split PDF",
+      "name": "Dividir PDF",
       "slug": "split-pdf",
-      "description": "Extract specific pages from a PDF file",
-      "metaDescription": "Split PDF online free. Extract specific pages or split by ranges."
+      "description": "Extrae páginas específicas de un archivo PDF",
+      "metaDescription": "Divide PDF online gratis. Extrae páginas específicas o divide por rangos."
     },
     "girar-pdf": {
-      "name": "Rotate PDF",
+      "name": "Rotar PDF",
       "slug": "rotate-pdf",
-      "description": "Rotate PDF pages by 90°, 180°, 270° or 360°",
-      "metaDescription": "Rotate PDF pages online free."
+      "description": "Rota páginas PDF 90°, 180°, 270° o 360°",
+      "metaDescription": "Rota páginas PDF online gratis. Rota todas las páginas en 90, 180 o 270 grados."
     },
     "proteger-pdf": {
-      "name": "Protect PDF",
+      "name": "Proteger PDF",
       "slug": "protect-pdf",
-      "description": "Add password protection to PDF files",
-      "metaDescription": "Protect PDFs with password online free."
+      "description": "Añade protección con contraseña a archivos PDF",
+      "metaDescription": "Protege PDFs con contraseña online gratis. Añade seguridad a tus documentos PDF."
     },
     "desbloquear-pdf": {
-      "name": "Unlock PDF",
+      "name": "Desbloquear PDF",
       "slug": "unlock-pdf",
-      "description": "Remove protection and restrictions from PDF files",
-      "metaDescription": "Unlock protected PDFs online free."
+      "description": "Elimina protección y restricciones de archivos PDF",
+      "metaDescription": "Desbloquea PDFs protegidos online gratis. Elimina restricciones de archivos PDF."
     },
     "calculadora-imc": {
-      "name": "BMI Calculator",
+      "name": "Calculadora de IMC",
       "slug": "bmi-calculator",
-      "description": "Calculate your Body Mass Index and see your category",
-      "metaDescription": "Calculate your BMI online free."
+      "description": "Calcula tu Índice de Masa Corporal y mira tu categoría",
+      "metaDescription": "Calcula tu IMC online gratis. Descubre tu índice de masa corporal y categoría de peso."
     },
     "calculadora-idade": {
-      "name": "Age Calculator",
+      "name": "Calculadora de Edad",
       "slug": "age-calculator",
-      "description": "Calculate exact age in years, months and days",
-      "metaDescription": "Calculate your exact age online free."
+      "description": "Calcula la edad exacta en años, meses y días",
+      "metaDescription": "Calcula tu edad exacta en años, meses y días. Descubre cuántos días has vivido."
     },
     "calculadora-calorias": {
-      "name": "Calorie Calculator",
+      "name": "Calculadora de Calorías",
       "slug": "calorie-calculator",
-      "description": "Calculate your daily caloric needs based on BMR",
-      "metaDescription": "Calculate daily calories online free."
+      "description": "Calcula tus necesidades calóricas diarias basadas en TMB",
+      "metaDescription": "Calcula cuántas calorías necesitas al día para mantener, perder o ganar peso. Basada en la ecuación de Mifflin-St Jeor."
     },
     "calculadora-agua": {
-      "name": "Water Calculator",
+      "name": "Calculadora de Agua",
       "slug": "water-calculator",
-      "description": "Calculate how much water you should drink per day",
-      "metaDescription": "Calculate daily water intake online free."
+      "description": "Calcula cuánta agua debes beber al día",
+      "metaDescription": "Calcula tu ingesta diaria de agua recomendada basada en peso, actividad y clima."
     },
     "calculadora-frequencia-cardiaca": {
-      "name": "Heart Rate Calculator",
+      "name": "Calculadora de Frecuencia Cardíaca",
       "slug": "heart-rate-calculator",
-      "description": "Calculate your heart rate zones for training",
-      "metaDescription": "Calculate heart rate zones online free."
+      "description": "Calcula tus zonas de frecuencia cardíaca para entrenamiento",
+      "metaDescription": "Calcula tu frecuencia cardíaca máxima y zonas de entrenamiento online gratis. Basada en la fórmula de Karvonen."
     },
     "diferenca-datas": {
-      "name": "Date Difference",
+      "name": "Diferencia entre Fechas",
       "slug": "date-difference",
-      "description": "Calculate difference between two dates",
-      "metaDescription": "Calculate date difference online free."
+      "description": "Calcula la diferencia entre dos fechas en años, meses y días",
+      "metaDescription": "Calcula la diferencia entre dos fechas online gratis. Descubre años, meses y días entre fechas."
     },
     "conversor-fuso-horario": {
-      "name": "Timezone Converter",
+      "name": "Conversor de Zona Horaria",
       "slug": "timezone-converter",
-      "description": "Convert times between different time zones",
-      "metaDescription": "Convert timezones online free."
+      "description": "Convierte horarios entre diferentes zonas horarias",
+      "metaDescription": "Convierte horarios entre zonas horarias online gratis. Soporta todas las principales zonas horarias del mundo."
     },
     "conversor-case": {
-      "name": "Case Converter",
+      "name": "Conversor de Mayúsculas/Minúsculas",
       "slug": "case-converter",
-      "description": "Convert text between UPPERCASE, lowercase, camelCase",
-      "metaDescription": "Convert text case online free."
+      "description": "Convierte texto entre MAYÚSCULAS, minúsculas, camelCase y más",
+      "metaDescription": "Convierte texto entre diferentes formatos: MAYÚSCULAS, minúsculas, Title Case, camelCase, snake_case y kebab-case."
     },
     "removedor-espacos": {
-      "name": "Space Remover",
+      "name": "Eliminar Espacios",
       "slug": "space-remover",
-      "description": "Remove extra spaces and duplicate lines",
-      "metaDescription": "Remove spaces online free."
+      "description": "Elimina espacios extra, líneas duplicadas y vacías",
+      "metaDescription": "Elimina espacios extra, líneas duplicadas y vacías del texto online gratis. Limpia y organiza tu texto."
     },
     "comparador-texto": {
-      "name": "Text Comparator",
+      "name": "Comparador de Texto",
       "slug": "text-comparator",
-      "description": "Compare two texts and identify differences",
-      "metaDescription": "Compare texts online free."
+      "description": "Compara dos textos e identifica diferencias",
+      "metaDescription": "Compara dos textos online gratis. Identifica diferencias por caracteres, palabras o líneas."
     },
     "conversor-base64": {
-      "name": "Base64 Converter",
+      "name": "Conversor Base64",
       "slug": "base64-converter",
-      "description": "Encode and decode text in Base64",
-      "metaDescription": "Convert Base64 online free."
+      "description": "Codifica y decodifica texto en Base64",
+      "metaDescription": "Convierte texto a Base64 y viceversa online gratis. Encode y decode Base64 instantáneamente."
     },
     "conversor-unidades": {
-      "name": "Unit Converter",
+      "name": "Conversor de Unidades",
       "slug": "unit-converter",
-      "description": "Convert between different units of measurement",
-      "metaDescription": "Convert units online free."
+      "description": "Convierte entre diferentes unidades de medida",
+      "metaDescription": "Convierte unidades de longitud, peso, temperatura y volumen online gratis. Soporta todas las principales unidades de medida."
     },
     "calendario-perpetuo": {
-      "name": "Perpetual Calendar",
+      "name": "Calendario Perpetuo",
       "slug": "perpetual-calendar",
-      "description": "View calendar for any month and year",
-      "metaDescription": "Perpetual calendar online free."
+      "description": "Visualiza el calendario de cualquier mes y año",
+      "metaDescription": "Calendario perpetuo online gratis. Visualiza cualquier mes de cualquier año del 1 al 9999."
     },
     "gerador-gradientes": {
-      "name": "Gradient Generator",
+      "name": "Generador de Gradientes",
       "slug": "gradient-generator",
-      "description": "Create beautiful CSS gradients",
-      "metaDescription": "Generate CSS gradients online free."
+      "description": "Crea hermosos gradientes CSS y copia el código",
+      "metaDescription": "Generador de gradientes CSS online gratis. Crea gradientes lineales y radiales y copia el código CSS."
     },
     "assinatura-email": {
-      "name": "Email Signature",
+      "name": "Firma de Email",
       "slug": "email-signature",
-      "description": "Create professional HTML email signatures",
-      "metaDescription": "Generate email signatures online free."
+      "description": "Crea firmas HTML profesionales para email",
+      "metaDescription": "Generador de firma de email online gratis. Crea firmas HTML profesionales para Gmail, Outlook y otros."
     },
     "merge-pdf": {
       "name": "Merge PDFs",
@@ -1074,58 +1074,58 @@
       "metaDescription": "Prueba de velocidad de internet online gratis. Comprueba tu velocidad de descarga, subida, ping y jitter al instante."
     },
     "dividir-pdf-es": {
-      "name": "Split PDF",
+      "name": "Dividir PDF",
       "slug": "dividir-pdf-es",
-      "description": "Extract specific pages from a PDF file",
-      "metaDescription": "Split PDF online free. Extract specific pages or split by ranges."
+      "description": "Extrae páginas específicas de un archivo PDF",
+      "metaDescription": "Divide PDF online gratis. Extrae páginas específicas o divide por rangos."
     },
     "calculadora-imc-es": {
-      "name": "BMI Calculator",
+      "name": "Calculadora de IMC",
       "slug": "calculadora-imc-es",
-      "description": "Calculate your Body Mass Index and see your category",
-      "metaDescription": "Calculate your BMI online free."
+      "description": "Calcula tu Índice de Masa Corporal y mira tu categoría",
+      "metaDescription": "Calcula tu IMC online gratis. Descubre tu índice de masa corporal y categoría de peso."
     },
     "proteger-pdf-es": {
-      "name": "Protect PDF",
+      "name": "Proteger PDF",
       "slug": "proteger-pdf-es",
-      "description": "Add password protection to PDF files",
-      "metaDescription": "Protect PDFs with password online free."
+      "description": "Añade protección con contraseña a archivos PDF",
+      "metaDescription": "Protege PDFs con contraseña online gratis. Añade seguridad a tus documentos PDF."
     },
     "desbloquear-pdf-es": {
-      "name": "Unlock PDF",
+      "name": "Desbloquear PDF",
       "slug": "desbloquear-pdf-es",
-      "description": "Remove protection and restrictions from PDF files",
-      "metaDescription": "Unlock protected PDFs online free."
+      "description": "Elimina protección y restricciones de archivos PDF",
+      "metaDescription": "Desbloquea PDFs protegidos online gratis. Elimina restricciones de archivos PDF."
     },
     "calculadora-calorias-es": {
-      "name": "Calorie Calculator",
+      "name": "Calculadora de Calorías",
       "slug": "calculadora-calorias-es",
-      "description": "Calculate your daily caloric needs based on BMR",
-      "metaDescription": "Calculate daily calories online free."
+      "description": "Calcula tus necesidades calóricas diarias basadas en TMB",
+      "metaDescription": "Calcula cuántas calorías necesitas al día para mantener, perder o ganar peso. Basada en la ecuación de Mifflin-St Jeor."
     },
     "calculadora-agua-es": {
-      "name": "Water Calculator",
+      "name": "Calculadora de Agua",
       "slug": "calculadora-agua-es",
-      "description": "Calculate how much water you should drink per day",
-      "metaDescription": "Calculate daily water intake online free."
+      "description": "Calcula cuánta agua debes beber al día",
+      "metaDescription": "Calcula tu ingesta diaria de agua recomendada basada en peso, actividad y clima."
     },
     "comparador-texto-es": {
-      "name": "Text Comparator",
+      "name": "Comparador de Texto",
       "slug": "comparador-texto-es",
-      "description": "Compare two texts and identify differences",
-      "metaDescription": "Compare texts online free."
+      "description": "Compara dos textos e identifica diferencias",
+      "metaDescription": "Compara dos textos online gratis. Identifica diferencias por caracteres, palabras o líneas."
     },
     "conversor-unidades-es": {
-      "name": "Unit Converter",
+      "name": "Conversor de Unidades",
       "slug": "conversor-unidades-es",
-      "description": "Convert between different units of measurement",
-      "metaDescription": "Convert units online free."
+      "description": "Convierte entre diferentes unidades de medida",
+      "metaDescription": "Convierte unidades de longitud, peso, temperatura y volumen online gratis. Soporta todas las principales unidades de medida."
     },
     "calendario-perpetuo-es": {
-      "name": "Perpetual Calendar",
+      "name": "Calendario Perpetuo",
       "slug": "calendario-perpetuo-es",
-      "description": "View calendar for any month and year",
-      "metaDescription": "Perpetual calendar online free."
+      "description": "Visualiza el calendario de cualquier mes y año",
+      "metaDescription": "Calendario perpetuo online gratis. Visualiza cualquier mes de cualquier año del 1 al 9999."
     },
     "comprimir-pdf": {
       "name": "Comprimir PDF",

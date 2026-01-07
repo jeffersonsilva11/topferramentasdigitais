@@ -300,244 +300,244 @@
       "metaDescription": "Бесплатный тест скорости интернета онлайн. Проверьте скорость загрузки, выгрузки, пинга и джиттера мгновенно."
     },
     "mesclar-pdf": {
-      "name": "Merge PDFs",
+      "name": "Объединить PDF",
       "slug": "merge-pdf",
-      "description": "Combine multiple PDF files into a single document",
-      "metaDescription": "Merge multiple PDFs into a single file online and free."
+      "description": "Объедините несколько PDF-файлов в один документ",
+      "metaDescription": "Объедините несколько PDF в один файл бесплатно онлайн. Перетащите для изменения порядка страниц."
     },
     "dividir-pdf": {
-      "name": "Split PDF",
+      "name": "Разделить PDF",
       "slug": "split-pdf",
-      "description": "Extract specific pages from a PDF file",
-      "metaDescription": "Split PDF online free. Extract specific pages or split by ranges."
+      "description": "Извлеките определенные страницы из PDF-файла",
+      "metaDescription": "Разделите PDF бесплатно онлайн. Извлеките определенные страницы или разделите по диапазонам."
     },
     "girar-pdf": {
-      "name": "Rotate PDF",
+      "name": "Повернуть PDF",
       "slug": "rotate-pdf",
-      "description": "Rotate PDF pages by 90°, 180°, 270° or 360°",
-      "metaDescription": "Rotate PDF pages online free."
+      "description": "Поверните страницы PDF на 90°, 180°, 270° или 360°",
+      "metaDescription": "Поверните страницы PDF бесплатно онлайн. Поворот всех страниц на 90, 180 или 270 градусов."
     },
     "proteger-pdf": {
-      "name": "Protect PDF",
+      "name": "Защитить PDF",
       "slug": "protect-pdf",
-      "description": "Add password protection to PDF files",
-      "metaDescription": "Protect PDFs with password online free."
+      "description": "Добавьте защиту паролем к PDF-файлам",
+      "metaDescription": "Защитите PDF паролем бесплатно онлайн. Добавьте безопасность вашим PDF-документам."
     },
     "desbloquear-pdf": {
-      "name": "Unlock PDF",
+      "name": "Разблокировать PDF",
       "slug": "unlock-pdf",
-      "description": "Remove protection and restrictions from PDF files",
-      "metaDescription": "Unlock protected PDFs online free."
+      "description": "Удалите защиту и ограничения с PDF-файлов",
+      "metaDescription": "Разблокируйте защищенные PDF бесплатно онлайн. Удалите ограничения с PDF-файлов."
     },
     "calculadora-imc": {
-      "name": "BMI Calculator",
+      "name": "Калькулятор ИМТ",
       "slug": "bmi-calculator",
-      "description": "Calculate your Body Mass Index and see your category",
-      "metaDescription": "Calculate your BMI online free."
+      "description": "Рассчитайте индекс массы тела и узнайте свою категорию",
+      "metaDescription": "Рассчитайте ИМТ бесплатно онлайн. Узнайте свой индекс массы тела и категорию веса."
     },
     "calculadora-idade": {
-      "name": "Age Calculator",
+      "name": "Калькулятор возраста",
       "slug": "age-calculator",
-      "description": "Calculate exact age in years, months and days",
-      "metaDescription": "Calculate your exact age online free."
+      "description": "Рассчитайте точный возраст в годах, месяцах и днях",
+      "metaDescription": "Рассчитайте свой точный возраст в годах, месяцах и днях. Узнайте, сколько дней вы прожили."
     },
     "calculadora-calorias": {
-      "name": "Calorie Calculator",
+      "name": "Калькулятор калорий",
       "slug": "calorie-calculator",
-      "description": "Calculate your daily caloric needs based on BMR",
-      "metaDescription": "Calculate daily calories online free."
+      "description": "Рассчитайте суточную потребность в калориях на основе BMR",
+      "metaDescription": "Рассчитайте, сколько калорий вам нужно в день. Основано на уравнении Миффлина-Сан Жеора."
     },
     "calculadora-agua": {
-      "name": "Water Calculator",
+      "name": "Калькулятор воды",
       "slug": "water-calculator",
-      "description": "Calculate how much water you should drink per day",
-      "metaDescription": "Calculate daily water intake online free."
+      "description": "Рассчитайте, сколько воды вам нужно пить в день",
+      "metaDescription": "Рассчитайте рекомендуемое суточное потребление воды на основе веса, активности и климата."
     },
     "calculadora-frequencia-cardiaca": {
-      "name": "Heart Rate Calculator",
+      "name": "Калькулятор частоты сердечных сокращений",
       "slug": "heart-rate-calculator",
-      "description": "Calculate your heart rate zones for training",
-      "metaDescription": "Calculate heart rate zones online free."
+      "description": "Рассчитайте зоны частоты сердечных сокращений для тренировок",
+      "metaDescription": "Рассчитайте максимальную частоту сердечных сокращений и зоны тренировки бесплатно онлайн."
     },
     "diferenca-datas": {
-      "name": "Date Difference",
+      "name": "Разница между датами",
       "slug": "date-difference",
-      "description": "Calculate difference between two dates",
-      "metaDescription": "Calculate date difference online free."
+      "description": "Рассчитайте разницу между двумя датами в годах, месяцах и днях",
+      "metaDescription": "Рассчитайте разницу между двумя датами бесплатно онлайн."
     },
     "conversor-fuso-horario": {
-      "name": "Timezone Converter",
+      "name": "Конвертер часовых поясов",
       "slug": "timezone-converter",
-      "description": "Convert times between different time zones",
-      "metaDescription": "Convert timezones online free."
+      "description": "Конвертируйте время между разными часовыми поясами",
+      "metaDescription": "Конвертируйте время между часовыми поясами бесплатно онлайн."
     },
     "conversor-case": {
-      "name": "Case Converter",
+      "name": "Конвертер регистра",
       "slug": "case-converter",
-      "description": "Convert text between UPPERCASE, lowercase, camelCase",
-      "metaDescription": "Convert text case online free."
+      "description": "Конвертируйте текст между ВЕРХНИМ, нижним регистром, camelCase и другими",
+      "metaDescription": "Конвертируйте текст между форматами: ВЕРХНИЙ, нижний, Title Case, camelCase, snake_case и kebab-case."
     },
     "removedor-espacos": {
-      "name": "Space Remover",
+      "name": "Удаление пробелов",
       "slug": "space-remover",
-      "description": "Remove extra spaces and duplicate lines",
-      "metaDescription": "Remove spaces online free."
+      "description": "Удалите лишние пробелы, дублирующиеся и пустые строки",
+      "metaDescription": "Удалите лишние пробелы из текста бесплатно онлайн."
     },
     "comparador-texto": {
-      "name": "Text Comparator",
+      "name": "Сравнение текстов",
       "slug": "text-comparator",
-      "description": "Compare two texts and identify differences",
-      "metaDescription": "Compare texts online free."
+      "description": "Сравните два текста и определите различия",
+      "metaDescription": "Сравните два текста бесплатно онлайн."
     },
     "conversor-base64": {
-      "name": "Base64 Converter",
+      "name": "Конвертер Base64",
       "slug": "base64-converter",
-      "description": "Encode and decode text in Base64",
-      "metaDescription": "Convert Base64 online free."
+      "description": "Кодируйте и декодируйте текст в Base64",
+      "metaDescription": "Конвертируйте текст в Base64 и обратно бесплатно онлайн."
     },
     "conversor-unidades": {
-      "name": "Unit Converter",
+      "name": "Конвертер единиц",
       "slug": "unit-converter",
-      "description": "Convert between different units of measurement",
-      "metaDescription": "Convert units online free."
+      "description": "Конвертируйте между разными единицами измерения",
+      "metaDescription": "Конвертируйте единицы длины, веса, температуры и объема бесплатно онлайн."
     },
     "calendario-perpetuo": {
-      "name": "Perpetual Calendar",
+      "name": "Вечный календарь",
       "slug": "perpetual-calendar",
-      "description": "View calendar for any month and year",
-      "metaDescription": "Perpetual calendar online free."
+      "description": "Просмотр календаря любого месяца и года",
+      "metaDescription": "Вечный календарь бесплатно онлайн. Просмотр любого месяца любого года от 1 до 9999."
     },
     "gerador-gradientes": {
-      "name": "Gradient Generator",
+      "name": "Генератор градиентов",
       "slug": "gradient-generator",
-      "description": "Create beautiful CSS gradients",
-      "metaDescription": "Generate CSS gradients online free."
+      "description": "Создайте красивые CSS-градиенты и скопируйте код",
+      "metaDescription": "Генератор CSS-градиентов бесплатно онлайн. Создайте линейные и радиальные градиенты."
     },
     "assinatura-email": {
-      "name": "Email Signature",
+      "name": "Подпись для Email",
       "slug": "email-signature",
-      "description": "Create professional HTML email signatures",
-      "metaDescription": "Generate email signatures online free."
+      "description": "Создайте профессиональные HTML-подписи для email",
+      "metaDescription": "Генератор подписи email бесплатно онлайн. Создайте профессиональные HTML-подписи."
     },
     "merge-pdf": {
-      "name": "Merge PDFs",
+      "name": "Объединить PDF",
       "slug": "merge-pdf",
-      "description": "Combine multiple PDF files into a single document",
-      "metaDescription": "Merge multiple PDFs into a single file online and free."
+      "description": "Объедините несколько PDF-файлов в один документ",
+      "metaDescription": "Объедините несколько PDF в один файл бесплатно онлайн. Перетащите для изменения порядка страниц."
     },
     "split-pdf": {
-      "name": "Split PDF",
+      "name": "Разделить PDF",
       "slug": "split-pdf",
-      "description": "Extract specific pages from a PDF file",
-      "metaDescription": "Split PDF online free. Extract specific pages or split by ranges."
+      "description": "Извлеките определенные страницы из PDF-файла",
+      "metaDescription": "Разделите PDF бесплатно онлайн. Извлеките определенные страницы или разделите по диапазонам."
     },
     "rotate-pdf": {
-      "name": "Rotate PDF",
+      "name": "Повернуть PDF",
       "slug": "rotate-pdf",
-      "description": "Rotate PDF pages by 90°, 180°, 270° or 360°",
-      "metaDescription": "Rotate PDF pages online free."
+      "description": "Поверните страницы PDF на 90°, 180°, 270° или 360°",
+      "metaDescription": "Поверните страницы PDF бесплатно онлайн. Поворот всех страниц на 90, 180 или 270 градусов."
     },
     "protect-pdf": {
-      "name": "Protect PDF",
+      "name": "Защитить PDF",
       "slug": "protect-pdf",
-      "description": "Add password protection to PDF files",
-      "metaDescription": "Protect PDFs with password online free."
+      "description": "Добавьте защиту паролем к PDF-файлам",
+      "metaDescription": "Защитите PDF паролем бесплатно онлайн. Добавьте безопасность вашим PDF-документам."
     },
     "unlock-pdf": {
-      "name": "Unlock PDF",
+      "name": "Разблокировать PDF",
       "slug": "unlock-pdf",
-      "description": "Remove protection and restrictions from PDF files",
-      "metaDescription": "Unlock protected PDFs online free."
+      "description": "Удалите защиту и ограничения с PDF-файлов",
+      "metaDescription": "Разблокируйте защищенные PDF бесплатно онлайн. Удалите ограничения с PDF-файлов."
     },
     "bmi-calculator": {
-      "name": "BMI Calculator",
+      "name": "Калькулятор ИМТ",
       "slug": "bmi-calculator",
-      "description": "Calculate your Body Mass Index and see your category",
-      "metaDescription": "Calculate your BMI online free."
+      "description": "Рассчитайте индекс массы тела и узнайте свою категорию",
+      "metaDescription": "Рассчитайте ИМТ бесплатно онлайн. Узнайте свой индекс массы тела и категорию веса."
     },
     "age-calculator": {
-      "name": "Age Calculator",
+      "name": "Калькулятор возраста",
       "slug": "age-calculator",
-      "description": "Calculate exact age in years, months and days",
-      "metaDescription": "Calculate your exact age online free."
+      "description": "Рассчитайте точный возраст в годах, месяцах и днях",
+      "metaDescription": "Рассчитайте свой точный возраст в годах, месяцах и днях. Узнайте, сколько дней вы прожили."
     },
     "calorie-calculator": {
-      "name": "Calorie Calculator",
+      "name": "Калькулятор калорий",
       "slug": "calorie-calculator",
-      "description": "Calculate your daily caloric needs based on BMR",
-      "metaDescription": "Calculate daily calories online free."
+      "description": "Рассчитайте суточную потребность в калориях на основе BMR",
+      "metaDescription": "Рассчитайте, сколько калорий вам нужно в день. Основано на уравнении Миффлина-Сан Жеора."
     },
     "water-calculator": {
-      "name": "Water Calculator",
+      "name": "Калькулятор воды",
       "slug": "water-calculator",
-      "description": "Calculate how much water you should drink per day",
-      "metaDescription": "Calculate daily water intake online free."
+      "description": "Рассчитайте, сколько воды вам нужно пить в день",
+      "metaDescription": "Рассчитайте рекомендуемое суточное потребление воды на основе веса, активности и климата."
     },
     "heart-rate-calculator": {
-      "name": "Heart Rate Calculator",
+      "name": "Калькулятор частоты сердечных сокращений",
       "slug": "heart-rate-calculator",
-      "description": "Calculate your heart rate zones for training",
-      "metaDescription": "Calculate heart rate zones online free."
+      "description": "Рассчитайте зоны частоты сердечных сокращений для тренировок",
+      "metaDescription": "Рассчитайте максимальную частоту сердечных сокращений и зоны тренировки бесплатно онлайн."
     },
     "date-difference": {
-      "name": "Date Difference",
+      "name": "Разница между датами",
       "slug": "date-difference",
-      "description": "Calculate difference between two dates",
-      "metaDescription": "Calculate date difference online free."
+      "description": "Рассчитайте разницу между двумя датами в годах, месяцах и днях",
+      "metaDescription": "Рассчитайте разницу между двумя датами бесплатно онлайн."
     },
     "timezone-converter": {
-      "name": "Timezone Converter",
+      "name": "Конвертер часовых поясов",
       "slug": "timezone-converter",
-      "description": "Convert times between different time zones",
-      "metaDescription": "Convert timezones online free."
+      "description": "Конвертируйте время между разными часовыми поясами",
+      "metaDescription": "Конвертируйте время между часовыми поясами бесплатно онлайн."
     },
     "case-converter": {
-      "name": "Case Converter",
+      "name": "Конвертер регистра",
       "slug": "case-converter",
-      "description": "Convert text between UPPERCASE, lowercase, camelCase",
-      "metaDescription": "Convert text case online free."
+      "description": "Конвертируйте текст между ВЕРХНИМ, нижним регистром, camelCase и другими",
+      "metaDescription": "Конвертируйте текст между форматами: ВЕРХНИЙ, нижний, Title Case, camelCase, snake_case и kebab-case."
     },
     "space-remover": {
-      "name": "Space Remover",
+      "name": "Удаление пробелов",
       "slug": "space-remover",
-      "description": "Remove extra spaces and duplicate lines",
-      "metaDescription": "Remove spaces online free."
+      "description": "Удалите лишние пробелы, дублирующиеся и пустые строки",
+      "metaDescription": "Удалите лишние пробелы из текста бесплатно онлайн."
     },
     "text-comparator": {
-      "name": "Text Comparator",
+      "name": "Сравнение текстов",
       "slug": "text-comparator",
-      "description": "Compare two texts and identify differences",
-      "metaDescription": "Compare texts online free."
+      "description": "Сравните два текста и определите различия",
+      "metaDescription": "Сравните два текста бесплатно онлайн."
     },
     "base64-converter": {
-      "name": "Base64 Converter",
+      "name": "Конвертер Base64",
       "slug": "base64-converter",
-      "description": "Encode and decode text in Base64",
-      "metaDescription": "Convert Base64 online free."
+      "description": "Кодируйте и декодируйте текст в Base64",
+      "metaDescription": "Конвертируйте текст в Base64 и обратно бесплатно онлайн."
     },
     "unit-converter": {
-      "name": "Unit Converter",
+      "name": "Конвертер единиц",
       "slug": "unit-converter",
-      "description": "Convert between different units of measurement",
-      "metaDescription": "Convert units online free."
+      "description": "Конвертируйте между разными единицами измерения",
+      "metaDescription": "Конвертируйте единицы длины, веса, температуры и объема бесплатно онлайн."
     },
     "perpetual-calendar": {
-      "name": "Perpetual Calendar",
+      "name": "Вечный календарь",
       "slug": "perpetual-calendar",
-      "description": "View calendar for any month and year",
-      "metaDescription": "Perpetual calendar online free."
+      "description": "Просмотр календаря любого месяца и года",
+      "metaDescription": "Вечный календарь бесплатно онлайн. Просмотр любого месяца любого года от 1 до 9999."
     },
     "gradient-generator": {
-      "name": "Gradient Generator",
+      "name": "Генератор градиентов",
       "slug": "gradient-generator",
-      "description": "Create beautiful CSS gradients",
-      "metaDescription": "Generate CSS gradients online free."
+      "description": "Создайте красивые CSS-градиенты и скопируйте код",
+      "metaDescription": "Генератор CSS-градиентов бесплатно онлайн. Создайте линейные и радиальные градиенты."
     },
     "email-signature": {
-      "name": "Email Signature",
+      "name": "Подпись для Email",
       "slug": "email-signature",
-      "description": "Create professional HTML email signatures",
-      "metaDescription": "Generate email signatures online free."
+      "description": "Создайте профессиональные HTML-подписи для email",
+      "metaDescription": "Генератор подписи email бесплатно онлайн. Создайте профессиональные HTML-подписи."
     },
     "my-ip": {
       "name": "Мой IP-адрес",

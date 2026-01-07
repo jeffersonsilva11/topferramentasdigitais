@@ -197,10 +197,10 @@ async function ToolPageContent({ locale, slug, toolKey }: { locale: string; slug
         <div className="text-6xl mb-4">
           {toolExists.icon || '🛠️'}
         </div>
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-3">
           {t('name')}
         </h1>
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+        <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
           {t('description')}
         </p>
       </div>
@@ -216,9 +216,9 @@ async function ToolPageContent({ locale, slug, toolKey }: { locale: string; slug
       </div>
 
       {/* SEO Content */}
-      <div className="max-w-4xl mx-auto mt-12 bg-white rounded-lg shadow-md p-6">
-        <h2 className="text-2xl font-bold mb-4">{tSite('about')}</h2>
-        <p className="text-gray-700 mb-4">
+      <div className="max-w-4xl mx-auto mt-12 bg-white dark:bg-dark-800 rounded-lg shadow-md dark:shadow-dark-900/50 p-6 transition-colors">
+        <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-100">{tSite('about')}</h2>
+        <p className="text-gray-700 dark:text-gray-300 mb-4">
           {t('metaDescription')}
         </p>
       </div>

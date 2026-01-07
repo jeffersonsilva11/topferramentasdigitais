@@ -402,7 +402,7 @@ export const tools: Tool[] = [
     metaDescription: 'Teste de velocidade de internet online grátis. Meça download, upload, ping e jitter da sua conexão. Resultados instantâneos e precisos.',
   },
   {
-    id: '41',
+    id: '42',
     name: 'Mesclar PDFs',
     description: 'Combine múltiplos arquivos PDF em um único documento',
     icon: '📑',
@@ -412,7 +412,7 @@ export const tools: Tool[] = [
     metaDescription: 'Mescle múltiplos PDFs em um único arquivo online e grátis. Arraste e solte para reordenar páginas.',
   },
   {
-    id: '42',
+    id: '43',
     name: 'Dividir PDF',
     description: 'Extraia páginas específicas de um arquivo PDF',
     icon: '✂️',
@@ -422,7 +422,7 @@ export const tools: Tool[] = [
     metaDescription: 'Divida PDF online grátis. Extraia páginas específicas ou divida por intervalos.',
   },
   {
-    id: '43',
+    id: '44',
     name: 'Girar PDF',
     description: 'Rotacione páginas PDF em 90°, 180°, 270° ou 360°',
     icon: '🔄',
@@ -432,7 +432,7 @@ export const tools: Tool[] = [
     metaDescription: 'Gire páginas de PDF online grátis. Rotacione todas as páginas em 90, 180 ou 270 graus.',
   },
   {
-    id: '44',
+    id: '45',
     name: 'Calculadora de IMC',
     description: 'Calcule seu Índice de Massa Corporal e veja sua categoria',
     icon: '⚖️',
@@ -442,7 +442,7 @@ export const tools: Tool[] = [
     metaDescription: 'Calcule seu IMC online grátis. Descubra seu índice de massa corporal e categoria de peso.',
   },
   {
-    id: '45',
+    id: '46',
     name: 'Calculadora de Idade',
     description: 'Calcule idade exata em anos, meses e dias',
     icon: '🎂',
@@ -452,7 +452,7 @@ export const tools: Tool[] = [
     metaDescription: 'Calcule sua idade exata em anos, meses e dias. Descubra quantos dias você viveu.',
   },
   {
-    id: '46',
+    id: '47',
     name: 'Conversor de Case',
     description: 'Converta texto entre MAIÚSCULAS, minúsculas, camelCase e mais',
     icon: '🔤',
@@ -462,7 +462,7 @@ export const tools: Tool[] = [
     metaDescription: 'Converta texto entre diferentes formatos: MAIÚSCULAS, minúsculas, Title Case, camelCase, snake_case e kebab-case.',
   },
   {
-    id: '47',
+    id: '48',
     name: 'Conversor Base64',
     description: 'Codifique e decodifique texto em Base64',
     icon: '🔐',
@@ -472,7 +472,7 @@ export const tools: Tool[] = [
     metaDescription: 'Converta texto para Base64 e vice-versa online grátis. Encode e decode Base64 instantaneamente.',
   },
   {
-    id: '48',
+    id: '49',
     name: 'Removedor de Espaços',
     description: 'Remova espaços extras, linhas duplicadas e vazias',
     icon: '🧹',
@@ -482,7 +482,7 @@ export const tools: Tool[] = [
     metaDescription: 'Remova espaços extras, linhas duplicadas e vazias do texto online grátis. Limpe e organize seu texto.',
   },
   {
-    id: '49',
+    id: '50',
     name: 'Diferença entre Datas',
     description: 'Calcule diferença entre duas datas em anos, meses e dias',
     icon: '📅',
@@ -492,7 +492,7 @@ export const tools: Tool[] = [
     metaDescription: 'Calcule a diferença entre duas datas online grátis. Descubra anos, meses e dias entre datas.',
   },
   {
-    id: '50',
+    id: '51',
     name: 'Proteger PDF',
     description: 'Adicione proteção por senha a arquivos PDF',
     icon: '🔒',
@@ -502,7 +502,7 @@ export const tools: Tool[] = [
     metaDescription: 'Proteja PDFs com senha online grátis. Adicione segurança aos seus documentos PDF.',
   },
   {
-    id: '51',
+    id: '52',
     name: 'Desbloquear PDF',
     description: 'Remova proteção e restrições de arquivos PDF',
     icon: '🔓',
@@ -512,7 +512,7 @@ export const tools: Tool[] = [
     metaDescription: 'Desbloqueie PDFs protegidos online grátis. Remova restrições de arquivos PDF.',
   },
   {
-    id: '52',
+    id: '53',
     name: 'Calculadora de Calorias',
     description: 'Calcule suas necessidades calóricas diárias baseado em TMB',
     icon: '🍎',
@@ -522,7 +522,7 @@ export const tools: Tool[] = [
     metaDescription: 'Calcule quantas calorias você precisa por dia para manter, perder ou ganhar peso. Baseado na equação de Mifflin-St Jeor.',
   },
   {
-    id: '53',
+    id: '54',
     name: 'Calculadora de Água',
     description: 'Calcule quanto água você deve beber por dia',
     icon: '💧',
@@ -532,7 +532,7 @@ export const tools: Tool[] = [
     metaDescription: 'Calcule sua ingestão diária recomendada de água baseada em peso, atividade e clima.',
   },
   {
-    id: '54',
+    id: '55',
     name: 'Calculadora de Frequência Cardíaca',
     description: 'Calcule suas zonas de frequência cardíaca para treino',
     icon: '❤️',
@@ -542,7 +542,7 @@ export const tools: Tool[] = [
     metaDescription: 'Calcule sua frequência cardíaca máxima e zonas de treino online grátis. Baseado na fórmula de Karvonen.',
   },
   {
-    id: '55',
+    id: '56',
     name: 'Conversor de Fuso Horário',
     description: 'Converta horários entre diferentes fusos horários',
     icon: '🌍',
@@ -552,7 +552,7 @@ export const tools: Tool[] = [
     metaDescription: 'Converta horários entre fusos horários online grátis. Suporta todos os principais timezones do mundo.',
   },
   {
-    id: '56',
+    id: '57',
     name: 'Comparador de Texto',
     description: 'Compare dois textos e identifique diferenças',
     icon: '🔍',
@@ -562,7 +562,7 @@ export const tools: Tool[] = [
     metaDescription: 'Compare dois textos online grátis. Identifique diferenças por caracteres, palavras ou linhas.',
   },
   {
-    id: '57',
+    id: '58',
     name: 'Conversor de Unidades',
     description: 'Converta entre diferentes unidades de medida',
     icon: '📐',
@@ -572,7 +572,7 @@ export const tools: Tool[] = [
     metaDescription: 'Converta unidades de comprimento, peso, temperatura e volume online grátis. Suporta todas as principais unidades de medida.',
   },
   {
-    id: '58',
+    id: '59',
     name: 'Calendário Perpétuo',
     description: 'Visualize o calendário de qualquer mês e ano',
     icon: '📅',
@@ -582,7 +582,7 @@ export const tools: Tool[] = [
     metaDescription: 'Calendário perpétuo online grátis. Visualize qualquer mês de qualquer ano de 1 a 9999.',
   },
   {
-    id: '59',
+    id: '60',
     name: 'Gerador de Gradientes',
     description: 'Crie gradientes CSS lindos e copie o código',
     icon: '🎨',
@@ -592,7 +592,7 @@ export const tools: Tool[] = [
     metaDescription: 'Gerador de gradientes CSS online grátis. Crie gradientes lineares e radiais e copie o código CSS.',
   },
   {
-    id: '60',
+    id: '61',
     name: 'Assinatura de Email',
     description: 'Crie assinaturas HTML profissionais para email',
     icon: '✉️',
@@ -602,7 +602,7 @@ export const tools: Tool[] = [
     metaDescription: 'Gerador de assinatura de email online grátis. Crie assinaturas HTML profissionais para Gmail, Outlook e outros.',
   },
   {
-    id: '61',
+    id: '62',
     name: 'Comprimir PDF',
     description: 'Reduza o tamanho de arquivos PDF mantendo a qualidade',
     icon: '🗜️',
