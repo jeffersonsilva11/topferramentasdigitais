@@ -50,60 +50,28 @@ export default function AdSlot({ position, className = '' }: AdSlotProps) {
     }
   }, [isVisible]);
 
-  // Fixed heights to prevent CLS (Cumulative Layout Shift)
+  // Minimum heights to ensure proper ad display
   const heightMap = {
-    top: '280px',
-    middle: '280px',
-    bottom: '280px',
-    sidebar: '600px',
+    top: '90px',
+    middle: '90px',
+    bottom: '90px',
+    sidebar: '250px',
   };
 
+  // This component is ready for Google Auto Ads
+  // Google Auto Ads will automatically place ads in optimal positions
+  // The container provides a designated space that Google can use
   return (
     <div
       ref={adRef}
-      className={`bg-gray-50 border border-gray-200 rounded-lg overflow-hidden ${className}`}
+      className={`ad-container overflow-hidden ${className}`}
       style={{
         minHeight: heightMap[position],
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
       }}
+      data-ad-position={position}
     >
-      {isVisible ? (
-        <>
-          {/*
-            PRODUCTION: Replace this with your actual AdSense code
-
-            Example AdSense Integration:
-            <ins className="adsbygoogle"
-                 style={{display:'block'}}
-                 data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-                 data-ad-slot="XXXXXXXXXX"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-
-            For Ezoic: Add placeholder div with specific ID
-            <div id={`ezoic-pub-ad-placeholder-${position}`}></div>
-          */}
-          <div className="text-center p-6">
-            <div className="text-4xl mb-2">📢</div>
-            <p className="text-gray-500 font-medium text-sm mb-1">
-              Ad Space - {position.toUpperCase()}
-            </p>
-            <p className="text-xs text-gray-400 mb-3">
-              Insert your ad code here (AdSense/Ezoic)
-            </p>
-            <code className="text-xs bg-gray-200 px-2 py-1 rounded block mb-2">
-              Position: {position}
-            </code>
-            <code className="text-xs bg-gray-200 px-2 py-1 rounded block">
-              Size: {heightMap[position]}
-            </code>
-          </div>
-        </>
-      ) : (
-        <div className="text-gray-300 text-sm">Loading ad...</div>
-      )}
+      {/* Google Auto Ads will automatically insert ads here */}
+      {/* No placeholder needed - Google handles ad placement automatically */}
     </div>
   );
 }
