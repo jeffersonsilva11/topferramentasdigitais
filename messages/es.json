@@ -361,18 +361,6 @@
       "description": "Rota páginas PDF 90°, 180°, 270° o 360°",
       "metaDescription": "Rota páginas PDF online gratis. Rota todas las páginas en 90, 180 o 270 grados."
     },
-    "proteger-pdf": {
-      "name": "Proteger PDF",
-      "slug": "protect-pdf",
-      "description": "Añade protección con contraseña a archivos PDF",
-      "metaDescription": "Protege PDFs con contraseña online gratis. Añade seguridad a tus documentos PDF."
-    },
-    "desbloquear-pdf": {
-      "name": "Desbloquear PDF",
-      "slug": "unlock-pdf",
-      "description": "Elimina protección y restricciones de archivos PDF",
-      "metaDescription": "Desbloquea PDFs protegidos online gratis. Elimina restricciones de archivos PDF."
-    },
     "calculadora-imc": {
       "name": "Calculadora de IMC",
       "slug": "bmi-calculator",
@@ -480,18 +468,6 @@
       "slug": "rotate-pdf",
       "description": "Rotate PDF pages by 90°, 180°, 270° or 360°",
       "metaDescription": "Rotate PDF pages online free."
-    },
-    "protect-pdf": {
-      "name": "Protect PDF",
-      "slug": "protect-pdf",
-      "description": "Add password protection to PDF files",
-      "metaDescription": "Protect PDFs with password online free."
-    },
-    "unlock-pdf": {
-      "name": "Unlock PDF",
-      "slug": "unlock-pdf",
-      "description": "Remove protection and restrictions from PDF files",
-      "metaDescription": "Unlock protected PDFs online free."
     },
     "bmi-calculator": {
       "name": "BMI Calculator",
@@ -1128,18 +1104,6 @@
       "slug": "calculadora-imc-es",
       "description": "Calcula tu Índice de Masa Corporal y mira tu categoría",
       "metaDescription": "Calcula tu IMC online gratis. Descubre tu índice de masa corporal y categoría de peso."
-    },
-    "proteger-pdf-es": {
-      "name": "Proteger PDF",
-      "slug": "proteger-pdf-es",
-      "description": "Añade protección con contraseña a archivos PDF",
-      "metaDescription": "Protege PDFs con contraseña online gratis. Añade seguridad a tus documentos PDF."
-    },
-    "desbloquear-pdf-es": {
-      "name": "Desbloquear PDF",
-      "slug": "desbloquear-pdf-es",
-      "description": "Elimina protección y restricciones de archivos PDF",
-      "metaDescription": "Desbloquea PDFs protegidos online gratis. Elimina restricciones de archivos PDF."
     },
     "calculadora-calorias-es": {
       "name": "Calculadora de Calorías",
@@ -1868,5 +1832,11 @@
     "tip5": "Verifica si hay actualizaciones de firmware disponibles para tu router",
     "privacyTitle": "Privacidad",
     "privacyText": "Esta prueba se ejecuta 100% en tu navegador. No se recopilan ni se almacenan datos personales. Usamos servidores públicos de Cloudflare para realizar las mediciones de velocidad."
+  },
+  "navigation": {
+    "home": "Inicio",
+    "tools": "Herramientas",
+    "privacy": "Privacidad",
+    "cookies": "Cookies"
   }
 }

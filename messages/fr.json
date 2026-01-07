@@ -361,18 +361,6 @@
       "description": "Faites pivoter les pages PDF de 90°, 180°, 270° ou 360°",
       "metaDescription": "Faites pivoter les pages PDF en ligne gratuitement. Rotation de toutes les pages de 90, 180 ou 270 degrés."
     },
-    "proteger-pdf": {
-      "name": "Protéger PDF",
-      "slug": "protect-pdf",
-      "description": "Ajoutez une protection par mot de passe aux fichiers PDF",
-      "metaDescription": "Protégez vos PDFs avec un mot de passe en ligne gratuitement. Ajoutez de la sécurité à vos documents PDF."
-    },
-    "desbloquear-pdf": {
-      "name": "Déverrouiller PDF",
-      "slug": "unlock-pdf",
-      "description": "Supprimez la protection et les restrictions des fichiers PDF",
-      "metaDescription": "Déverrouillez les PDFs protégés en ligne gratuitement. Supprimez les restrictions des fichiers PDF."
-    },
     "calculadora-imc": {
       "name": "Calculateur d'IMC",
       "slug": "bmi-calculator",
@@ -480,18 +468,6 @@
       "slug": "rotate-pdf",
       "description": "Faites pivoter les pages PDF de 90°, 180°, 270° ou 360°",
       "metaDescription": "Faites pivoter les pages PDF en ligne gratuitement. Rotation de toutes les pages de 90, 180 ou 270 degrés."
-    },
-    "protect-pdf": {
-      "name": "Protéger PDF",
-      "slug": "protect-pdf",
-      "description": "Ajoutez une protection par mot de passe aux fichiers PDF",
-      "metaDescription": "Protégez vos PDFs avec un mot de passe en ligne gratuitement. Ajoutez de la sécurité à vos documents PDF."
-    },
-    "unlock-pdf": {
-      "name": "Déverrouiller PDF",
-      "slug": "unlock-pdf",
-      "description": "Supprimez la protection et les restrictions des fichiers PDF",
-      "metaDescription": "Déverrouillez les PDFs protégés en ligne gratuitement. Supprimez les restrictions des fichiers PDF."
     },
     "bmi-calculator": {
       "name": "Calculateur d'IMC",
@@ -1128,18 +1104,6 @@
       "slug": "calculadora-imc-es",
       "description": "Calculate your Body Mass Index and see your category",
       "metaDescription": "Calculate your BMI online free."
-    },
-    "proteger-pdf-es": {
-      "name": "Protect PDF",
-      "slug": "proteger-pdf-es",
-      "description": "Add password protection to PDF files",
-      "metaDescription": "Protect PDFs with password online free."
-    },
-    "desbloquear-pdf-es": {
-      "name": "Unlock PDF",
-      "slug": "desbloquear-pdf-es",
-      "description": "Remove protection and restrictions from PDF files",
-      "metaDescription": "Unlock protected PDFs online free."
     },
     "calculadora-calorias-es": {
       "name": "Calorie Calculator",
@@ -1868,5 +1832,11 @@
     "tip5": "Vérifiez les mises à jour du firmware disponibles pour votre routeur",
     "privacyTitle": "Confidentialité",
     "privacyText": "Ce test s'exécute à 100% dans votre navigateur. Aucune donnée personnelle n'est collectée ou stockée. Nous utilisons des serveurs publics de Cloudflare pour effectuer les mesures de vitesse."
+  },
+  "navigation": {
+    "home": "Accueil",
+    "tools": "Outils",
+    "privacy": "Confidentialité",
+    "cookies": "Cookies"
   }
 }
