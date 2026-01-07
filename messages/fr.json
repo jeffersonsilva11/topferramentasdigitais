@@ -56,6 +56,50 @@
     "security": {
       "title": "Sécurité",
       "desc": "Hash, Mots de passe sécurisés"
+    },
+    "network": {
+      "title": "Réseau",
+      "desc": "IP, User Agent, État des Sites"
+    },
+    "pdf": {
+      "title": "PDF",
+      "desc": "Fusionner, Diviser, Compresser, Protéger"
+    },
+    "health": {
+      "title": "Santé",
+      "desc": "IMC, Calories, Fréquence Cardiaque"
+    },
+    "date": {
+      "title": "Date et Heure",
+      "desc": "Calendrier, Fuseau Horaire, Différence de Dates"
+    },
+    "developer": {
+      "title": "Développeur",
+      "desc": "JSON, Regex, Base64, Hash"
+    },
+    "finance": {
+      "title": "Finance",
+      "desc": "ROI, Intérêts, Taux de Change"
+    },
+    "marketing": {
+      "title": "Marketing",
+      "desc": "Générateur UTM, Générateur de Politiques"
+    },
+    "productivity": {
+      "title": "Productivité",
+      "desc": "Téléprompteur, Enregistreur d'écran"
+    },
+    "utility": {
+      "title": "Utilitaires",
+      "desc": "Divers outils utiles"
+    },
+    "design": {
+      "title": "Design",
+      "desc": "Couleurs, Dégradés, Palettes"
+    },
+    "contentCreator": {
+      "title": "Créateur de Contenu",
+      "desc": "Outils pour créateurs de contenu"
     }
   },
   "tools": {
@@ -1364,7 +1408,12 @@
   },
   "theme": {
     "switchToLight": "Passer en mode clair",
-    "switchToDark": "Passer en mode sombre"
+    "switchToDark": "Passer en mode sombre",
+    "light": "Clair",
+    "dim": "Tamisé",
+    "dark": "Sombre",
+    "auto": "Automatique",
+    "autoModeInfo": "Suit les préférences du système. Actuellement :"
   },
   "teleprompterUI": {
     "settings": "Paramètres",

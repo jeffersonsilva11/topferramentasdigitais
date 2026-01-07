@@ -10,9 +10,31 @@ interface ToolCardProps {
   index?: number;
 }
 
+// Map Portuguese categories from tools.ts to translation keys
+const categoryMap: Record<string, string> = {
+  'Rede': 'network',
+  'Gerador': 'generators',
+  'Texto': 'text',
+  'Conversor': 'converters',
+  'Imagem': 'images',
+  'Segurança': 'security',
+  'Calculadora': 'calculators',
+  'PDF': 'pdf',
+  'Saúde': 'health',
+  'Data': 'date',
+  'Desenvolvedor': 'developer',
+  'Financeiro': 'finance',
+  'Marketing': 'marketing',
+  'Produtividade': 'productivity',
+  'Utilitário': 'utility',
+  'Design': 'design',
+  'Criador de Conteúdo': 'contentCreator',
+};
+
 export default function ToolCard({ tool, index = 0 }: ToolCardProps) {
   const locale = useLocale();
   const t = useTranslations(`tools.${tool.slug}`);
+  const tCategories = useTranslations('categories');
 
   const translatedSlug = t('slug');
 
@@ -62,7 +84,7 @@ export default function ToolCard({ tool, index = 0 }: ToolCardProps) {
           {/* Category badge */}
           <div className="mt-4 mb-3">
             <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 border border-primary-200 dark:border-primary-800 group-hover:bg-primary-200 dark:group-hover:bg-primary-800/50 transition-colors duration-220">
-              {t('category')}
+              {tCategories(`${categoryMap[tool.category] || 'utility'}.title`)}
             </span>
           </div>
 

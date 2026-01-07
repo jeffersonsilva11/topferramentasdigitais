@@ -56,6 +56,50 @@
     "security": {
       "title": "Sicherheit",
       "desc": "Hash, Sichere Passwörter"
+    },
+    "network": {
+      "title": "Netzwerk",
+      "desc": "IP, User Agent, Website-Status"
+    },
+    "pdf": {
+      "title": "PDF",
+      "desc": "Zusammenführen, Teilen, Komprimieren, Schützen"
+    },
+    "health": {
+      "title": "Gesundheit",
+      "desc": "BMI, Kalorien, Herzfrequenz"
+    },
+    "date": {
+      "title": "Datum & Zeit",
+      "desc": "Kalender, Zeitzone, Datumsdifferenz"
+    },
+    "developer": {
+      "title": "Entwickler",
+      "desc": "JSON, Regex, Base64, Hash"
+    },
+    "finance": {
+      "title": "Finanzen",
+      "desc": "ROI, Zinsen, Währungsumrechnung"
+    },
+    "marketing": {
+      "title": "Marketing",
+      "desc": "UTM-Generator, Richtlinien-Generator"
+    },
+    "productivity": {
+      "title": "Produktivität",
+      "desc": "Teleprompter, Bildschirmaufnahme"
+    },
+    "utility": {
+      "title": "Dienstprogramme",
+      "desc": "Verschiedene nützliche Werkzeuge"
+    },
+    "design": {
+      "title": "Design",
+      "desc": "Farben, Verläufe, Paletten"
+    },
+    "contentCreator": {
+      "title": "Content Creator",
+      "desc": "Werkzeuge für Content-Ersteller"
     }
   },
   "tools": {
@@ -1364,7 +1408,12 @@
   },
   "theme": {
     "switchToLight": "Zum hellen Modus wechseln",
-    "switchToDark": "Zum dunklen Modus wechseln"
+    "switchToDark": "Zum dunklen Modus wechseln",
+    "light": "Hell",
+    "dim": "Gedämpft",
+    "dark": "Dunkel",
+    "auto": "Automatisch",
+    "autoModeInfo": "Folgt den Systemeinstellungen. Aktuell:"
   },
   "teleprompterUI": {
     "settings": "Einstellungen",

@@ -56,6 +56,50 @@
     "security": {
       "title": "Security",
       "desc": "Hash, Secure Passwords"
+    },
+    "network": {
+      "title": "Network",
+      "desc": "IP, User Agent, Website Status"
+    },
+    "pdf": {
+      "title": "PDF",
+      "desc": "Merge, Split, Compress, Protect"
+    },
+    "health": {
+      "title": "Health",
+      "desc": "BMI, Calories, Heart Rate"
+    },
+    "date": {
+      "title": "Date & Time",
+      "desc": "Calendar, Timezone, Date Difference"
+    },
+    "developer": {
+      "title": "Developer",
+      "desc": "JSON, Regex, Base64, Hash"
+    },
+    "finance": {
+      "title": "Finance",
+      "desc": "ROI, Interest, Currency Exchange"
+    },
+    "marketing": {
+      "title": "Marketing",
+      "desc": "UTM Generator, Policy Generator"
+    },
+    "productivity": {
+      "title": "Productivity",
+      "desc": "Teleprompter, Screen Recorder"
+    },
+    "utility": {
+      "title": "Utility",
+      "desc": "Various useful tools"
+    },
+    "design": {
+      "title": "Design",
+      "desc": "Colors, Gradients, Palettes"
+    },
+    "contentCreator": {
+      "title": "Content Creator",
+      "desc": "Tools for content creators"
     }
   },
   "tools": {
@@ -1364,7 +1408,12 @@
   },
   "theme": {
     "switchToLight": "Switch to light mode",
-    "switchToDark": "Switch to dark mode"
+    "switchToDark": "Switch to dark mode",
+    "light": "Light",
+    "dim": "Dim",
+    "dark": "Dark",
+    "auto": "Auto",
+    "autoModeInfo": "Follows system preference. Currently:"
   },
   "teleprompterUI": {
     "settings": "Settings",
