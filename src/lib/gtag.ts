@@ -9,7 +9,8 @@
  * 5. Use event() for custom events
  */
 
-export const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || '';
+// GA4 Measurement ID - fallback to hardcoded value if env var not set
+export const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || 'G-EQFJLPCG8K';
 
 /**
  * Page view tracking
