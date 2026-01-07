@@ -1,28 +1,12 @@
 // Service Worker for Top Digital Tools
-// Version 1.0.0
+// Version 1.1.0
 
-const CACHE_NAME = 'toptools-v1';
-const OFFLINE_URL = '/offline';
+const CACHE_NAME = 'toptools-v1.1';
 
-// Assets to cache on install
-const STATIC_ASSETS = [
-  '/',
-  '/offline',
-  '/manifest.json',
-];
-
-// Install event - cache static assets
+// Install event - activate immediately without caching
 self.addEventListener('install', (event) => {
   console.log('[SW] Installing service worker...');
-
-  event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => {
-      console.log('[SW] Caching static assets');
-      return cache.addAll(STATIC_ASSETS);
-    })
-  );
-
-  // Force the waiting service worker to become the active service worker
+  // Skip waiting and activate immediately
   self.skipWaiting();
 });
 
@@ -61,19 +45,21 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
+  // Skip chrome-extension and other non-http requests
+  if (!request.url.startsWith('http')) {
+    return;
+  }
+
   event.respondWith(
     fetch(request)
       .then((response) => {
-        // Clone the response before caching
-        const responseToCache = response.clone();
-
-        // Cache successful responses
-        if (response.status === 200) {
+        // Only cache successful responses
+        if (response.status === 200 && response.type === 'basic') {
+          const responseToCache = response.clone();
           caches.open(CACHE_NAME).then((cache) => {
             cache.put(request, responseToCache);
           });
         }
-
         return response;
       })
       .catch(() => {
@@ -83,18 +69,23 @@ self.addEventListener('fetch', (event) => {
             return cachedResponse;
           }
 
-          // If cache fails and it's a navigation request, show offline page
+          // Return a basic offline response for other requests
           if (request.mode === 'navigate') {
-            return caches.match(OFFLINE_URL);
+            return new Response(
+              '<!DOCTYPE html><html><head><title>Offline</title></head><body style="font-family:sans-serif;text-align:center;padding:50px;"><h1>You are offline</h1><p>Please check your internet connection.</p></body></html>',
+              {
+                status: 503,
+                statusText: 'Service Unavailable',
+                headers: new Headers({
+                  'Content-Type': 'text/html',
+                }),
+              }
+            );
           }
 
-          // Return a basic offline response for other requests
-          return new Response('Offline - content not available', {
+          return new Response('Offline', {
             status: 503,
             statusText: 'Service Unavailable',
-            headers: new Headers({
-              'Content-Type': 'text/plain',
-            }),
           });
         });
       })
@@ -106,39 +97,4 @@ self.addEventListener('message', (event) => {
   if (event.data && event.data.type === 'SKIP_WAITING') {
     self.skipWaiting();
   }
-
-  if (event.data && event.data.type === 'CACHE_URLS') {
-    event.waitUntil(
-      caches.open(CACHE_NAME).then((cache) => {
-        return cache.addAll(event.data.payload);
-      })
-    );
-  }
-});
-
-// Push notification event (prepared structure for future use)
-self.addEventListener('push', (event) => {
-  const data = event.data ? event.data.json() : {};
-  const title = data.title || 'Top Digital Tools';
-  const options = {
-    body: data.body || 'New notification',
-    icon: '/icon-192x192.png',
-    badge: '/icon-96x96.png',
-    vibrate: [200, 100, 200],
-    data: data.data || {},
-    actions: data.actions || [],
-  };
-
-  event.waitUntil(
-    self.registration.showNotification(title, options)
-  );
-});
-
-// Notification click event
-self.addEventListener('notificationclick', (event) => {
-  event.notification.close();
-
-  event.waitUntil(
-    clients.openWindow(event.notification.data.url || '/')
-  );
 });
