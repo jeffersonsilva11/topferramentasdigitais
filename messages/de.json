@@ -361,18 +361,6 @@
       "description": "Drehen Sie PDF-Seiten um 90°, 180°, 270° oder 360°",
       "metaDescription": "Drehen Sie PDF-Seiten kostenlos online. Drehen Sie alle Seiten um 90, 180 oder 270 Grad."
     },
-    "proteger-pdf": {
-      "name": "PDF schützen",
-      "slug": "protect-pdf",
-      "description": "Fügen Sie Passwortschutz zu PDF-Dateien hinzu",
-      "metaDescription": "Schützen Sie PDFs mit Passwort kostenlos online. Fügen Sie Ihren PDF-Dokumenten Sicherheit hinzu."
-    },
-    "desbloquear-pdf": {
-      "name": "PDF entsperren",
-      "slug": "unlock-pdf",
-      "description": "Entfernen Sie Schutz und Einschränkungen von PDF-Dateien",
-      "metaDescription": "Entsperren Sie geschützte PDFs kostenlos online. Entfernen Sie Einschränkungen von PDF-Dateien."
-    },
     "calculadora-imc": {
       "name": "BMI-Rechner",
       "slug": "bmi-calculator",
@@ -480,18 +468,6 @@
       "slug": "rotate-pdf",
       "description": "Drehen Sie PDF-Seiten um 90°, 180°, 270° oder 360°",
       "metaDescription": "Drehen Sie PDF-Seiten kostenlos online. Drehen Sie alle Seiten um 90, 180 oder 270 Grad."
-    },
-    "protect-pdf": {
-      "name": "PDF schützen",
-      "slug": "protect-pdf",
-      "description": "Fügen Sie Passwortschutz zu PDF-Dateien hinzu",
-      "metaDescription": "Schützen Sie PDFs mit Passwort kostenlos online. Fügen Sie Ihren PDF-Dokumenten Sicherheit hinzu."
-    },
-    "unlock-pdf": {
-      "name": "PDF entsperren",
-      "slug": "unlock-pdf",
-      "description": "Entfernen Sie Schutz und Einschränkungen von PDF-Dateien",
-      "metaDescription": "Entsperren Sie geschützte PDFs kostenlos online. Entfernen Sie Einschränkungen von PDF-Dateien."
     },
     "bmi-calculator": {
       "name": "BMI-Rechner",
@@ -1128,18 +1104,6 @@
       "slug": "calculadora-imc-es",
       "description": "Berechnen Sie Ihren Body-Mass-Index und sehen Sie Ihre Kategorie",
       "metaDescription": "Berechnen Sie Ihren BMI kostenlos online. Entdecken Sie Ihren Body-Mass-Index und Gewichtskategorie."
-    },
-    "proteger-pdf-es": {
-      "name": "PDF schützen",
-      "slug": "proteger-pdf-es",
-      "description": "Fügen Sie Passwortschutz zu PDF-Dateien hinzu",
-      "metaDescription": "Schützen Sie PDFs mit Passwort kostenlos online. Fügen Sie Ihren PDF-Dokumenten Sicherheit hinzu."
-    },
-    "desbloquear-pdf-es": {
-      "name": "PDF entsperren",
-      "slug": "desbloquear-pdf-es",
-      "description": "Entfernen Sie Schutz und Einschränkungen von PDF-Dateien",
-      "metaDescription": "Entsperren Sie geschützte PDFs kostenlos online. Entfernen Sie Einschränkungen von PDF-Dateien."
     },
     "calculadora-calorias-es": {
       "name": "Kalorienrechner",
@@ -1868,5 +1832,11 @@
     "tip5": "Überprüfen Sie verfügbare Firmware-Updates für Ihren Router",
     "privacyTitle": "Datenschutz",
     "privacyText": "Dieser Test wird zu 100% in Ihrem Browser ausgeführt. Es werden keine persönlichen Daten erfasst oder gespeichert. Wir verwenden öffentliche Cloudflare-Server für Geschwindigkeitsmessungen."
+  },
+  "navigation": {
+    "home": "Startseite",
+    "tools": "Werkzeuge",
+    "privacy": "Datenschutz",
+    "cookies": "Cookies"
   }
 }

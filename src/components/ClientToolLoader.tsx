@@ -201,14 +201,6 @@ const toolComponents = {
   'date-difference': dynamic(() => import('@/components/tools/DiferencaDatas'), { ssr: false }),
   'diferencia-fechas': dynamic(() => import('@/components/tools/DiferencaDatas'), { ssr: false }),
 
-  'proteger-pdf': dynamic(() => import('@/components/tools/ProtegerPDF'), { ssr: false }),
-  'protect-pdf': dynamic(() => import('@/components/tools/ProtegerPDF'), { ssr: false }),
-  'proteger-pdf-es': dynamic(() => import('@/components/tools/ProtegerPDF'), { ssr: false }),
-
-  'desbloquear-pdf': dynamic(() => import('@/components/tools/DesbloquearPDF'), { ssr: false }),
-  'unlock-pdf': dynamic(() => import('@/components/tools/DesbloquearPDF'), { ssr: false }),
-  'desbloquear-pdf-es': dynamic(() => import('@/components/tools/DesbloquearPDF'), { ssr: false }),
-
   'calculadora-calorias': dynamic(() => import('@/components/tools/CalculadoraCalorias'), { ssr: false }),
   'calorie-calculator': dynamic(() => import('@/components/tools/CalculadoraCalorias'), { ssr: false }),
   'calculadora-calorias-es': dynamic(() => import('@/components/tools/CalculadoraCalorias'), { ssr: false }),

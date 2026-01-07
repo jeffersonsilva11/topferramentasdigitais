@@ -57,8 +57,6 @@ const toolSlugMap: Record<string, Record<string, string>> = {
   'conversor-base64': { en: 'base64-converter', pt: 'conversor-base64', es: 'conversor-base64' },
   'removedor-espacos': { en: 'space-remover', pt: 'removedor-espacos', es: 'eliminar-espacios' },
   'diferenca-datas': { en: 'date-difference', pt: 'diferenca-datas', es: 'diferencia-fechas' },
-  'proteger-pdf': { en: 'protect-pdf', pt: 'proteger-pdf', es: 'proteger-pdf' },
-  'desbloquear-pdf': { en: 'unlock-pdf', pt: 'desbloquear-pdf', es: 'desbloquear-pdf' },
   'calculadora-calorias': { en: 'calorie-calculator', pt: 'calculadora-calorias', es: 'calculadora-calorias' },
   'calculadora-agua': { en: 'water-calculator', pt: 'calculadora-agua', es: 'calculadora-agua' },
   'calculadora-frequencia-cardiaca': { en: 'heart-rate-calculator', pt: 'calculadora-frequencia-cardiaca', es: 'calculadora-frecuencia-cardiaca' },
