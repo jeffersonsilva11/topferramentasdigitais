@@ -63,7 +63,8 @@ export default async function LocaleLayout({
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-title" content="TopTools" />
 
-        {/* Google AdSense will be loaded via GoogleAnalytics component after consent */}
+        {/* Google AdSense - Meta tag for domain verification */}
+        <meta name="google-adsense-account" content="ca-pub-7799249195760389" />
       </head>
       <body className="font-sans bg-white dark:bg-dark-950 dim:bg-dim-950 text-gray-900 dark:text-gray-100 dim:text-dim-100 transition-colors antialiased">
         {/* Skip to main content - Accessibility */}
