@@ -1158,7 +1158,10 @@
     "tagline": "Herramientas online gratuitas para uso personal y comercial.",
     "legalLinks": "Legal",
     "privacyPolicy": "Política de Privacidad",
-    "cookiePolicy": "Política de Cookies"
+    "cookiePolicy": "Política de Cookies",
+    "aboutUs": "Quiénes Somos",
+    "contactUs": "Contáctenos",
+    "termsOfService": "Términos de Servicio"
   },
   "languageSelector": {
     "label": "Idioma",
@@ -1838,5 +1841,164 @@
     "tools": "Herramientas",
     "privacy": "Privacidad",
     "cookies": "Cookies"
+  },
+  "termsOfService": {
+    "title": "Términos de Servicio",
+    "metaDescription": "Términos de Servicio de Herramientas Digitales - Condiciones de uso, responsabilidades y derechos de los usuarios.",
+    "backToHome": "Volver al Inicio",
+    "lastUpdated": "Última Actualización",
+    "updateDate": "Enero 2025",
+    "introduction": {
+      "title": "Introducción",
+      "p1": "Bienvenido a Herramientas Digitales. Estos Términos de Servicio rigen el uso de nuestro sitio web y todas las herramientas proporcionadas de forma gratuita.",
+      "p2": "Al acceder y utilizar nuestro sitio, acepta cumplir con estos términos. Si no está de acuerdo con alguna parte, por favor no utilice nuestros servicios."
+    },
+    "acceptance": {
+      "title": "Aceptación de los Términos",
+      "desc": "Al utilizar cualquier herramienta disponible en nuestro sitio web, acepta automáticamente estos Términos de Servicio. Recomendamos leerlos completamente antes de usar nuestros servicios."
+    },
+    "services": {
+      "title": "Servicios Ofrecidos",
+      "desc": "Herramientas Digitales ofrece una colección de herramientas en línea gratuitas que funcionan directamente en su navegador:",
+      "item1": "Conversores de archivos (PDF, imágenes, documentos)",
+      "item2": "Generadores (QR Code, contraseñas, UUID, Lorem Ipsum)",
+      "item3": "Calculadoras (porcentaje, regla de tres, IMC)",
+      "item4": "Herramientas de texto, imagen y productividad"
+    },
+    "userResponsibilities": {
+      "title": "Responsabilidades del Usuario",
+      "desc": "Al utilizar nuestras herramientas, acepta:",
+      "item1": "Utilizar los servicios solo para fines legales y éticos",
+      "item2": "No intentar comprometer la seguridad o integridad del sitio",
+      "item3": "No utilizar las herramientas para procesar contenido ilegal u ofensivo",
+      "item4": "Respetar los derechos de propiedad intelectual de terceros"
+    },
+    "intellectualProperty": {
+      "title": "Propiedad Intelectual",
+      "p1": "Todo el contenido del sitio web, incluyendo diseño, código, textos y gráficos, está protegido por derechos de autor y pertenece a Herramientas Digitales o sus licenciantes.",
+      "p2": "Puede utilizar nuestras herramientas libremente para fines personales y comerciales, pero no puede copiar, modificar o distribuir nuestro código fuente o diseño sin autorización expresa."
+    },
+    "privacy": {
+      "title": "Privacidad",
+      "desc": "Respetamos su privacidad. Todas las herramientas procesan datos localmente en su navegador - sus archivos no se envían a nuestros servidores. Para más detalles, consulte nuestra",
+      "link": "Política de Privacidad"
+    },
+    "disclaimer": {
+      "title": "Exención de Garantías",
+      "p1": "Las herramientas se proporcionan \"tal cual\", sin garantías de ningún tipo, expresas o implícitas. No garantizamos que los servicios sean ininterrumpidos o libres de errores.",
+      "p2": "Los resultados generados por las herramientas se proporcionan solo con fines informativos. Recomendamos verificar los resultados antes de usarlos para fines críticos."
+    },
+    "limitation": {
+      "title": "Limitación de Responsabilidad",
+      "desc": "En ningún caso Herramientas Digitales será responsable por daños directos, indirectos, incidentales, consecuentes o punitivos derivados del uso o la imposibilidad de uso de nuestros servicios."
+    },
+    "modifications": {
+      "title": "Modificaciones a los Términos",
+      "desc": "Nos reservamos el derecho de modificar estos términos en cualquier momento. Los cambios entran en vigor inmediatamente después de su publicación. El uso continuado del sitio después de los cambios constituye aceptación de los nuevos términos."
+    },
+    "governingLaw": {
+      "title": "Ley Aplicable",
+      "desc": "Estos términos se rigen por las leyes de Brasil. Cualquier disputa se resolverá en los tribunales competentes de Brasil."
+    },
+    "contact": {
+      "title": "¿Preguntas?",
+      "desc": "Si tiene preguntas sobre estos Términos de Servicio, contáctenos a través de nuestra página de contacto.",
+      "link": "Ir a página de contacto"
+    },
+    "footer": "Herramientas Digitales - Todos los Derechos Reservados"
+  },
+  "about": {
+    "title": "Quiénes Somos",
+    "metaDescription": "Conozca Herramientas Digitales - Su colección de herramientas en línea gratuitas para simplificar su día.",
+    "backToHome": "Volver al Inicio",
+    "subtitle": "Herramientas gratuitas para simplificar su día digital",
+    "mission": {
+      "title": "Nuestra Misión",
+      "p1": "Herramientas Digitales nació con una misión simple: ofrecer herramientas en línea gratuitas, de alta calidad, que respetan la privacidad del usuario.",
+      "p2": "Creemos que todos deberían tener acceso a herramientas útiles sin tener que pagar, registrarse o comprometer sus datos personales."
+    },
+    "whatWeOffer": {
+      "title": "Lo Que Ofrecemos",
+      "desc": "Ofrecemos más de 60 herramientas en línea gratuitas divididas en varias categorías:",
+      "converters": {
+        "title": "Conversores",
+        "desc": "PDF a JPG, PNG a JPG, WebP a JPG y mucho más"
+      },
+      "generators": {
+        "title": "Generadores",
+        "desc": "QR Code, contraseñas seguras, UUID, Lorem Ipsum"
+      },
+      "calculators": {
+        "title": "Calculadoras",
+        "desc": "Porcentaje, regla de tres, IMC, intereses"
+      },
+      "security": {
+        "title": "Seguridad",
+        "desc": "Generadores de hash, verificadores de contraseña"
+      }
+    },
+    "whyFree": {
+      "title": "¿Por Qué es Gratis?",
+      "p1": "Mantenemos el sitio gratuito a través de publicidad no intrusiva. Esto nos permite ofrecer todas las herramientas sin costo para usted.",
+      "p2": "Nuestro modelo permite que miles de personas accedan a herramientas de calidad sin barreras financieras."
+    },
+    "privacyFirst": {
+      "title": "Privacidad Primero",
+      "p1": "A diferencia de muchos sitios, nuestras herramientas procesan todo localmente en su navegador. Sus archivos nunca se envían a nuestros servidores.",
+      "item1": "Procesamiento 100% local en el navegador",
+      "item2": "Ningún archivo se envía a servidores externos",
+      "item3": "Sin necesidad de registro o inicio de sesión",
+      "item4": "Sin límites de uso"
+    },
+    "values": {
+      "title": "Nuestros Valores",
+      "simplicity": {
+        "title": "Simplicidad",
+        "desc": "Herramientas fáciles de usar, sin complicaciones"
+      },
+      "accessibility": {
+        "title": "Accesibilidad",
+        "desc": "Gratis para todos, sin barreras"
+      },
+      "trust": {
+        "title": "Confianza",
+        "desc": "Privacidad y seguridad garantizadas"
+      }
+    },
+    "contactCta": {
+      "title": "¿Tiene Alguna Sugerencia?",
+      "desc": "Siempre buscamos mejorar. Si tiene sugerencias de nuevas herramientas o mejoras, ¡nos encantaría escucharlo!",
+      "button": "Contáctenos"
+    },
+    "footer": "Herramientas Digitales - Todos los Derechos Reservados"
+  },
+  "contact": {
+    "title": "Contáctenos",
+    "metaDescription": "Contacte Herramientas Digitales - Estamos aquí para ayudar con preguntas, sugerencias y comentarios.",
+    "backToHome": "Volver al Inicio",
+    "subtitle": "¿Tiene preguntas o sugerencias? ¡Nos encantaría escucharlo!",
+    "responseTime": {
+      "title": "Tiempo de Respuesta",
+      "desc": "Respondemos a la mayoría de los mensajes dentro de 48 horas hábiles. Para asuntos urgentes, por favor indíquelo en el asunto."
+    },
+    "otherWays": {
+      "title": "Otras Formas de Contacto",
+      "desc": "También puede contactarnos directamente por correo electrónico:"
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "q1": "¿Las herramientas son realmente gratuitas?",
+      "a1": "¡Sí! Todas nuestras herramientas son 100% gratuitas, sin límites de uso.",
+      "q2": "¿Mis archivos están seguros?",
+      "a2": "¡Sí! Todos los archivos se procesan localmente en su navegador y nunca se envían a nuestros servidores.",
+      "q3": "¿Puedo sugerir nuevas herramientas?",
+      "a3": "¡Por supuesto! Use el formulario para enviar sus sugerencias. ¡Nos encanta escuchar a nuestros usuarios!"
+    },
+    "form": {
+      "title": "Envíe su Mensaje",
+      "desc": "Complete el formulario a continuación y le responderemos lo antes posible.",
+      "loading": "Cargando formulario..."
+    },
+    "footer": "Herramientas Digitales - Todos los Derechos Reservados"
   }
 }

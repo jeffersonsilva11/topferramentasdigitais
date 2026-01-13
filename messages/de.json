@@ -1157,6 +1157,9 @@
     "copyright": "Alle Rechte vorbehalten.",
     "tagline": "Kostenlose Online-Tools für den persönlichen und kommerziellen Gebrauch.",
     "legalLinks": "Rechtliches",
+    "aboutUs": "Über Uns",
+    "contactUs": "Kontakt",
+    "termsOfService": "Nutzungsbedingungen",
     "privacyPolicy": "Datenschutzrichtlinie",
     "cookiePolicy": "Cookie-Richtlinie"
   },
@@ -1838,5 +1841,164 @@
     "tools": "Werkzeuge",
     "privacy": "Datenschutz",
     "cookies": "Cookies"
+  },
+  "termsOfService": {
+    "title": "Nutzungsbedingungen",
+    "metaDescription": "Nutzungsbedingungen von Digitale Tools - Nutzungsbedingungen, Verantwortlichkeiten und Benutzerrechte.",
+    "backToHome": "Zurück zur Startseite",
+    "lastUpdated": "Letzte Aktualisierung",
+    "updateDate": "Januar 2025",
+    "introduction": {
+      "title": "Einführung",
+      "p1": "Willkommen bei Digitale Tools. Diese Nutzungsbedingungen regeln die Nutzung unserer Website und aller kostenlos bereitgestellten Tools.",
+      "p2": "Durch den Zugriff auf und die Nutzung unserer Website erklären Sie sich mit diesen Bedingungen einverstanden. Wenn Sie mit einem Teil nicht einverstanden sind, nutzen Sie bitte unsere Dienste nicht."
+    },
+    "acceptance": {
+      "title": "Akzeptanz der Bedingungen",
+      "desc": "Durch die Nutzung eines auf unserer Website verfügbaren Tools akzeptieren Sie automatisch diese Nutzungsbedingungen. Wir empfehlen, sie vor der Nutzung unserer Dienste vollständig zu lesen."
+    },
+    "services": {
+      "title": "Angebotene Dienste",
+      "desc": "Digitale Tools bietet eine Sammlung kostenloser Online-Tools, die direkt in Ihrem Browser funktionieren:",
+      "item1": "Dateikonverter (PDF, Bilder, Dokumente)",
+      "item2": "Generatoren (QR-Code, Passwörter, UUID, Lorem Ipsum)",
+      "item3": "Rechner (Prozent, Dreisatz, BMI)",
+      "item4": "Text-, Bild- und Produktivitätswerkzeuge"
+    },
+    "userResponsibilities": {
+      "title": "Benutzerverantwortung",
+      "desc": "Durch die Nutzung unserer Tools stimmen Sie zu:",
+      "item1": "Dienste nur für legale und ethische Zwecke zu nutzen",
+      "item2": "Nicht zu versuchen, die Sicherheit oder Integrität der Website zu gefährden",
+      "item3": "Die Tools nicht zur Verarbeitung illegaler oder anstößiger Inhalte zu verwenden",
+      "item4": "Die geistigen Eigentumsrechte Dritter zu respektieren"
+    },
+    "intellectualProperty": {
+      "title": "Geistiges Eigentum",
+      "p1": "Alle Website-Inhalte, einschließlich Design, Code, Texte und Grafiken, sind urheberrechtlich geschützt und gehören Digitale Tools oder seinen Lizenzgebern.",
+      "p2": "Sie dürfen unsere Tools frei für persönliche und kommerzielle Zwecke nutzen, aber Sie dürfen unseren Quellcode oder unser Design nicht ohne ausdrückliche Genehmigung kopieren, modifizieren oder verbreiten."
+    },
+    "privacy": {
+      "title": "Datenschutz",
+      "desc": "Wir respektieren Ihre Privatsphäre. Alle Tools verarbeiten Daten lokal in Ihrem Browser - Ihre Dateien werden nicht an unsere Server gesendet. Weitere Details finden Sie in unserer",
+      "link": "Datenschutzerklärung"
+    },
+    "disclaimer": {
+      "title": "Haftungsausschluss",
+      "p1": "Die Tools werden \"wie sie sind\" ohne jegliche ausdrückliche oder stillschweigende Gewährleistung bereitgestellt. Wir garantieren nicht, dass die Dienste unterbrechungsfrei oder fehlerfrei sind.",
+      "p2": "Die von den Tools generierten Ergebnisse dienen nur zu Informationszwecken. Wir empfehlen, die Ergebnisse zu überprüfen, bevor Sie sie für kritische Zwecke verwenden."
+    },
+    "limitation": {
+      "title": "Haftungsbeschränkung",
+      "desc": "In keinem Fall haftet Digitale Tools für direkte, indirekte, zufällige, Folge- oder Strafschäden, die aus der Nutzung oder der Unfähigkeit zur Nutzung unserer Dienste entstehen."
+    },
+    "modifications": {
+      "title": "Änderungen der Bedingungen",
+      "desc": "Wir behalten uns das Recht vor, diese Bedingungen jederzeit zu ändern. Änderungen treten sofort nach der Veröffentlichung in Kraft. Die fortgesetzte Nutzung der Website nach Änderungen gilt als Akzeptanz der neuen Bedingungen."
+    },
+    "governingLaw": {
+      "title": "Anwendbares Recht",
+      "desc": "Diese Bedingungen unterliegen den Gesetzen Brasiliens. Alle Streitigkeiten werden vor den zuständigen Gerichten Brasiliens beigelegt."
+    },
+    "contact": {
+      "title": "Fragen?",
+      "desc": "Wenn Sie Fragen zu diesen Nutzungsbedingungen haben, kontaktieren Sie uns über unsere Kontaktseite.",
+      "link": "Zur Kontaktseite"
+    },
+    "footer": "Digitale Tools - Alle Rechte Vorbehalten"
+  },
+  "about": {
+    "title": "Über Uns",
+    "metaDescription": "Erfahren Sie mehr über Digitale Tools - Ihre Sammlung kostenloser Online-Tools zur Vereinfachung Ihres Alltags.",
+    "backToHome": "Zurück zur Startseite",
+    "subtitle": "Kostenlose Tools zur Vereinfachung Ihres digitalen Alltags",
+    "mission": {
+      "title": "Unsere Mission",
+      "p1": "Digitale Tools wurde mit einer einfachen Mission gegründet: kostenlose, hochwertige Online-Tools anzubieten, die die Privatsphäre der Benutzer respektieren.",
+      "p2": "Wir glauben, dass jeder Zugang zu nützlichen Tools haben sollte, ohne zahlen, sich registrieren oder persönliche Daten kompromittieren zu müssen."
+    },
+    "whatWeOffer": {
+      "title": "Was Wir Anbieten",
+      "desc": "Wir bieten über 60 kostenlose Online-Tools in verschiedenen Kategorien:",
+      "converters": {
+        "title": "Konverter",
+        "desc": "PDF zu JPG, PNG zu JPG, WebP zu JPG und vieles mehr"
+      },
+      "generators": {
+        "title": "Generatoren",
+        "desc": "QR-Code, sichere Passwörter, UUID, Lorem Ipsum"
+      },
+      "calculators": {
+        "title": "Rechner",
+        "desc": "Prozent, Dreisatz, BMI, Zinsen"
+      },
+      "security": {
+        "title": "Sicherheit",
+        "desc": "Hash-Generatoren, Passwort-Prüfer"
+      }
+    },
+    "whyFree": {
+      "title": "Warum Ist Es Kostenlos?",
+      "p1": "Wir halten die Website durch nicht-aufdringliche Werbung kostenlos. Dies ermöglicht es uns, alle Tools ohne Kosten für Sie anzubieten.",
+      "p2": "Unser Modell ermöglicht es Tausenden von Menschen, ohne finanzielle Barrieren auf Qualitätswerkzeuge zuzugreifen."
+    },
+    "privacyFirst": {
+      "title": "Datenschutz Zuerst",
+      "p1": "Anders als viele Websites verarbeiten unsere Tools alles lokal in Ihrem Browser. Ihre Dateien werden niemals an unsere Server gesendet.",
+      "item1": "100% lokale Verarbeitung im Browser",
+      "item2": "Keine Dateien werden an externe Server gesendet",
+      "item3": "Keine Registrierung oder Anmeldung erforderlich",
+      "item4": "Keine Nutzungsbeschränkungen"
+    },
+    "values": {
+      "title": "Unsere Werte",
+      "simplicity": {
+        "title": "Einfachheit",
+        "desc": "Benutzerfreundliche Tools ohne Komplikationen"
+      },
+      "accessibility": {
+        "title": "Zugänglichkeit",
+        "desc": "Kostenlos für alle, ohne Barrieren"
+      },
+      "trust": {
+        "title": "Vertrauen",
+        "desc": "Datenschutz und Sicherheit garantiert"
+      }
+    },
+    "contactCta": {
+      "title": "Haben Sie einen Vorschlag?",
+      "desc": "Wir suchen immer nach Verbesserungen. Wenn Sie Vorschläge für neue Tools oder Verbesserungen haben, würden wir gerne von Ihnen hören!",
+      "button": "Kontaktieren Sie uns"
+    },
+    "footer": "Digitale Tools - Alle Rechte Vorbehalten"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "metaDescription": "Kontaktieren Sie Digitale Tools - Wir sind hier, um bei Fragen, Vorschlägen und Feedback zu helfen.",
+    "backToHome": "Zurück zur Startseite",
+    "subtitle": "Haben Sie Fragen oder Vorschläge? Wir würden gerne von Ihnen hören!",
+    "responseTime": {
+      "title": "Antwortzeit",
+      "desc": "Wir antworten auf die meisten Nachrichten innerhalb von 48 Geschäftsstunden. Bei dringenden Angelegenheiten geben Sie dies bitte im Betreff an."
+    },
+    "otherWays": {
+      "title": "Andere Kontaktmöglichkeiten",
+      "desc": "Sie können uns auch direkt per E-Mail kontaktieren:"
+    },
+    "faq": {
+      "title": "Häufig Gestellte Fragen",
+      "q1": "Sind die Tools wirklich kostenlos?",
+      "a1": "Ja! Alle unsere Tools sind 100% kostenlos, ohne Nutzungsbeschränkungen.",
+      "q2": "Sind meine Dateien sicher?",
+      "a2": "Ja! Alle Dateien werden lokal in Ihrem Browser verarbeitet und werden niemals an unsere Server gesendet.",
+      "q3": "Kann ich neue Tools vorschlagen?",
+      "a3": "Natürlich! Nutzen Sie das Formular, um Ihre Vorschläge zu senden. Wir hören gerne von unseren Benutzern!"
+    },
+    "form": {
+      "title": "Nachricht Senden",
+      "desc": "Füllen Sie das folgende Formular aus und wir werden uns so schnell wie möglich bei Ihnen melden.",
+      "loading": "Formular wird geladen..."
+    },
+    "footer": "Digitale Tools - Alle Rechte Vorbehalten"
   }
 }

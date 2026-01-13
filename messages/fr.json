@@ -1157,6 +1157,9 @@
     "copyright": "Tous droits réservés.",
     "tagline": "Outils en ligne gratuits pour usage personnel et commercial.",
     "legalLinks": "Légal",
+    "aboutUs": "À Propos",
+    "contactUs": "Contactez-nous",
+    "termsOfService": "Conditions d'Utilisation",
     "privacyPolicy": "Politique de Confidentialité",
     "cookiePolicy": "Politique de Cookies"
   },
@@ -1838,5 +1841,164 @@
     "tools": "Outils",
     "privacy": "Confidentialité",
     "cookies": "Cookies"
+  },
+  "termsOfService": {
+    "title": "Conditions d'Utilisation",
+    "metaDescription": "Conditions d'Utilisation d'Outils Numériques - Conditions d'utilisation, responsabilités et droits des utilisateurs.",
+    "backToHome": "Retour à l'Accueil",
+    "lastUpdated": "Dernière Mise à Jour",
+    "updateDate": "Janvier 2025",
+    "introduction": {
+      "title": "Introduction",
+      "p1": "Bienvenue sur Outils Numériques. Ces Conditions d'Utilisation régissent l'utilisation de notre site web et de tous les outils fournis gratuitement.",
+      "p2": "En accédant et en utilisant notre site, vous acceptez de respecter ces conditions. Si vous n'êtes pas d'accord avec une partie, veuillez ne pas utiliser nos services."
+    },
+    "acceptance": {
+      "title": "Acceptation des Conditions",
+      "desc": "En utilisant n'importe quel outil disponible sur notre site web, vous acceptez automatiquement ces Conditions d'Utilisation. Nous recommandons de les lire intégralement avant d'utiliser nos services."
+    },
+    "services": {
+      "title": "Services Offerts",
+      "desc": "Outils Numériques offre une collection d'outils en ligne gratuits qui fonctionnent directement dans votre navigateur:",
+      "item1": "Convertisseurs de fichiers (PDF, images, documents)",
+      "item2": "Générateurs (QR Code, mots de passe, UUID, Lorem Ipsum)",
+      "item3": "Calculatrices (pourcentage, règle de trois, IMC)",
+      "item4": "Outils de texte, image et productivité"
+    },
+    "userResponsibilities": {
+      "title": "Responsabilités de l'Utilisateur",
+      "desc": "En utilisant nos outils, vous acceptez de:",
+      "item1": "Utiliser les services uniquement à des fins légales et éthiques",
+      "item2": "Ne pas tenter de compromettre la sécurité ou l'intégrité du site",
+      "item3": "Ne pas utiliser les outils pour traiter du contenu illégal ou offensant",
+      "item4": "Respecter les droits de propriété intellectuelle des tiers"
+    },
+    "intellectualProperty": {
+      "title": "Propriété Intellectuelle",
+      "p1": "Tout le contenu du site web, y compris le design, le code, les textes et les graphiques, est protégé par le droit d'auteur et appartient à Outils Numériques ou à ses concédants de licence.",
+      "p2": "Vous pouvez utiliser librement nos outils à des fins personnelles et commerciales, mais vous ne pouvez pas copier, modifier ou distribuer notre code source ou notre design sans autorisation expresse."
+    },
+    "privacy": {
+      "title": "Confidentialité",
+      "desc": "Nous respectons votre vie privée. Tous les outils traitent les données localement dans votre navigateur - vos fichiers ne sont pas envoyés à nos serveurs. Pour plus de détails, consultez notre",
+      "link": "Politique de Confidentialité"
+    },
+    "disclaimer": {
+      "title": "Exclusion de Garanties",
+      "p1": "Les outils sont fournis \"en l'état\", sans garanties d'aucune sorte, expresses ou implicites. Nous ne garantissons pas que les services seront ininterrompus ou sans erreur.",
+      "p2": "Les résultats générés par les outils sont fournis à titre informatif uniquement. Nous recommandons de vérifier les résultats avant de les utiliser à des fins critiques."
+    },
+    "limitation": {
+      "title": "Limitation de Responsabilité",
+      "desc": "En aucun cas Outils Numériques ne sera responsable des dommages directs, indirects, accessoires, consécutifs ou punitifs découlant de l'utilisation ou de l'impossibilité d'utiliser nos services."
+    },
+    "modifications": {
+      "title": "Modifications des Conditions",
+      "desc": "Nous nous réservons le droit de modifier ces conditions à tout moment. Les modifications entrent en vigueur immédiatement après leur publication. L'utilisation continue du site après les modifications constitue l'acceptation des nouvelles conditions."
+    },
+    "governingLaw": {
+      "title": "Loi Applicable",
+      "desc": "Ces conditions sont régies par les lois du Brésil. Tout litige sera résolu dans les tribunaux compétents du Brésil."
+    },
+    "contact": {
+      "title": "Questions?",
+      "desc": "Si vous avez des questions sur ces Conditions d'Utilisation, contactez-nous via notre page de contact.",
+      "link": "Aller à la page de contact"
+    },
+    "footer": "Outils Numériques - Tous Droits Réservés"
+  },
+  "about": {
+    "title": "À Propos",
+    "metaDescription": "Découvrez Outils Numériques - Votre collection d'outils en ligne gratuits pour simplifier votre quotidien.",
+    "backToHome": "Retour à l'Accueil",
+    "subtitle": "Outils gratuits pour simplifier votre quotidien numérique",
+    "mission": {
+      "title": "Notre Mission",
+      "p1": "Outils Numériques est né avec une mission simple: offrir des outils en ligne gratuits, de haute qualité, qui respectent la vie privée des utilisateurs.",
+      "p2": "Nous croyons que tout le monde devrait avoir accès à des outils utiles sans avoir à payer, s'inscrire ou compromettre ses données personnelles."
+    },
+    "whatWeOffer": {
+      "title": "Ce Que Nous Offrons",
+      "desc": "Nous offrons plus de 60 outils en ligne gratuits répartis en différentes catégories:",
+      "converters": {
+        "title": "Convertisseurs",
+        "desc": "PDF en JPG, PNG en JPG, WebP en JPG et bien plus"
+      },
+      "generators": {
+        "title": "Générateurs",
+        "desc": "QR Code, mots de passe sécurisés, UUID, Lorem Ipsum"
+      },
+      "calculators": {
+        "title": "Calculatrices",
+        "desc": "Pourcentage, règle de trois, IMC, intérêts"
+      },
+      "security": {
+        "title": "Sécurité",
+        "desc": "Générateurs de hash, vérificateurs de mot de passe"
+      }
+    },
+    "whyFree": {
+      "title": "Pourquoi C'est Gratuit?",
+      "p1": "Nous maintenons le site gratuit grâce à une publicité non intrusive. Cela nous permet d'offrir tous les outils sans frais pour vous.",
+      "p2": "Notre modèle permet à des milliers de personnes d'accéder à des outils de qualité sans barrières financières."
+    },
+    "privacyFirst": {
+      "title": "Confidentialité en Premier",
+      "p1": "Contrairement à de nombreux sites, nos outils traitent tout localement dans votre navigateur. Vos fichiers ne sont jamais envoyés à nos serveurs.",
+      "item1": "Traitement 100% local dans le navigateur",
+      "item2": "Aucun fichier n'est envoyé à des serveurs externes",
+      "item3": "Pas besoin d'inscription ou de connexion",
+      "item4": "Pas de limites d'utilisation"
+    },
+    "values": {
+      "title": "Nos Valeurs",
+      "simplicity": {
+        "title": "Simplicité",
+        "desc": "Outils faciles à utiliser, sans complications"
+      },
+      "accessibility": {
+        "title": "Accessibilité",
+        "desc": "Gratuit pour tous, sans barrières"
+      },
+      "trust": {
+        "title": "Confiance",
+        "desc": "Confidentialité et sécurité garanties"
+      }
+    },
+    "contactCta": {
+      "title": "Avez-vous une Suggestion?",
+      "desc": "Nous cherchons toujours à nous améliorer. Si vous avez des suggestions de nouveaux outils ou d'améliorations, nous serions ravis de vous entendre!",
+      "button": "Contactez-nous"
+    },
+    "footer": "Outils Numériques - Tous Droits Réservés"
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "metaDescription": "Contactez Outils Numériques - Nous sommes là pour vous aider avec vos questions, suggestions et commentaires.",
+    "backToHome": "Retour à l'Accueil",
+    "subtitle": "Avez-vous des questions ou des suggestions? Nous serions ravis de vous entendre!",
+    "responseTime": {
+      "title": "Temps de Réponse",
+      "desc": "Nous répondons à la plupart des messages dans les 48 heures ouvrables. Pour les questions urgentes, veuillez l'indiquer dans le sujet."
+    },
+    "otherWays": {
+      "title": "Autres Moyens de Contact",
+      "desc": "Vous pouvez également nous contacter directement par email:"
+    },
+    "faq": {
+      "title": "Questions Fréquentes",
+      "q1": "Les outils sont-ils vraiment gratuits?",
+      "a1": "Oui! Tous nos outils sont 100% gratuits, sans limites d'utilisation.",
+      "q2": "Mes fichiers sont-ils sécurisés?",
+      "a2": "Oui! Tous les fichiers sont traités localement dans votre navigateur et ne sont jamais envoyés à nos serveurs.",
+      "q3": "Puis-je suggérer de nouveaux outils?",
+      "a3": "Bien sûr! Utilisez le formulaire pour envoyer vos suggestions. Nous adorons entendre nos utilisateurs!"
+    },
+    "form": {
+      "title": "Envoyez Votre Message",
+      "desc": "Remplissez le formulaire ci-dessous et nous vous répondrons dès que possible.",
+      "loading": "Chargement du formulaire..."
+    },
+    "footer": "Outils Numériques - Tous Droits Réservés"
   }
 }

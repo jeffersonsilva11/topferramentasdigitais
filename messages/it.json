@@ -1157,6 +1157,9 @@
     "copyright": "Tutti i diritti riservati.",
     "tagline": "Strumenti online gratuiti per uso personale e commerciale.",
     "legalLinks": "Note Legali",
+    "aboutUs": "Chi Siamo",
+    "contactUs": "Contattaci",
+    "termsOfService": "Termini di Servizio",
     "privacyPolicy": "Informativa sulla Privacy",
     "cookiePolicy": "Informativa sui Cookie"
   },
@@ -1838,5 +1841,164 @@
     "tools": "Strumenti",
     "privacy": "Privacy",
     "cookies": "Cookie"
+  },
+  "termsOfService": {
+    "title": "Termini di Servizio",
+    "metaDescription": "Termini di Servizio di Strumenti Digitali - Condizioni d'uso, responsabilità e diritti degli utenti.",
+    "backToHome": "Torna alla Home",
+    "lastUpdated": "Ultimo Aggiornamento",
+    "updateDate": "Gennaio 2025",
+    "introduction": {
+      "title": "Introduzione",
+      "p1": "Benvenuto su Strumenti Digitali. Questi Termini di Servizio regolano l'uso del nostro sito web e di tutti gli strumenti forniti gratuitamente.",
+      "p2": "Accedendo e utilizzando il nostro sito, accetti di rispettare questi termini. Se non sei d'accordo con qualche parte, per favore non utilizzare i nostri servizi."
+    },
+    "acceptance": {
+      "title": "Accettazione dei Termini",
+      "desc": "Utilizzando qualsiasi strumento disponibile sul nostro sito web, accetti automaticamente questi Termini di Servizio. Ti consigliamo di leggerli completamente prima di utilizzare i nostri servizi."
+    },
+    "services": {
+      "title": "Servizi Offerti",
+      "desc": "Strumenti Digitali offre una collezione di strumenti online gratuiti che funzionano direttamente nel tuo browser:",
+      "item1": "Convertitori di file (PDF, immagini, documenti)",
+      "item2": "Generatori (QR Code, password, UUID, Lorem Ipsum)",
+      "item3": "Calcolatrici (percentuale, regola del tre, IMC)",
+      "item4": "Strumenti per testo, immagini e produttività"
+    },
+    "userResponsibilities": {
+      "title": "Responsabilità dell'Utente",
+      "desc": "Utilizzando i nostri strumenti, accetti di:",
+      "item1": "Utilizzare i servizi solo per scopi legali ed etici",
+      "item2": "Non tentare di compromettere la sicurezza o l'integrità del sito",
+      "item3": "Non utilizzare gli strumenti per elaborare contenuti illegali o offensivi",
+      "item4": "Rispettare i diritti di proprietà intellettuale di terzi"
+    },
+    "intellectualProperty": {
+      "title": "Proprietà Intellettuale",
+      "p1": "Tutti i contenuti del sito web, inclusi design, codice, testi e grafiche, sono protetti da copyright e appartengono a Strumenti Digitali o ai suoi licenzianti.",
+      "p2": "Puoi utilizzare liberamente i nostri strumenti per scopi personali e commerciali, ma non puoi copiare, modificare o distribuire il nostro codice sorgente o design senza autorizzazione esplicita."
+    },
+    "privacy": {
+      "title": "Privacy",
+      "desc": "Rispettiamo la tua privacy. Tutti gli strumenti elaborano i dati localmente nel tuo browser - i tuoi file non vengono inviati ai nostri server. Per maggiori dettagli, consulta la nostra",
+      "link": "Informativa sulla Privacy"
+    },
+    "disclaimer": {
+      "title": "Esclusione di Garanzie",
+      "p1": "Gli strumenti sono forniti \"così come sono\", senza garanzie di alcun tipo, espresse o implicite. Non garantiamo che i servizi saranno ininterrotti o privi di errori.",
+      "p2": "I risultati generati dagli strumenti sono forniti solo a scopo informativo. Ti consigliamo di verificare i risultati prima di utilizzarli per scopi critici."
+    },
+    "limitation": {
+      "title": "Limitazione di Responsabilità",
+      "desc": "In nessun caso Strumenti Digitali sarà responsabile per danni diretti, indiretti, incidentali, consequenziali o punitivi derivanti dall'uso o dall'impossibilità di utilizzare i nostri servizi."
+    },
+    "modifications": {
+      "title": "Modifiche ai Termini",
+      "desc": "Ci riserviamo il diritto di modificare questi termini in qualsiasi momento. Le modifiche entrano in vigore immediatamente dopo la pubblicazione. L'uso continuato del sito dopo le modifiche costituisce accettazione dei nuovi termini."
+    },
+    "governingLaw": {
+      "title": "Legge Applicabile",
+      "desc": "Questi termini sono regolati dalle leggi del Brasile. Qualsiasi controversia sarà risolta nei tribunali competenti del Brasile."
+    },
+    "contact": {
+      "title": "Domande?",
+      "desc": "Se hai domande su questi Termini di Servizio, contattaci attraverso la nostra pagina di contatto.",
+      "link": "Vai alla pagina di contatto"
+    },
+    "footer": "Strumenti Digitali - Tutti i Diritti Riservati"
+  },
+  "about": {
+    "title": "Chi Siamo",
+    "metaDescription": "Scopri Strumenti Digitali - La tua collezione di strumenti online gratuiti per semplificare la tua giornata.",
+    "backToHome": "Torna alla Home",
+    "subtitle": "Strumenti gratuiti per semplificare la tua giornata digitale",
+    "mission": {
+      "title": "La Nostra Missione",
+      "p1": "Strumenti Digitali è nato con una missione semplice: offrire strumenti online gratuiti, di alta qualità, che rispettano la privacy degli utenti.",
+      "p2": "Crediamo che tutti dovrebbero avere accesso a strumenti utili senza dover pagare, registrarsi o compromettere i propri dati personali."
+    },
+    "whatWeOffer": {
+      "title": "Cosa Offriamo",
+      "desc": "Offriamo oltre 60 strumenti online gratuiti divisi in varie categorie:",
+      "converters": {
+        "title": "Convertitori",
+        "desc": "PDF in JPG, PNG in JPG, WebP in JPG e molto altro"
+      },
+      "generators": {
+        "title": "Generatori",
+        "desc": "QR Code, password sicure, UUID, Lorem Ipsum"
+      },
+      "calculators": {
+        "title": "Calcolatrici",
+        "desc": "Percentuale, regola del tre, IMC, interessi"
+      },
+      "security": {
+        "title": "Sicurezza",
+        "desc": "Generatori di hash, verificatori di password"
+      }
+    },
+    "whyFree": {
+      "title": "Perché È Gratuito?",
+      "p1": "Manteniamo il sito gratuito attraverso pubblicità non invasiva. Questo ci permette di offrire tutti gli strumenti senza costi per te.",
+      "p2": "Il nostro modello permette a migliaia di persone di accedere a strumenti di qualità senza barriere finanziarie."
+    },
+    "privacyFirst": {
+      "title": "Privacy al Primo Posto",
+      "p1": "A differenza di molti siti, i nostri strumenti elaborano tutto localmente nel tuo browser. I tuoi file non vengono mai inviati ai nostri server.",
+      "item1": "Elaborazione 100% locale nel browser",
+      "item2": "Nessun file viene inviato a server esterni",
+      "item3": "Nessuna registrazione o login richiesti",
+      "item4": "Nessun limite di utilizzo"
+    },
+    "values": {
+      "title": "I Nostri Valori",
+      "simplicity": {
+        "title": "Semplicità",
+        "desc": "Strumenti facili da usare, senza complicazioni"
+      },
+      "accessibility": {
+        "title": "Accessibilità",
+        "desc": "Gratuito per tutti, senza barriere"
+      },
+      "trust": {
+        "title": "Fiducia",
+        "desc": "Privacy e sicurezza garantite"
+      }
+    },
+    "contactCta": {
+      "title": "Hai un Suggerimento?",
+      "desc": "Cerchiamo sempre di migliorare. Se hai suggerimenti per nuovi strumenti o miglioramenti, ci piacerebbe sentirti!",
+      "button": "Contattaci"
+    },
+    "footer": "Strumenti Digitali - Tutti i Diritti Riservati"
+  },
+  "contact": {
+    "title": "Contattaci",
+    "metaDescription": "Contatta Strumenti Digitali - Siamo qui per aiutarti con domande, suggerimenti e feedback.",
+    "backToHome": "Torna alla Home",
+    "subtitle": "Hai domande o suggerimenti? Ci piacerebbe sentirti!",
+    "responseTime": {
+      "title": "Tempo di Risposta",
+      "desc": "Rispondiamo alla maggior parte dei messaggi entro 48 ore lavorative. Per questioni urgenti, indica nell'oggetto."
+    },
+    "otherWays": {
+      "title": "Altri Modi per Contattarci",
+      "desc": "Puoi anche contattarci direttamente via email:"
+    },
+    "faq": {
+      "title": "Domande Frequenti",
+      "q1": "Gli strumenti sono davvero gratuiti?",
+      "a1": "Sì! Tutti i nostri strumenti sono 100% gratuiti, senza limiti di utilizzo.",
+      "q2": "I miei file sono sicuri?",
+      "a2": "Sì! Tutti i file vengono elaborati localmente nel tuo browser e non vengono mai inviati ai nostri server.",
+      "q3": "Posso suggerire nuovi strumenti?",
+      "a3": "Certo! Usa il modulo per inviare i tuoi suggerimenti. Amiamo sentire i nostri utenti!"
+    },
+    "form": {
+      "title": "Invia il Tuo Messaggio",
+      "desc": "Compila il modulo sottostante e ti risponderemo il prima possibile.",
+      "loading": "Caricamento modulo..."
+    },
+    "footer": "Strumenti Digitali - Tutti i Diritti Riservati"
   }
 }

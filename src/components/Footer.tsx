@@ -41,19 +41,37 @@ export default function Footer() {
             <p className="text-sm text-gray-400 dark:text-gray-500 mb-4">
               {t('aboutText')}
             </p>
-            {/* Legal Links */}
+            {/* Navigation Links */}
             <nav aria-label={t('legalLinks')} className="space-y-2">
+              <Link
+                href={`/${locale}/about`}
+                className="block text-sm text-gray-400 dark:text-gray-500 hover:text-primary-400 transition-colors"
+              >
+                {t('aboutUs')}
+              </Link>
+              <Link
+                href={`/${locale}/contact`}
+                className="block text-sm text-gray-400 dark:text-gray-500 hover:text-primary-400 transition-colors"
+              >
+                {t('contactUs')}
+              </Link>
+              <Link
+                href={`/${locale}/terms-of-service`}
+                className="block text-sm text-gray-400 dark:text-gray-500 hover:text-primary-400 transition-colors"
+              >
+                {t('termsOfService')}
+              </Link>
               <Link
                 href={`/${locale}/privacy-policy`}
                 className="block text-sm text-gray-400 dark:text-gray-500 hover:text-primary-400 transition-colors"
               >
-                🔒 {t('privacyPolicy')}
+                {t('privacyPolicy')}
               </Link>
               <Link
                 href={`/${locale}/cookie-policy`}
                 className="block text-sm text-gray-400 dark:text-gray-500 hover:text-primary-400 transition-colors"
               >
-                🍪 {t('cookiePolicy')}
+                {t('cookiePolicy')}
               </Link>
             </nav>
           </div>

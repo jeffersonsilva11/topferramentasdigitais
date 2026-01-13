@@ -65,6 +65,13 @@ export default async function LocaleLayout({
 
         {/* Google AdSense - Meta tag for domain verification */}
         <meta name="google-adsense-account" content="ca-pub-7799249195760389" />
+
+        {/* Google AdSense - Script for ad display */}
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7799249195760389"
+          crossOrigin="anonymous"
+        />
       </head>
       <body className="font-sans bg-white dark:bg-dark-950 dim:bg-dim-950 text-gray-900 dark:text-gray-100 dim:text-dim-100 transition-colors antialiased">
         {/* Skip to main content - Accessibility */}
