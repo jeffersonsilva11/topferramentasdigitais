@@ -10,6 +10,7 @@ interface AdSlotProps {
 export default function AdSlot({ position, className = '' }: AdSlotProps) {
   const adRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
+  const adLoadedRef = useRef(false);
 
   // Lazy load ads - only load when in viewport
   useEffect(() => {
@@ -38,14 +39,18 @@ export default function AdSlot({ position, className = '' }: AdSlotProps) {
     };
   }, [isVisible]);
 
-  // Load AdSense script when ad becomes visible
+  // Load AdSense script when ad becomes visible (only once)
   useEffect(() => {
-    if (isVisible && typeof window !== 'undefined') {
+    if (isVisible && typeof window !== 'undefined' && !adLoadedRef.current) {
+      adLoadedRef.current = true;
       try {
         // @ts-expect-error - adsbygoogle is injected by Google
         (window.adsbygoogle = window.adsbygoogle || []).push({});
       } catch (err) {
-        console.error('AdSense error:', err);
+        // Ignore "already have ads" error - this is expected behavior
+        if (err instanceof Error && !err.message.includes('already have ads')) {
+          console.error('AdSense error:', err);
+        }
       }
     }
   }, [isVisible]);

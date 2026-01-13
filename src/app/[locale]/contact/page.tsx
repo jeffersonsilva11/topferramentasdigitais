@@ -62,25 +62,6 @@ export default async function ContactPage({ params }: Params) {
               </p>
             </div>
 
-            {/* Other Ways */}
-            <div className="bg-white dark:bg-dark-900 rounded-2xl shadow-xl p-6">
-              <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-4 flex items-center">
-                <span className="mr-2">📬</span>
-                {t('otherWays.title')}
-              </h2>
-              <p className="text-gray-700 dark:text-gray-300 text-sm mb-4">
-                {t('otherWays.desc')}
-              </p>
-              <div className="space-y-3">
-                <div className="flex items-center text-gray-600 dark:text-gray-400 text-sm">
-                  <svg className="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                  </svg>
-                  contato@ferramentasdigitais.com.br
-                </div>
-              </div>
-            </div>
-
             {/* FAQ */}
             <div className="bg-white dark:bg-dark-900 rounded-2xl shadow-xl p-6">
               <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-4 flex items-center">
