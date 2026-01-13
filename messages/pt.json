@@ -1151,6 +1151,9 @@
     "copyright": "Todos os direitos reservados.",
     "tagline": "Ferramentas online gratuitas para uso pessoal e comercial.",
     "legalLinks": "Legal",
+    "aboutUs": "Quem Somos",
+    "contactUs": "Fale Conosco",
+    "termsOfService": "Termos de Serviço",
     "privacyPolicy": "Política de Privacidade",
     "cookiePolicy": "Política de Cookies"
   },
@@ -1832,5 +1835,164 @@
     "tools": "Ferramentas",
     "privacy": "Privacidade",
     "cookies": "Cookies"
+  },
+  "termsOfService": {
+    "title": "Termos de Serviço",
+    "metaDescription": "Termos de Serviço do Ferramentas Digitais - Condições de uso, responsabilidades e direitos dos usuários.",
+    "backToHome": "Voltar para Home",
+    "lastUpdated": "Última Atualização",
+    "updateDate": "Janeiro 2025",
+    "introduction": {
+      "title": "Introdução",
+      "p1": "Bem-vindo ao Ferramentas Digitais. Estes Termos de Serviço regem o uso do nosso site e de todas as ferramentas disponibilizadas gratuitamente.",
+      "p2": "Ao acessar e utilizar nosso site, você concorda em cumprir estes termos. Se não concordar com alguma parte, por favor, não utilize nossos serviços."
+    },
+    "acceptance": {
+      "title": "Aceitação dos Termos",
+      "desc": "Ao utilizar qualquer ferramenta disponível em nosso site, você automaticamente concorda com estes Termos de Serviço. Recomendamos a leitura completa antes de utilizar nossos serviços."
+    },
+    "services": {
+      "title": "Serviços Oferecidos",
+      "desc": "O Ferramentas Digitais oferece uma coleção de ferramentas online gratuitas que funcionam diretamente no seu navegador:",
+      "item1": "Conversores de arquivos (PDF, imagens, documentos)",
+      "item2": "Geradores (QR Code, senhas, UUID, Lorem Ipsum)",
+      "item3": "Calculadoras (porcentagem, regra de três, IMC)",
+      "item4": "Ferramentas de texto, imagem e produtividade"
+    },
+    "userResponsibilities": {
+      "title": "Responsabilidades do Usuário",
+      "desc": "Ao utilizar nossas ferramentas, você concorda em:",
+      "item1": "Utilizar os serviços apenas para fins legais e éticos",
+      "item2": "Não tentar comprometer a segurança ou integridade do site",
+      "item3": "Não utilizar as ferramentas para processar conteúdo ilegal ou ofensivo",
+      "item4": "Respeitar os direitos de propriedade intelectual de terceiros"
+    },
+    "intellectualProperty": {
+      "title": "Propriedade Intelectual",
+      "p1": "Todo o conteúdo do site, incluindo design, código, textos e gráficos, é protegido por direitos autorais e pertence ao Ferramentas Digitais ou seus licenciadores.",
+      "p2": "Você pode utilizar nossas ferramentas livremente para fins pessoais e comerciais, mas não pode copiar, modificar ou distribuir nosso código-fonte ou design sem autorização expressa."
+    },
+    "privacy": {
+      "title": "Privacidade",
+      "desc": "Respeitamos sua privacidade. Todas as ferramentas processam dados localmente no seu navegador - seus arquivos não são enviados para nossos servidores. Para mais detalhes, consulte nossa",
+      "link": "Política de Privacidade"
+    },
+    "disclaimer": {
+      "title": "Isenção de Garantias",
+      "p1": "As ferramentas são fornecidas \"como estão\", sem garantias de qualquer tipo, expressas ou implícitas. Não garantimos que os serviços serão ininterruptos ou livres de erros.",
+      "p2": "Os resultados gerados pelas ferramentas são fornecidos apenas para fins informativos. Recomendamos verificar os resultados antes de utilizá-los para fins críticos."
+    },
+    "limitation": {
+      "title": "Limitação de Responsabilidade",
+      "desc": "Em nenhuma circunstância o Ferramentas Digitais será responsável por quaisquer danos diretos, indiretos, incidentais, consequenciais ou punitivos decorrentes do uso ou da impossibilidade de uso dos nossos serviços."
+    },
+    "modifications": {
+      "title": "Modificações nos Termos",
+      "desc": "Reservamo-nos o direito de modificar estes termos a qualquer momento. As alterações entram em vigor imediatamente após a publicação. O uso continuado do site após as alterações constitui aceitação dos novos termos."
+    },
+    "governingLaw": {
+      "title": "Lei Aplicável",
+      "desc": "Estes termos são regidos pelas leis do Brasil. Qualquer disputa será resolvida nos tribunais competentes do Brasil."
+    },
+    "contact": {
+      "title": "Dúvidas?",
+      "desc": "Se você tiver dúvidas sobre estes Termos de Serviço, entre em contato conosco através da nossa página de contato.",
+      "link": "Ir para página de contato"
+    },
+    "footer": "Ferramentas Digitais - Todos os Direitos Reservados"
+  },
+  "about": {
+    "title": "Quem Somos",
+    "metaDescription": "Conheça o Ferramentas Digitais - Sua coleção de ferramentas online gratuitas para facilitar o dia a dia.",
+    "backToHome": "Voltar para Home",
+    "subtitle": "Ferramentas gratuitas para simplificar seu dia a dia digital",
+    "mission": {
+      "title": "Nossa Missão",
+      "p1": "O Ferramentas Digitais nasceu com uma missão simples: oferecer ferramentas online gratuitas, de alta qualidade, que respeitam a privacidade dos usuários.",
+      "p2": "Acreditamos que todos devem ter acesso a ferramentas úteis sem precisar pagar, se cadastrar ou comprometer seus dados pessoais."
+    },
+    "whatWeOffer": {
+      "title": "O Que Oferecemos",
+      "desc": "Oferecemos mais de 60 ferramentas online gratuitas divididas em diversas categorias:",
+      "converters": {
+        "title": "Conversores",
+        "desc": "PDF para JPG, PNG para JPG, WebP para JPG e muito mais"
+      },
+      "generators": {
+        "title": "Geradores",
+        "desc": "QR Code, senhas seguras, UUID, Lorem Ipsum"
+      },
+      "calculators": {
+        "title": "Calculadoras",
+        "desc": "Porcentagem, regra de três, IMC, juros"
+      },
+      "security": {
+        "title": "Segurança",
+        "desc": "Geradores de hash, verificadores de senha"
+      }
+    },
+    "whyFree": {
+      "title": "Por Que é Gratuito?",
+      "p1": "Mantemos o site gratuito através de publicidade não intrusiva. Isso nos permite oferecer todas as ferramentas sem custos para você.",
+      "p2": "Nosso modelo permite que milhares de pessoas tenham acesso a ferramentas de qualidade sem barreiras financeiras."
+    },
+    "privacyFirst": {
+      "title": "Privacidade em Primeiro Lugar",
+      "p1": "Diferente de muitos sites, nossas ferramentas processam tudo localmente no seu navegador. Seus arquivos nunca são enviados para nossos servidores.",
+      "item1": "Processamento 100% local no navegador",
+      "item2": "Nenhum arquivo é enviado para servidores externos",
+      "item3": "Sem necessidade de cadastro ou login",
+      "item4": "Sem limites de uso"
+    },
+    "values": {
+      "title": "Nossos Valores",
+      "simplicity": {
+        "title": "Simplicidade",
+        "desc": "Ferramentas fáceis de usar, sem complicações"
+      },
+      "accessibility": {
+        "title": "Acessibilidade",
+        "desc": "Gratuito para todos, sem barreiras"
+      },
+      "trust": {
+        "title": "Confiança",
+        "desc": "Privacidade e segurança garantidas"
+      }
+    },
+    "contactCta": {
+      "title": "Tem Alguma Sugestão?",
+      "desc": "Estamos sempre buscando melhorar. Se você tem sugestões de novas ferramentas ou melhorias, adoraríamos ouvir você!",
+      "button": "Entre em Contato"
+    },
+    "footer": "Ferramentas Digitais - Todos os Direitos Reservados"
+  },
+  "contact": {
+    "title": "Fale Conosco",
+    "metaDescription": "Entre em contato com o Ferramentas Digitais - Estamos aqui para ajudar com dúvidas, sugestões e feedback.",
+    "backToHome": "Voltar para Home",
+    "subtitle": "Tem dúvidas ou sugestões? Adoraríamos ouvir você!",
+    "responseTime": {
+      "title": "Tempo de Resposta",
+      "desc": "Respondemos a maioria das mensagens em até 48 horas úteis. Para assuntos urgentes, por favor indique no assunto."
+    },
+    "otherWays": {
+      "title": "Outras Formas de Contato",
+      "desc": "Você também pode nos contatar diretamente por email:"
+    },
+    "faq": {
+      "title": "Perguntas Frequentes",
+      "q1": "As ferramentas são realmente gratuitas?",
+      "a1": "Sim! Todas as nossas ferramentas são 100% gratuitas, sem limites de uso.",
+      "q2": "Meus arquivos são seguros?",
+      "a2": "Sim! Todos os arquivos são processados localmente no seu navegador e nunca são enviados para nossos servidores.",
+      "q3": "Posso sugerir novas ferramentas?",
+      "a3": "Claro! Use o formulário ao lado para enviar suas sugestões. Adoramos ouvir nossos usuários!"
+    },
+    "form": {
+      "title": "Envie sua Mensagem",
+      "desc": "Preencha o formulário abaixo e entraremos em contato o mais breve possível.",
+      "loading": "Carregando formulário..."
+    },
+    "footer": "Ferramentas Digitais - Todos os Direitos Reservados"
   }
 }
