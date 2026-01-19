@@ -2,9 +2,11 @@ import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { tools } from '@/lib/tools';
+import { getToolContent, getDefaultContent } from '@/lib/toolsContent';
 import AdSlot from '@/components/AdSlot';
 import ClientToolLoader from '@/components/ClientToolLoader';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import { ToolSchema, FAQSchema, BreadcrumbSchema } from '@/components/JsonLdSchema';
 
 function getToolKeyBySlug(slug: string) {
   const slugMap: Record<string, string> = {
@@ -182,8 +184,77 @@ async function ToolPageContent({ locale, slug, toolKey }: { locale: string; slug
     notFound();
   }
 
+  // Get rich content for the tool
+  const toolContent = getToolContent(locale, toolKey) || getDefaultContent(locale);
+
+  // Labels for content sections
+  const labels: Record<string, Record<string, string>> = {
+    pt: {
+      about: 'Sobre esta ferramenta',
+      howToUse: 'Como usar',
+      faq: 'Perguntas Frequentes',
+      useCases: 'Casos de uso',
+    },
+    en: {
+      about: 'About this tool',
+      howToUse: 'How to use',
+      faq: 'Frequently Asked Questions',
+      useCases: 'Use cases',
+    },
+    es: {
+      about: 'Sobre esta herramienta',
+      howToUse: 'Cómo usar',
+      faq: 'Preguntas frecuentes',
+      useCases: 'Casos de uso',
+    },
+    fr: {
+      about: 'À propos de cet outil',
+      howToUse: 'Comment utiliser',
+      faq: 'Questions fréquentes',
+      useCases: "Cas d'utilisation",
+    },
+    de: {
+      about: 'Über dieses Tool',
+      howToUse: 'Wie man es benutzt',
+      faq: 'Häufig gestellte Fragen',
+      useCases: 'Anwendungsfälle',
+    },
+    it: {
+      about: 'Informazioni su questo strumento',
+      howToUse: 'Come usare',
+      faq: 'Domande frequenti',
+      useCases: 'Casi d\'uso',
+    },
+    ru: {
+      about: 'Об этом инструменте',
+      howToUse: 'Как использовать',
+      faq: 'Часто задаваемые вопросы',
+      useCases: 'Примеры использования',
+    },
+  };
+
+  const currentLabels = labels[locale] || labels['pt'];
+  const baseUrl = 'https://ferramentasdigitais.com.br';
+
+  // Breadcrumb items for schema
+  const breadcrumbItems = [
+    { name: 'Home', url: `${baseUrl}/${locale}` },
+    { name: t('name'), url: `${baseUrl}/${locale}/${slug}` },
+  ];
+
   return (
     <div className="container mx-auto px-4 py-8">
+      {/* JSON-LD Schemas */}
+      <ToolSchema
+        name={t('name')}
+        description={t('metaDescription')}
+        url={`${baseUrl}/${locale}/${slug}`}
+        category={toolExists.category}
+        locale={locale}
+      />
+      <BreadcrumbSchema items={breadcrumbItems} />
+      {toolContent.faq.length > 0 && <FAQSchema items={toolContent.faq} />}
+
       {/* Breadcrumbs */}
       <Breadcrumbs />
 
@@ -194,7 +265,7 @@ async function ToolPageContent({ locale, slug, toolKey }: { locale: string; slug
 
       {/* Tool Header */}
       <div className="text-center mb-8 animate-fade-in">
-        <div className="text-6xl mb-4">
+        <div className="text-6xl mb-4" role="img" aria-label={t('name')}>
           {toolExists.icon || '🛠️'}
         </div>
         <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-3">
@@ -210,17 +281,78 @@ async function ToolPageContent({ locale, slug, toolKey }: { locale: string; slug
         <ClientToolLoader slug={slug} />
       </div>
 
+      {/* Ad Slot - Middle */}
+      <div className="mt-12">
+        <AdSlot position="middle" />
+      </div>
+
+      {/* Rich SEO Content Section */}
+      <div className="max-w-4xl mx-auto mt-12 space-y-8">
+        {/* About Section */}
+        <section className="bg-white dark:bg-dark-800 rounded-lg shadow-md dark:shadow-dark-900/50 p-6 transition-colors">
+          <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-100">
+            {currentLabels.about}
+          </h2>
+          <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+            {toolContent.longDescription}
+          </p>
+        </section>
+
+        {/* How to Use Section */}
+        <section className="bg-white dark:bg-dark-800 rounded-lg shadow-md dark:shadow-dark-900/50 p-6 transition-colors">
+          <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-100">
+            {currentLabels.howToUse}
+          </h2>
+          <ol className="list-decimal list-inside space-y-3 text-gray-700 dark:text-gray-300">
+            {toolContent.howToUse.map((step, index) => (
+              <li key={index} className="leading-relaxed pl-2">
+                {step}
+              </li>
+            ))}
+          </ol>
+        </section>
+
+        {/* Use Cases Section */}
+        <section className="bg-white dark:bg-dark-800 rounded-lg shadow-md dark:shadow-dark-900/50 p-6 transition-colors">
+          <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-100">
+            {currentLabels.useCases}
+          </h2>
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
+            {toolContent.useCases.map((useCase, index) => (
+              <li
+                key={index}
+                className="flex items-center gap-2 text-gray-700 dark:text-gray-300"
+              >
+                <span className="text-green-500">✓</span>
+                {useCase}
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="bg-white dark:bg-dark-800 rounded-lg shadow-md dark:shadow-dark-900/50 p-6 transition-colors">
+          <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-gray-100">
+            {currentLabels.faq}
+          </h2>
+          <div className="space-y-6">
+            {toolContent.faq.map((item, index) => (
+              <div key={index} className="border-b border-gray-200 dark:border-gray-700 pb-4 last:border-0 last:pb-0">
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">
+                  {item.question}
+                </h3>
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                  {item.answer}
+                </p>
+              </div>
+            ))}
+          </div>
+        </section>
+      </div>
+
       {/* Ad Slot - Bottom */}
       <div className="mt-12">
         <AdSlot position="bottom" />
-      </div>
-
-      {/* SEO Content */}
-      <div className="max-w-4xl mx-auto mt-12 bg-white dark:bg-dark-800 rounded-lg shadow-md dark:shadow-dark-900/50 p-6 transition-colors">
-        <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-100">{tSite('about')}</h2>
-        <p className="text-gray-700 dark:text-gray-300 mb-4">
-          {t('metaDescription')}
-        </p>
       </div>
     </div>
   );

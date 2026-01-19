@@ -7,10 +7,22 @@ interface AdSlotProps {
   className?: string;
 }
 
+// AdSense Publisher ID
+const AD_CLIENT = 'ca-pub-7799249195760389';
+
+// Ad slots for different positions (create these in your AdSense console)
+// For now using responsive auto ads format
+const AD_SLOTS: Record<string, string> = {
+  top: '1234567890',      // Replace with real slot from AdSense
+  middle: '1234567891',   // Replace with real slot from AdSense
+  bottom: '1234567892',   // Replace with real slot from AdSense
+  sidebar: '1234567893',  // Replace with real slot from AdSense
+};
+
 export default function AdSlot({ position, className = '' }: AdSlotProps) {
   const adRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
-  const adLoadedRef = useRef(false);
+  const [adInitialized, setAdInitialized] = useState(false);
 
   // Lazy load ads - only load when in viewport
   useEffect(() => {
@@ -39,44 +51,61 @@ export default function AdSlot({ position, className = '' }: AdSlotProps) {
     };
   }, [isVisible]);
 
-  // Load AdSense script when ad becomes visible (only once)
+  // Load AdSense script when ad becomes visible (only once per component)
   useEffect(() => {
-    if (isVisible && typeof window !== 'undefined' && !adLoadedRef.current) {
-      adLoadedRef.current = true;
-      try {
-        // @ts-expect-error - adsbygoogle is injected by Google
-        (window.adsbygoogle = window.adsbygoogle || []).push({});
-      } catch (err) {
-        // Ignore "already have ads" error - this is expected behavior
-        if (err instanceof Error && !err.message.includes('already have ads')) {
-          console.error('AdSense error:', err);
-        }
-      }
-    }
-  }, [isVisible]);
+    if (isVisible && typeof window !== 'undefined' && !adInitialized) {
+      setAdInitialized(true);
 
-  // Minimum heights to ensure proper ad display
+      // Small delay to ensure the ins element is rendered
+      const timer = setTimeout(() => {
+        try {
+          // @ts-expect-error - adsbygoogle is injected by Google
+          (window.adsbygoogle = window.adsbygoogle || []).push({});
+        } catch (err) {
+          // Ignore errors - common when ads are blocked or already loaded
+          if (process.env.NODE_ENV === 'development') {
+            console.log('AdSense info:', err);
+          }
+        }
+      }, 100);
+
+      return () => clearTimeout(timer);
+    }
+  }, [isVisible, adInitialized]);
+
+  // Minimum heights to ensure proper ad display and prevent CLS
   const heightMap = {
     top: '90px',
-    middle: '90px',
+    middle: '250px',
     bottom: '90px',
-    sidebar: '250px',
+    sidebar: '600px',
   };
 
-  // This component is ready for Google Auto Ads
-  // Google Auto Ads will automatically place ads in optimal positions
-  // The container provides a designated space that Google can use
   return (
     <div
       ref={adRef}
       className={`ad-container overflow-hidden ${className}`}
       style={{
         minHeight: heightMap[position],
+        textAlign: 'center',
       }}
       data-ad-position={position}
     >
-      {/* Google Auto Ads will automatically insert ads here */}
-      {/* No placeholder needed - Google handles ad placement automatically */}
+      {isVisible && (
+        <ins
+          className="adsbygoogle"
+          style={{
+            display: 'block',
+            width: '100%',
+            height: 'auto',
+            minHeight: heightMap[position],
+          }}
+          data-ad-client={AD_CLIENT}
+          data-ad-slot={AD_SLOTS[position]}
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        />
+      )}
     </div>
   );
 }
