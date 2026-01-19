@@ -16,6 +16,7 @@ import ToastProvider from '@/components/ui/ToastProvider';
 import GlobalKeyboardShortcuts from '@/components/GlobalKeyboardShortcuts';
 import PWAInstallPrompt from '@/components/PWAInstallPrompt';
 import ServiceWorkerRegistration from '@/components/ServiceWorkerRegistration';
+import JsonLdSchema from '@/components/JsonLdSchema';
 
 const locales = ['en', 'pt', 'es', 'fr', 'de', 'ru', 'it'];
 
@@ -74,6 +75,9 @@ export default async function LocaleLayout({
         />
       </head>
       <body className="font-sans bg-white dark:bg-dark-950 dim:bg-dim-950 text-gray-900 dark:text-gray-100 dim:text-dim-100 transition-colors antialiased">
+        {/* JSON-LD Schema for SEO */}
+        <JsonLdSchema locale={locale} />
+
         {/* Skip to main content - Accessibility */}
         <a href="#main-content" className="skip-to-main">
           {locale === 'en' && 'Skip to main content'}
